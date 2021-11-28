@@ -3629,6 +3629,7 @@ h2 {
           flex: 0 0 100%;
   max-width: 50%;
   padding: 150px 0 150px 100px;
+  border: 10px solid red;
 }
 
 .swiper .swiper-wrapper {
