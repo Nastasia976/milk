@@ -117,6 +117,55 @@ $(document).ready(function () {
         ]
     });
 
+    $('.small-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: $('.small-slider__prev'),
+        nextArrow: $('.small-slider__next'),
+        vertical: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1281,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1020,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 570,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
+    $('.big-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+    });
+
+    $('.popular__heart1').click(function (evrnt) {
+        $(this).toggleClass('passive');
+        $('.popular__heart2').toggleClass('active');
+    });
+
 
 
 
@@ -188,6 +237,22 @@ $(document).ready(function () {
 
     $('.user-phone').mask('999) 999-99-99', {
         autoclear: false
+    });
+
+    $('.product-about__el_description').click(function (evrnt) {
+        $('.description').toggleClass('active');
+    });
+    $('.product-about__el_characters').click(function (evrnt) {
+        $('.characters').toggleClass('active');
+    });
+    $('.product-about__el_package').click(function (evrnt) {
+        $('.package').toggleClass('active');
+    });
+    $('.product-about__el_sertificates').click(function (evrnt) {
+        $('.sertificates').toggleClass('active');
+    });
+    $('.product-about__el_reviews').click(function (evrnt) {
+        $('.reviews').toggleClass('active');
     });
 });
 
