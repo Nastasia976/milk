@@ -142,11 +142,18 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         infinite: true,
-        fade: true,
         asNavFor: '.small-slider',
+        responsive: [
+            {
+                breakpoint: 501,
+                settings: {
+                    draggable: true,
+                }
+            },
+        ]
     });
 
-    
+
 
     $('.big-slider__prev').click(function (event) {
         $('.big-slider').slick('slickPrev');
@@ -249,53 +256,53 @@ $(document).ready(function () {
 
     //___________DESCRIPTION_PAGE_____
 
-   /*  $('.product-about__el_description').click(function (evrnt) {
-
-        $('.product-about__el').removeClass('active');
-        $(this).toggleClass('active');
-        $('.description').addClass('_active');
-        $('.description').removeClass('_passive');
-
-        $('.characters, .package, .sertificates, .reviews').toggleClass('_passive');
-        $('.characters, .package, .sertificates, .reviews').addClass('_active');
-    });
-    $('.product-about__el_characters').click(function (evrnt) {
-        $('.product-about__el').removeClass('active');
-        $(this).toggleClass('active');
-        $('.characters').addClass('_active');
-        $('.characters').removeClass('_passive');
-
-        $('.description, .package, .sertificates, .reviews').removeClass('_active');
-        $('.description, .package, .sertificates, .reviews').addClass('_passive');
-    });
-    $('.product-about__el_package').click(function (evrnt) {
-        $('.product-about__el').removeClass('active');
-        $(this).toggleClass('active');
-        $('.package').addClass('_active');
-        $('.package').removeClass('_passive');
-
-        $('.description, .characters, .sertificates, .reviews').removeClass('_active');
-
-        $('.description, .characters, .sertificates, .reviews').addClass('_passive');
-    });
-    $('.product-about__el_sertificates').click(function (evrnt) {
-        $('.product-about__el').removeClass('active');
-        $(this).toggleClass('active');
-        $('.sertificates').addClass('_active');
-        $('.sertificates').removeClass('_passive');
-
-        $('.description, .characters, .package, .reviews').removeClass('_active');
-        $('.description, .characters, .package, .reviews').addClass('_passive');
-    });
-    $('.product-about__el_reviews').click(function (evrnt) {
-        $('.product-about__el').removeClass('active');
-        $(this).toggleClass('active');
-        $('.reviews').addClass('_active');
-        $('.reviews').removeClass('_passive');
-
-        $('.description, .characters, .package, .sertificates').removeClass('_active');
-        $('.description, .characters, .package, .sertificates').addClass('_passive');
-    }); */
+    /*  $('.product-about__el_description').click(function (evrnt) {
+ 
+         $('.product-about__el').removeClass('active');
+         $(this).toggleClass('active');
+         $('.description').addClass('_active');
+         $('.description').removeClass('_passive');
+ 
+         $('.characters, .package, .sertificates, .reviews').toggleClass('_passive');
+         $('.characters, .package, .sertificates, .reviews').addClass('_active');
+     });
+     $('.product-about__el_characters').click(function (evrnt) {
+         $('.product-about__el').removeClass('active');
+         $(this).toggleClass('active');
+         $('.characters').addClass('_active');
+         $('.characters').removeClass('_passive');
+ 
+         $('.description, .package, .sertificates, .reviews').removeClass('_active');
+         $('.description, .package, .sertificates, .reviews').addClass('_passive');
+     });
+     $('.product-about__el_package').click(function (evrnt) {
+         $('.product-about__el').removeClass('active');
+         $(this).toggleClass('active');
+         $('.package').addClass('_active');
+         $('.package').removeClass('_passive');
+ 
+         $('.description, .characters, .sertificates, .reviews').removeClass('_active');
+ 
+         $('.description, .characters, .sertificates, .reviews').addClass('_passive');
+     });
+     $('.product-about__el_sertificates').click(function (evrnt) {
+         $('.product-about__el').removeClass('active');
+         $(this).toggleClass('active');
+         $('.sertificates').addClass('_active');
+         $('.sertificates').removeClass('_passive');
+ 
+         $('.description, .characters, .package, .reviews').removeClass('_active');
+         $('.description, .characters, .package, .reviews').addClass('_passive');
+     });
+     $('.product-about__el_reviews').click(function (evrnt) {
+         $('.product-about__el').removeClass('active');
+         $(this).toggleClass('active');
+         $('.reviews').addClass('_active');
+         $('.reviews').removeClass('_passive');
+ 
+         $('.description, .characters, .package, .sertificates').removeClass('_active');
+         $('.description, .characters, .package, .sertificates').addClass('_passive');
+     }); */
 
     /* $('.popular__button2').click(function (evrnt) {
         $('.popular__button2').toggleClass('active');
@@ -369,8 +376,10 @@ ts.append(...Array.from(ts.children).reverse())
 new Swiper('.swiper-description', {
     slidesPerView: 1,
     autoHeight: true,
-    touchRatio: 5,
 });
+/* new Swiper('.swiper-conteiner', {
+    slidesPerView: 1,
+}); */
 
 
 
