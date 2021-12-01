@@ -19,6 +19,12 @@
     font-weight: 600;
 }
 @font-face {
+    font-family: "Gotham Pro";
+    src: local("GothamPro"), url("../../../fonts/GothamPro-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 800;
+}
+@font-face {
     font-family: "Story";
     src: local("Story_Bold"), url("../../../fonts/Story_Bold.woff") format("woff");
     font-style: normal;
@@ -2847,7 +2853,11 @@ h2 {
 }
 //________PAGE-DESCRIPTION______
 .main-description-page {
-    padding: 0 20px;
+    .products-block{
+        padding: 0 20px;
+        min-width: 100%;
+    }
+
 }
 .bread-crumbs {
     display: flex;
@@ -3134,29 +3144,7 @@ h2 {
         }
     }
 }
-.product-about {
-    display: flex;
-    width: 100%;
-    background-color: #f3f9fe;
-    margin-top: 82px;
-    &__el {
-        padding: 28px 37px;
-        font-size: 20px;
-        line-height: 120%;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        transition: 0.4s;
-        svg {
-            margin-right: 11px;
-        }
-    }
-    &__el:hover {
-        background-color: #4eb7e5;
-        color: white;
-        transition: 0.4s;
-    }
-}
+
 
 @media (max-width: 1400px) {
     .product-card__body {
@@ -3237,9 +3225,14 @@ h2 {
     }
     .product-card__slider2 {
         max-width: 70% !important;
-        margin: -50px auto 0;
         .big-slider {
-            margin-left: -50px;
+            margin: 0 !important;
+            &__image{
+                padding: 0 0 23% 0;
+                img{
+                    max-width: 90%;
+                }
+            }
         }
     }
     .about__title {
@@ -3304,6 +3297,9 @@ h2 {
         .big-slider {
             margin-left: calc(0px + (0) * (100vw / 768));
         }
+    }
+    .about__items{
+        margin: 20px -20px 0;
     }
     .about {
         position: relative;
@@ -3427,21 +3423,45 @@ h2 {
         }
     }
 }
-
-.product-description {
-    li.active {
-        display: block;
+.product-about {
+    display: flex;
+    width: 100%;
+    background-color: #f3f9fe;
+    margin-top: 82px;
+    &__el {
+        padding: 28px 37px;
+        font-size: 20px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.4s;
+        svg {
+            margin-right: 11px;
+        }
+    }
+    &__el:hover {
+        background-color: #4eb7e5;
+        color: white;
+        transition: 0.4s;
+    }
+    &__el.active{
+        background-color: #4eb7e5;
+        color: white;
     }
 }
-h2 {
+h3 {
     font-size: 28px;
     line-height: 120%;
     text-transform: uppercase;
     font-weight: 800;
 }
 .description {
-    max-width: 1070px;
     margin-top: 77px;
+    padding: 0 0 60px 0;
+    &__body {
+        max-width: 1065px;
+    }
     p {
         margin-top: 34px;
         font-size: 18px;
@@ -3452,8 +3472,15 @@ h2 {
         font-weight: 500;
     }
 }
+.description._active, .characters._active, .package._active, .sertificates._active, .reviews._active {
+    display: block;
+}
+.description._passive,.characters._passive, .package._passive, .sertificates._passive, .reviews._passive {
+    display: none;
+}
 .characters {
     margin-top: 77px;
+    padding: 0 0 60px 0;
     &__body {
         display: flex;
         max-width: 1420px;
@@ -3469,7 +3496,7 @@ h2 {
         max-width: 700px;
         margin-top: 34px;
         width: 100%;
-        padding: 44px 52px 49px;
+        padding: 44px 25px 49px 52px;
         background: #fefbf7;
         border-radius: 20px;
         .about__details {
@@ -3486,6 +3513,7 @@ h2 {
         .about__details._name {
             margin-bottom: 10px;
             color: #969696;
+            font-size: 14px;
         }
     }
     &__items:not(:last-child) {
@@ -3499,6 +3527,7 @@ h2 {
 }
 .package {
     margin-top: 77px;
+    padding: 0 0 60px 0;
     &__body {
         display: flex;
         padding: 46px 51px;
@@ -3526,6 +3555,7 @@ h2 {
 }
 .sertificates {
     margin-top: 77px;
+    padding: 0 0 60px 0;
     width: 100%;
     &__body {
         display: flex;
@@ -3570,7 +3600,7 @@ h2 {
     }
 }
 .reviews {
-    padding: 86px 0 0 0;
+    padding: 86px 0 60px 0;
     background: #eff4f9;
     min-width: 100%;
     margin-top: 77px;
@@ -3659,27 +3689,110 @@ h2 {
         }
     }
 }
+.sale-block {
+    padding: 65px 0 0 0;
+    background-color: #EFF4F9;
+    &__conteiner {
+    }
+    &__body {
+        background: url("../../../img/гранеллобаннер0031.png");
+        height: 160px;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    &__sale {
+        background-color: #4eb7e5;
+        font-size: 30px;
+        line-height: 110%;
+        text-transform: uppercase;
+        width: 63px;
+        height: 163px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            color: white;
+            display: block;
+            transform: rotate(-90deg);
+            font-weight: 500;
+        }
+    }
+    &__items {
+        margin-left: calc(67px + 200 * (100vw / 1920));
+        padding: 27px 0 25px;
+    }
+    &__title {
+        font-family: "Story";
+        font-size: 40px;
+        line-height: 108%;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__button {
+        margin-top: 19px;
+        button {
+            border: 1px solid #000000;
+            border-radius: 10px;
+            padding: 11px 38px;
+            box-sizing: border-box;
+            span{
+                font-size: 24px;
+                line-height: 120%;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__price {
+        margin-left: 38px;
+        display: flex;
+        align-items: center;
+    }
+    &__after {
+        font-size: 26px;
+        line-height: 120%;
+        font-weight: 600;
+        color: #DE7941;
+    }
+    &__before {
+        margin-left: 10px;
+        font-size: 18px;
+        line-height: 120%;
+        text-decoration: line-through;
+        color: #636363;
+        font-weight: 500;
+    }
+}
+
 .recommendations {
-    margin-top: 115px;
+    padding: calc(15px + 100 * (100vw / 1920)) 0 57px 0;
     position: relative;
-    padding: 0 0 57px 0;
-    .recommendations__title{
+    background-color: #EFF4F9;
+    .recommendations__title {
         width: 100%;
         text-align: center;
-        h2{
+        h2 {
             text-transform: none;
             font-size: 45px;
             line-height: 107%;
             font-weight: 800;
-            font-family: 'Story';
+            font-family: "Story";
         }
     }
-    .popular__slider{
-        .slick-track{
+    .popular__slider {
+        .slick-track {
             padding: 0 0 30px 0;
         }
     }
-    .popular__items:hover{
+    .popular__items:hover {
         box-shadow: 0px 10px 20px rgba(59, 88, 99, 0.4);
         border-radius: 18px;
     }
