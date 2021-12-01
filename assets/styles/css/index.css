@@ -1505,8 +1505,8 @@ h2 {
   padding: 21px 28px 33px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: minmax(60px, 60px) minmax(300px, 300px) 1fr minmax(30px, 30px) minmax(90px, 90px) minmax(80px, 80px);
-      grid-template-rows: minmax(60px, 60px) minmax(300px, 300px) 1fr minmax(30px, 30px) minmax(90px, 90px) minmax(80px, 80px);
+  -ms-grid-rows: minmax(60px, 60px) minmax(300px, 300px) 1fr minmax(30px, 30px) minmax(100px, 100px) minmax(55px, 55px);
+      grid-template-rows: minmax(60px, 60px) minmax(300px, 300px) 1fr minmax(30px, 30px) minmax(100px, 100px) minmax(55px, 55px);
   margin: 0 15px;
 }
 
@@ -1548,6 +1548,8 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  font-size: 20px;
+  line-height: 120%;
 }
 
 .popular__reiting svg {
@@ -1586,6 +1588,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   padding: 26px 0 0 0;
+  font-weight: 500;
 }
 
 .popular__text {
@@ -1686,6 +1689,7 @@ h2 {
   line-height: 120%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  font-weight: 500;
 }
 
 .popular__button3:hover {
@@ -1739,7 +1743,7 @@ h2 {
 .item-price__after {
   font-size: 22px;
   line-height: 120%;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .item-price__before {
@@ -3770,15 +3774,15 @@ h2 {
 }
 
 .product-card__slider .small-slider__prev {
-  top: 0;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.product-card__slider .small-slider__next {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   bottom: -60px;
+}
+
+.product-card__slider .small-slider__next {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .product-card__slider2 {
@@ -3809,7 +3813,11 @@ h2 {
 }
 
 .product-card__item svg {
-  margin-right: 18px;
+  margin-right: 20px;
+}
+
+.product-card__item:not(:first-child) svg {
+  margin: 0 25px 0 10px;
 }
 
 .product-card__item:not(:last-child) {
@@ -3829,7 +3837,8 @@ h2 {
 }
 
 .small-slider__image {
-  height: 110px;
+  height: 120px;
+  text-align: center;
 }
 
 .big-slider {
@@ -3979,6 +3988,7 @@ h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding: 0;
 }
 
 .about__items .item-price .item-price__after {
@@ -4003,6 +4013,11 @@ h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  /* .popular__button2.active{
+                svg{
+                    color: #4EB7E5;
+                }
+            } */
 }
 
 .about__items .popular__bottons .popular__button1 {
@@ -4031,7 +4046,8 @@ h2 {
 }
 
 .about__items .popular__bottons .popular__button2 svg {
-  color: #8ed8f3;
+  color: #4eb7e5;
+  /* color: #8ed8f3; */
   margin-right: 17px;
 }
 
@@ -4118,6 +4134,9 @@ h2 {
 }
 
 @media (max-width: 1280px) {
+  .big-slider {
+    margin-top: 0;
+  }
   .about__items {
     padding: 42px 20px;
   }
@@ -4273,7 +4292,7 @@ h2 {
     margin-right: 20px;
   }
   .product-card__slider2 .big-slider {
-    margin-left: calc(0px + (-70) * (100vw / 768));
+    margin-left: calc(0px + (0) * (100vw / 768));
   }
   .about {
     position: relative;
@@ -4462,9 +4481,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   max-width: 1420px;
 }
 
@@ -4509,6 +4525,10 @@ h2 {
   color: #969696;
 }
 
+.characters__items:not(:last-child) {
+  margin-right: 39px;
+}
+
 .characters__name {
   font-size: 20px;
   line-height: 120%;
@@ -4544,6 +4564,10 @@ h2 {
 
 .package__items:last-child {
   margin-left: calc(0px + 144 * (100vw / 1920));
+}
+
+.package__el._opacity {
+  opacity: 0.76;
 }
 
 .sertificates {
@@ -4607,6 +4631,7 @@ h2 {
   padding: 86px 0 0 0;
   background: #eff4f9;
   min-width: 100%;
+  margin-top: 77px;
 }
 
 .reviews__wrapper {
@@ -4614,7 +4639,7 @@ h2 {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  padding: 70px 100px;
+  padding: 70px 106px;
 }
 
 .reviews__top {
@@ -4635,6 +4660,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 20px;
 }
 
 .reviews__item {
@@ -4663,7 +4689,15 @@ h2 {
 }
 
 .reviews__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 34px;
+}
+
+.reviews__item:first-child svg:not(:last-child) {
+  margin-right: 12px;
+}
+
+.reviews__item._middle {
+  margin-right: 50px;
 }
 
 .review__top {
@@ -4676,18 +4710,21 @@ h2 {
   padding: 56px 0 0 0;
 }
 
+.review__top svg:not(:last-child) {
+  margin-right: 12px;
+}
+
 .review__name {
   font-size: 20px;
   font-weight: 500;
   line-height: 160%;
-  margin-right: 20px;
 }
 
 .review__date {
   font-size: 16px;
   line-height: 120%;
   color: #9b9b9b;
-  margin-right: 20px;
+  margin: 0 45px 0 35px;
 }
 
 .review__text {
@@ -4707,6 +4744,8 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   color: #4eb7e5;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .review__button svg {
@@ -4715,4 +4754,53 @@ h2 {
 
 .recommendations {
   margin-top: 115px;
+  position: relative;
+  padding: 0 0 57px 0;
+}
+
+.recommendations .recommendations__title {
+  width: 100%;
+  text-align: center;
+}
+
+.recommendations .recommendations__title h2 {
+  text-transform: none;
+  font-size: 45px;
+  line-height: 107%;
+  font-weight: 800;
+  font-family: 'Story';
+}
+
+.recommendations .popular__slider .slick-track {
+  padding: 0 0 30px 0;
+}
+
+.recommendations .popular__items:hover {
+  -webkit-box-shadow: 0px 10px 20px rgba(59, 88, 99, 0.4);
+          box-shadow: 0px 10px 20px rgba(59, 88, 99, 0.4);
+  border-radius: 18px;
+}
+
+.recommendations .popular__arrows {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recommendations .popular__arrows .popular-prev,
+.recommendations .popular__arrows .popular-next {
+  max-width: 15px;
+  color: #4eb7e5;
+}
+
+.recommendations .popular__arrows .popular-prev {
+  margin-right: 57px;
+}
+
+.recommendations .popular__arrows .popular-next.slick-disabled,
+.recommendations .popular__arrows .popular-prev.slick-disabled {
+  color: #cccccc;
 }
