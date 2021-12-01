@@ -2971,16 +2971,45 @@ h2 {
         text-align: center;
     }
 }
+.product-card__slider2{
+    min-width: 100% !important;
+}
 .big-slider {
-    margin-left: calc(0px + 50 * (100vw / 1920));
     margin-top: 40px;
     &__image {
         img {
             width: calc(224px + 300 * (100vw / 1920));
+            left: 0;
+            right: 0;
+            margin: auto;
         }
     }
 }
-
+.product-card__slider2{
+    position: relative;
+    .big-slider__arrow {
+        position: absolute;
+        color: #cccccc;
+        display: none;
+        align-items: center;
+        bottom: 0px;
+        right: 0;
+        .big-slider__prev {
+            height: fit-content;
+            width: fit-content;
+            margin-right: 55px;
+        }
+        .big-slider__next {
+            transform: rotate(180deg);
+            width: fit-content;
+            
+        }
+        .big-slider__prev:hover,
+        .big-slider__next:hover {
+            color: #4EB7E5;
+        }
+    }
+}
 .about {
     &__sale {
         padding: 4px 16px;
@@ -3312,11 +3341,6 @@ h2 {
             }
         }
     }
-    .product-card__slider2 {
-        .big-slider {
-            margin-left: calc(0px + (0) * (100vw / 768));
-        }
-    }
     .about__items {
         margin: 20px -20px 0;
         transform: translate(0) !important;
@@ -3343,6 +3367,9 @@ h2 {
         position: absolute;
         right: 0px;
         top: 30px;
+    }
+    .product-card__body{
+        margin-top: -30px;
     }
 }
 @media (max-width: 610px) {
@@ -3414,32 +3441,15 @@ h2 {
         }
     }
     .product-card__slider2{
-        position: relative;
         padding: 0 0 50px 0;
         min-width: 100%;
     }
-    .big-slider__arrow {
-        position: absolute;
-        color: #cccccc;
-        display: flex;
-        align-items: center;
-        bottom: 0;
-        right: 0;
-        .big-slider__prev {
-            height: fit-content;
-            width: fit-content;
-            margin-right: 55px;
-        }
-        .big-slider__next {
-            transform: rotate(180deg);
-            width: fit-content;
-            
-        }
-        .big-slider__prev:hover,
-        .big-slider__next:hover {
-            color: #4EB7E5;
+    .product-card__slider2{
+        .big-slider__arrow {
+            display: flex;
         }
     }
+    
 
     .product-card {
         margin-top: 80px;

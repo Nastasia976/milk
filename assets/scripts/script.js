@@ -164,16 +164,13 @@ $(document).ready(function () {
         fade: true,
         infinite: true,
         asNavFor: '.small-slider',
-        responsive: [
-            {
-                breakpoint: 421,
-                settings: {
-                    arrows: true,
-                    prevArrow: $('.big-slider__prev'),
-                    nextArrow: $('.big-slider__next'),
-                }
-            }
-        ]
+    });
+
+    $('.big-slider__prev').click(function(event) {
+        $('.big-slider').slick('slickPrev');
+    });
+    $('.big-slider__next').click(function(event) {
+        $('.big-slider').slick('slickNext');
     });
 
     $('.popular__heart1').click(function (evrnt) {
