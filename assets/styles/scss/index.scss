@@ -3638,14 +3638,13 @@ h3 {
 .package._active,
 .sertificates._active,
 .reviews._active {
-    display: block;
 }
 .description._passive,
 .characters._passive,
 .package._passive,
 .sertificates._passive,
 .reviews._passive {
-    display: none;
+    
 }
 .characters {
     margin-top: calc(17px + 60 * (100vw / 1920));

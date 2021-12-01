@@ -146,6 +146,8 @@ $(document).ready(function () {
         asNavFor: '.small-slider',
     });
 
+    
+
     $('.big-slider__prev').click(function (event) {
         $('.big-slider').slick('slickPrev');
     });
@@ -247,7 +249,7 @@ $(document).ready(function () {
 
     //___________DESCRIPTION_PAGE_____
 
-    $('.product-about__el_description').click(function (evrnt) {
+   /*  $('.product-about__el_description').click(function (evrnt) {
 
         $('.product-about__el').removeClass('active');
         $(this).toggleClass('active');
@@ -293,7 +295,7 @@ $(document).ready(function () {
 
         $('.description, .characters, .package, .sertificates').removeClass('_active');
         $('.description, .characters, .package, .sertificates').addClass('_passive');
-    });
+    }); */
 
     /* $('.popular__button2').click(function (evrnt) {
         $('.popular__button2').toggleClass('active');
@@ -362,6 +364,13 @@ new Swiper('.swiper', {
 
 let ts = document.querySelector('.small-slider')
 ts.append(...Array.from(ts.children).reverse())
+
+
+new Swiper('.swiper-description', {
+    slidesPerView: 1,
+    autoHeight: true,
+    touchRatio: 5,
+});
 
 
 
