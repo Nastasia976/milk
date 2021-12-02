@@ -188,19 +188,19 @@ $(document).ready(function () {
         $('.popular__heart2').toggleClass('active');
     });
 
-    $('#ss-01').click(function (evrnt) {
+    $('#ss-01').click(function (event) {
         $('.big-slider').slick('goTo', 0);
     });
-    $('#ss-02').click(function (evrnt) {
+    $('#ss-02').click(function (event) {
         $('.big-slider').slick('goTo', 1);
     });
-    $('#ss-03').click(function (evrnt) {
+    $('#ss-03').click(function (event) {
         $('.big-slider').slick('goTo', 2);
     });
-    $('#ss-04').click(function (evrnt) {
+    $('#ss-04').click(function (event) {
         $('.big-slider').slick('goTo', 3);
     });
-    $('.slick-cloned').click(function (evrnt) {
+    $('.slick-cloned').click(function (event) {
         $('.big-slider').slick('slickNext');
     });
 
@@ -275,60 +275,6 @@ $(document).ready(function () {
         autoclear: false
     });
 
-    //___________DESCRIPTION_PAGE_____
-
-    /*  $('.product-about__el_description').click(function (evrnt) {
- 
-         $('.product-about__el').removeClass('active');
-         $(this).toggleClass('active');
-         $('.description').addClass('_active');
-         $('.description').removeClass('_passive');
- 
-         $('.characters, .package, .sertificates, .reviews').toggleClass('_passive');
-         $('.characters, .package, .sertificates, .reviews').addClass('_active');
-     });
-     $('.product-about__el_characters').click(function (evrnt) {
-         $('.product-about__el').removeClass('active');
-         $(this).toggleClass('active');
-         $('.characters').addClass('_active');
-         $('.characters').removeClass('_passive');
- 
-         $('.description, .package, .sertificates, .reviews').removeClass('_active');
-         $('.description, .package, .sertificates, .reviews').addClass('_passive');
-     });
-     $('.product-about__el_package').click(function (evrnt) {
-         $('.product-about__el').removeClass('active');
-         $(this).toggleClass('active');
-         $('.package').addClass('_active');
-         $('.package').removeClass('_passive');
- 
-         $('.description, .characters, .sertificates, .reviews').removeClass('_active');
- 
-         $('.description, .characters, .sertificates, .reviews').addClass('_passive');
-     });
-     $('.product-about__el_sertificates').click(function (evrnt) {
-         $('.product-about__el').removeClass('active');
-         $(this).toggleClass('active');
-         $('.sertificates').addClass('_active');
-         $('.sertificates').removeClass('_passive');
- 
-         $('.description, .characters, .package, .reviews').removeClass('_active');
-         $('.description, .characters, .package, .reviews').addClass('_passive');
-     });
-     $('.product-about__el_reviews').click(function (evrnt) {
-         $('.product-about__el').removeClass('active');
-         $(this).toggleClass('active');
-         $('.reviews').addClass('_active');
-         $('.reviews').removeClass('_passive');
- 
-         $('.description, .characters, .package, .sertificates').removeClass('_active');
-         $('.description, .characters, .package, .sertificates').addClass('_passive');
-     }); */
-
-    /* $('.popular__button2').click(function (evrnt) {
-        $('.popular__button2').toggleClass('active');
-    }); */
-
 });
 
 
@@ -363,66 +309,57 @@ var counts = document.querySelectorAll('.item-price__choice');
 counts.forEach(counterFunction);
 
 
-/* new Swiper('.swiper', {
-
-    navigation: {
-        nextEl: '.swiper-next',
-        prevEl: '.swiper-prev'
-    },
-    slidesPerView: 1.6,
-    loop: true,
-    spaceBetween: 10,
-    slidesOffsetBefore: -250,
-    pagination: {
-        el: '.swaper-pagination',
-        type: 'fraction',
-
-    },
-
-}); */
-
-
 let ts = document.querySelector('.small-slider')
 ts.append(...Array.from(ts.children).reverse())
 
 
-new Swiper('.swiper-description', {
+var mySwiper = new Swiper('.swiper-description', {
     slidesPerView: 1,
     autoHeight: true,
+    slideToClickedSlide: true,
 });
-/* new Swiper('.swiper-conteiner', {
-    observer: true,
-    observeParents: true,
-    observeSlideChildren: true,
-    breakpoints: {
-        845: {
-            slidesPerView: 3,
-            observer: true,
-    observeParents: true,
-    observeSlideChildren: true,
-        },
-        592: {
-            slidesPerView: 2,
-            slidesPerGroup: 1,
-            observer: true,
-    observeParents: true,
-    observeSlideChildren: true,
-        },
-        356: {
-            slidesPerView: 1.5,
-            observer: true,
-    observeParents: true,
-    observeSlideChildren: true,
-        },
-        0: {
-            slidesPerView: 1,
-            observer: true,
-    observeParents: true,
-    observeSlideChildren: true,
-        },
 
-    }
-}); */
+function goToPage(numberPage) {
+    $('.product-about__el_description').click(function (e) {
+        new Swiper('.swiper-description').slideTo(0, 500, false);
+        $('.product-about__el').removeClass('active');
+        $(this).toggleClass('active');
+    });
+}
+goToPage(10);
+function goToPage1(numberPage) {
+    $('.product-about__el_characters').click(function (e) {
+        new Swiper('.swiper-description').slideTo(1, 500, false);
+        $('.product-about__el').removeClass('active');
+        $(this).toggleClass('active');
+    });
+}
+goToPage1(10);
+function goToPage2(numberPage) {
+    $('.product-about__el_package').click(function (e) {
+        new Swiper('.swiper-description').slideTo(2, 500, false);
+        $('.product-about__el').removeClass('active');
+        $(this).toggleClass('active');
+    });
+}
+goToPage2(10);
+function goToPage3(numberPage) {
+    $('.product-about__el_sertificates').click(function (e) {
+        new Swiper('.swiper-description').slideTo(3, 500, false);
+        $('.product-about__el').removeClass('active');
+        $(this).toggleClass('active');
+    });
+}
+goToPage3(10);
+function goToPage4(numberPage) {
+    $('.product-about__el_reviews').click(function (e) {
+        new Swiper('.swiper-description').slideTo(4, 500, false);
+        $('.product-about__el').removeClass('active');
+        $(this).toggleClass('active');
+    });
+}
+goToPage4(10);
+
 
 
 
