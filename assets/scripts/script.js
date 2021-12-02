@@ -275,6 +275,27 @@ $(document).ready(function () {
         autoclear: false
     });
 
+    $('.sertificates__image1').click(function (event) {
+        $('.sertificates__items1, .scale-sertificat').toggleClass('active');
+        
+        $('body').toggleClass('lock');
+    });
+    $('.sertificates__image2').click(function (event) {
+        $('.sertificates__items2, .scale-sertificat').toggleClass('active');
+        
+        $('body').toggleClass('lock');
+    });
+    $('.sertificates__image3').click(function (event) {
+        $('.sertificates__items3, .scale-sertificat').toggleClass('active');
+        
+        $('body').toggleClass('lock');
+    });
+
+    $('.close-sertificate').click(function (event) {
+        $('.sertificates__items1, .sertificates__items2, .sertificates__items3, .scale-sertificat').removeClass('active');
+        $('body').removeClass('lock');
+    });
+    
 });
 
 
@@ -316,8 +337,46 @@ ts.append(...Array.from(ts.children).reverse())
 var mySwiper = new Swiper('.swiper-description', {
     slidesPerView: 1,
     autoHeight: true,
-    slideToClickedSlide: true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
 });
+/* if ( $('.swiper-slide').hasClass('swiper-1').hasClass('swiper-slide-active') ) {
+    $('.swiper-1').addClass('act');
+}
+if ( $('.swiper-slide-active').hasClass('.swiper-2') ) {
+    $('.swiper-slide-active').addClass('act');
+} */
+/* if ( $('.swiper-3').hasClass('swiper-slide-active') ) {
+    $('.swiper-3').toggleClass('act');
+}
+if ( $('.swiper-4').hasClass('swiper-slide-active') ) {
+    $('.swiper-4').toggleClass('act');
+}
+if ( $('.swiper-5').hasClass('swiper-slide-active') ) {
+    $('.swiper-5').toggleClass('act');
+} */
+
+/* if ( $('.swiper-1').hasClass('act') ) {
+    $('.product-about__el_description').addClass('active');
+    $('.product-about__el_characters, .product-about__el_package, .product-about__el_sertificates, .product-about__el_reviews').removeClass('active');
+}
+if ( $('.swiper-slide-active').hasClass('swiper-2') ) {
+    $('.product-about__el_characters').addClass('active');
+    $('.product-about__el_description, .product-about__el_package, .product-about__el_sertificates, .product-about__el_reviews').removeClass('active');
+} */
+/* if ( $('.swiper-3').hasClass('act') ) {
+    $('.product-about__el_package').addClass('active');
+    $('.product-about__el_description, .product-about__el_characters, .product-about__el_sertificates, .product-about__el_reviews').removeClass('active');
+}
+if ( $('.swiper-4').hasClass('act') ) {
+    $('.product-about__el_sertificates').addClass('active');
+    $('.product-about__el_description, .product-about__el_package, .product-about__el_package, .product-about__el_reviews').removeClass('active');
+}
+if ( $('.swiper-5').hasClass('act') ) {
+    $('.product-about__el_reviews').addClass('active');
+    $('.product-about__el_description, .product-about__el_package, .product-about__el_sertificates, .product-about__el_sertificates').removeClass('active');
+} */
 
 function goToPage(numberPage) {
     $('.product-about__el_description').click(function (e) {
@@ -332,6 +391,7 @@ function goToPage1(numberPage) {
         new Swiper('.swiper-description').slideTo(1, 500, false);
         $('.product-about__el').removeClass('active');
         $(this).toggleClass('active');
+        
     });
 }
 goToPage1(10);
@@ -340,6 +400,8 @@ function goToPage2(numberPage) {
         new Swiper('.swiper-description').slideTo(2, 500, false);
         $('.product-about__el').removeClass('active');
         $(this).toggleClass('active');
+        $('.swiper-1').removeClass('swiper-slide-active');
+        $('.swiper-2').toggleClass('swiper-slide-active');
     });
 }
 goToPage2(10);
@@ -348,6 +410,7 @@ function goToPage3(numberPage) {
         new Swiper('.swiper-description').slideTo(3, 500, false);
         $('.product-about__el').removeClass('active');
         $(this).toggleClass('active');
+        $('.swiper-4').toggleClass('swiper-slide-active');
     });
 }
 goToPage3(10);
@@ -356,6 +419,7 @@ function goToPage4(numberPage) {
         new Swiper('.swiper-description').slideTo(4, 500, false);
         $('.product-about__el').removeClass('active');
         $(this).toggleClass('active');
+        $('.swiper-5').toggleClass('swiper-slide-active');
     });
 }
 goToPage4(10);
