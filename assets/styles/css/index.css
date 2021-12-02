@@ -2183,7 +2183,7 @@ h2 {
         position: relative;
         padding: 0 0 100px 0; */
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 130px;
   width: 53%;
 }
@@ -2353,7 +2353,7 @@ h2 {
 
 .production-slider__image {
   position: relative;
-  padding: 0 0 32.3% 0;
+  padding: 0 0 12.3% 0;
   margin: 0 10px;
 }
 
@@ -2427,7 +2427,7 @@ h2 {
 .order-page {
   padding: calc(15px + 100 * (100vw / 1920)) 20px;
   position: relative;
-  z-index: 2;
+  z-index: 20;
   background-color: #fff;
 }
 
@@ -2562,6 +2562,7 @@ h2 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+    max-width: 800px;
     border-top: 0px dashed #000;
   }
   .order-page__items:not(:last-child) {
@@ -2912,6 +2913,8 @@ h2 {
   }
   .delivery-page::before {
     display: none;
+    width: 0;
+    height: 0;
   }
   .delivery-page__title {
     -webkit-transform: translate(0, 0);

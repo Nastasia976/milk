@@ -93,7 +93,8 @@ $(document).ready(function () {
     $('.production-slider').slick({
         slidesToScroll: 1,
         slidesToShow: 1.5,
-        infinite: false,
+        infinite: true,
+        initialSlide: 0,
         arrows: true,
         prevArrow: $('.production-page-prev'),
         nextArrow: $('.production-page-next'),
@@ -109,9 +110,9 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 545,
+                breakpoint: 445,
                 settings: {
-                    slidesToShow: 1.3,
+                    slidesToShow: 1,
                 }
             }
         ]
@@ -362,15 +363,7 @@ var counts = document.querySelectorAll('.item-price__choice');
 counts.forEach(counterFunction);
 
 
-/* $(document).ready(function () {
-    $('.production-slider2').slick({
-        slidesToShow: 1.5,
-        slidesToScrol: 0.5,
-        infinite: false,
-        initialSlide: 0.5,
-    });
-}); */
-new Swiper('.swiper', {
+/* new Swiper('.swiper', {
 
     navigation: {
         nextEl: '.swiper-next',
@@ -386,7 +379,7 @@ new Swiper('.swiper', {
 
     },
 
-});
+}); */
 
 
 let ts = document.querySelector('.small-slider')
