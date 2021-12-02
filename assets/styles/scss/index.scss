@@ -3827,18 +3827,18 @@ h3 {
         display: none;
     }
     .sertificates__next {
-        right: 35px;
+        right: 40px;
         transform: rotate(180deg);
         bottom: 40px;
         color: #cccccc;
     }
     .sertificates__prev {
-        right: 95px;
+        right: 115px;
         bottom: 40px;
         color: #cccccc;
     }
-    .sertificates__next,
-    .sertificates__prev {
+    .sertificates__next:hover,
+    .sertificates__prev:hover {
         color: #4eb7e5;
     }
     .sertificates__body::-webkit-scrollbar {
@@ -3894,14 +3894,17 @@ h3 {
 @media (max-width: 844px) {
     .sertificates {
         padding: 0 20px 100px;
+        .slick-arrow {
+            position: absolute;
+            display: block;
+            width: fit-content;
+            height: fit-content;
+        }
     }
     .sertificates__items {
         margin: 0 !important;
     }
-    .slick-arrow {
-        position: absolute;
-        display: block;
-    }
+    
 }
 @media (max-width: 560px) {
     .sertificates__items {
