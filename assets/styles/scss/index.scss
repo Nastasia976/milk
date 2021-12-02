@@ -3858,6 +3858,7 @@ h3 {
         border-radius: 20px;
         overflow: hidden;
         width: fit-content;
+        cursor: pointer;
     }
     &__name {
         margin-top: 8px;
@@ -3898,6 +3899,7 @@ h3 {
     height: 50px;
     right: 10px;
     top: 10px;
+    cursor: pointer;
 }
 .close-sertificate::after, .close-sertificate::before{
     position: absolute;
@@ -4150,11 +4152,13 @@ display: none;
         margin-top: 19px;
     }
     &__button {
+        border: 1px solid #000000;
+        border-radius: 10px;
+        overflow: hidden;
         button {
-            border: 1px solid #000000;
-            border-radius: 10px;
             padding: 11px 38px;
             box-sizing: border-box;
+            background-color: rgba(0,0,0,0);  
             span {
                 font-size: 24px;
                 line-height: 120%;
@@ -4185,21 +4189,21 @@ display: none;
 }
 @media (max-width: 1345px) {
     .sale-block__items {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
         padding: 27px 0 25px 80px;
         min-height: 100%;
     }
     .sale-block__title {
         color: white;
+        position: relative;
     }
     .sale-block__before,
     .sale-block__after {
         color: white;
     }
     .sale-block__button {
-        button {
-            border: 0;
-        }
+        background-color: white !important;
+        border: 0;
     }
 }
 @media (max-width: 768px) {
