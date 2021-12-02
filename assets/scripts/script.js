@@ -377,9 +377,24 @@ new Swiper('.swiper-description', {
     slidesPerView: 1,
     autoHeight: true,
 });
-/* new Swiper('.swiper-conteiner', {
-    slidesPerView: 1,
-}); */
+new Swiper('.swiper-conteiner', {
+    
+    breakpoints: {
+        845: {
+            slidesPerView: 3,
+        },
+        592: {
+            slidesPerView: 2.1,
+        },
+        356: {
+            slidesPerView: 1.2,
+        },
+        0: {
+            slidesPerView: 1,
+        },
+
+    }
+});
 
 
 
