@@ -4908,17 +4908,18 @@ h3 {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   bottom: 40px;
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 .sertificates .sertificates__prev {
   right: 95px;
   bottom: 40px;
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
-.sertificates .sertificates__next, .sertificates .sertificates__prev {
-  color: #4EB7E5;
+.sertificates .sertificates__next,
+.sertificates .sertificates__prev {
+  color: #4eb7e5;
 }
 
 .sertificates .sertificates__body::-webkit-scrollbar {
