@@ -3811,19 +3811,20 @@ h3 {
 }
 .sertificates {
     margin-top: calc(17px + 60 * (100vw / 1920));
-    padding: 0 20px 100px;
+    padding: 0 20px 50px;
     width: 100%;
     overflow: hidden;
     position: relative;
     &__body {
         display: flex;
         width: 100%;
-        padding: 0 0 100px 0;
+        padding: 0 0 50px 0;
         /* overflow: auto; */
         padding: 0 0 10px 0;
     }
     .slick-arrow {
         position: absolute;
+        display: none;
     }
     .sertificates__next {
         right: 35px;
@@ -3891,8 +3892,15 @@ h3 {
     }
 }
 @media (max-width: 844px) {
+    .sertificates {
+        padding: 0 20px 100px;
+    }
     .sertificates__items {
         margin: 0 !important;
+    }
+    .slick-arrow {
+        position: absolute;
+        display: block;
     }
 }
 @media (max-width: 560px) {
