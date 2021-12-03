@@ -90,6 +90,16 @@ $(document).ready(function () {
         dots: true,
         appendDots: $('.delivery-page__dots'),
     });
+    $('.why-we-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        prevArrow: $('.why-we-prev'),
+        nextArrow: $('.why-we-next'),
+        dots: true,
+        dots: false,
+    });
+
     $('.production-slider').slick({
         slidesToScroll: 1,
         slidesToShow: 1.5,
@@ -175,6 +185,35 @@ $(document).ready(function () {
         ]
     });
 
+    $('.sertif-block__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        prevArrow: $('.sertif-block-prev'),
+        nextArrow: $('.sertif-block-next'),
+        responsive: [
+            {
+                breakpoint: 1501,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 930,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+
+    
 
     $('.big-slider__prev').click(function (event) {
         $('.big-slider').slick('slickPrev');
@@ -247,6 +286,10 @@ $(document).ready(function () {
             console.log('Second click');
         }
     });
+
+    
+    
+
 
     $('.head-link').click(function (event) {
         $(this).toggleClass('active').not($(this)).removeClass('active');
@@ -335,17 +378,32 @@ var counts = document.querySelectorAll('.item-price__choice');
 counts.forEach(counterFunction);
 
 
+
+
+new Swiper('.tradishon-swiper', {
+    slidePerGroup: 1,
+    loop: true,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.tradishon-next',
+        prevEl: '.tradishon-prev',
+    },
+    pagination: {
+        el: '.tradishon__dots',
+        type: 'fraction'
+    },
+    breakpoints: {
+        545: {
+            slidesPerView: 1.5,
+        },
+        240: {
+            slidesPerView: 1.2,
+        },
+    },
+});
+
 let ts = document.querySelector('.small-slider')
-ts.append(...Array.from(ts.children).reverse())
-
-
-/* let myImageSlider = new Swiper('.swiper-description', {
-    slidesPerView: 1,
-    autoHeight: true,
-    observer: true,
-    observeParents: true,
-    observeSlideChildren: true,
-}); */
+ts.append(...Array.from(ts.children).reverse());
 
 /* let myTextSlider = new Swiper('.swiper-tabs', {
     observer: true,
