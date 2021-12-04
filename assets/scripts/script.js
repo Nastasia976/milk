@@ -320,7 +320,7 @@ $(document).ready(function () {
         autoclear: false
     });
 
-    $('.sertificates__image1').click(function (event) {
+    /* $('.sertificates__image1').click(function (event) {
         $('.sertificates__items1, .scale-sertificat').toggleClass('active');
 
         $('body').toggleClass('lock');
@@ -339,7 +339,7 @@ $(document).ready(function () {
     $('.close-sertificate').click(function (event) {
         $('.sertificates__items1, .sertificates__items2, .sertificates__items3, .scale-sertificat').removeClass('active');
         $('body').removeClass('lock');
-    });
+    }); */
 
     $('.product-about__el').click(function (event) {
         $('.product-about__el').removeClass('active');
