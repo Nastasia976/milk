@@ -4500,25 +4500,39 @@ h2 {
     display: none;
   }
   .product-card__slider2 {
-    padding: 0 0 40px 0;
+    border: 1px solid red;
+    min-width: 100%;
   }
   .product-card__slider2 .big-slider__arrow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     bottom: 0px;
-    right: -20px;
+    right: 20px;
+  }
+  .product-card__body {
+    border: 1px solid black;
+    margin: -40px -20px 0;
   }
   .big-slider {
     margin-top: 0px !important;
     pointer-events: none;
+    border: 1px solid blue;
+    max-width: 100% !important;
+  }
+  .big-slider__image {
+    padding: 0 0 16% 0 !important;
+  }
+  .big-slider__image img {
+    height: 100%;
+    width: 100%;
   }
   .about__favorites._hide {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
-    top: 20px !important;
-    right: 0px !important;
+    top: 50px !important;
+    right: 45px !important;
   }
 }
 

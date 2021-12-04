@@ -159,6 +159,8 @@ $(document).ready(function () {
                 breakpoint: 501,
                 settings: {
                     draggable: true,
+                    variableHeight: true,
+                    slidesToShow: 1,
                 }
             },
         ]
