@@ -4651,7 +4651,7 @@ h2 {
 }
 
 .select {
-  margin: 50px auto;
+  margin: 30px auto 50px;
   position: relative;
   width: 250px;
   display: none;
