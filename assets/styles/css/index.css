@@ -4516,7 +4516,6 @@ h2 {
   }
   .big-slider {
     margin-top: 0px !important;
-    pointer-events: none;
     border: 1px solid blue;
     max-width: 100% !important;
   }
