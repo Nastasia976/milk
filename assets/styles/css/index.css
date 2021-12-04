@@ -4800,6 +4800,10 @@ h3 {
   padding: calc(17px + 43 * (100vw / 1920)) 20px 0;
 }
 
+.characters__conteiner {
+  overflow: hidden;
+}
+
 .characters__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4807,6 +4811,27 @@ h3 {
   max-width: 1420px;
   padding: 0 0 calc(17px + 43 * (100vw / 1920)) 0;
   border-bottom: 1px solid #f5f5f5;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  position: absolute;
+  top: 34px;
+}
+
+.characters__body.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: visible;
+  position: static;
 }
 
 .characters .characters__name {
@@ -4886,6 +4911,12 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   max-width: 513px;
+  cursor: pointer;
+}
+
+.consist__item.active {
+  -webkit-box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
 }
 
 .consist__item:not(:last-child) {
