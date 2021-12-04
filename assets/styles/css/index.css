@@ -4513,7 +4513,7 @@ h2 {
     margin: -30px -20px 0;
   }
   .big-slider {
-    margin-top: 0px !important;
+    margin-top: 20px !important;
     max-width: 100% !important;
   }
   .big-slider__image {
@@ -4527,7 +4527,7 @@ h2 {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
-    top: 20px !important;
+    top: 30px !important;
     right: 45px !important;
   }
 }
@@ -4651,7 +4651,7 @@ h2 {
 }
 
 .select {
-  margin: 30px auto 50px;
+  margin: 50px auto 15px;
   position: relative;
   width: 250px;
   display: none;
