@@ -3484,7 +3484,6 @@ h2 {
         display: none;
     }
     .product-card__slider2 {
-        border: 1px solid red;
         min-width: 100%;
         .big-slider__arrow {
             display: flex;
@@ -3493,12 +3492,10 @@ h2 {
         }
     }
     .product-card__body{
-        border: 1px solid black;
         margin: -30px -20px 0;
     }
     .big-slider {
         margin-top: 0px !important;
-        border: 1px solid blue;
         max-width: 100% !important;
         &__image{
             padding: 0 0 14% 0 !important;

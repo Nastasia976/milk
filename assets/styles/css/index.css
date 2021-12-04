@@ -4500,7 +4500,6 @@ h2 {
     display: none;
   }
   .product-card__slider2 {
-    border: 1px solid red;
     min-width: 100%;
   }
   .product-card__slider2 .big-slider__arrow {
@@ -4511,12 +4510,10 @@ h2 {
     right: 20px;
   }
   .product-card__body {
-    border: 1px solid black;
     margin: -30px -20px 0;
   }
   .big-slider {
     margin-top: 0px !important;
-    border: 1px solid blue;
     max-width: 100% !important;
   }
   .big-slider__image {
