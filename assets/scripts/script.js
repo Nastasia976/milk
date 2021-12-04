@@ -346,6 +346,25 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     });
 
+    $('.select__item').click(function (event) {
+        $('.select__item').removeClass('_active');
+        $(this).toggleClass('_active');
+        $('.select__icon').removeClass('_active');
+    });
+    $('.select__header').click(function (event) {
+        $('.select__icon').toggleClass('_active');
+    });
+
+    
+    $(document).mouseup(function (e){ 
+        var div = $('.select');
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+          $('.select').removeClass('is-active');
+          $('.select__icon').removeClass('_active');
+            }
+      });
+
 });
 
 
@@ -518,4 +537,34 @@ goToPage4(10); */
 
 
 
+
+let select = function () {
+    let selectHeader = document.querySelectorAll('.select__header');
+    let selectItem = document.querySelectorAll('.select__item');
+
+    selectHeader.forEach(item => {
+        item.addEventListener('click', selectToggle)
+    });
+
+    selectItem.forEach(item => {
+        item.addEventListener('click', selectChoose);
+    });
+
+    function selectToggle() {
+        this.parentElement.classList.toggle('is-active')
+    }
+
+    function selectChoose() {
+        let text = this.innerText,
+            select = this.closest('.select'),
+            currentText = select.querySelector('.select__current');
+        currentText.innerText = text;
+        select.classList.remove('is-active');
+    }
+    
+
+};
+
+
+select();
 
