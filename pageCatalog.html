@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="assets/styles/css/index.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Невельмолоко</title>
 </head>
 
@@ -365,208 +365,290 @@
             </div>
         </header>
         <main class="main main-catalog-page">
+            <div class="catalog-choice__crumbs">
+                <ul class="bread-crumbs _conteiner">
+                    <li class="bread-crumbs__el">
+                        <a href="#" class="bread-crumbs__link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="bread-crumbs__el">
+                        Каталог
+                    </li>
+                </ul>
+            </div>
             <div class="catalog-choice _conteiner">
-                <div class="filter">
+                <div class="catalog-choice__filter filter">
                     <div class="filter__body">
                         <div class="filter__menu one">
                             <div class="filter__items">
                                 <div class="filter__element">
-                                    <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z" fill="#C4C4C4"/>
-                                        </svg>                                
-                                    <span>По типу товара</span>
-                                    <svg class="filter-close" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z" fill="#C6C6C6"/>
-                                        </svg>
-                                </div>  
+                                    <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z"
+                                            fill="#C4C4C4" />
+                                    </svg>
+                                    <span class="bb-dashed">По типу товара</span>
+                                    <svg class="filter-close" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z"
+                                            fill="#C6C6C6" />
+                                    </svg>
+                                </div>
                                 <div class="filter__submenu">
                                     <div class="filter__section">
                                         <div class="filter__item">
-                                                <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z" fill="#C4C4C4"/>
-                                                    </svg>
-                                                    <input id="lolo" type="checkbox">
-                                                Гранулированное сухое молоко
+                                            <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z"
+                                                    fill="#C4C4C4" />
+                                            </svg>
+                                            <input class="checkbox" id="lolo" type="checkbox">
+                                            <div class="false-input"></div>
+                                            <span class="for-input">Гранулированное сухое молоко</span>
                                         </div>
                                         <div class="filter__sub-submenu">
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Гранулированное сухое цельное молоко
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Гранулированное сухое цельное молоко</span>
                                             </div>
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Гранулированное сухое частично обезжиренное 
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Гранулированное сухое частично обезжиренное
+                                                </span>
                                             </div>
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Гранулированное сухое обезжиренное
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Гранулированное сухое обезжиренное</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="filter__section">
                                         <div class="filter__item">
-                                            <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z" fill="#C4C4C4"/>
-                                                </svg>
-                                                
-                                            <input type="checkbox">
-                                            Гранулированные топпинги
+                                            <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z"
+                                                    fill="#C4C4C4" />
+                                            </svg>
+
+                                            <input class="checkbox" id="lolo" type="checkbox">
+                                            <div class="false-input"></div>
+                                            <span class="for-input">Гранулированные топпинги</span>
+
                                         </div>
                                         <div class="filter__sub-submenu">
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Lorem ipsum dolor, sit amet 
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Lorem ipsum dolor, sit amet </span>
                                             </div>
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Lorem ipsum dolor sit amet.
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Lorem ipsum dolor sit amet.</span>
                                             </div>
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Lorem ipsum dolor sit amet.
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Lorem ipsum dolor sit amet.</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="filter__section">
                                         <div class="filter__item">
-                                            <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z" fill="#C4C4C4"/>
-                                                </svg>
-                                                
-                                            <input type="checkbox">
-                                            Сухие гранулированные какао-напитки 
+                                            <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z"
+                                                    fill="#C4C4C4" />
+                                            </svg>
+
+                                            <input class="checkbox" id="lolo" type="checkbox">
+                                            <div class="false-input"></div>
+                                            <span class="for-input">Сухие гранулированные какао-напитки </span>
                                         </div>
                                         <div class="filter__sub-submenu">
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Lorem ipsum dolor
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Lorem ipsum dolor</span>
                                             </div>
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Lorem ipsum dolor sit amet.
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Lorem ipsum dolor sit amet.</span>
                                             </div>
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Lorem ipsum dolor sit amet.
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Lorem ipsum dolor sit amet.</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="filter__section">
                                         <div class="filter__item">
-                                            <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z" fill="#C4C4C4"/>
-                                                </svg>
-                                                
-                                            <input type="checkbox">
-                                            Сухие гранулированные кофейные напитки
+                                            <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z"
+                                                    fill="#C4C4C4" />
+                                            </svg>
+
+                                            <input class="checkbox" id="lolo" type="checkbox">
+                                            <div class="false-input"></div>
+
+                                            <span class="for-input">Сухие гранулированные кофейные напитки</span>
                                         </div>
                                         <div class="filter__sub-submenu">
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Lorem ipsum dolor sit amet.
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Lorem ipsum dolor sit amet.</span>
                                             </div>
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Lorem ipsum dolor sit amet.
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Lorem ipsum dolor sit amet.</span>
                                             </div>
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Lorem ipsum dolor sit amet.
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Lorem ipsum dolor sit amet.</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="filter__section">
                                         <div class="filter__item">
-                                            <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z" fill="#C4C4C4"/>
-                                                </svg>
-                                                
-                                            <input type="checkbox">
-                                            Ассорти Granello
+                                            <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z"
+                                                    fill="#C4C4C4" />
+                                            </svg>
+
+                                            <input class="checkbox" id="lolo" type="checkbox">
+                                            <div class="false-input"></div>
+                                            <span class="for-input">Ассорти Granello</span>
                                         </div>
                                         <div class="filter__sub-submenu">
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Сыворотка молочная сухая
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Сыворотка молочная сухая</span>
                                             </div>
                                             <div class="filter__sub-submenu__item">
-                                                <input type="checkbox">
-                                                Размешиватели одноразовые для горячих и холодных напитков
+                                                <input class="checkbox" id="lolo" type="checkbox">
+                                                <div class="false-input"></div>
+                                                <span class="for-input">Размешиватели одноразовые для горячих и холодных
+                                                    напитков</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div> 
-                            </div>
-                            <div class="filter__items">
-                                <div class="filter__element">
-                                    <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z" fill="#C4C4C4"/>
-                                        </svg>                                
-                                    <span>По бренду</span>
-                                    <svg class="filter-close" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z" fill="#C6C6C6"/>
-                                        </svg>
                                 </div>
-                                    <div class="filter__submenu">
-                                        <div class="filter__item">
-                                            <input type="checkbox">
-                                            Невельмолоко
-                                        </div> 
-                                        <div class="filter__item">
-                                            <input type="checkbox">
-                                            Nevelvend
-                                        </div>
-                                        <div class="filter__item">
-                                            <input type="checkbox">
-                                            Granello
-                                        </div>
-                                    </div>
                             </div>
                             <div class="filter__items">
                                 <div class="filter__element">
-                                    <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z" fill="#C4C4C4"/>
-                                        </svg>                                
-                                    <span>Наличие</span>
-                                    <svg class="filter-close" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z" fill="#C6C6C6"/>
-                                        </svg>
+                                    <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z"
+                                            fill="#C4C4C4" />
+                                    </svg>
+                                    <span class="bb-dashed">По бренду</span>
+                                    <svg class="filter-close" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z"
+                                            fill="#C6C6C6" />
+                                    </svg>
                                 </div>
-                                    <div class="filter__submenu">
-                                        <div class="filter__item">
-                                            <input type="checkbox">
-                                            В наличии
-                                        </div> 
-                                        <div class="filter__item">
-                                            <input type="checkbox">
-                                            Предзаказ
-                                        </div>
-                                    </div> 
+                                <div class="filter__submenu _without">
+                                    <div class="filter__item">
+                                        <input class="checkbox" id="lolo" type="checkbox">
+                                        <div class="false-input"></div>
+                                        <span class="for-input">Невельмолоко</span>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="checkbox" id="lolo" type="checkbox">
+                                        <div class="false-input"></div>
+                                        <span class="for-input">Nevelvend</span>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="checkbox" id="lolo" type="checkbox">
+                                        <div class="false-input"></div>
+                                        <span class="for-input">Granello</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="filter__items">
                                 <div class="filter__element">
-                                    <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z" fill="#C4C4C4"/>
-                                        </svg>                                
-                                    <span>Выгодные предложения</span>
-                                    <svg class="filter-close" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z" fill="#C6C6C6"/>
-                                        </svg>
-                                </div>                                
-                                    <div class="filter__submenu">
-                                        <div class="filter__item">
-                                            <input type="checkbox">
-                                            Акция
-                                        </div> 
-                                        <div class="filter__item">
-                                            <input type="checkbox">
-                                            Новинка
-                                        </div>
-                                        <li class="filter__item">
-                                            <input type="checkbox">
-                                            Хит
-                                        </li>
-                                    </div> 
+                                    <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z"
+                                            fill="#C4C4C4" />
+                                    </svg>
+                                    <span class="bb-dashed">Наличие</span>
+                                    <svg class="filter-close" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z"
+                                            fill="#C6C6C6" />
+                                    </svg>
+                                </div>
+                                <div class="filter__submenu _without">
+                                    <div class="filter__item">
+                                        <input class="checkbox" id="lolo" type="checkbox">
+                                        <div class="false-input"></div>
+                                        <span class="for-input">В наличии</span>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="checkbox" id="lolo" type="checkbox">
+                                        <div class="false-input"></div>
+                                        <span class="for-input">Предзаказ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__items">
+                                <div class="filter__element">
+                                    <svg class="arrow-down" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0148 0.733398L7 5.70046L1.98517 0.733398L0.4375 2.26628L7 8.76628L13.5625 2.26628L12.0148 0.733398Z"
+                                            fill="#C4C4C4" />
+                                    </svg>
+                                    <span class="bb-dashed">Выгодные предложения</span>
+                                    <svg class="filter-close" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z"
+                                            fill="#C6C6C6" />
+                                    </svg>
+                                </div>
+                                <div class="filter__submenu _without">
+                                    <div class="filter__item">
+                                        <input class="checkbox" id="lolo" type="checkbox">
+                                        <div class="false-input"></div>
+                                        <span class="for-input">Акция</span>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="checkbox" id="lolo" type="checkbox">
+                                        <div class="false-input"></div>
+                                        <span class="for-input">Новинка</span>
+                                    </div>
+                                    <li class="filter__item">
+                                        <input class="checkbox" id="lolo" type="checkbox">
+                                        <div class="false-input"></div>
+                                        <span class="for-input">Хит</span>
+                                    </li>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -578,607 +660,768 @@
                         </div>
                         <div class="filter__buttons">
                             <button class="filter__clear">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z" fill="white"/>
-                                    </svg>                                
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z"
+                                        fill="white" />
+                                </svg>
                                 <span>Очистить все</span>
                             </button>
                         </div>
                     </div>
                 </div>
-                <section class="popular">
-                    <div class="popular__conteiner _conteiner">
-                        <div class="popular__title">
-                            <h2>Популярные товары</h2>
-                        </div>
-                        <div class="popular__slider">
-                            <div class="popular__items">
-                                <div class="popular__header">
-                                    <div class="popular__reiting">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>4,8</span>
-                                    </div>
-                                    <div class="popular__like">
-                                        <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
-                                            fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a href="#" class="popular__image">
-                                    <img src="img/popular-slider/1.png" alt="popular">
-                                </a>
-                                <div class="popular__name">Сухой гранулированный быстрорастворимый какао-напиток “Горячий
-                                    шоколад”</div>
-                                <div class="popular__text">шоколадно-апельсиновый вкус</div>
-                                <div class="popular__item item-price">
-                                    <div class="item-price__price">
-                                        <div class="item-price__after">900 руб/упак</div>
-                                        <div class="item-price__before">1 500 руб/упак</div>
-                                    </div>
-                                    <div class="item-price__choice">
-                                        <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
-                                                height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                        <input value="1" class="item-price__numbers">
-                                        <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
-                                                height="10" viewBox="0 0 10 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                                <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="popular__bottons">
-                                    <button class="popular__button1"><span>В корзину</span></button>
-                                    <button class="popular__button2">
-                                        <span>Купить в 1 клик</span>
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
-                                                fill="#8ED8F3" />
-                                            <path
-                                                d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
-                                                fill="#8ED8F3" />
-                                        </svg>
-    
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="popular__items">
-                                <div class="popular__header">
-                                    <div class="popular__sell">
-                                        <a href="#">Акция</a>
-                                    </div>
-                                    <div class="popular__reiting">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>4,8</span>
-                                    </div>
-                                    <div class="popular__like">
-                                        <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
-                                            fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a href="#" class="popular__image">
-                                    <img src="img/popular-slider/2.png" alt="popular">
-    
-                                </a>
-                                <div class="popular__name">Сухой гранулированный быстрорастворимый какао-напиток “Горячий
-                                    шоколад”</div>
-                                <div class="popular__text">шоколадно-мятный вкус</div>
-                                <div class="popular__item item-price">
-                                    <div class="item-price__price">
-                                        <div class="item-price__after">900 руб/упак</div>
-                                        <div class="item-price__before">1 500 руб/упак</div>
-                                    </div>
-                                    <div class="item-price__choice">
-                                        <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
-                                                height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                        <input value="1" class="item-price__numbers">
-                                        <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
-                                                height="10" viewBox="0 0 10 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                                <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="popular__bottons">
-                                    <button class="popular__button3"><span>Оформить предзаказ</span></button>
-                                </div>
-                            </div>
-                            <div class="popular__items">
-                                <div class="popular__header">
-                                    <div class="popular__reiting">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>4,8</span>
-                                    </div>
-                                    <div class="popular__like">
-                                        <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
-                                            fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a href="#" class="popular__image">
-                                    <img src="img/popular-slider/3.png" alt="popular">
-                                </a>
-                                <div class="popular__name">Сухой гранулированный быстрорастворимый молокосодержащий продукт
-                                    "Горячий капучино"</div>
-                                <div class="popular__text">со вкусом "Корица"</div>
-                                <div class="popular__item item-price">
-                                    <div class="item-price__price">
-                                        <div class="item-price__after">900 руб/упак</div>
-                                        <div class="item-price__before">1 500 руб/упак</div>
-                                    </div>
-                                    <div class="item-price__choice">
-                                        <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
-                                                height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                        <input value="1" class="item-price__numbers">
-                                        <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
-                                                height="10" viewBox="0 0 10 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                                <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="popular__bottons">
-                                    <button class="popular__button1"><span>В корзину</span></button>
-                                    <button class="popular__button2">
-                                        <span>Купить в 1 клик</span>
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
-                                                fill="#8ED8F3" />
-                                            <path
-                                                d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
-                                                fill="#8ED8F3" />
-                                        </svg>
-    
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="popular__items">
-                                <div class="popular__header">
-                                    <div class="popular__reiting">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>4,8</span>
-                                    </div>
-                                    <div class="popular__like">
-                                        <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
-                                            fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a href="#" class="popular__image">
-                                    <img src="img/popular-slider/4.png" alt="popular">
-    
-                                </a>
-                                <div class="popular__name">Сухое цельное молоко быстрорастворимое, гранулированное</div>
-                                <div class="popular__text">массовая доля жира — 26%</div>
-                                <div class="popular__item item-price">
-                                    <div class="item-price__price">
-                                        <div class="item-price__after">900 руб/упак</div>
-                                        <div class="item-price__before">1 500 руб/упак</div>
-                                    </div>
-                                    <div class="item-price__choice">
-                                        <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
-                                                height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                        <input value="1" class="item-price__numbers">
-                                        <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
-                                                height="10" viewBox="0 0 10 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                                <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="popular__bottons">
-                                    <button class="popular__button1"><span>В корзину</span></button>
-                                    <button class="popular__button2">
-                                        <span>Купить в 1 клик</span>
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
-                                                fill="#8ED8F3" />
-                                            <path
-                                                d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
-                                                fill="#8ED8F3" />
-                                        </svg>
-    
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="popular__items">
-                                <div class="popular__header">
-                                    <div class="popular__reiting">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>4,8</span>
-                                    </div>
-                                    <div class="popular__like">
-                                        <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
-                                            fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a href="#" class="popular__image">
-                                    <img src="img/popular-slider/1.png" alt="popular">
-                                </a>
-                                <div class="popular__name">Сухой гранулированный быстрорастворимый какао-напиток “Горячий
-                                    шоколад”</div>
-                                <div class="popular__text">шоколадно-апельсиновый вкус</div>
-                                <div class="popular__item item-price">
-                                    <div class="item-price__price">
-                                        <div class="item-price__after">900 руб/упак</div>
-                                        <div class="item-price__before">1 500 руб/упак</div>
-                                    </div>
-                                    <div class="item-price__choice">
-                                        <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
-                                                height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                        <input value="1" class="item-price__numbers">
-                                        <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
-                                                height="10" viewBox="0 0 10 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                                <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="popular__bottons">
-                                    <button class="popular__button1"><span>В корзину</span></button>
-                                    <button class="popular__button2">
-                                        <span>Купить в 1 клик</span>
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
-                                                fill="#8ED8F3" />
-                                            <path
-                                                d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
-                                                fill="#8ED8F3" />
-                                        </svg>
-    
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="popular__items">
-                                <div class="popular__header">
-                                    <div class="popular__sell">
-                                        <a href="#">Акция</a>
-                                    </div>
-                                    <div class="popular__reiting">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>4,8</span>
-                                    </div>
-                                    <div class="popular__like">
-                                        <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
-                                            fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a href="#" class="popular__image">
-                                    <img src="img/popular-slider/2.png" alt="popular">
-    
-                                </a>
-                                <div class="popular__name">Сухой гранулированный быстрорастворимый какао-напиток “Горячий
-                                    шоколад”</div>
-                                <div class="popular__text">шоколадно-мятный вкус</div>
-                                <div class="popular__item item-price">
-                                    <div class="item-price__price">
-                                        <div class="item-price__after">900 руб/упак</div>
-                                        <div class="item-price__before">1 500 руб/упак</div>
-                                    </div>
-                                    <div class="item-price__choice">
-                                        <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
-                                                height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                        <input value="1" class="item-price__numbers">
-                                        <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
-                                                height="10" viewBox="0 0 10 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                                <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="popular__bottons">
-                                    <button class="popular__button3"><span>Оформить предзаказ</span></button>
-                                </div>
-                            </div>
-                            <div class="popular__items">
-                                <div class="popular__header">
-                                    <div class="popular__reiting">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>4,8</span>
-                                    </div>
-                                    <div class="popular__like">
-                                        <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
-                                            fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a href="#" class="popular__image">
-                                    <img src="img/popular-slider/3.png" alt="popular">
-                                </a>
-                                <div class="popular__name">Сухой гранулированный быстрорастворимый молокосодержащий продукт
-                                    "Горячий капучино"</div>
-                                <div class="popular__text">со вкусом "Корица"</div>
-                                <div class="popular__item item-price">
-                                    <div class="item-price__price">
-                                        <div class="item-price__after">900 руб/упак</div>
-                                        <div class="item-price__before">1 500 руб/упак</div>
-                                    </div>
-                                    <div class="item-price__choice">
-                                        <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
-                                                height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                        <input value="1" class="item-price__numbers">
-                                        <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
-                                                height="10" viewBox="0 0 10 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                                <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="popular__bottons">
-                                    <button class="popular__button1"><span>В корзину</span></button>
-                                    <button class="popular__button2">
-                                        <span>Купить в 1 клик</span>
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
-                                                fill="#8ED8F3" />
-                                            <path
-                                                d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
-                                                fill="#8ED8F3" />
-                                        </svg>
-    
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="popular__items">
-                                <div class="popular__header">
-                                    <div class="popular__reiting">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>4,8</span>
-                                    </div>
-                                    <div class="popular__like">
-                                        <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
-                                            fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a href="#" class="popular__image">
-                                    <img src="img/popular-slider/4.png" alt="popular">
-    
-                                </a>
-                                <div class="popular__name">Сухое цельное молоко быстрорастворимое, гранулированное</div>
-                                <div class="popular__text">массовая доля жира — 26%</div>
-                                <div class="popular__item item-price">
-                                    <div class="item-price__price">
-                                        <div class="item-price__after">900 руб/упак</div>
-                                        <div class="item-price__before">1 500 руб/упак</div>
-                                    </div>
-                                    <div class="item-price__choice">
-                                        <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
-                                                height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                        <input value="1" class="item-price__numbers">
-                                        <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
-                                                height="10" viewBox="0 0 10 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                                <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
-                                                    stroke-width="1.5" stroke-linecap="square" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="popular__bottons">
-                                    <button class="popular__button1"><span>В корзину</span></button>
-                                    <button class="popular__button2">
-                                        <span>Купить в 1 клик</span>
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
-                                                fill="#8ED8F3" />
-                                            <path
-                                                d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
-                                                fill="#8ED8F3" />
-                                        </svg>
-    
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular__arrows">
-                            <div class="popular-prev">
-                                <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                <div class="catalog-choice__catalog">
+                    <div class="catalog-choice__header">
+                        <div class="catalog-choice__title">
+                            <h1>Каталог</h1>
+                            <button>
+                                <span>Скачать прайс</span>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.0667 19.4893L5.66085 11.3546L14.0667 3.21998L11.4725 0.709473L0.472541 11.3546L11.4725 21.9998L14.0667 19.4893Z"
-                                        fill="currentColor" />
+                                    <g clip-path="url(#clip0_2_4331)">
+                                        <path
+                                            d="M9.50062 14.9286L15.6078 8.82146L13.5721 6.78575L10.8578 9.50002V0H8.14352V9.50002L5.42926 6.78575L3.39355 8.82146L9.50062 14.9286Z"
+                                            fill="#4EB7E5" />
+                                        <path d="M0 16.2858H19V19H0V16.2858Z" fill="#4EB7E5" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_4331">
+                                            <rect width="19" height="19" fill="white" />
+                                        </clipPath>
+                                    </defs>
                                 </svg>
+                            </button>
+                        </div>
+                        <div class="catalog-choice__sorter sorter">
+                            <div class="sorter__items">
+                                <div class="sorter__item">Сортировать:</div>
+                                <div class="sorter__item _price active">
+                                    <span>По цене</span>
+                                    <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 12.1666H0V14.5H7V12.1666Z" fill="#4EB7E5" />
+                                        <path d="M14 6.33337H0V8.66673H14V6.33337Z" fill="#4EB7E5" />
+                                        <path d="M21 0.5H0V2.83335H21V0.5Z" fill="#4EB7E5" />
+                                    </svg>
+                                    <div class="sorter__burger"><span></span></div>
+                                </div>
+                                <div class="sorter__item _reitings">По рейтингу</div>
                             </div>
-                            <div class="popular-next">
-                                <svg width="15" height="23" viewBox="0 0 15 23" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.933349 3.26136L9.33915 11.5L0.933349 19.7386L3.52746 22.2812L14.5275 11.5L3.52746 0.718752L0.933349 3.26136Z"
-                                        fill="currentColor" />
-                                </svg>
+                            <div class="sorter__items">
+                                <div class="sorter__icon sorter__icon-row"><svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.8029 18.7145H6.75419C6.09274 18.7145 5.55664 18.1784 5.55664 17.517C5.55664 16.8556 6.09274 16.3195 6.75419 16.3195H22.8025C23.4639 16.3195 24 16.8556 24 17.517C24 18.1784 23.4643 18.7145 22.8029 18.7145Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M22.8029 11.1976H6.75419C6.09274 11.1976 5.55664 10.6615 5.55664 10C5.55664 9.33859 6.09274 8.80249 6.75419 8.80249H22.8025C23.4639 8.80249 24 9.33859 24 10C24.0004 10.6615 23.4643 11.1976 22.8029 11.1976Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M22.8029 3.68061H6.75419C6.09274 3.68061 5.55664 3.14451 5.55664 2.48307C5.55664 1.82162 6.09274 1.28552 6.75419 1.28552H22.8025C23.4639 1.28552 24 1.82162 24 2.48307C24 3.14451 23.4643 3.68061 22.8029 3.68061Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M1.6083 4.18401C2.49654 4.18401 3.21661 3.46395 3.21661 2.57571C3.21661 1.68747 2.49654 0.967407 1.6083 0.967407C0.720062 0.967407 0 1.68747 0 2.57571C0 3.46395 0.720062 4.18401 1.6083 4.18401Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M1.6083 11.6083C2.49654 11.6083 3.21661 10.8883 3.21661 10C3.21661 9.11179 2.49654 8.39172 1.6083 8.39172C0.720062 8.39172 0 9.11179 0 10C0 10.8883 0.720062 11.6083 1.6083 11.6083Z"
+                                            fill="#C4C4C4" />
+                                        <path
+                                            d="M1.6083 19.0328C2.49654 19.0328 3.21661 18.3127 3.21661 17.4245C3.21661 16.5362 2.49654 15.8162 1.6083 15.8162C0.720062 15.8162 0 16.5362 0 17.4245C0 18.3127 0.720062 19.0328 1.6083 19.0328Z"
+                                            fill="#C4C4C4" />
+                                    </svg>
+                                </div>
+                                <div class="sorter__icon sorter__icon-grid active">
+                                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2_4317)">
+                                            <path
+                                                d="M0 10.3125V17.25C0 17.664 0.317333 18 0.708333 18H7.26042C7.65142 18 7.96875 17.664 7.96875 17.25V10.3125C7.96875 9.8985 7.65142 9.5625 7.26042 9.5625H0.708333C0.317333 9.5625 0 9.8985 0 10.3125Z"
+                                                fill="#EFE2C4" />
+                                            <path
+                                                d="M7.26042 0H0.708333C0.317333 0 0 0.336 0 0.75V7.6875C0 8.1015 0.317333 8.4375 0.708333 8.4375H7.26042C7.65142 8.4375 7.96875 8.1015 7.96875 7.6875V0.75C7.96875 0.336 7.65142 0 7.26042 0Z"
+                                                fill="#EFE2C4" />
+                                            <path
+                                                d="M9.73958 18H16.2917C16.6827 18 17 17.664 17 17.25V10.3125C17 9.8985 16.6827 9.5625 16.2917 9.5625H9.73958C9.34858 9.5625 9.03125 9.8985 9.03125 10.3125V17.25C9.03125 17.664 9.34858 18 9.73958 18Z"
+                                                fill="#EFE2C4" />
+                                            <path
+                                                d="M16.2917 0H9.73958C9.34858 0 9.03125 0.336 9.03125 0.75V7.6875C9.03125 8.1015 9.34858 8.4375 9.73958 8.4375H16.2917C16.6827 8.4375 17 8.1015 17 7.6875V0.75C17 0.336 16.6827 0 16.2917 0Z"
+                                                fill="#EFE2C4" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2_4317">
+                                                <rect width="17" height="18" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                    <div class="catalog-choice__body">
+                        <div class="popular__items">
+                            <div class="popular__header">
+                                <div class="popular__sell">
+                                    <a href="#">Акция</a>
+                                </div>
+                                <div class="popular__reiting">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <span>4,8</span>
+                                </div>
+                                <div class="popular__like">
+                                    <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="popular__image">
+                                <img src="img/popular-slider/2.png" alt="popular">
+
+                            </a>
+                            <div class="popular__name">Сухой гранулированный быстрорастворимый какао-напиток “Горячий
+                                шоколад”</div>
+                            <div class="popular__text">шоколадно-мятный вкус</div>
+                            <div class="popular__item item-price">
+                                <div class="item-price__price">
+                                    <div class="item-price__after">900 руб/упак</div>
+                                    <div class="item-price__before">1 500 руб/упак</div>
+                                </div>
+                                <div class="item-price__choice">
+                                    <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
+                                            height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                    <input value="1" class="item-price__numbers">
+                                    <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                            <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="popular__bottons">
+                                <button class="popular__button3"><span>Оформить предзаказ</span></button>
+                            </div>
+                        </div>
+                        <div class="popular__items">
+                            <div class="popular__header">
+                                <div class="popular__reiting">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <span>4,8</span>
+                                </div>
+                                <div class="popular__like">
+                                    <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="popular__image">
+                                <img src="img/popular-slider/3.png" alt="popular">
+                            </a>
+                            <div class="popular__name">Сухой гранулированный быстрорастворимый молокосодержащий продукт
+                                "Горячий капучино"</div>
+                            <div class="popular__text">со вкусом "Корица"</div>
+                            <div class="popular__item item-price">
+                                <div class="item-price__price">
+                                    <div class="item-price__after">900 руб/упак</div>
+                                    <div class="item-price__before">1 500 руб/упак</div>
+                                </div>
+                                <div class="item-price__choice">
+                                    <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
+                                            height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                    <input value="1" class="item-price__numbers">
+                                    <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                            <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="popular__bottons">
+                                <button class="popular__button1"><span>В корзину</span></button>
+                                <button class="popular__button2">
+                                    <span>Купить в 1 клик</span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
+                                            fill="#8ED8F3" />
+                                        <path
+                                            d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
+                                            fill="#8ED8F3" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popular__items">
+                            <div class="popular__header">
+                                <div class="popular__reiting">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <span>4,8</span>
+                                </div>
+                                <div class="popular__like">
+                                    <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="popular__image">
+                                <img src="img/popular-slider/4.png" alt="popular">
+
+                            </a>
+                            <div class="popular__name">Сухое цельное молоко быстрорастворимое, гранулированное</div>
+                            <div class="popular__text">массовая доля жира — 26%</div>
+                            <div class="popular__item item-price">
+                                <div class="item-price__price">
+                                    <div class="item-price__after">900 руб/упак</div>
+                                    <div class="item-price__before">1 500 руб/упак</div>
+                                </div>
+                                <div class="item-price__choice">
+                                    <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
+                                            height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                    <input value="1" class="item-price__numbers">
+                                    <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                            <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="popular__bottons">
+                                <button class="popular__button1"><span>В корзину</span></button>
+                                <button class="popular__button2">
+                                    <span>Купить в 1 клик</span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
+                                            fill="#8ED8F3" />
+                                        <path
+                                            d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
+                                            fill="#8ED8F3" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popular__items">
+                            <div class="popular__header">
+                                <div class="popular__reiting">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <span>4,8</span>
+                                </div>
+                                <div class="popular__like">
+                                    <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="popular__image">
+                                <img src="img/popular-slider/3.png" alt="popular">
+                            </a>
+                            <div class="popular__name">Сухой гранулированный быстрорастворимый молокосодержащий продукт
+                                "Горячий капучино"</div>
+                            <div class="popular__text">со вкусом "Корица"</div>
+                            <div class="popular__item item-price">
+                                <div class="item-price__price">
+                                    <div class="item-price__after">900 руб/упак</div>
+                                    <div class="item-price__before">1 500 руб/упак</div>
+                                </div>
+                                <div class="item-price__choice">
+                                    <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
+                                            height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                    <input value="1" class="item-price__numbers">
+                                    <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                            <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="popular__bottons">
+                                <button class="popular__button1"><span>В корзину</span></button>
+                                <button class="popular__button2">
+                                    <span>Купить в 1 клик</span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
+                                            fill="#8ED8F3" />
+                                        <path
+                                            d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
+                                            fill="#8ED8F3" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popular__items">
+                            <div class="popular__header">
+                                <div class="popular__reiting">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <span>4,8</span>
+                                </div>
+                                <div class="popular__like">
+                                    <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="popular__image">
+                                <img src="img/popular-slider/4.png" alt="popular">
+
+                            </a>
+                            <div class="popular__name">Сухое цельное молоко быстрорастворимое, гранулированное</div>
+                            <div class="popular__text">массовая доля жира — 26%</div>
+                            <div class="popular__item item-price">
+                                <div class="item-price__price">
+                                    <div class="item-price__after">900 руб/упак</div>
+                                    <div class="item-price__before">1 500 руб/упак</div>
+                                </div>
+                                <div class="item-price__choice">
+                                    <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
+                                            height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                    <input value="1" class="item-price__numbers">
+                                    <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                            <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="popular__bottons">
+                                <button class="popular__button1"><span>В корзину</span></button>
+                                <button class="popular__button2">
+                                    <span>Купить в 1 клик</span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
+                                            fill="#8ED8F3" />
+                                        <path
+                                            d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
+                                            fill="#8ED8F3" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popular__items">
+                            <div class="popular__header">
+                                <div class="popular__reiting">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <span>4,8</span>
+                                </div>
+                                <div class="popular__like">
+                                    <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="popular__image">
+                                <img src="img/popular-slider/1.png" alt="popular">
+                            </a>
+                            <div class="popular__name">Сухой гранулированный быстрорастворимый какао-напиток “Горячий
+                                шоколад”</div>
+                            <div class="popular__text">шоколадно-апельсиновый вкус</div>
+                            <div class="popular__item item-price">
+                                <div class="item-price__price">
+                                    <div class="item-price__after">900 руб/упак</div>
+                                    <div class="item-price__before">1 500 руб/упак</div>
+                                </div>
+                                <div class="item-price__choice">
+                                    <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
+                                            height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                    <input value="1" class="item-price__numbers">
+                                    <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                            <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="popular__bottons">
+                                <button class="popular__button1"><span>В корзину</span></button>
+                                <button class="popular__button2">
+                                    <span>Купить в 1 клик</span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
+                                            fill="#8ED8F3" />
+                                        <path
+                                            d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
+                                            fill="#8ED8F3" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popular__items">
+                            <div class="popular__header">
+                                <div class="popular__reiting">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <span>4,8</span>
+                                </div>
+                                <div class="popular__like">
+                                    <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="popular__image">
+                                <img src="img/popular-slider/1.png" alt="popular">
+                            </a>
+                            <div class="popular__name">Сухой гранулированный быстрорастворимый какао-напиток “Горячий
+                                шоколад”</div>
+                            <div class="popular__text">шоколадно-апельсиновый вкус</div>
+                            <div class="popular__item item-price">
+                                <div class="item-price__price">
+                                    <div class="item-price__after">900 руб/упак</div>
+                                    <div class="item-price__before">1 500 руб/упак</div>
+                                </div>
+                                <div class="item-price__choice">
+                                    <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
+                                            height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                    <input value="1" class="item-price__numbers">
+                                    <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                            <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="popular__bottons">
+                                <button class="popular__button1"><span>В корзину</span></button>
+                                <button class="popular__button2">
+                                    <span>Купить в 1 клик</span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
+                                            fill="#8ED8F3" />
+                                        <path
+                                            d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
+                                            fill="#8ED8F3" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popular__items">
+                            <div class="popular__header">
+                                <div class="popular__sell">
+                                    <a href="#">Акция</a>
+                                </div>
+                                <div class="popular__reiting">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <span>4,8</span>
+                                </div>
+                                <div class="popular__like">
+                                    <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="popular__image">
+                                <img src="img/popular-slider/2.png" alt="popular">
+
+                            </a>
+                            <div class="popular__name">Сухой гранулированный быстрорастворимый какао-напиток “Горячий
+                                шоколад”</div>
+                            <div class="popular__text">шоколадно-мятный вкус</div>
+                            <div class="popular__item item-price">
+                                <div class="item-price__price">
+                                    <div class="item-price__after">900 руб/упак</div>
+                                    <div class="item-price__before">1 500 руб/упак</div>
+                                </div>
+                                <div class="item-price__choice">
+                                    <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
+                                            height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                    <input value="1" class="item-price__numbers">
+                                    <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                            <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="popular__bottons">
+                                <button class="popular__button3"><span>Оформить предзаказ</span></button>
+                            </div>
+                        </div>
+                        <div class="popular__items">
+                            <div class="popular__header">
+                                <div class="popular__reiting">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.9641 9.6319C24.878 9.36671 24.6488 9.17345 24.3729 9.13341L16.6228 8.0072L13.1568 0.984422C13.0334 0.734423 12.7788 0.576172 12.5 0.576172C12.2212 0.576172 11.9666 0.734423 11.8433 0.984422L8.37706 8.0072L0.627091 9.13341C0.351262 9.17345 0.122015 9.36671 0.0358821 9.63185C-0.0502992 9.89703 0.0215755 10.1881 0.221233 10.3827L5.82902 15.8492L4.5054 23.568C4.45823 23.8428 4.57122 24.1205 4.79675 24.2844C4.92434 24.3771 5.07546 24.4242 5.22732 24.4242C5.34392 24.4242 5.46091 24.3964 5.56804 24.3401L12.5 20.6957L19.4317 24.34C19.6785 24.4698 19.9775 24.4482 20.203 24.2843C20.4285 24.1205 20.5416 23.8427 20.4944 23.5679L19.1704 15.8492L24.7788 10.3826C24.9784 10.1881 25.0503 9.89703 24.9641 9.6319Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <span>4,8</span>
+                                </div>
+                                <div class="popular__like">
+                                    <svg class="popular__heart1" width="27" height="25" viewBox="0 0 27 25"
+                                        fill="#4EB7E5" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5 24.4979C13.1156 24.4979 12.745 24.3586 12.4562 24.1057C11.3655 23.1519 10.3139 22.2557 9.38608 21.465L9.38135 21.4609C6.6612 19.1429 4.31226 17.141 2.67791 15.1691C0.850958 12.9645 0 10.8743 0 8.59086C0 6.37231 0.760733 4.32555 2.14192 2.82736C3.53958 1.31145 5.45738 0.476562 7.54265 0.476562C9.10119 0.476562 10.5285 0.969299 11.7849 1.94097C12.4189 2.43144 12.9936 3.03171 13.5 3.73188C14.0065 3.03171 14.581 2.43144 15.2153 1.94097C16.4716 0.969299 17.899 0.476562 19.4575 0.476562C21.5426 0.476562 23.4606 1.31145 24.8582 2.82736C26.2394 4.32555 27 6.37231 27 8.59086C27 10.8743 26.1492 12.9645 24.3222 15.1689C22.6879 17.141 20.3392 19.1427 17.6194 21.4605C16.69 22.2524 15.6367 23.1501 14.5435 24.1061C14.2549 24.3586 13.8842 24.4979 13.5 24.4979ZM7.54265 2.05818C5.90439 2.05818 4.3994 2.71201 3.30454 3.89935C2.19342 5.10462 1.58141 6.7707 1.58141 8.59086C1.58141 10.5113 2.29518 12.2289 3.89554 14.1599C5.44234 16.0264 7.74308 17.9871 10.407 20.2573L10.4119 20.2614C11.3432 21.0551 12.3989 21.9549 13.4977 22.9157C14.6031 21.953 15.6604 21.0518 16.5936 20.2569C19.2573 17.9866 21.5578 16.0264 23.1046 14.1599C24.7048 12.2289 25.4185 10.5113 25.4185 8.59086C25.4185 6.7707 24.8065 5.10462 23.6954 3.89935C22.6008 2.71201 21.0956 2.05818 19.4575 2.05818C18.2574 2.05818 17.1555 2.43968 16.1826 3.19197C15.3156 3.86269 14.7116 4.71056 14.3575 5.30382C14.1754 5.60889 13.8549 5.79099 13.5 5.79099C13.145 5.79099 12.8245 5.60889 12.6424 5.30382C12.2885 4.71056 11.6846 3.86269 10.8173 3.19197C9.84442 2.43968 8.74256 2.05818 7.54265 2.05818Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                    <svg class="popular__heart2" width="27" height="26" viewBox="0 0 28 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7787 2.96912C24.3293 1.39706 22.3405 0.53125 20.1782 0.53125C18.5619 0.53125 17.0817 1.04224 15.7786 2.0499C15.1211 2.55853 14.5253 3.18082 14 3.90714C13.4749 3.18103 12.8789 2.55853 12.2212 2.0499C10.9183 1.04224 9.43808 0.53125 7.82181 0.53125C5.65952 0.53125 3.67047 1.39706 2.22104 2.96912C0.78891 4.5228 0 6.64536 0 8.94608C0 11.3141 0.882477 13.4817 2.7771 15.7679C4.47198 17.8129 6.90793 19.8889 9.72882 22.2928C10.692 23.1138 11.7839 24.0443 12.9176 25.0355C13.2171 25.2979 13.6014 25.4423 14 25.4423C14.3984 25.4423 14.7829 25.2979 15.082 25.0359C16.2157 24.0445 17.3082 23.1136 18.2718 22.2922C21.0923 19.8887 23.5282 17.8129 25.2231 15.7677C27.1177 13.4817 28 11.3141 28 8.94586C28 6.64536 27.2111 4.5228 25.7787 2.96912Z"
+                                            fill="#4EB7E5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="popular__image">
+                                <img src="img/popular-slider/3.png" alt="popular">
+                            </a>
+                            <div class="popular__name">Сухой гранулированный быстрорастворимый молокосодержащий продукт
+                                "Горячий капучино"</div>
+                            <div class="popular__text">со вкусом "Корица"</div>
+                            <div class="popular__item item-price">
+                                <div class="item-price__price">
+                                    <div class="item-price__after">900 руб/упак</div>
+                                    <div class="item-price__before">1 500 руб/упак</div>
+                                </div>
+                                <div class="item-price__choice">
+                                    <button onclick="inc(-1)" class="item-price__choice__item _minus"><svg width="9"
+                                            height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="1.25" x2="8.25" y2="1.25" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                    <input value="1" class="item-price__numbers">
+                                    <button onclick="inc(1)" class="item-price__choice__item _plus"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.75" y1="4.61353" x2="8.44481" y2="4.61353" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                            <line x1="4.58118" y1="0.75" x2="4.58118" y2="8.44481" stroke="black"
+                                                stroke-width="1.5" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="popular__bottons">
+                                <button class="popular__button1"><span>В корзину</span></button>
+                                <button class="popular__button2">
+                                    <span>Купить в 1 клик</span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5003 0C7.31946 0 4.87882 2.87323 5.42432 6.03294C5.49337 6.43272 5.8735 6.69899 6.27061 6.63013C6.66925 6.56128 6.93666 6.18248 6.8678 5.78384C6.47775 3.52364 8.22126 1.46484 10.5003 1.46484C12.7726 1.46484 14.5193 3.51391 14.1346 5.77488C14.0667 6.17371 14.3351 6.55193 14.7337 6.61983C15.1325 6.68793 15.5108 6.41937 15.5787 6.02055C16.1141 2.87361 13.685 0 10.5003 0Z"
+                                            fill="#8ED8F3" />
+                                        <path
+                                            d="M18.2944 11.7495C17.7414 10.6646 16.4288 10.2469 15.3647 10.773C14.8631 9.78879 13.7171 9.33332 12.687 9.69094V5.206C12.687 4.01048 11.7262 3.0116 10.545 2.97918C9.30734 2.94408 8.28176 3.93533 8.28176 5.17568V16.459L7.42136 15.5579C6.59547 14.6933 5.21265 14.6325 4.33851 15.4227C3.41612 16.2564 3.37015 17.6761 4.21949 18.5683L9.16448 23.8427C9.85418 24.578 10.8279 24.9999 11.8361 24.9999H17.8002C19.8195 24.9999 21.4623 23.3571 21.4623 21.3378V13.7206C21.4623 12.0931 19.7455 11.032 18.2944 11.7495Z"
+                                            fill="#8ED8F3" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-choice__footer">
+                        <div class="catalog-choice__items items-select">
+                            <select class="select-catalog">
+                                <option class="select-catalog__item" value="9">9</option>
+                                <option class="select-catalog__item" value="18">18</option>
+                                <option class="select-catalog__item" value="27">27</option>
+                                <option class="select-catalog__item" value="54">54</option>
+                                <option class="select-catalog__item" value="100">100</option>
+                            </select>
+                        </div>
+                        <div class="catalog-choice__items">
+                            <button class="show-more">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.0508 0.963036C9.79255 0.954234 6.65924 2.21615 4.31659 4.48065V0.96298C4.31659 0.431132 3.88546 0 3.35361 0C2.82177 0 2.39069 0.431132 2.39069 0.96298V6.74074C2.39058 7.1554 2.65594 7.52356 3.04938 7.65458L8.82714 9.58048C9.33236 9.74857 9.8782 9.4752 10.0462 8.96998C10.2143 8.46476 9.94094 7.91892 9.43573 7.75089L5.16983 6.3315C9.1105 2.04022 15.7839 1.75595 20.0752 5.69663C24.3665 9.6373 24.6507 16.3107 20.71 20.602C16.7694 24.8933 10.096 25.1775 5.80471 21.2368C3.17379 18.8209 1.9441 15.2377 2.53711 11.7154C2.63038 11.1918 2.28157 10.6917 1.75801 10.5984C1.23446 10.5051 0.734379 10.854 0.641054 11.3775C0.640039 11.3832 0.639079 11.389 0.638177 11.3947C0.522903 12.0843 0.4649 12.7822 0.464844 13.4814C0.472687 20.3919 6.07277 25.992 12.9832 25.9999C19.897 26.0186 25.5168 20.429 25.5355 13.5153C25.5541 6.60155 19.9646 0.981712 13.0508 0.963036Z"
+                                        fill="#8ED8F3" />
+                                </svg>
+                                <span>Показать еще</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="contact-page">
                 <div class="contact-page__conteiner _conteiner">
