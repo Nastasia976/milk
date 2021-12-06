@@ -4579,7 +4579,7 @@ h3 {
     .title-about__item:first-child {
         margin-right: 0;
     }
-    .title-about__item{
+    .title-about__item {
         margin-top: 30px;
     }
     .title-about__item:not(:first-child) {
@@ -4645,7 +4645,7 @@ h3 {
         }
         .production-page__subtitle {
             margin-top: 39px !important;
-            p{
+            p {
                 font-size: calc(14px + 20 * (100vw / 1920));
                 line-height: 76%;
                 font-weight: 600;
@@ -5638,16 +5638,16 @@ h3 {
 }
 @media (max-width: 500px) {
     .main-about-page {
-        .sertif-block__items{
+        .sertif-block__items {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
-        .sertif-block__image{
+        .sertif-block__image {
             padding: 0;
             width: fit-content;
-            img{
+            img {
                 position: static;
                 max-width: calc(100px + 200 * (100vw / 500));
             }
@@ -5658,7 +5658,7 @@ h3 {
 //_________QUESTIONS____
 .questions {
     padding: 39px 20px 35px;
-    background: linear-gradient(180deg, #554440 0%, #684A43 100%);
+    background: linear-gradient(180deg, #554440 0%, #684a43 100%);
     position: relative;
     z-index: 10;
     overflow: hidden;
@@ -5786,7 +5786,6 @@ h3 {
 .catalog-choice {
     display: flex;
     margin-top: calc(33px + 20 * (100vw / 1920));
-
 }
 
 .catalog-choice__crumbs {
@@ -6061,12 +6060,10 @@ h3 {
         outline: none;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .select__item {
+    .select-catalog__item {
         cursor: pointer;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 156%;
-        width: fit-content;
-        margin: 0 auto;
     }
     .select__item:not(:last-child) {
         margin-bottom: 14px;
@@ -6185,9 +6182,15 @@ h3 {
 }
 //__________ACTIVE__________
 .catalog-choice__body.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    padding: 32px 0 63px !important;
     .popular__items {
-        margin: 15px;
-        flex: 0 0 100%;
+        margin: 0 !important;
+        flex: 1 1 100%;
+        min-width: 100%;
         display: flex;
         position: relative;
         padding: 50px 45px 60px;
@@ -6282,21 +6285,32 @@ h3 {
             display: none;
         }
     }
+    .catalog-choice__body{
+        margin-top: 15px;
+    }
 }
 //_________GRID_____________
+.catalog-choice__catalog {
+}
 .catalog-choice__body {
     padding: 32px 0 63px;
-    flex: 1 1 auto;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -15px -15px -15px;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: minmax(280px, 700px) minmax(280px, 700px) minmax(280px, 700px);
+    gap: 20px;
     .popular__items {
-        margin: 15px;
-        flex: 1 1 378px;
+        /* margin: 15px; */
+        margin: 0;
+        flex: 1 1 30% !important;
         display: grid;
-        grid-template-rows: minmax(30px, 30px) minmax(300px, 320px) minmax(100px, 150px) 1fr;
-        padding: 20px 30px 32px;
+        grid-template-rows: minmax(30px, 30px) minmax(300px, 320px) minmax(100px, 135px) 1fr 1fr;
+        padding: 20px 15px 30px;
+    }
+    .popular__text{
+        margin-top: 5px;
     }
     .popular__sell2 {
         display: none;
@@ -6305,9 +6319,19 @@ h3 {
         flex-direction: column;
         justify-content: space-between;
     }
+    .popular__item{
+        margin-top: 18px;
+        padding: 0;
+        .item-price__price, .item-price__choice{
+            margin-top: 10px;
+        }
+    }
     .popular__bottons {
         align-items: flex-end;
-        margin-top: 28px;
+        margin-top: 18px;
+        button{
+            margin-top: 10px;
+        }
     }
     .popular__image {
         padding: 0 0 38% 0;
@@ -6343,7 +6367,7 @@ h3 {
     }
 }
 @media (max-width: 1450px) {
-    .filter{
+    .filter {
         box-shadow: 1px 5px 15px 10px rgba(173, 173, 173, 0.2);
     }
     .catalog-choice {
@@ -6361,9 +6385,29 @@ h3 {
         display: block;
     }
 }
-@media (max-width: 1234px) {
-    .sorter__icon{
+@media (max-width: 1070px) {
+    .sorter__icon {
         display: none;
+    }
+}
+@media (max-width: 1045px) {
+    .catalog-choice__body {
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-columns: minmax(260px, 1fr) minmax(260px, 1fr);
+        gap: 10px;
+        .item-price, .popular__bottons{
+            flex-wrap: wrap;
+        }
+
+    }
+}
+@media (max-width: 576px) {
+    .catalog-choice__body {
+        grid-template-columns: minmax(260px, 1fr);
+        gap: 10px;
+        .item-price, .popular__bottons{
+            flex-wrap: wrap;
+        }
     }
 }
 @media (max-width: 455px) {
@@ -6418,14 +6462,18 @@ h3 {
     .catalog-choice__body {
         .popular__items {
             padding: 20px;
-            grid-template-rows: minmax(30px, 30px) minmax(250px, 250px) minmax(80px, 130px) minmax(50px, 120px);
+            grid-template-rows: minmax(30px, 30px) minmax(250px, 250px) minmax(80px, 140px) minmax(50px, 130px);
             .popular__item {
-                flex-direction: column;
+                flex-wrap: nowrap;
+                flex-direction: column !important;
+                margin-top: 8px;
             }
-            
+            .popular__name{
+                margin-top: 10px;
+            }
             .item-price__choice {
                 margin: 0;
-                margin-top: 15px;
+                margin-top: 10px;
             }
             .popular__bottons {
                 flex-direction: column;
@@ -6438,7 +6486,7 @@ h3 {
                     align-items: center;
                     justify-content: center;
                 }
-                .popular__button1{
+                .popular__button1 {
                     margin: 0;
                 }
                 .popular__button2 {

@@ -427,6 +427,16 @@ $(document).ready(function () {
         $('.catalog-choice__filter').slideToggle(300);
     });
 
+
+});
+
+$(window).on('resize', function() {
+    if ($(window).width() < 1450) {
+        filterOut();
+    }
+});                                    
+
+var filterOut = function(){    
     $(document).mouseup(function (e) {
         var div = $('.catalog-choice__filter, .filter__burger');
         if (!div.is(e.target)
@@ -435,18 +445,18 @@ $(document).ready(function () {
             $('.filter__burger').removeClass('active');
         }
     });
-    
-});
+}
 
-jQuery(document).ready(function(){
-    function classFunction(){
-      if($('body').width()<1234){ $('.catalog-choice, .catalog-choice__catalog, .catalog-choice__body, .sorter__icon-row').removeClass('active');
-      }
+$(document).ready(function () {
+    function classFunction() {
+        if ($('body').width() < 1071) {
+            $('.catalog-choice, .catalog-choice__catalog, .catalog-choice__body, .sorter__icon-row').removeClass('active');
+        }
     }
-    
+
     classFunction();
-    jQuery(window).resize(classFunction);
-   })
+    $(window).resize(classFunction);
+});
 
 
 
@@ -493,10 +503,10 @@ new Swiper('.tradishon-swiper', {
     pagination: {
         el: '.tradishon__dots',
         type: 'fraction',
-        renderFraction: function (currentClass, totalClass){
-            return '0<span class="' + currentClass + '"></span>' + 
-            ' / ' +
-            '<span class="' + totalClass + '"></span>';
+        renderFraction: function (currentClass, totalClass) {
+            return '0<span class="' + currentClass + '"></span>' +
+                ' / ' +
+                '<span class="' + totalClass + '"></span>';
         },
     },
     breakpoints: {
