@@ -5957,7 +5957,7 @@ h3 {
 }
 
 .main-about-page .lider .production-page__subtitle p {
-  font-size: 34px;
+  font-size: calc(14px + 20 * (100vw / 1920));
   line-height: 76%;
   font-weight: 600;
   margin-top: 5px;
