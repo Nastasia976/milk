@@ -426,8 +426,6 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $('.catalog-choice__filter').slideToggle(300);
     });
-
-
 });
 
 $(window).on('resize', function() {
@@ -506,7 +504,7 @@ new Swiper('.tradishon-swiper', {
         renderFraction: function (currentClass, totalClass) {
             return '0<span class="' + currentClass + '"></span>' +
                 ' / ' +
-                '<span class="' + totalClass + '"></span>';
+                '0<span class="' + totalClass + '"></span>';
         },
     },
     breakpoints: {
