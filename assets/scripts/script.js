@@ -20,8 +20,8 @@ $(document).ready(function () {
         infinite: true,
         speed: 1500,
         autoplaySpeed: 10000,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next'),
+        prevArrow: $('.mainPage-prev'),
+        nextArrow: $('.mainPage-next'),
     });
 
     $('.categories-slider').slick({
@@ -501,10 +501,10 @@ new Swiper('.tradishon-swiper', {
     pagination: {
         el: '.tradishon__dots',
         type: 'fraction',
-        renderFraction: function (currentClass, totalClass) {
-            return '0<span class="' + currentClass + '"></span>' +
-                ' / ' +
-                '0<span class="' + totalClass + '"></span>';
+        renderFraction: function (currentClass, totalClass, zeroClass) {
+            return '0<span class="' + currentClass + '"></span> ' +
+                '<span class="' + zeroClass + '">/ 0</span>' +
+                '<span class="' + totalClass + '"></span>';
         },
     },
     breakpoints: {

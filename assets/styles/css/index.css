@@ -815,8 +815,6 @@ h2 {
 
 .slick-arrow {
   font-size: 0;
-  width: 30px;
-  height: 30px;
   background-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -830,7 +828,6 @@ h2 {
 .slick-next {
   background-image: url("../../../img/Vector2.png");
   background-repeat: no-repeat;
-  margin-left: 15px;
 }
 
 .title-page {
@@ -866,15 +863,18 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60px;
 }
 
-.title-page__contein .title-page__control .title-page__arrows .next {
-  margin-left: 25px;
+.title-page__contein .title-page__control .title-page__arrows .mainPage-next {
   cursor: pointer;
   color: #5f5f5f;
 }
 
-.title-page__contein .title-page__control .title-page__arrows .prev {
+.title-page__contein .title-page__control .title-page__arrows .mainPage-prev {
   cursor: pointer;
   color: #5f5f5f;
 }
@@ -2186,11 +2186,6 @@ h2 {
 }
 
 .production-page__body {
-  /* overflow: hidden;
-        flex: 0 0 55%;
-        border: 1px solid black;
-        position: relative;
-        padding: 0 0 100px 0; */
   position: absolute;
   left: 10px;
   top: 130px;
@@ -2203,8 +2198,8 @@ h2 {
   display: flex;
   position: absolute;
   right: 20px;
-  bottom: -80px;
-  right: 70px;
+  bottom: -75px;
+  right: 30px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -6223,15 +6218,11 @@ h3 {
   font-weight: 500;
 }
 
-.tradishon .tradishon__dots .swiper-pagination-current {
-  font-weight: 500;
-}
-
-.tradishon .tradishon__dots span {
+.tradishon .tradishon__dots .swiper-pagination-total {
   font-weight: 400;
 }
 
-.tradishon .tradishon__dots .swiper-pagination-total {
+.tradishon .tradishon__dots span.undefined {
   font-weight: 400;
 }
 
@@ -6453,6 +6444,14 @@ h3 {
   z-index: 10;
 }
 
+.main-about-page .why-we-page {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f9ff), to(#f4f9ff));
+  background: linear-gradient(0deg, #f4f9ff, #f4f9ff);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .main-about-page .contact-page {
   position: relative;
   z-index: 10;
@@ -6462,17 +6461,20 @@ h3 {
 .main-about-page .delivery-page {
   position: relative;
   overflow: inherit;
-  padding: 0;
-  margin-top: calc(100px + 230 * (100vw / 1920));
-  background: -webkit-gradient(linear, left bottom, left top, from(#f4f9ff), to(#f4f9ff));
-  background: linear-gradient(0deg, #f4f9ff, #f4f9ff);
+  padding: 0 20px 60px;
+  margin-top: calc(100px + 180 * (100vw / 1920));
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f9ff), to(#f4f9ff)) !important;
+  background: linear-gradient(0deg, #f4f9ff, #f4f9ff) !important;
 }
 
 .main-about-page .delivery-page__conteiner {
   position: relative;
   z-index: 2;
-  margin: 0 20px;
   margin: 0 auto;
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .main-about-page .delivery-page__conteiner .why-we-prev,
@@ -6502,7 +6504,7 @@ h3 {
 }
 
 .main-about-page .delivery-page__conteiner .why-we-prev {
-  right: 95.5%;
+  right: 94.5%;
 }
 
 .main-about-page .delivery-page__conteiner .why-we-next {
@@ -6519,8 +6521,8 @@ h3 {
   position: absolute;
   content: "";
   width: 200%;
-  height: 120vh;
-  top: -5%;
+  height: 100vh;
+  top: -25%;
   border-radius: 50%;
   left: -50%;
   z-index: 1;
@@ -6571,6 +6573,11 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 500;
+}
+
+.main-about-page .why-we-slider__items .why-we__dots .why-we__button .why-we__el.active button {
+  font-weight: 500 !important;
 }
 
 .main-about-page .why-we-slider__items .why-we__dots .why-we__button li button {
@@ -6662,6 +6669,8 @@ h3 {
   margin: auto;
   position: absolute;
   z-index: 2;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f9ff), to(#f4f9ff));
+  background: linear-gradient(0deg, #f4f9ff, #f4f9ff);
 }
 
 .main-about-page .why-we__body {
@@ -6736,7 +6745,7 @@ h3 {
 
 @media (max-width: 1500px) {
   .delivery-page::before {
-    top: -4% !important;
+    top: -15% !important;
   }
 }
 
@@ -6782,9 +6791,13 @@ h3 {
 @media (max-width: 1100px) {
   .why-we__conteiner .why-we-prev,
   .why-we__conteiner .why-we-next {
-    top: 102% !important;
+    -webkit-transform: translate(0, 280px);
+            transform: translate(0, 280px);
     background-color: rgba(0, 0, 0, 0) !important;
     color: #cccccc !important;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   .why-we__conteiner .why-we-prev {
     right: 75px !important;
@@ -6794,8 +6807,8 @@ h3 {
   }
   .main-about-page .delivery-page::before {
     display: block;
-    height: 70vh;
-    top: -3% !important;
+    top: -10 !important;
+    height: 80vh;
     border-radius: 50%;
     left: -50%;
   }
@@ -6805,6 +6818,10 @@ h3 {
   .why-we__circle {
     display: none;
   }
+  .why-we-slider .why-we-slider__item {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
   .main-about-page .why-we-slider__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6813,9 +6830,19 @@ h3 {
   }
   .main-about-page .delivery-page {
     margin-top: 200px;
+    padding: 0 20px 100px;
   }
   .main-about-page .delivery-page::before {
-    top: -2% !important;
+    top: -8% !important;
+    height: 60vh;
+  }
+  .main-about-page .why-we-prev, .main-about-page .why-we-next {
+    top: 102% !important;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .main-about-page .why-we__dots {
+    margin-top: 30px !important;
   }
 }
 
@@ -6823,10 +6850,6 @@ h3 {
   .why-we-slider__items .why-we-slider__item {
     min-width: 100%;
     margin: 0;
-    padding: 0 20px !important;
-  }
-  .why-we-slider__items .why-we__dots {
-    margin: calc(17px + 50 * (100vw / 690)) auto 0 !important;
   }
   .why-we-slider__items .why-we-slider__title {
     margin-top: 20px;
@@ -6835,15 +6858,13 @@ h3 {
 
 @media (max-width: 500px) {
   .main-about-page .delivery-page {
-    margin-top: 110px;
+    margin-top: 120px;
+    padding: 0 20px 100px !important;
   }
   .main-about-page .delivery-page::before {
     display: block;
-    top: -1.8% !important;
-    height: 70vh;
-    width: 250%;
-    border-radius: 50%;
-    left: -75%;
+    top: -5.2% !important;
+    height: 60vh;
   }
 }
 
@@ -6857,7 +6878,7 @@ h3 {
     min-height: 400px !important;
   }
   .main-about-page .why-we-slider__items .why-we-slider__item {
-    margin-top: -50px;
+    margin-top: -60px !important;
   }
   .main-about-page .why-we-slider__items .why-we-slider__number {
     font-size: 60px;
@@ -6879,6 +6900,12 @@ h3 {
   }
   .main-about-page .why-we-slider__items .why-we__dots .dots-before li {
     width: 40px;
+  }
+  .main-about-page .delivery-page::before {
+    display: block;
+    top: -8% !important;
+    height: 40vh;
+    width: 200%;
   }
 }
 
@@ -7002,7 +7029,7 @@ h3 {
 
 @media (max-width: 890px) {
   .main-about-page .our-productss {
-    margin-top: 100px !important;
+    margin-top: 20px !important;
   }
 }
 

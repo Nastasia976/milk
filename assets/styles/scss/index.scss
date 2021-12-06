@@ -570,8 +570,6 @@ h2 {
 }
 .slick-arrow {
     font-size: 0;
-    width: 30px;
-    height: 30px;
     background-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -583,7 +581,6 @@ h2 {
 .slick-next {
     background-image: url("../../../img/Vector2.png");
     background-repeat: no-repeat;
-    margin-left: 15px;
 }
 //___TITLE_PAGE______
 .title-page {
@@ -605,12 +602,13 @@ h2 {
             .title-page__arrows {
                 margin-right: 24px;
                 display: flex;
-                .next {
-                    margin-left: 25px;
+                justify-content: space-between;
+                width: 60px;
+                .mainPage-next {
                     cursor: pointer;
                     color: #5f5f5f;
                 }
-                .prev {
+                .mainPage-prev {
                     cursor: pointer;
                     color: #5f5f5f;
                 }
@@ -1653,11 +1651,6 @@ h2 {
         justify-content: right;
     }
     &__body {
-        /* overflow: hidden;
-        flex: 0 0 55%;
-        border: 1px solid black;
-        position: relative;
-        padding: 0 0 100px 0; */
         position: absolute;
         left: 10px;
         top: 130px;
@@ -1667,8 +1660,8 @@ h2 {
         display: flex;
         position: absolute;
         right: 20px;
-        bottom: -80px;
-        right: 70px;
+        bottom: -75px;
+        right: 30px;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1703,6 +1696,7 @@ h2 {
             position: relative;
             font-weight: 400;
         }
+        
         span::before {
             position: absolute;
             content: "";
@@ -4860,13 +4854,10 @@ h3 {
         font-size: 18px;
         line-height: 156%;
         font-weight: 500;
-        .swiper-pagination-current {
-            font-weight: 500;
-        }
-        span {
+        .swiper-pagination-total{
             font-weight: 400;
         }
-        .swiper-pagination-total {
+        span.undefined{
             font-weight: 400;
         }
     }
@@ -5049,6 +5040,10 @@ h3 {
 }
 //____WHY_WE______
 .main-about-page {
+    .why-we-page{
+        background: linear-gradient(0deg, #f4f9ff, #f4f9ff);
+        height: fit-content;
+    }
     .contact-page {
         position: relative;
         z-index: 10;
@@ -5057,14 +5052,15 @@ h3 {
     .delivery-page {
         position: relative;
         overflow: inherit;
-        padding: 0;
-        margin-top: calc(100px + 230 * (100vw / 1920));
-        background: linear-gradient(0deg, #f4f9ff, #f4f9ff);
+        padding: 0 20px 60px;
+        margin-top: calc(100px + 180 * (100vw / 1920));
+        background: linear-gradient(0deg, #f4f9ff, #f4f9ff) !important;
         &__conteiner {
             position: relative;
             z-index: 2;
-            margin: 0 20px;
             margin: 0 auto;
+            padding: 0;
+            height: fit-content;
             .why-we-prev,
             .why-we-next {
                 position: absolute;
@@ -5084,7 +5080,7 @@ h3 {
                 background-color: #8ed8f3;
             }
             .why-we-prev {
-                right: 95.5%;
+                right: 94.5%;
             }
             .why-we-next {
                 right: 0;
@@ -5102,8 +5098,8 @@ h3 {
         position: absolute;
         content: "";
         width: 200%;
-        height: 120vh;
-        top: -5%;
+        height: 100vh;
+        top: -25%;
         border-radius: 50%;
         left: -50%;
         z-index: 1;
@@ -5133,6 +5129,12 @@ h3 {
                 justify-content: left;
                 .why-we__button {
                     display: flex;
+                    font-weight: 500;
+                    .why-we__el.active{
+                        button{
+                            font-weight: 500 !important;
+                        }
+                    }
                     li {
                         button {
                             color: #5f5f5f;
@@ -5206,6 +5208,7 @@ h3 {
             margin: auto;
             position: absolute;
             z-index: 2;
+            background: linear-gradient(0deg, #f4f9ff, #f4f9ff);
         }
         &__body {
             width: 100%;
@@ -5264,7 +5267,7 @@ h3 {
 }
 @media (max-width: 1500px) {
     .delivery-page::before {
-        top: -4% !important;
+        top: -15% !important;
     }
 }
 @media (max-width: 1350px) {
@@ -5309,9 +5312,10 @@ h3 {
     .why-we__conteiner {
         .why-we-prev,
         .why-we-next {
-            top: 102% !important;
+            transform: translate(0, 280px);
             background-color: rgba(0, 0, 0, 0) !important;
             color: #cccccc !important;
+            max-width: fit-content;
         }
         .why-we-prev {
             right: 75px !important;
@@ -5323,8 +5327,8 @@ h3 {
     .main-about-page {
         .delivery-page::before {
             display: block;
-            height: 70vh;
-            top: -3% !important;
+            top: -10 !important;
+            height: 80vh;
             border-radius: 50%;
             left: -50%;
         }
@@ -5334,6 +5338,12 @@ h3 {
     .why-we__circle {
         display: none;
     }
+    .why-we-slider{
+        .why-we-slider__item{
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
     .main-about-page {
         .why-we-slider__items {
             flex-direction: column;
@@ -5342,9 +5352,18 @@ h3 {
     .main-about-page {
         .delivery-page {
             margin-top: 200px;
+            padding: 0 20px 100px;
         }
         .delivery-page::before {
-            top: -2% !important;
+            top: -8% !important;
+            height: 60vh;
+        }
+        .why-we-prev, .why-we-next{
+            top: 102% !important;
+            transform: translate(0);
+        }
+        .why-we__dots{
+            margin-top: 30px !important;
         }
     }
 }
@@ -5353,11 +5372,8 @@ h3 {
         .why-we-slider__item {
             min-width: 100%;
             margin: 0;
-            padding: 0 20px !important;
         }
-        .why-we__dots {
-            margin: calc(17px + 50 * (100vw / 690)) auto 0 !important;
-        }
+        
         .why-we-slider__title {
             margin-top: 20px;
         }
@@ -5366,15 +5382,13 @@ h3 {
 @media (max-width: 500px) {
     .main-about-page {
         .delivery-page {
-            margin-top: 110px;
+            margin-top: 120px;
+            padding: 0 20px 100px !important;
         }
         .delivery-page::before {
             display: block;
-            top: -1.8% !important;
-            height: 70vh;
-            width: 250%;
-            border-radius: 50%;
-            left: -75%;
+            top: -5.2% !important;
+            height: 60vh;
         }
     }
 }
@@ -5389,7 +5403,7 @@ h3 {
         }
         .why-we-slider__items {
             .why-we-slider__item {
-                margin-top: -50px;
+                margin-top: -60px !important;
             }
             .why-we-slider__number {
                 font-size: 60px;
@@ -5412,6 +5426,14 @@ h3 {
                     }
                 }
             }
+        }
+    }
+    .main-about-page {
+        .delivery-page::before {
+            display: block;
+            top: -8% !important;
+            height: 40vh;
+            width: 200%;
         }
     }
 }
@@ -5521,7 +5543,7 @@ h3 {
 @media (max-width: 890px) {
     .main-about-page {
         .our-productss {
-            margin-top: 100px !important;
+            margin-top: 20px !important;
         }
     }
 }
