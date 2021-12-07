@@ -90,6 +90,8 @@ $(document).ready(function () {
         dots: true,
         appendDots: $('.delivery-page__dots'),
     });
+
+
     $('.why-we-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -253,25 +255,30 @@ $(document).ready(function () {
         $('.delivery-slider, .why-we-slider').slick('slickGoTo', slideno - 1);
     });
 
-    $('.circle__item1').click(function (event) {
-        $('.circle__item1').toggleClass('active');
-        $('.circle__item2, .circle__item3, .circle__item4').removeClass('active');
-    });
+    if($('.delivery-slider__items1').hasClass('slick-active')) {
+        $('.circle__item1').addClass('active');
+    };
 
-    $('.circle__item2').click(function (event) {
-        $('.circle__item2').toggleClass('active');
-        $('.circle__item1, .circle__item3, .circle__item4').removeClass('active');
-    });
 
-    $('.circle__item3').click(function (event) {
-        $('.circle__item3').toggleClass('active');
-        $('.circle__item2, .circle__item1, .circle__item4').removeClass('active');
-    });
 
-    $('.circle__item4').click(function (event) {
-        $('.circle__item4').toggleClass('active');
-        $('.circle__item2, .circle__item3, .circle__item1').removeClass('active');
-    });
+
+
+   /*  $('.why-we__image').click(function (event) {
+        $('.why-we__image').removeClass('active');
+        $(this).toggleClass('active');
+    }); */
+
+    /* $('.circle__item').click(function (event) {
+        $('.circle__item').removeClass('active');
+        $(this).toggleClass('active');
+    }); */
+
+    /* if ($('#slick-slide40').hasClass('slick-active')) {
+        $('.circle__item1').addClass('active');
+    }
+    if ($('.delivery-slider__items2').hasClass('slick-current')) {
+        $('.circle__item2').addClass('active');
+    } */
 
     $('.header__link-open').click(function (event) {
         $('.header__link-open').toggleClass('active');
@@ -442,6 +449,7 @@ var filterOut = function () {
             $('.catalog-choice__filter').slideUp(300);
             $('.filter__burger').removeClass('active');
         }
+        
     });
 }
 
