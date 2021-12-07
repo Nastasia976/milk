@@ -112,6 +112,45 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.granello-main {
+  padding: 50px;
+}
+
+.granello-main h1 {
+  font-size: 50px;
+}
+
+.granello {
+  margin-top: 50px;
+}
+
+.granello__menu {
+  margin-left: 50px;
+}
+
+.granello__el {
+  margin-top: 30px;
+  position: relative;
+  padding: 0 0 0 30px;
+}
+
+.granello__el::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #4EB7E5;
+}
+
+.granello__links {
+  font-size: 20px;
+  line-height: 122%;
+  color: #818181;
+}
+
 body {
   font-family: "Gotham Pro";
   font-weight: 400;
