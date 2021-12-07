@@ -5352,6 +5352,10 @@ h3 {
         .why-we-next {
             right: 0 !important;
         }
+        .why-we-prev:hover,
+        .why-we-next:hover {
+            color: #4EB7E5 !important;
+        }
     }
     .main-about-page {
         .delivery-page::before {
@@ -5396,7 +5400,7 @@ h3 {
             transform: translate(0);
         }
         .why-we__dots {
-            margin-top: 30px !important;
+            margin-top: 60px !important;
         }
     }
 }
@@ -5450,7 +5454,7 @@ h3 {
                 margin-top: 10px;
             }
             .why-we__dots {
-                margin-top: 20px !important;
+                margin-top: 40px !important;
                 margin: 0 auto;
                 max-width: fit-content;
                 .dots-before {
@@ -5462,6 +5466,10 @@ h3 {
         }
     }
     .main-about-page {
+        .delivery-page{
+            padding: 0 20px 80px !important;
+        }
+        
         .delivery-page::before {
             display: block;
             top: -8% !important;
@@ -5529,7 +5537,6 @@ h3 {
         .our-productss {
             position: relative;
             z-index: 20;
-            margin: 0px -20px 0;
         }
     }
 }
