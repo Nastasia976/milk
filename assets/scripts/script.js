@@ -255,7 +255,7 @@ $(document).ready(function () {
         $('.delivery-slider, .why-we-slider').slick('slickGoTo', slideno - 1);
     });
 
-    if($('.delivery-slider__items1').hasClass('slick-active')) {
+    if ($('.delivery-slider__items1').hasClass('slick-active')) {
         $('.circle__item1').addClass('active');
     };
 
@@ -263,10 +263,10 @@ $(document).ready(function () {
 
 
 
-   /*  $('.why-we__image').click(function (event) {
-        $('.why-we__image').removeClass('active');
-        $(this).toggleClass('active');
-    }); */
+    /*  $('.why-we__image').click(function (event) {
+         $('.why-we__image').removeClass('active');
+         $(this).toggleClass('active');
+     }); */
 
     /* $('.circle__item').click(function (event) {
         $('.circle__item').removeClass('active');
@@ -433,7 +433,74 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $('.catalog-choice__filter').slideToggle(300);
     });
+    //_____deliveryAndPay_____
+
+    /* $('.delivery-pay__item1').click(function(event) {
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        $('.delivery-pay__condition').removeClass('active');
+        $('.condition1').addClass('active');
+    });
+    $('.delivery-pay__item2').click(function(event) {
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        $('.delivery-pay__condition').removeClass('active');
+        $('.condition2').addClass('active');
+    });
+    $('.delivery-pay__item3').click(function(event) {
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        $('.delivery-pay__condition').removeClass('active');
+        $('.condition3').addClass('active');
+    });
+    $('.delivery-pay__item4').click(function(event) {
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        $('.delivery-pay__condition').removeClass('active');
+        $('.condition4').addClass('active');
+    }); */
+
+
+    /* $('.delivery-pay__item1').click(function(event) {
+        $('.swiper-condition').slideTo(1,300);
+    });
+    $('.delivery-pay__item2').click(function(event) {
+        $('.swiper-condition').slideTo(2,300);
+    }) */
+    $('.delivery-pay__item1').click(function (e) {
+        e.preventDefault();
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        goToPage(0);
+    });
+    $('.delivery-pay__item2').click(function (e) {
+        e.preventDefault();
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        goToPage(1);
+    });
+    $('.delivery-pay__item3').click(function (e) {
+        e.preventDefault();
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        goToPage(2);
+    });
+    $('.delivery-pay__item4').click(function (e) {
+        e.preventDefault();
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        goToPage(3);
+    });
+
 });
+
+
+function goToPage(numberPage) {
+    new Swiper('.swiper-condition').slideTo(numberPage, 500, false)
+}
+
+
+
 
 $(window).on('resize', function () {
     if ($(window).width() < 1450) {
@@ -449,7 +516,7 @@ var filterOut = function () {
             $('.catalog-choice__filter').slideUp(300);
             $('.filter__burger').removeClass('active');
         }
-        
+
     });
 }
 
@@ -536,7 +603,7 @@ new Swiper('.swiper-consist', {
             watchOverFlow: true,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             watchOverFlow: false,
         },
         100: {
@@ -544,6 +611,19 @@ new Swiper('.swiper-consist', {
         },
     },
 });
+
+new Swiper('.swiper-characters', {
+    navigation: {
+        nextEl: '.consist__next',
+        prevEl: '.consist__prev',
+    },
+});
+
+new Swiper('.swiper-condition', {
+    slidesPerView: 1,
+    mode:'horizontal',
+});
+
 
 let ts = document.querySelector('.small-slider')
 ts.append(...Array.from(ts.children).reverse());

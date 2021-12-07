@@ -1165,10 +1165,7 @@ h2 {
         border-radius: 18px;
         padding: 21px 28px 32px;
         display: grid;
-        grid-template-rows: minmax(40px, 40px) minmax(300px, 300px) 1fr minmax(30px, 30px) minmax(80px, 100px) minmax(
-                60px,
-                100px
-            );
+        grid-template-rows: minmax(40px, 40px) minmax(300px, 300px) 0fr 0.1fr 0.6fr 0.5fr;
         margin: 0 15px;
     }
     &__items:hover {
@@ -1329,14 +1326,8 @@ h2 {
         z-index: 1;
     }
 }
-@media (max-width: 1240px) {
-    .mainpage {
-        .popular::after {
-        }
-    }
-}
 .item-price {
-    padding: 28px 0 0 0;
+    padding: 10px 0 0 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -1430,10 +1421,7 @@ h2 {
 }
 @media (max-width: 380px) {
     .popular__items {
-        grid-template-rows: minmax(60px, 60px) minmax(300px, 300px) 1fr minmax(30px, 30px) minmax(140px, 140px) minmax(
-                80px,
-                110px
-            );
+        padding: 15px;
         .popular__bottons {
             flex-direction: column;
             align-items: center;
@@ -3794,9 +3782,6 @@ h3 {
 }
 .characters {
     padding: calc(17px + 43 * (100vw / 1920)) 20px 0;
-    &__conteiner {
-        overflow: hidden;
-    }
     &__body {
         display: flex;
         max-width: 1420px;
@@ -3928,6 +3913,10 @@ h3 {
         color: black;
     }
 }
+.swiper-characters{
+    display: none;
+    pointer-events: none;
+}
 @media (max-width: 1600px) {
     .consist {
         &__item {
@@ -3939,6 +3928,12 @@ h3 {
     }
 }
 @media (max-width: 1200px) {
+    .for-consist-green, .for-consist-orange, .for-consist-brown{
+        display: none !important;
+    }
+    .swiper-characters{
+        display: block;
+    }
     .consist {
         padding: 0 !important;
     }
@@ -3998,6 +3993,26 @@ h3 {
         }
     }
 }
+@media (max-width: 580px) {
+    .swiper-characters{
+        .about__details._name,
+        .about__el._empty {
+            display: none;
+        }
+        .about__el {
+            width: fit-content !important;
+        }
+        .about__el:first-child {
+            margin-bottom: 5px;
+        }
+        .about__details {
+            flex-direction: column;
+            border-bottom: 1px dashed #cccccc;
+            padding: 0 0 5px 0;
+        }
+    }
+}
+
 @media (max-width: 520px) {
     .characters {
         .about__details._name,
@@ -4596,6 +4611,9 @@ h3 {
             color: #cccccc;
         }
     }
+    .popular__bottons{
+        margin-top: 15px;
+    }
 }
 @media (max-width: 768px) {
     .recommendations {
@@ -4612,6 +4630,11 @@ h3 {
     .recommendations {
         .popular__bottons {
             align-items: center;
+        }
+        .popular__items{
+            margin: 0;
+            margin-top: 20px;
+            padding: 15px 15px 10px;
         }
     }
 }
@@ -6453,8 +6476,8 @@ h3 {
         margin: 0;
         flex: 1 1 30% !important;
         display: grid;
-        grid-template-rows: minmax(30px, 30px) minmax(300px, 320px) 0.7fr 0.5fr 0.5fr !important;
-        padding: 20px 15px 30px;
+        grid-template-rows: minmax(30px, 30px) minmax(300px, 320px) 0fr 0.5fr 0.2fr !important;
+        padding: 20px 15px 10px;
     }
     .popular__text {
         margin-top: 5px;
@@ -6737,3 +6760,155 @@ h3 {
         }
     }
 }
+
+//____________PAGE_DELIVERY_AND_PAY____________
+.wrapper_pay{
+    header{
+        z-index: 3;
+        background-color: #fff;
+    }
+}
+.pageDeliveryAndPay {
+}
+.bread-crumbs {
+		&__el {}
+		&__link {}
+}
+.delivery-pay {
+    background-color: #EFF4F9;
+    position: relative;
+		&__conteiner {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+		&__title {
+            text-align: center;
+            margin-top: calc(23px + 30 * (100vw / 1920));
+            h1{
+                font-size: calc(35px + 25px * (100vw / 1920));
+                font-weight: 800;
+                line-height: 118%;
+            }
+        }
+		&__wrapper {
+            margin-top: calc(24px + 50 * (100vw / 1920));
+        }
+		&__name {
+            h3{
+                font-size: 22px;
+                line-height: 150%;
+                font-weight: 700;
+            }
+        }
+		&__body {
+            margin-top: calc(32px + 30 * (100vw / 1920));
+            display: flex;
+        }
+		&__regions {
+            max-width: 420px;
+            padding: 8px 0 0 0;
+        }
+		&__item {
+            font-size: 18px;
+            line-height: 120%;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        &__item:hover, &__item.active{
+            color: #4EB7E5;
+        }
+        &__item:not(:last-child){
+            margin-bottom: calc(15px + 18 * (100vw / 1920));
+        }
+		&__condition {
+            margin-left: calc(0px + 107 * (100vw / 1920));
+        }
+        .swiper-condition{
+            min-width: 0;
+            overflow: hidden;
+        }
+		&__description {
+            font-size: 16px;
+            line-height: 197%;
+            letter-spacing: 0.02em;
+            li{
+                margin-top: 33px;
+                position: relative;
+                padding: 0 0 0 30px;
+            }
+            li::after{
+                position: absolute;
+                content: '';
+                width: 8px;
+                height: 8px;
+                background-color: #4EB7E5;
+                z-index: 3;
+                left: 0;
+                top: 10px;
+                border-radius: 50%;
+            }
+        }
+}
+.delivery-pay::after{
+    position: absolute;
+    width: 200%;
+    height: 100vh;
+    content: '';
+    bottom: -25%;
+    left: -50%;
+    background-color: #EFF4F9;
+    z-index: 1;
+    border-radius: 50%;
+}
+.cdek {
+		&__conteiner {}
+		&__item {}
+		&__image {}
+		&__title {}
+		&__items {}
+		&__text {}
+		&__logo {}
+}
+.pick-up {
+		&__conteiner {}
+		&__title {}
+		&__body {}
+		&__regions {}
+		&__item {}
+		&__description {}
+		&__text {}
+}
+.payment {
+		&__conteiner {}
+		&__title {}
+		&__body {}
+		&__card {}
+		&__image {}
+		&__items {}
+		&__name {}
+		&__description {}
+}
+.contact-page {
+		&__conteiner {}
+		&__catalog {}
+		&__title {}
+		&__list {}
+		&__elem {}
+		&__link {}
+		&__menu {}
+		&__items {}
+		&__item {}
+		&__name {}
+		&__text {}
+		&__social {}
+		&__body {}
+		&__image {}
+}
+.contacts {
+		&__item {}
+		&__title {}
+		&__text {}
+}
+
