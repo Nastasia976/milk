@@ -934,7 +934,6 @@ h2 {
 
 .title-page__cards .wave {
   position: absolute;
-  /* bottom: calc(-90px + (-50) * (100vw / 1920)); */
   bottom: -18%;
   z-index: 10;
   width: 100%;
@@ -964,7 +963,7 @@ h2 {
 }
 
 .title-page__cards._beige .title-page__title span {
-  font-size: 50px;
+  font-size: calc(20px + 30 * (100vw / 1920));
   color: #331b1b;
   line-height: 111%;
   font-family: "Story";
@@ -972,7 +971,7 @@ h2 {
 }
 
 .title-page__cards._beige .title-page__title h1 {
-  font-size: 70px;
+  font-size: calc(40px + 30 * (100vw / 1920));
   line-height: 111%;
   color: #982850;
   font-family: "Story";
@@ -1031,14 +1030,14 @@ h2 {
 }
 
 .title-page__title span {
-  font-size: 50px;
+  font-size: calc(20px + 30 * (100vw / 1920));
   line-height: 106%;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .title-page__title h1 {
-  font-size: 70px;
+  font-size: calc(40px + 30 * (100vw / 1920));
   line-height: 107%;
   font-weight: 700;
   text-transform: uppercase;
@@ -1121,22 +1120,8 @@ h2 {
     min-height: 550px;
   }
   .title-page__cards .title-page__body {
-    background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
     width: 100%;
-  }
-  .title-page__cards .title-page__body .title-page__arrows {
-    color: white !important;
-  }
-  .title-page__cards .title-page__body .title-page__arrows .mainPage-prev,
-  .title-page__cards .title-page__body .title-page__arrows .mainPage-next {
-    color: white;
-  }
-  .title-page__cards .title-page__body .title-page__dots {
-    color: white;
-  }
-  .title-page__cards .title-page__body .title-page__dots .dots__list li.active {
-    background-color: #fff;
   }
   .title-page__cards .title-page__body .title-page__subtitle {
     margin-top: 20px;
@@ -1153,9 +1138,6 @@ h2 {
   }
   .title-page__cards .title-page__body .title-page__contein {
     margin-top: 30px;
-  }
-  .title-page__cards._beige .title-page__body .title-page__subtitle {
-    color: white;
   }
   .title-page__cards._beige .title-page__body .title-page__item {
     margin: 0;
@@ -1179,6 +1161,9 @@ h2 {
 }
 
 @media (max-width: 1000px) {
+  .title-page__subtitle {
+    max-width: 400px;
+  }
   .title-page__slider .slick-list {
     padding: 0;
   }
