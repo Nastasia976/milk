@@ -4978,7 +4978,7 @@ h3 {
     position: relative;
     z-index: 2;
     padding: 0 20px;
-    margin-top: calc(41px + 170 * (100vw / 1920));
+    margin-top: calc(61px + 250 * (100vw / 1920));
     &__conteiner {
         display: flex;
         align-items: center;
@@ -5072,7 +5072,7 @@ h3 {
         position: relative;
         overflow: inherit;
         padding: 0 20px 60px;
-        margin-top: calc(100px + 180 * (100vw / 1920));
+        margin-top: calc(100px + 200 * (100vw / 1920));
         background: linear-gradient(0deg, #f4f9ff, #f4f9ff) !important;
         &__conteiner {
             position: relative;
@@ -5118,7 +5118,7 @@ h3 {
         content: "";
         width: 200%;
         height: 100vh;
-        top: -25%;
+        top: -17%;
         border-radius: 50%;
         left: -50%;
         z-index: 1;
@@ -5217,6 +5217,13 @@ h3 {
             transform: translate(-61px, -145px);
         }
     }
+    .control-why-we{
+        position: relative;
+        height: 320px;
+        overflow: hidden;
+        margin-top: -20px;
+        background: linear-gradient(0deg, #f4f9ff, #f4f9ff);
+    }
     .why-we {
         &__circle {
             width: 1350px;
@@ -5290,6 +5297,9 @@ h3 {
     }
 }
 @media (max-width: 1350px) {
+    .control-why-we{
+        max-height: 250px;
+    }
     .why-we__body {
         max-width: 900px;
         max-height: 900px;
@@ -5354,6 +5364,9 @@ h3 {
     }
 }
 @media (max-width: 890px) {
+    .control-why-we{
+        display: none;
+    }
     .why-we__circle {
         display: none;
     }
@@ -5462,10 +5475,9 @@ h3 {
     .our-productss {
         position: relative;
         z-index: 20;
-        margin: 300px 0px 0 !important;
         min-width: 100%;
         background-color: #fff;
-        padding: calc(35px + 80 * (100vw / 1920)) 20px;
+        padding: calc(35px + 90 * (100vw / 1920)) 20px;
         &__conteiner {
         }
         &__title {
@@ -5517,7 +5529,7 @@ h3 {
         .our-productss {
             position: relative;
             z-index: 20;
-            margin: 230px -20px 0;
+            margin: 0px -20px 0;
         }
     }
 }
