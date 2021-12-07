@@ -2967,10 +2967,10 @@ h2 {
         }
         .small-slider__prev {
             transform: rotate(-90deg);
-            bottom: -60px;
+            bottom: 10px;
         }
         .small-slider__next {
-            top: 0;
+            top: 70px;
             transform: rotate(90deg);
         }
     }
@@ -3505,8 +3505,12 @@ h2 {
         min-width: 100%;
         .big-slider__arrow {
             display: flex;
+            align-items: center !important;
             bottom: 0px;
             right: 20px;
+        }
+        .big-slider__next{
+            margin-top: -3px;
         }
     }
     .product-card__body {
@@ -3516,7 +3520,7 @@ h2 {
         margin-top: 20px !important;
         max-width: 100% !important;
         &__image {
-            padding: 0 0 14.5% 0 !important;
+            padding: 0 0 14% 0 !important;
             img {
                 height: 100%;
                 width: 100%;

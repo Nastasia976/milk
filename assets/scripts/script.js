@@ -517,6 +517,10 @@ new Swiper('.tradishon-swiper', {
     },
 });
 
+new Swiper('.swiper-consist', {
+
+});
+
 let ts = document.querySelector('.small-slider')
 ts.append(...Array.from(ts.children).reverse());
 
