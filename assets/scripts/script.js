@@ -428,13 +428,13 @@ $(document).ready(function () {
     });
 });
 
-$(window).on('resize', function() {
+$(window).on('resize', function () {
     if ($(window).width() < 1450) {
         filterOut();
     }
-});                                    
+});
 
-var filterOut = function(){    
+var filterOut = function () {
     $(document).mouseup(function (e) {
         var div = $('.catalog-choice__filter, .filter__burger');
         if (!div.is(e.target)
@@ -518,7 +518,23 @@ new Swiper('.tradishon-swiper', {
 });
 
 new Swiper('.swiper-consist', {
-
+    navigation: {
+        nextEl: '.consist__next',
+        prevEl: '.consist__prev',
+    },
+    breakpoints: {
+        1200: {
+            slidesPerView: 3,
+            watchOverFlow: true,
+        },
+        768: {
+            slidesPerView: 2,
+            watchOverFlow: false,
+        },
+        100: {
+            slidesPerView: 1,
+        },
+    },
 });
 
 let ts = document.querySelector('.small-slider')
