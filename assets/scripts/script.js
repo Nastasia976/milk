@@ -635,6 +635,7 @@ let elSwiper = new Swiper('.swiper-condition', {
     slidesPerView: 1,
     mode: 'horizontal',
     effect: 'fade',
+    autoHeight: true,
     fadeEffect: {
         crossFade: true,
     }

@@ -6849,10 +6849,17 @@ h3 {
         overflow: hidden;
         height: fit-content;
     }
+    .delivery-pay__name{
+        font-size: calc(18px + 6 * (100vw / 1920));
+    }
+    .delivery-pay__condition:not(:first-child){
+        margin-top: 26px;
+    }
     &__description {
         font-size: 16px;
         line-height: 197%;
         letter-spacing: 0.02em;
+        margin-top: 20px;
         li {
             margin-top: 33px;
             position: relative;
@@ -6876,7 +6883,7 @@ h3 {
     width: 200%;
     height: 100vh;
     content: "";
-    bottom: -25%;
+    bottom: -120px;
     left: -50%;
     background-color: #eff4f9;
     z-index: 1;
@@ -6893,12 +6900,13 @@ h3 {
         margin-top: 40px;
     }
     .delivery-pay::after {
-        bottom: -15%;
+        bottom: -100px;
+        height: 80vh;
     }
 }
 @media (max-width: 768px) {
     .delivery-pay::after {
-        bottom: -10%;
+        bottom: -80px;
     }
     .delivery-pay__item {
         white-space: normal;
@@ -6906,7 +6914,7 @@ h3 {
 }
 @media (max-width: 400px) {
     .delivery-pay::after {
-        bottom: -5%;
+        bottom: -50px;
         height: 50vh;
     }
     .swiper-condition {
@@ -7035,6 +7043,7 @@ h3 {
 @media (max-width: 1000px) {
     .pick-up::after {
         top: -80px;
+        height: 80vh;
     }
     .pick-up__body {
         flex-direction: column;
@@ -7051,13 +7060,13 @@ h3 {
 }
 @media (max-width: 768px) {
     .pick-up::after {
-        top: -20%;
+       
     }
 }
 @media (max-width: 400px) {
     .pick-up::after {
         height: 50vh;
-        top: -15%;
+        top: -50px;
     }
     .pick-up__body {
         margin-top: 30px;
