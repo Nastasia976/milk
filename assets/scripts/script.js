@@ -438,6 +438,11 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $('.catalog-choice__filter').slideToggle(300);
     });
+
+    //_____CONTACTSPAGE_____
+    $('.about-our-company__title').click(function (event) {
+        $(this).toggleClass('active').next().slideToggle(500);
+    });
     //_____deliveryAndPay_____
 
     /* $('.delivery-pay__item1').click(function(event) {
