@@ -89,8 +89,13 @@ $(document).ready(function () {
         nextArrow: $('.delivery-page-next'),
         dots: true,
         appendDots: $('.delivery-page__dots'),
-    });
 
+    });
+    $('.delivery-slider').on('beforeChange', function(nextSlide){
+      if(nextSlide > 0){
+        $('.delivery-pay__item').hide();
+      }
+    });
 
     $('.why-we-slider').slick({
         slidesToShow: 1,
@@ -467,7 +472,9 @@ $(document).ready(function () {
     $('.delivery-pay__item2').click(function(event) {
         $('.swiper-condition').slideTo(2,300);
     }) */
-    $('.delivery-pay__item1').click(function (e) {
+
+
+    /* $('.delivery-pay__item1').click(function (e) {
         e.preventDefault();
         $('.delivery-pay__item').removeClass('active');
         $(this).addClass('active');
@@ -490,14 +497,14 @@ $(document).ready(function () {
         $('.delivery-pay__item').removeClass('active');
         $(this).addClass('active');
         goToPage(3);
-    });
+    }); */
 
 });
 
 
-function goToPage(numberPage) {
+/* function goToPage(numberPage) {
     new Swiper('.swiper-condition').slideTo(numberPage, 500, false)
-}
+} */
 
 
 
@@ -619,11 +626,61 @@ new Swiper('.swiper-characters', {
     },
 });
 
-new Swiper('.swiper-condition', {
+let elSwiper = new Swiper('.swiper-condition', {
     slidesPerView: 1,
-    mode:'horizontal',
+    mode: 'horizontal',
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true,
+    }
+});
+let pickUpSwiper = new Swiper('.swiper-pick-up', {
+    slidesPerView: 1,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true,
+    }
 });
 
+$(document).ready(function () {
+    $('.delivery-pay__item1').click(function(event){
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        elSwiper.slideTo(0, 600);
+    });
+    $('.delivery-pay__item2').click(function(event){
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        elSwiper.slideTo(1, 600);
+    });
+    $('.delivery-pay__item3').click(function(event){
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        elSwiper.slideTo(2, 600);
+    });
+    $('.delivery-pay__item4').click(function(event){
+        $('.delivery-pay__item').removeClass('active');
+        $(this).addClass('active');
+        elSwiper.slideTo(3, 600);
+    });
+});
+$(document).ready(function () {
+    $('.pick1').click(function(event){
+        $('.pick-up__item').removeClass('active');
+        $(this).addClass('active');
+        pickUpSwiper.slideTo(0, 600);
+    });
+    $('.pick2').click(function(event){
+        $('.pick-up__item').removeClass('active');
+        $(this).addClass('active');
+        pickUpSwiper.slideTo(1, 600);
+    });
+    $('.pick3').click(function(event){
+        $('.pick-up__item').removeClass('active');
+        $(this).addClass('active');
+        pickUpSwiper.slideTo(2, 600);
+    });
+});
 
 let ts = document.querySelector('.small-slider')
 ts.append(...Array.from(ts.children).reverse());
