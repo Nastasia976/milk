@@ -8738,28 +8738,19 @@ h3 {
   height: fit-content;
 }
 
-.delivery-pay .delivery-pay__name {
-  font-size: calc(18px + 6 * (100vw / 1920));
-}
-
-.delivery-pay .delivery-pay__condition:not(:first-child) {
-  margin-top: 26px;
-}
-
-.delivery-pay__description {
+.delivery-pay__description, .pick-up__description {
   font-size: 16px;
   line-height: 197%;
   letter-spacing: 0.02em;
-  margin-top: 20px;
 }
 
-.delivery-pay__description li {
+.delivery-pay__description li, .pick-up__description li {
   margin-top: 33px;
   position: relative;
   padding: 0 0 0 30px;
 }
 
-.delivery-pay__description li::after {
+.delivery-pay__description li::after, .pick-up__description li::after {
   position: absolute;
   content: "";
   width: 8px;
@@ -8769,6 +8760,10 @@ h3 {
   left: 0;
   top: 10px;
   border-radius: 50%;
+}
+
+.pick-up__description li::after {
+  background-color: #B17F85;
 }
 
 .delivery-pay::after {
@@ -8876,6 +8871,10 @@ h3 {
   margin-left: calc(0px + 106 * (100vw / 1920));
 }
 
+.cdek__items img {
+  margin-top: 26px;
+}
+
 .cdek__text {
   font-size: 18px;
   line-height: 144%;
@@ -8972,7 +8971,7 @@ h3 {
   width: 200%;
   height: 100vh;
   content: "";
-  top: -35%;
+  top: -100px;
   left: -50%;
   background: -webkit-gradient(linear, left bottom, left top, from(#fff7f8), to(#fff7f8)), -webkit-gradient(linear, left bottom, left top, from(#fbf7f2), to(#fbf7f2));
   background: linear-gradient(0deg, #fff7f8, #fff7f8), linear-gradient(0deg, #fbf7f2, #fbf7f2);
@@ -8999,6 +8998,13 @@ h3 {
   }
   .pick-up__item {
     white-space: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .pick-up::after {
+    top: -50px;
+    height: 60vh;
   }
 }
 

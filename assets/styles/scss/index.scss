@@ -6849,33 +6849,31 @@ h3 {
         overflow: hidden;
         height: fit-content;
     }
-    .delivery-pay__name{
-        font-size: calc(18px + 6 * (100vw / 1920));
+}
+.delivery-pay__description, .pick-up__description {
+    font-size: 16px;
+    line-height: 197%;
+    letter-spacing: 0.02em;
+    li {
+        margin-top: 33px;
+        position: relative;
+        padding: 0 0 0 30px;
     }
-    .delivery-pay__condition:not(:first-child){
-        margin-top: 26px;
+    li::after {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: #4eb7e5;
+        z-index: 3;
+        left: 0;
+        top: 10px;
+        border-radius: 50%;
     }
-    &__description {
-        font-size: 16px;
-        line-height: 197%;
-        letter-spacing: 0.02em;
-        margin-top: 20px;
-        li {
-            margin-top: 33px;
-            position: relative;
-            padding: 0 0 0 30px;
-        }
-        li::after {
-            position: absolute;
-            content: "";
-            width: 8px;
-            height: 8px;
-            background-color: #4eb7e5;
-            z-index: 3;
-            left: 0;
-            top: 10px;
-            border-radius: 50%;
-        }
+}
+.pick-up__description{
+    li::after {
+        background-color: #B17F85;
     }
 }
 .delivery-pay::after {
@@ -6957,6 +6955,9 @@ h3 {
     &__items {
         flex: 0 1 48%;
         margin-left: calc(0px + 106 * (100vw / 1920));
+        img{
+            margin-top: 26px;
+        }
     }
     &__text {
         font-size: 18px;
@@ -7034,7 +7035,7 @@ h3 {
     width: 200%;
     height: 100vh;
     content: "";
-    top: -35%;
+    top: -100px;
     left: -50%;
     background: linear-gradient(0deg, #fff7f8, #fff7f8), linear-gradient(0deg, #fbf7f2, #fbf7f2);
     z-index: 1;
@@ -7060,7 +7061,8 @@ h3 {
 }
 @media (max-width: 768px) {
     .pick-up::after {
-       
+       top: -50px;
+       height: 60vh;
     }
 }
 @media (max-width: 400px) {
