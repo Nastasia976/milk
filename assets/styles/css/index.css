@@ -9637,28 +9637,28 @@ h3 {
 .password-profil__item input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 120%;
-  color: black;
+  color: #cccccc;
 }
 
 .personal-data__item input:-ms-input-placeholder,
 .password-profil__item input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 120%;
-  color: black;
+  color: #cccccc;
 }
 
 .personal-data__item input::-ms-input-placeholder,
 .password-profil__item input::-ms-input-placeholder {
   font-size: 16px;
   line-height: 120%;
-  color: black;
+  color: #cccccc;
 }
 
 .personal-data__item input::placeholder,
 .password-profil__item input::placeholder {
   font-size: 16px;
   line-height: 120%;
-  color: black;
+  color: #cccccc;
 }
 
 .password-profil__item input {
