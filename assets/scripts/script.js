@@ -525,6 +525,11 @@ $(document).ready(function () {
         goToPage(3);
     }); */
 
+    //_________PROFIL-PAGE__________
+    $('._p-header').click(function(event) {
+        $(this).toggleClass('active').next().slideToggle(300);
+    })
+
 });
 
 

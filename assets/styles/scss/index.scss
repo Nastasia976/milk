@@ -7387,3 +7387,227 @@ h3 {
         height: 51px !important;
     }
 }
+
+//________PROFIL_______
+.main {
+}
+.main-profil {
+    background-color: #f4f9ff;
+    padding: calc(33px + 30 * (100vw / 1920)) 0 0;
+    &__crumbs {
+        .bread-crumbs {
+            margin-top: 0;
+        }
+    }
+}
+.profil {
+    margin-top: calc(20px + 30 * (100vw / 1920));
+    padding: 0 20px 0;
+    &__menu {
+    }
+    &__conteiner {
+        display: flex;
+    }
+}
+.sidebar {
+    flex: 0 1 25%;
+    &__header {
+        background-color: #115485;
+        display: flex;
+        padding: 32px;
+        color: white;
+    }
+    &__image {
+        width: 30px;
+        text-align: center;
+        margin-right: 18px;
+    }
+    &__items {
+    }
+    &__name {
+        font-size: 22px;
+        line-height: 150%;
+        font-weight: 600;
+    }
+    &__emeil {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 120%;
+        font-weight: 500;
+    }
+    &__body {
+        margin-top: 26px;
+        padding: 9px 32px 14px;
+        background-color: #fff;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 23px 0;
+        font-size: 18px;
+        line-height: 120%;
+        transition: 0.4s;
+        color: black;
+        svg {
+            visibility: hidden;
+        }
+    }
+    &__item:not(:last-child) {
+        border-bottom: 1px solid #ededed;
+    }
+    &__item.active {
+        font-weight: 500;
+        svg {
+            visibility: visible;
+        }
+    }
+    &__item:hover {
+        color: #4eb7e5;
+        transition: 0.4s;
+        svg {
+            visibility: visible;
+            transition: 0.4s;
+        }
+    }
+}
+//----profil-body----
+.profil {
+    &__body {
+        flex: 1 1 auto;
+        margin-left: 31px;
+    }
+    &__title {
+        font-size: calc(30px + 25 * (100vw / 1920));
+        font-family: "Story";
+        font-weight: 700;
+        line-height: 118%;
+        margin-bottom: calc(16px + 30 * (100vw / 1920));
+    }
+    &__personal-data,
+    &__password,
+    &__deliveri {
+        background-color: #fff;
+    }
+}
+.personal-data__title,
+.password-profil__title,
+.delivery-profil__title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 150%;
+}
+._p-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 43px 44px;
+    cursor: pointer;
+    svg {
+        transition: 0.4s;
+        cursor: pointer;
+    }
+}
+._p-header.active {
+    svg {
+        transform: rotate(-180deg);
+        transition: 0.4s;
+    }
+}
+.personal-data,
+.password-profil {
+    .profil__wrapper {
+        padding: 0 44px;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px -15px;
+    }
+    &__item {
+        font-size: 16px;
+        line-height: 120%;
+        padding: 16px 21px;
+        margin: 10px 15px;
+        flex: 0 1 47.2%;
+        background-color: #f9fafc;
+        input {
+            background-color: transparent;
+            font-size: 16px;
+            line-height: 120%;
+            color: #818181;
+        }
+    }
+}
+.delivery-profil {
+    &__header {
+        button {
+            font-size: 16px;
+            font-weight: 500;
+            background-color: transparent;
+            padding: 5px;
+            margin-right: 62px;
+            ._add {
+                margin-right: 10px;
+                color: #4eb7e5;
+            }
+            .add-a {
+                border-bottom: 1px dashed #4eb7e5;
+                padding: 0 0 3px 0;
+            }
+        }
+    }
+    &__body {
+    }
+    &__items._head {
+        padding: 30px 44px;
+        color: #737373;
+        font-size: 14px;
+        line-height: 120%;
+        background-color: #f9fafc;
+    }
+    &__items {
+        display: grid;
+        padding: 26px 44px 24px;
+        grid-template: 1fr / 1fr 0.7fr 0.7fr 0.3fr 0.3fr 0.3fr 0.3fr 0.2fr;
+    }
+    &__item {
+        white-space: nowrap;
+        font-size: 15px;
+        svg {
+            color: #c4c4c4;
+            cursor: pointer;
+        }
+        svg:hover {
+            color: #3ea3cf;
+        }
+    }
+    &__item:last-child {
+        text-align: right;
+    }
+    &__footer {
+    }
+    &__button {
+        text-align: center;
+        background-color: #f4f9ff;
+        padding: 37px 0 88px;
+        button {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 120%;
+            background-color: transparent;
+            padding: 14px 36px;
+            background: #4eb7e5;
+            border: 1px solid #4eb7e5;
+            border-radius: 10px;
+            color: white;
+            svg {
+                margin-right: 15px;
+            }
+        }
+    }
+}
