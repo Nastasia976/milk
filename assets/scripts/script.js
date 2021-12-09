@@ -442,17 +442,11 @@ $(document).ready(function () {
     /* $('.sorter__icon-row').click(function (event) {
         $(this).addClass('active');
         $('.sorter__icon-grid ').removeClass('active');
-        $('.catalog-choice__body').addClass('active');
-        $('.catalog-choice__catalog').addClass('active');
-        $('.catalog-choice').addClass('active');
-    }); */
+    });
 
-    /* $('.sorter__icon-grid').click(function (event) {
+    $('.sorter__icon-grid').click(function (event) {
         $(this).addClass('active');
         $('.sorter__icon-row').removeClass('active');
-        $('.catalog-choice__body').removeClass('active');
-        $('.catalog-choice__catalog').removeClass('active');
-        $('.catalog-choice').removeClass('active');
     }); */
 
     $('.filter__burger').click(function (event) {
