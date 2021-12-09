@@ -8652,12 +8652,6 @@ h3 {
   }
 }
 
-@media (max-width: 1070px) {
-  .sorter__icon {
-    display: none;
-  }
-}
-
 @media (max-width: 1445px) {
   .catalog-choice__body {
     -ms-grid-rows: ()[auto-fit];
@@ -8732,6 +8726,14 @@ h3 {
   }
   .catalog-choice__body .popular__item, .catalog-choice__body .popular__name, .catalog-choice__body .popular__bottons {
     margin: 0 !important;
+  }
+  .sorter {
+    position: relative;
+  }
+  .sorter__items._view {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
   }
 }
 

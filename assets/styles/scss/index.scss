@@ -6788,11 +6788,7 @@ h3 {
         margin-top: 20px;
     }
 }
-@media (max-width: 1070px) {
-    .sorter__icon {
-        display: none;
-    }
-}
+
 @media (max-width: 1445px) {
     .catalog-choice__body {
         grid-template-rows: repeat(auto-fit);
@@ -6844,6 +6840,14 @@ h3 {
         .popular__item, .popular__name, .popular__bottons{
             margin: 0 !important;
         }
+    }
+    .sorter{
+        position: relative;
+    }
+    .sorter__items._view{
+        position: absolute;
+        bottom: -70px;
+        right: 0;
     }
 }
 @media (max-width: 455px) {
