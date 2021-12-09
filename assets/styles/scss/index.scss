@@ -7395,6 +7395,7 @@ h3 {
     background-color: #f4f9ff;
     padding: calc(33px + 30 * (100vw / 1920)) 0 0;
     &__crumbs {
+        padding: 0 20px;
         .bread-crumbs {
             margin-top: 0;
         }
@@ -7425,13 +7426,13 @@ h3 {
     &__items {
     }
     &__name {
-        font-size: 22px;
+        font-size: calc(18px + 4 * (100vw / 1920));
         line-height: 150%;
         font-weight: 600;
     }
     &__emeil {
         margin-top: 20px;
-        font-size: 16px;
+        font-size: calc(14px + 2 * (100vw / 1920));
         line-height: 120%;
         font-weight: 500;
     }
@@ -7470,6 +7471,11 @@ h3 {
         }
     }
 }
+@media (max-width: 470px) {
+    .sidebar__header {
+        padding: 30px 15px;
+    }
+}
 //----profil-body----
 .profil {
     &__body {
@@ -7477,7 +7483,7 @@ h3 {
         margin-left: 31px;
     }
     &__title {
-        font-size: calc(30px + 25 * (100vw / 1920));
+        font-size: calc(20px + 35 * (100vw / 1920));
         font-family: "Story";
         font-weight: 700;
         line-height: 118%;
@@ -7492,7 +7498,7 @@ h3 {
 .personal-data__title,
 .password-profil__title,
 .delivery-profil__title {
-    font-size: 22px;
+    font-size: calc(16px + 6 * (100vw / 1920));
     font-weight: 600;
     line-height: 150%;
 }
@@ -7531,12 +7537,31 @@ h3 {
     &__item {
         font-size: 16px;
         line-height: 120%;
-        padding: 16px 21px;
-        margin: 10px 15px;
-        flex: 0 1 47.2%;
-        background-color: #f9fafc;
+        padding: 10px 15px;
+        flex: 0 0 50%;
         input {
-            background-color: transparent;
+            background-color: #f9fafc;
+            width: 100%;
+            padding: 16px 21px;
+            font-size: 16px;
+            line-height: 120%;
+            color: black;
+        }
+        input::placeholder {
+            font-size: 16px;
+            line-height: 120%;
+            color: black;
+        }
+    }
+}
+.password-profil {
+    &__item {
+        input {
+            font-size: 16px;
+            line-height: 120%;
+            color: #818181;
+        }
+        input::placeholder {
             font-size: 16px;
             line-height: 120%;
             color: #818181;
@@ -7546,11 +7571,11 @@ h3 {
 .delivery-profil {
     &__header {
         button {
-            font-size: 16px;
+            font-size: calc(14px + 2 * (100vw / 1920));
             font-weight: 500;
             background-color: transparent;
             padding: 5px;
-            margin-right: 62px;
+            margin-right: calc(10px + 52 * (100vw / 1920));
             ._add {
                 margin-right: 10px;
                 color: #4eb7e5;
@@ -7569,14 +7594,22 @@ h3 {
         font-size: 14px;
         line-height: 120%;
         background-color: #f9fafc;
+        .delivery-profil__item {
+            white-space: nowrap;
+        }
+    }
+    &__items._head._hide {
+        display: none;
     }
     &__items {
         display: grid;
         padding: 26px 44px 24px;
         grid-template: 1fr / 1fr 0.7fr 0.7fr 0.3fr 0.3fr 0.3fr 0.3fr 0.2fr;
+        .for-mobile-item {
+            display: none;
+        }
     }
     &__item {
-        white-space: nowrap;
         font-size: 15px;
         svg {
             color: #c4c4c4;
@@ -7588,6 +7621,9 @@ h3 {
     }
     &__item:last-child {
         text-align: right;
+    }
+    &__item:first-child {
+        padding: 0 10px 0 0;
     }
     &__footer {
     }
@@ -7611,3 +7647,91 @@ h3 {
         }
     }
 }
+
+@media (max-width: 1240px) {
+    .profil__conteiner {
+        flex-direction: column;
+    }
+    .profil__body {
+        margin-left: 0;
+        margin-top: calc(20px + 60 * (100vw / 1240));
+    }
+}
+@media (max-width: 960px) {
+    ._p-header {
+        padding: 30px;
+    }
+    .profil__wrapper{
+        padding: 0 30px !important;
+    }
+    .delivery-profil__body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .delivery-profil__items._head {
+        display: none;
+    }
+    .delivery-profil__items {
+        flex: 1 1 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px 30px;
+        position: relative;
+        .for-mobile-item {
+            display: block;
+            padding: 0 0 8px 0;
+        }
+        .delivery-profil__item {
+            flex: 0 1 14.29%;
+        }
+        .delivery-profil__item:not(:first-child) {
+            margin-top: 24px;
+        }
+        .delivery-profil__item:last-child {
+            position: absolute;
+            top: -7px;
+            right: 30px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .personal-data__item, .password-profil__item {
+        flex: 1 1 100%;
+    }
+}
+
+
+@media (max-width: 545px) {
+    .delivery-profil__items {
+        flex: 1 1 100%;
+        border-bottom: 1px dashed #cccccc;
+    }
+    .delivery-profil__header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        .del-abs {
+            position: absolute;
+            top: 40px;
+            right: 30px;
+        }
+    }
+    .delivery-profil__add {
+        margin-top: 20px;
+        button {
+            padding: 0;
+        }
+    }
+}
+@media (max-width: 445px) {
+    .profil__wrapper{
+        padding: 0 !important;
+    }
+    .personal-data__title{
+        margin-right: 15px;
+    }
+    ._p-header {
+        padding: 30px 20px;
+    }
+}
+

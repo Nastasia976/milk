@@ -529,6 +529,9 @@ $(document).ready(function () {
     $('._p-header').click(function(event) {
         $(this).toggleClass('active').next().slideToggle(300);
     })
+    $('.popo').click(function(event) {
+        $(this).toggleClass('active').next().slideToggle(300);
+    })
 
 });
 

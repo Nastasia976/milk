@@ -9423,6 +9423,10 @@ h3 {
   padding: calc(33px + 30 * (100vw / 1920)) 0 0;
 }
 
+.main-profil__crumbs {
+  padding: 0 20px;
+}
+
 .main-profil__crumbs .bread-crumbs {
   margin-top: 0;
 }
@@ -9460,14 +9464,14 @@ h3 {
 }
 
 .sidebar__name {
-  font-size: 22px;
+  font-size: calc(18px + 4 * (100vw / 1920));
   line-height: 150%;
   font-weight: 600;
 }
 
 .sidebar__emeil {
   margin-top: 20px;
-  font-size: 16px;
+  font-size: calc(14px + 2 * (100vw / 1920));
   line-height: 120%;
   font-weight: 500;
 }
@@ -9521,6 +9525,12 @@ h3 {
   transition: 0.4s;
 }
 
+@media (max-width: 470px) {
+  .sidebar__header {
+    padding: 30px 15px;
+  }
+}
+
 .profil__body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -9529,7 +9539,7 @@ h3 {
 }
 
 .profil__title {
-  font-size: calc(30px + 25 * (100vw / 1920));
+  font-size: calc(20px + 35 * (100vw / 1920));
   font-family: "Story";
   font-weight: 700;
   line-height: 118%;
@@ -9543,7 +9553,7 @@ h3 {
 .personal-data__title,
 .password-profil__title,
 .delivery-profil__title {
-  font-size: 22px;
+  font-size: calc(16px + 6 * (100vw / 1920));
   font-weight: 600;
   line-height: 150%;
 }
@@ -9607,28 +9617,86 @@ h3 {
 .password-profil__item {
   font-size: 16px;
   line-height: 120%;
-  padding: 16px 21px;
-  margin: 10px 15px;
+  padding: 10px 15px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 47.2%;
-          flex: 0 1 47.2%;
-  background-color: #f9fafc;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 
 .personal-data__item input,
 .password-profil__item input {
-  background-color: transparent;
+  background-color: #f9fafc;
+  width: 100%;
+  padding: 16px 21px;
+  font-size: 16px;
+  line-height: 120%;
+  color: black;
+}
+
+.personal-data__item input::-webkit-input-placeholder,
+.password-profil__item input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 120%;
+  color: black;
+}
+
+.personal-data__item input:-ms-input-placeholder,
+.password-profil__item input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 120%;
+  color: black;
+}
+
+.personal-data__item input::-ms-input-placeholder,
+.password-profil__item input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 120%;
+  color: black;
+}
+
+.personal-data__item input::placeholder,
+.password-profil__item input::placeholder {
+  font-size: 16px;
+  line-height: 120%;
+  color: black;
+}
+
+.password-profil__item input {
+  font-size: 16px;
+  line-height: 120%;
+  color: #818181;
+}
+
+.password-profil__item input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 120%;
+  color: #818181;
+}
+
+.password-profil__item input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 120%;
+  color: #818181;
+}
+
+.password-profil__item input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 120%;
+  color: #818181;
+}
+
+.password-profil__item input::placeholder {
   font-size: 16px;
   line-height: 120%;
   color: #818181;
 }
 
 .delivery-profil__header button {
-  font-size: 16px;
+  font-size: calc(14px + 2 * (100vw / 1920));
   font-weight: 500;
   background-color: transparent;
   padding: 5px;
-  margin-right: 62px;
+  margin-right: calc(10px + 52 * (100vw / 1920));
 }
 
 .delivery-profil__header button ._add {
@@ -9649,6 +9717,14 @@ h3 {
   background-color: #f9fafc;
 }
 
+.delivery-profil__items._head .delivery-profil__item {
+  white-space: nowrap;
+}
+
+.delivery-profil__items._head._hide {
+  display: none;
+}
+
 .delivery-profil__items {
   display: -ms-grid;
   display: grid;
@@ -9658,8 +9734,11 @@ h3 {
       grid-template: 1fr / 1fr 0.7fr 0.7fr 0.3fr 0.3fr 0.3fr 0.3fr 0.2fr;
 }
 
+.delivery-profil__items .for-mobile-item {
+  display: none;
+}
+
 .delivery-profil__item {
-  white-space: nowrap;
   font-size: 15px;
 }
 
@@ -9674,6 +9753,10 @@ h3 {
 
 .delivery-profil__item:last-child {
   text-align: right;
+}
+
+.delivery-profil__item:first-child {
+  padding: 0 10px 0 0;
 }
 
 .delivery-profil__button {
@@ -9696,4 +9779,117 @@ h3 {
 
 .delivery-profil__button button svg {
   margin-right: 15px;
+}
+
+@media (max-width: 1240px) {
+  .profil__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profil__body {
+    margin-left: 0;
+    margin-top: calc(20px + 60 * (100vw / 1240));
+  }
+}
+
+@media (max-width: 960px) {
+  ._p-header {
+    padding: 30px;
+  }
+  .profil__wrapper {
+    padding: 0 30px !important;
+  }
+  .delivery-profil__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .delivery-profil__items._head {
+    display: none;
+  }
+  .delivery-profil__items {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 30px 30px;
+    position: relative;
+  }
+  .delivery-profil__items .for-mobile-item {
+    display: block;
+    padding: 0 0 8px 0;
+  }
+  .delivery-profil__items .delivery-profil__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 14.29%;
+            flex: 0 1 14.29%;
+  }
+  .delivery-profil__items .delivery-profil__item:not(:first-child) {
+    margin-top: 24px;
+  }
+  .delivery-profil__items .delivery-profil__item:last-child {
+    position: absolute;
+    top: -7px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .personal-data__item, .password-profil__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 545px) {
+  .delivery-profil__items {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    border-bottom: 1px dashed #cccccc;
+  }
+  .delivery-profil__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+  }
+  .delivery-profil__header .del-abs {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+  }
+  .delivery-profil__add {
+    margin-top: 20px;
+  }
+  .delivery-profil__add button {
+    padding: 0;
+  }
+}
+
+@media (max-width: 445px) {
+  .profil__wrapper {
+    padding: 0 !important;
+  }
+  .personal-data__title {
+    margin-right: 15px;
+  }
+  ._p-header {
+    padding: 30px 20px;
+  }
 }
