@@ -53,15 +53,15 @@
     &__el {
         margin-top: 30px;
         position: relative;
-        padding: 0 0 0 30px;
+        padding: 0 0 0 25px;
     }
     &__el::before {
         position: absolute;
         content: "";
         left: 0;
-        top: 5px;
-        width: 15px;
-        height: 15px;
+        top: 7px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         background-color: #4eb7e5;
     }
@@ -5991,7 +5991,7 @@ h3 {
     z-index: 2;
     flex: 0 0 20%;
     margin-right: 28px;
-    .false-input.active {
+    .false-input.act-ive {
         background: url("../../../img/pageCatalog/Vector.png") no-repeat;
         background-position: 50% 50%;
     }
@@ -6011,11 +6011,6 @@ h3 {
         padding: 0 33px 0;
         margin: 0 -33px 0;
         cursor: pointer;
-        .bb-dashed {
-            border-bottom: 1px dashed #c4c4c4;
-            display: block;
-            max-width: 248px;
-        }
         .filter-close {
             position: absolute;
             right: 33px;
@@ -6028,12 +6023,17 @@ h3 {
             transition: 0.3s;
         }
     }
+    .bb-dashed {
+        span {
+            border-bottom: 1px dashed #c4c4c4;
+        }
+    }
     &__items.close-sub {
         .filter__submenu {
             display: none;
         }
     }
-    .for-input.active {
+    .for-input.act-ive {
         color: #3ea3cf;
     }
     &__element {
@@ -6141,6 +6141,9 @@ h3 {
             border-radius: 2px;
             margin: 4px 11px 0 0px;
         }
+    }
+    .filter__name-section {
+        display: flex;
     }
     .filter__sub-submenu__item:not(:last-child) {
         margin-bottom: 15px;
@@ -6358,14 +6361,14 @@ h3 {
     flex-direction: column;
     align-items: flex-start !important;
     justify-content: flex-start !important;
-    padding: 32px 0 63px !important;
+    padding: 37px 0 63px !important;
     .popular__items {
-        margin: 0 !important;
+        margin-top: 10px;
         flex: 1 1 100%;
         min-width: 100%;
         display: flex;
         position: relative;
-        padding: 50px 45px 60px;
+        padding: 58px 15px;
     }
     .popular__header {
         position: absolute;
@@ -6377,9 +6380,9 @@ h3 {
     }
     .popular__image {
         position: relative;
-        padding: 0 0 19% 0;
+        padding: 0 0 13% 0;
         flex: 0 0 20%;
-        margin-right: 30px;
+        margin-right: 20px;
         img {
             position: absolute;
             width: 100%;
@@ -6392,15 +6395,16 @@ h3 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex: 0 1 28%;
+        flex: 0 1 31%;
         position: relative;
+        margin-top: 0;
         .popular__sell2 {
             background: #e5844e;
             border-radius: 50px;
             padding: 4px 17px;
             width: fit-content;
-            margin-top: -50px;
-            margin-bottom: 40px;
+            margin-top: 0px;
+            margin-bottom: 20px;
             display: block;
             a {
                 font-size: 16px;
@@ -6408,12 +6412,21 @@ h3 {
                 color: white;
             }
         }
+        .popular__text {
+            margin-top: 18px;
+        }
     }
     .popular__item {
         flex-direction: column;
-        margin-left: 40px;
-        flex: 0 1 20%;
+        margin-left: calc(0px + 40 * (100vw / 1920));
+        flex: 0 1 15%;
         justify-content: flex-start;
+        .item-price__choice {
+            margin-top: 28px;
+        }
+        .item-price__price {
+            margin-top: 0;
+        }
     }
     .item-price__choice {
         margin: 0;
@@ -6421,7 +6434,9 @@ h3 {
     }
     .popular__bottons {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        margin-left: 30px;
+        padding: 25px 0 0 0;
         .popular__button1 {
             margin-right: 30px;
         }
@@ -6478,8 +6493,12 @@ h3 {
         margin: 0;
         flex: 1 1 30% !important;
         display: grid;
-        grid-template-rows: minmax(30px, 30px) minmax(300px, 320px) 0fr 0.5fr 0.2fr !important;
+        grid-template-rows: minmax(30px, 30px) minmax(300px, 350px) 0fr 0.5fr 0.2fr !important;
         padding: 20px 15px 10px;
+    }
+    .popular__items:hover {
+        box-shadow: none;
+        border: 1px solid #adadad;
     }
     .popular__text {
         margin-top: 5px;
@@ -6507,7 +6526,7 @@ h3 {
         }
     }
     .popular__image {
-        padding: 0 0 38% 0;
+        padding: 0 0 40% 0;
     }
 }
 .contact-page {
@@ -6850,7 +6869,8 @@ h3 {
         height: fit-content;
     }
 }
-.delivery-pay__description, .pick-up__description {
+.delivery-pay__description,
+.pick-up__description {
     font-size: 16px;
     line-height: 197%;
     letter-spacing: 0.02em;
@@ -6871,9 +6891,9 @@ h3 {
         border-radius: 50%;
     }
 }
-.pick-up__description{
+.pick-up__description {
     li::after {
-        background-color: #B17F85;
+        background-color: #b17f85;
     }
 }
 .delivery-pay::after {
@@ -6955,7 +6975,7 @@ h3 {
     &__items {
         flex: 0 1 48%;
         margin-left: calc(0px + 106 * (100vw / 1920));
-        img{
+        img {
             margin-top: 26px;
         }
     }
@@ -7061,8 +7081,8 @@ h3 {
 }
 @media (max-width: 768px) {
     .pick-up::after {
-       top: -50px;
-       height: 60vh;
+        top: -50px;
+        height: 60vh;
     }
 }
 @media (max-width: 400px) {
@@ -7252,21 +7272,22 @@ h3 {
     .contact-company__body {
         flex-direction: column;
     }
-    .info-company{
+    .info-company {
         padding: 0;
     }
-    .contact-company__map{
-       max-height: 400px;
-       overflow: hidden;
-       margin-bottom: 26px;
+    .contact-company__map {
+        max-height: 400px;
+        overflow: hidden;
+        margin-bottom: 26px;
     }
 }
 @media (max-width: 445px) {
-    .info-company__body, .info-company__header{
+    .info-company__body,
+    .info-company__header {
         padding: 30px 20px;
     }
-    .info-company__bottom{
-        .info-company__items{
+    .info-company__bottom {
+        .info-company__items {
             padding: 30px 20px;
         }
     }
@@ -7352,17 +7373,17 @@ h3 {
         display: block;
     }
 }
-@media(max-width:620px){
-    .about-our-company__items{
+@media (max-width: 620px) {
+    .about-our-company__items {
         flex-direction: column;
     }
-    .about-our-company__item:last-child{
+    .about-our-company__item:last-child {
         margin-top: 24px;
     }
 }
-@media(max-width:445px){
-    .about-our-company__arrow{
-        width: 51px !important; 
+@media (max-width: 445px) {
+    .about-our-company__arrow {
+        width: 51px !important;
         height: 51px !important;
     }
 }

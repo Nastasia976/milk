@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
     $('.header__burger').click(function (event) {
         $('.header__burger').toggleClass('active');
@@ -91,10 +89,10 @@ $(document).ready(function () {
         appendDots: $('.delivery-page__dots'),
 
     });
-    $('.delivery-slider').on('beforeChange', function(nextSlide){
-      if(nextSlide > 0){
-        $('.delivery-pay__item').hide();
-      }
+    $('.delivery-slider').on('beforeChange', function (nextSlide) {
+        if (nextSlide > 0) {
+            $('.delivery-pay__item').hide();
+        }
     });
 
     $('.why-we-slider').slick({
@@ -376,26 +374,45 @@ $(document).ready(function () {
         $(this).toggleClass('active').next().slideToggle(300);
     });
 
+    $('.checkbox, .false-input, .filter__sub-submenu__item, .filter-close').click(function (event) {
+        event.stopPropagation();
+    });
 
     $('.filter__section').click(function (event) {
         $(this).children('.filter__sub-submenu').slideToggle(300);
     });
-    $('.checkbox, .false-input, .filter__sub-submenu__item').click(function (event) {
-        event.stopPropagation();
-    });
+    
+    /* $('.filter__element').click(function(e) {
+        if(e.target.className == ".filter-close") {
+            $('.false-input, .for-input').removeClass('act-ive');
+        }
+    }); */ //если клик внутри блока был на крестике, удаляем acnive у инпута и текста 
+   
 
     $('.filter__clear').click(function (event) {
-        $('.filter__element, filter__section').removeClass('active').next().slideUp(300);
-        $('.false-input, .for-input').removeClass('active');
+        $('.false-input, .for-input').removeClass('act-ive');
     });
 
-    $('.filter__item').click(function (event) {
-        $(this).toggleClass('active');
+    $('.filter-close1').click(function (event) {
+        $('.filter__items1').find('.false-input, .for-input').removeClass('act-ive');
     });
+    $('.filter-close2').click(function (event) {
+        $('.filter__items2').find('.false-input, .for-input').removeClass('act-ive');
+    });
+    $('.filter-close3').click(function (event) {
+        $('.filter__items3').find('.false-input, .for-input').removeClass('act-ive');
+    });
+    $('.filter-close4').click(function (event) {
+        $('.filter__items4').find('.false-input, .for-input').removeClass('act-ive');
+    });
+    
 
     $('.false-input').click(function (event) {
-        $(this).toggleClass('active').next('.for-input').toggleClass('active');
+        $(this).toggleClass('act-ive').next().toggleClass('act-ive');
     });
+
+    //-------select----
+
 
     $('.select-catalog').click(function (event) {
         $('.items-select').toggleClass('active');
@@ -407,7 +424,11 @@ $(document).ready(function () {
             && div.has(e.target).length === 0) {
             $('.items-select').removeClass('active');
         }
-    });
+    });//клик вне селекта
+
+
+
+
     $('.sorter__item._price').click(function (event) {
         $(this).addClass('active');
         $('.sorter__item._reitings').removeClass('active');
@@ -510,9 +531,6 @@ $(document).ready(function () {
 /* function goToPage(numberPage) {
     new Swiper('.swiper-condition').slideTo(numberPage, 500, false)
 } */
-
-
-
 
 $(window).on('resize', function () {
     if ($(window).width() < 1450) {
@@ -649,39 +667,39 @@ let pickUpSwiper = new Swiper('.swiper-pick-up', {
 });
 
 $(document).ready(function () {
-    $('.delivery-pay__item1').click(function(event){
+    $('.delivery-pay__item1').click(function (event) {
         $('.delivery-pay__item').removeClass('active');
         $(this).addClass('active');
         elSwiper.slideTo(0, 600);
     });
-    $('.delivery-pay__item2').click(function(event){
+    $('.delivery-pay__item2').click(function (event) {
         $('.delivery-pay__item').removeClass('active');
         $(this).addClass('active');
         elSwiper.slideTo(1, 600);
     });
-    $('.delivery-pay__item3').click(function(event){
+    $('.delivery-pay__item3').click(function (event) {
         $('.delivery-pay__item').removeClass('active');
         $(this).addClass('active');
         elSwiper.slideTo(2, 600);
     });
-    $('.delivery-pay__item4').click(function(event){
+    $('.delivery-pay__item4').click(function (event) {
         $('.delivery-pay__item').removeClass('active');
         $(this).addClass('active');
         elSwiper.slideTo(3, 600);
     });
 });
 $(document).ready(function () {
-    $('.pick1').click(function(event){
+    $('.pick1').click(function (event) {
         $('.pick-up__item').removeClass('active');
         $(this).addClass('active');
         pickUpSwiper.slideTo(0, 600);
     });
-    $('.pick2').click(function(event){
+    $('.pick2').click(function (event) {
         $('.pick-up__item').removeClass('active');
         $(this).addClass('active');
         pickUpSwiper.slideTo(1, 600);
     });
-    $('.pick3').click(function(event){
+    $('.pick3').click(function (event) {
         $('.pick-up__item').removeClass('active');
         $(this).addClass('active');
         pickUpSwiper.slideTo(2, 600);
