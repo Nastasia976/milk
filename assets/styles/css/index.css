@@ -11191,6 +11191,9 @@ h3 {
   .order-number__marker {
     margin-left: 0;
   }
+  ._ready, ._recd, ._flash {
+    margin-top: 20px;
+  }
   .order-number__remind:first-child {
     margin-left: 0;
   }
