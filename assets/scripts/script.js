@@ -528,7 +528,7 @@ $(document).ready(function () {
     });
 
     $('.order-number').click(function(event) {//при клике на блок
-        if(event.target.className == "order-number__header") {//если клик был на
+        if(event.target.className == "order-number__header", "order-number__title", "order-number__marker") {//если клик был на
             $(this).toggleClass('active').children('.profil__wrapper').slideToggle(400);
             
         }
