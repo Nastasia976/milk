@@ -6722,6 +6722,9 @@ h3 {
 .main-favorites {
     background-color: #eff4f9;
     padding: calc(23px + 40 * (100vw / 1920)) 20px 0;
+    .popular__heart1 {
+        display: none;
+    }
 }
 .favorit-catalog {
     .catalog-choice__header {
@@ -6748,9 +6751,6 @@ h3 {
 }
 .catalog-choice__body-list-favorit {
     margin: 32px -15px calc(18px + 30 * (100vw / 1920));
-    .popular__heart1{
-        display: none;
-    }
     .popular__items {
         position: relative;
         display: flex;
@@ -6792,7 +6792,7 @@ h3 {
             justify-content: center;
         }
         .item-price {
-            flex: 0 1 20%;
+            flex: 0 0 20%;
             justify-content: flex-start;
         }
         .popular__name,
@@ -6816,25 +6816,23 @@ h3 {
             flex-wrap: wrap;
             padding: 20px;
             min-width: 220px;
+            justify-content: space-between;
             .popular__image {
                 flex: 0 0 30%;
                 padding: 0 0 18% 0;
-                margin-right: 20px;
             }
 
             .popular__name {
-                flex: 0 0 60%;
+                flex: 0 0 67%;
                 padding: 0;
                 margin-top: 40px;
-                
             }
             .item-price {
                 flex: 0 0 30%;
                 align-items: center;
-                margin-right: 20px;
             }
-            .popular__bottons{
-                flex: 0 0 60%;
+            .popular__bottons {
+                flex: 0 0 67%;
                 justify-content: flex-start;
             }
             .item-price__choice {
@@ -6843,11 +6841,13 @@ h3 {
             .popular__header {
                 top: 15px;
                 right: 20px;
-                
             }
             .popular__sell2 {
                 left: 33%;
                 top: 15px;
+            }
+            .popular__item{
+                margin: 0;
             }
         }
     }
@@ -6856,9 +6856,10 @@ h3 {
     .catalog-choice__body-list-favorit {
         .popular__items {
             padding: 10px;
+            justify-content: space-between;
             .popular__image {
                 padding: 0 0 0% 0;
-                img{
+                img {
                     width: 70%;
                     height: 80%;
                 }
@@ -6868,69 +6869,79 @@ h3 {
                 left: -10px;
                 top: 0px;
             }
-            .popular__bottons{
+            .popular__bottons {
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: flex-start;
-                span{
+                span {
                     font-size: 12px;
+                }button {
+                    width: 70%;
                 }
-                button{
-                    width: 100%;
-                }
-                .popular__button1{
+                .popular__button1 {
                     margin-top: 5px;
                     padding: 9px 0px;
                     font-size: 14px;
                 }
-                .popular__button2{
+                .popular__button2 {
                     padding: 7px 0;
                     font-size: 14px;
                 }
-                .popular__button3{
+                .popular__button3 {
                     padding: 14px 0;
                 }
             }
-            .popular__name{
+            .popular__name {
                 font-size: 15px;
                 margin-top: 25px;
-                
             }
-            .popular__text{
+            .popular__text {
                 font-size: 14px;
                 margin-top: 5px;
             }
-            .item-price{
+            .item-price {
                 padding: 0;
                 margin-top: 0px;
             }
-            .item-price__after{
+            .item-price__after {
                 font-size: 16px;
             }
-            .item-price__before{
+            .item-price__before {
                 font-size: 14px;
             }
-            .popular__header{
+            .popular__header {
                 top: 10px;
-                .popular__reiting{
+                .popular__reiting {
                     font-size: 15px;
-                    svg{
+                    svg {
                         width: 15px;
                         height: 15px;
                     }
                 }
-                .popular__heart2{
+                .popular__heart2 {
                     width: 20px;
                     height: 20px;
                 }
             }
-            .item-price__choice{
-                button{
+            .item-price__choice {
+                button {
                     height: 25px;
                 }
-                input{
+                input {
                     font-size: 13px;
                 }
+            }
+        }
+    }
+}
+@media (max-width: 520px) {
+    .catalog-choice__body-list-favorit {
+        .popular__items {
+            .popular__name {
+                flex: 0 0 60%;
+            }
+            .popular__bottons {
+                flex: 0 0 60%;
             }
         }
     }
@@ -6943,16 +6954,23 @@ h3 {
             gap: 10px;
             grid-template-columns: 0.5fr 1fr;
             grid-template-rows: 1fr 0.5fr;
-            .item-price{
+            .item-price {
                 margin: 0 !important;
             }
-            .popular__image{
+            .popular__image {
                 object-fit: contain;
                 margin: 0;
                 max-width: 100px;
-                img{
+                img {
                     width: 100%;
                     max-width: 100px;
+                }
+            }
+            .popular__bottons {
+                margin: 0;
+                button{
+                    width: 100%;
+                    margin: 0 !important;
                 }
             }
         }
@@ -6961,20 +6979,20 @@ h3 {
 @media (max-width: 345px) {
     .catalog-choice__body-list-favorit {
         .popular__items {
-            .item-price__after{
+            .item-price__after {
                 font-size: 14px;
             }
-            .item-price__before{
+            .item-price__before {
                 font-size: 12px;
             }
-            .popular__name{
+            .popular__name {
                 font-size: 13px;
             }
-            .popular__text{
+            .popular__text {
                 font-size: 13px;
             }
-            .item-price__choice{
-                button{
+            .item-price__choice {
+                button {
                     width: 27px;
                 }
             }
