@@ -7997,11 +7997,12 @@ h3 {
 .main-profil-ur {
     .sidebar {
         flex: 0 1 27.5%;
-        min-width: 377px;
+        width: 377px;
     }
 }
 .sidebar {
     flex: 0 1 27.5%;
+    width: 377px;
     .sidebar__description {
         font-size: 16px;
         line-height: 120%;
@@ -8387,13 +8388,16 @@ h3 {
 .main-profil-order {
     background-color: #f4f9ff;
     padding: calc(33px + 30 * (100vw / 1920)) 0 0 0;
-    .sidebar {
-        max-width: 377px;
-    }
+}
+.sidebar {
+    width: 377px;
 }
 .profil-order {
     &__conteiner {
         display: flex;
+        .profil__menu.sidebar {
+            width: 377px;
+        }
     }
     &__body {
     }

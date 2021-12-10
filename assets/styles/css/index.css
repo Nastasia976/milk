@@ -10183,13 +10183,14 @@ h3 {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 27.5%;
           flex: 0 1 27.5%;
-  min-width: 377px;
+  width: 377px;
 }
 
 .sidebar {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 27.5%;
           flex: 0 1 27.5%;
+  width: 377px;
 }
 
 .sidebar .sidebar__description {
@@ -10714,14 +10715,18 @@ h3 {
   padding: calc(33px + 30 * (100vw / 1920)) 0 0 0;
 }
 
-.main-profil-order .sidebar {
-  max-width: 377px;
+.sidebar {
+  width: 377px;
 }
 
 .profil-order__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.profil-order__conteiner .profil__menu.sidebar {
+  width: 377px;
 }
 
 .profil-order__header .arrow-d {
