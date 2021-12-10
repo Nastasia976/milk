@@ -10179,17 +10179,15 @@ h3 {
   display: flex;
 }
 
+.profil__body {
+  margin-left: 30px;
+}
+
 .main-profil-ur .sidebar {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 27.5%;
-          flex: 0 1 27.5%;
   width: 377px;
 }
 
 .sidebar {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 27.5%;
-          flex: 0 1 27.5%;
   width: 377px;
 }
 
@@ -10292,11 +10290,16 @@ h3 {
   }
 }
 
+.profil__conteiner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .profil__body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  margin-left: 31px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 74.5%;
+          flex: 0 1 74.5%;
 }
 
 .profil__title {
@@ -10352,7 +10355,7 @@ h3 {
 .personal-data .profil__wrapper,
 .password-profil .profil__wrapper,
 .data-company .profil__wrapper {
-  padding: 0 44px;
+  padding: 0 44px 43px;
 }
 
 .personal-data__body,
@@ -10393,7 +10396,7 @@ h3 {
 .data-company__item input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 120%;
-  color: #cccccc;
+  color: #818181;
 }
 
 .personal-data__item input:-ms-input-placeholder,
@@ -10401,7 +10404,7 @@ h3 {
 .data-company__item input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 120%;
-  color: #cccccc;
+  color: #818181;
 }
 
 .personal-data__item input::-ms-input-placeholder,
@@ -10409,7 +10412,7 @@ h3 {
 .data-company__item input::-ms-input-placeholder {
   font-size: 16px;
   line-height: 120%;
-  color: #cccccc;
+  color: #818181;
 }
 
 .personal-data__item input::placeholder,
@@ -10417,7 +10420,7 @@ h3 {
 .data-company__item input::placeholder {
   font-size: 16px;
   line-height: 120%;
-  color: #cccccc;
+  color: #818181;
 }
 
 .password-profil {
@@ -10476,6 +10479,10 @@ h3 {
   padding: 0 0 3px 0;
 }
 
+.delivery-profil__body {
+  padding: 0 44px;
+}
+
 .delivery-profil__items._head {
   padding: 30px 44px;
   color: #737373;
@@ -10495,7 +10502,7 @@ h3 {
 .delivery-profil__items {
   display: -ms-grid;
   display: grid;
-  padding: 26px 44px 24px;
+  padding: 26px 0 24px;
   -ms-grid-rows: 1fr;
   -ms-grid-columns: 1fr 0.7fr 0.7fr 0.3fr 0.3fr 0.3fr 0.3fr 0.2fr;
       grid-template: 1fr / 1fr 0.7fr 0.7fr 0.3fr 0.3fr 0.3fr 0.3fr 0.2fr;
@@ -10503,6 +10510,15 @@ h3 {
 
 .delivery-profil__items .for-mobile-item {
   display: none;
+}
+
+.delivery-profil__items:not(:last-child) {
+  border-bottom: 1px solid #EDEDED;
+}
+
+.delivery-profil .delivery-profil__items._head {
+  border-bottom: 0px solid #000;
+  margin: 0 -44px;
 }
 
 .delivery-profil__item {
@@ -10529,7 +10545,8 @@ h3 {
 .delivery-profil__button {
   text-align: center;
   background-color: #f4f9ff;
-  padding: 37px 0 88px;
+  padding: 0 0 88px;
+  margin-top: 23px;
 }
 
 .delivery-profil__button button {
@@ -10539,13 +10556,20 @@ h3 {
   background-color: transparent;
   padding: 14px 36px;
   background: #4eb7e5;
-  border: 1px solid #4eb7e5;
   border-radius: 10px;
   color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .delivery-profil__button button svg {
   margin-right: 15px;
+}
+
+.delivery-profil__button button:hover {
+  background: rgba(78, 183, 229, 0.8);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .data-company {
@@ -10592,6 +10616,9 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .profil__conteiner .sidebar {
+    width: 100%;
+  }
   .profil__body {
     margin-left: 0;
     margin-top: calc(20px + 60 * (100vw / 1240));
@@ -10610,7 +10637,7 @@ h3 {
     padding: 30px;
   }
   .profil__wrapper {
-    padding: 0 30px !important;
+    padding: 0 30px 30px !important;
   }
   .delivery-profil__body {
     display: -webkit-box;
@@ -10618,9 +10645,13 @@ h3 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0;
   }
   .delivery-profil__items._head {
     display: none;
+  }
+  .delivery-profil__items:not(:last-child) {
+    border-bottom: 0px solid #EDEDED;
   }
   .delivery-profil__items {
     -webkit-box-flex: 1;
@@ -10635,6 +10666,9 @@ h3 {
             flex-direction: column;
     padding: 20px 30px 30px;
     position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .delivery-profil__items .for-mobile-item {
     display: block;
@@ -10650,8 +10684,11 @@ h3 {
   }
   .delivery-profil__items .delivery-profil__item:last-child {
     position: absolute;
-    top: -7px;
+    top: 0px;
     right: 30px;
+  }
+  .delivery-profil__items .delivery-profil__item._hide {
+    display: none;
   }
 }
 
@@ -10662,6 +10699,15 @@ h3 {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 100% !important;
             flex: 1 1 100% !important;
+    padding: 10px 0;
+  }
+  .delivery-profil__items {
+    padding: 30px 0;
+  }
+  .delivery-profil__items .delivery-profil__item:last-child {
+    position: absolute;
+    top: 0px;
+    right: 30px;
   }
 }
 
@@ -10670,7 +10716,13 @@ h3 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
-    border-bottom: 1px dashed #cccccc;
+    padding: 30px 0;
+  }
+  .delivery-profil__body {
+    margin-top: -20px;
+  }
+  .delivery-profil__items:not(:last-child) {
+    border-bottom: 1px solid #EDEDED;
   }
   .delivery-profil__header {
     -webkit-box-orient: vertical;
@@ -10696,9 +10748,6 @@ h3 {
 }
 
 @media (max-width: 445px) {
-  .profil__wrapper {
-    padding: 0 !important;
-  }
   .personal-data__title {
     margin-right: 15px;
   }
@@ -10707,6 +10756,9 @@ h3 {
   }
   .data-company__name {
     padding: 0 0 19px 20px !important;
+  }
+  .delivery-profil__items .delivery-profil__item:last-child {
+    right: 0px;
   }
 }
 
@@ -10723,6 +10775,9 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .profil-order__conteiner .profil__menu.sidebar {
@@ -10790,6 +10845,7 @@ h3 {
   bottom: 0;
   margin: auto;
   right: 37px;
+  cursor: pointer;
 }
 
 .profil-order__search-form {
@@ -10875,7 +10931,7 @@ h3 {
 }
 
 .order-number__marker._paid {
-  background-color: #8ED8F3;
+  background-color: #8ed8f3;
 }
 
 .order-number .order-number__remind {
@@ -11196,7 +11252,9 @@ h3 {
   .order-number__marker {
     margin-left: 0;
   }
-  ._ready, ._recd, ._flash {
+  ._ready,
+  ._recd,
+  ._flash {
     margin-top: 20px;
   }
   .order-number__remind:first-child {

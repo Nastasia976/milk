@@ -7993,15 +7993,16 @@ h3 {
     &__conteiner {
         display: flex;
     }
+    &__body{
+        margin-left: 30px;
+    }
 }
 .main-profil-ur {
     .sidebar {
-        flex: 0 1 27.5%;
         width: 377px;
     }
 }
 .sidebar {
-    flex: 0 1 27.5%;
     width: 377px;
     .sidebar__description {
         font-size: 16px;
@@ -8084,9 +8085,11 @@ h3 {
 
 //----profil-body----
 .profil {
+    &__conteiner {
+        justify-content: space-between;
+    }
     &__body {
-        flex: 1 1 auto;
-        margin-left: 31px;
+        flex: 0 1 74.5%;
     }
     &__title {
         font-size: calc(20px + 35 * (100vw / 1920));
@@ -8132,7 +8135,7 @@ h3 {
 .password-profil,
 .data-company {
     .profil__wrapper {
-        padding: 0 44px;
+        padding: 0 44px 43px;
     }
     &__body {
         display: flex;
@@ -8155,7 +8158,7 @@ h3 {
         input::placeholder {
             font-size: 16px;
             line-height: 120%;
-            color: #cccccc;
+            color: #818181;
         }
     }
 }
@@ -8194,6 +8197,7 @@ h3 {
         }
     }
     &__body {
+        padding: 0 44px;
     }
     &__items._head {
         padding: 30px 44px;
@@ -8210,11 +8214,18 @@ h3 {
     }
     &__items {
         display: grid;
-        padding: 26px 44px 24px;
+        padding: 26px 0 24px;
         grid-template: 1fr / 1fr 0.7fr 0.7fr 0.3fr 0.3fr 0.3fr 0.3fr 0.2fr;
         .for-mobile-item {
             display: none;
         }
+    }
+    &__items:not(:last-child) {
+        border-bottom: 1px solid #EDEDED;
+    }
+    .delivery-profil__items._head {
+        border-bottom: 0px solid #000;
+        margin: 0 -44px;
     }
     &__item {
         font-size: 15px;
@@ -8237,7 +8248,8 @@ h3 {
     &__button {
         text-align: center;
         background-color: #f4f9ff;
-        padding: 37px 0 88px;
+        padding: 0 0 88px;
+        margin-top: 23px;
         button {
             font-size: 15px;
             font-weight: 500;
@@ -8245,12 +8257,16 @@ h3 {
             background-color: transparent;
             padding: 14px 36px;
             background: #4eb7e5;
-            border: 1px solid #4eb7e5;
             border-radius: 10px;
             color: white;
+            transition: 0.4s;
             svg {
                 margin-right: 15px;
             }
+        }
+        button:hover{
+            background: rgba(78, 183, 229, 0.8);
+            transition: 0.4s;
         }
     }
 }
@@ -8290,6 +8306,9 @@ h3 {
 @media (max-width: 1240px) {
     .profil__conteiner {
         flex-direction: column;
+        .sidebar{
+            width: 100%;
+        }
     }
     .profil__body {
         margin-left: 0;
@@ -8299,6 +8318,7 @@ h3 {
         margin-left: 31px;
         margin-top: 0;
     }
+    
 }
 @media (max-width: 960px) {
     .data-company__body {
@@ -8308,21 +8328,27 @@ h3 {
         padding: 30px;
     }
     .profil__wrapper {
-        padding: 0 30px !important;
+        padding: 0 30px 30px !important;
     }
     .delivery-profil__body {
         display: flex;
         flex-wrap: wrap;
+        padding: 0;
     }
     .delivery-profil__items._head {
         display: none;
     }
+    .delivery-profil__items:not(:last-child) {
+        border-bottom: 0px solid #EDEDED;
+    }
+    
     .delivery-profil__items {
         flex: 1 1 50%;
         display: flex;
         flex-direction: column;
         padding: 20px 30px 30px;
         position: relative;
+        height: fit-content;
         .for-mobile-item {
             display: block;
             padding: 0 0 8px 0;
@@ -8335,8 +8361,11 @@ h3 {
         }
         .delivery-profil__item:last-child {
             position: absolute;
-            top: -7px;
+            top: 0px;
             right: 30px;
+        }
+        .delivery-profil__item._hide{
+            display: none;
         }
     }
 }
@@ -8345,13 +8374,28 @@ h3 {
     .password-profil__item,
     .data-company__item {
         flex: 1 1 100% !important;
+        padding: 10px 0;
+    }
+    .delivery-profil__items{
+        padding: 30px 0;
+        .delivery-profil__item:last-child {
+            position: absolute;
+            top: 0px;
+            right: 30px;
+        }
     }
 }
 
 @media (max-width: 545px) {
     .delivery-profil__items {
         flex: 1 1 100%;
-        border-bottom: 1px dashed #cccccc;
+        padding: 30px 0;
+    }
+    .delivery-profil__body{
+        margin-top: -20px;   
+    }
+    .delivery-profil__items:not(:last-child){
+        border-bottom: 1px solid #EDEDED;
     }
     .delivery-profil__header {
         flex-direction: column;
@@ -8371,9 +8415,6 @@ h3 {
     }
 }
 @media (max-width: 445px) {
-    .profil__wrapper {
-        padding: 0 !important;
-    }
     .personal-data__title {
         margin-right: 15px;
     }
@@ -8382,6 +8423,11 @@ h3 {
     }
     .data-company__name {
         padding: 0 0 19px 20px !important;
+    }
+    .delivery-profil__items{
+        .delivery-profil__item:last-child {
+            right: 0px;
+        }
     }
 }
 //+______________PROFIL_ORDER____
@@ -8395,6 +8441,7 @@ h3 {
 .profil-order {
     &__conteiner {
         display: flex;
+        justify-content: space-between;
         .profil__menu.sidebar {
             width: 377px;
         }
@@ -8404,7 +8451,7 @@ h3 {
     &__title {
     }
     &__header {
-        .arrow-d{
+        .arrow-d {
             min-width: 25px;
         }
     }
@@ -8446,6 +8493,7 @@ h3 {
             bottom: 0;
             margin: auto;
             right: 37px;
+            cursor: pointer;
         }
     }
     &__search-form {
@@ -8496,8 +8544,8 @@ h3 {
     &__marker._flash {
         background-color: #8ed8f3;
     }
-    &__marker._paid{
-        background-color: #8ED8F3;
+    &__marker._paid {
+        background-color: #8ed8f3;
     }
     .order-number__remind {
         position: relative;
@@ -8517,8 +8565,8 @@ h3 {
         width: 300px;
         font-weight: 400;
     }
-    .order-number__remind:hover{
-        .popup-remind{
+    .order-number__remind:hover {
+        .popup-remind {
             visibility: visible;
         }
     }
@@ -8638,7 +8686,7 @@ h3 {
         }
     }
 }
-.wrap{
+.wrap {
     display: flex;
     align-items: center;
 }
@@ -8730,25 +8778,27 @@ h3 {
         flex-direction: column;
         align-items: flex-start;
     }
-    .wrap{
+    .wrap {
         margin-top: 20px;
     }
     .order-number__marker {
         margin-left: 0;
     }
-    ._ready, ._recd, ._flash{
+    ._ready,
+    ._recd,
+    ._flash {
         margin-top: 20px;
     }
-    .order-number__remind:first-child{
+    .order-number__remind:first-child {
         margin-left: 0;
     }
 }
 @media (max-width: 1050px) {
-    .profil-order-pre{
+    .profil-order-pre {
         .order-number__title {
             flex-direction: row;
             align-items: center;
-            .wrap{
+            .wrap {
                 margin-top: 0;
                 margin-left: 20px;
             }
@@ -8840,11 +8890,11 @@ h3 {
             margin-top: 25px;
         }
     }
-    .profil-order-pre{
+    .profil-order-pre {
         .order-number__title {
             flex-direction: column;
             align-items: flex-start;
-            .wrap{
+            .wrap {
                 margin-top: 10px;
                 margin-left: 0;
             }
@@ -8852,7 +8902,7 @@ h3 {
     }
 }
 @media (max-width: 510px) {
-    .popup-remind{
+    .popup-remind {
         left: -350%;
     }
 }
@@ -8916,7 +8966,7 @@ h3 {
             padding: 20px 0 0 0;
         }
     }
-    .popup-remind{
+    .popup-remind {
         left: -350%;
         width: 250px !important;
     }

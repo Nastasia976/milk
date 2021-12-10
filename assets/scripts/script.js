@@ -326,6 +326,12 @@ $(document).ready(function () {
         autoclear: false
     });
 
+    $('.profil-phone').mask('(999) 999-99-99', {
+        autoclear: false
+    });
+    
+    
+
     $('.product-about__el').click(function (event) {
         $('.product-about__el').removeClass('active');
         $(this).toggleClass('active');
@@ -538,7 +544,14 @@ $(document).ready(function () {
         $('.profil-order__switch').removeClass('active');
         $(this).toggleClass('active');
     });
+    
 
+    $('.add-adres').click(function (event) {
+        event.stopPropagation();
+    });
+    $('.add-adres').click(function (event) {
+        $(this).toggleClass('active');
+    });
 
 });
 
