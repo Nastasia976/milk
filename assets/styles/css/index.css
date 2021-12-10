@@ -10236,7 +10236,7 @@ h3 {
 
 .personal-data__title,
 .password-profil__title,
-.delivery-profil__title {
+.delivery-profil__title, .data-company__title {
   font-size: calc(16px + 6 * (100vw / 1920));
   font-weight: 600;
   line-height: 150%;
@@ -10253,6 +10253,7 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 43px 44px;
+  background-color: #fff;
   cursor: pointer;
 }
 
@@ -10345,6 +10346,10 @@ h3 {
   color: #cccccc;
 }
 
+.password-profil {
+  margin-top: 35px;
+}
+
 .password-profil__item input {
   font-size: 16px;
   line-height: 120%;
@@ -10373,6 +10378,10 @@ h3 {
   font-size: 16px;
   line-height: 120%;
   color: #818181;
+}
+
+.delivery-profil {
+  margin-top: 35px;
 }
 
 .delivery-profil__header button {
@@ -10463,6 +10472,10 @@ h3 {
 
 .delivery-profil__button button svg {
   margin-right: 15px;
+}
+
+.data-company {
+  margin-top: 35px;
 }
 
 @media (max-width: 1240px) {
