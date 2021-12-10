@@ -4985,7 +4985,7 @@ h3 {
 }
 
 .consist {
-  padding: 0 40px 0 0;
+  padding: 0 70px 0 0;
 }
 
 .consist__conteiner {
@@ -5092,6 +5092,12 @@ h3 {
 }
 
 @media (max-width: 1200px) {
+  .consist {
+    padding: 0;
+  }
+  .swiper-consist {
+    overflow: hidden;
+  }
   .for-consist-green,
   .for-consist-orange,
   .for-consist-brown {

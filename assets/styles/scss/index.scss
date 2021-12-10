@@ -3846,8 +3846,10 @@ h3 {
     visibility: hidden;
     position: absolute;
 }
+.swiper-consist{
+}
 .consist {
-    padding: 0 40px 0 0;
+    padding: 0 70px 0 0;
     &__conteiner {
         position: relative;
         .consist__prev,
@@ -3917,6 +3919,7 @@ h3 {
     display: none;
     pointer-events: none;
 }
+
 @media (max-width: 1600px) {
     .consist {
         &__item {
@@ -3928,6 +3931,12 @@ h3 {
     }
 }
 @media (max-width: 1200px) {
+    .consist {
+        padding: 0;
+    }
+    .swiper-consist{
+        overflow: hidden;
+    }
     .for-consist-green,
     .for-consist-orange,
     .for-consist-brown {
