@@ -8895,10 +8895,25 @@ h3 {
   }
 }
 
+@media (max-width: 445px) {
+  .catalog-choice__body-list-favorit .popular__bottons,
+  .catalog-choice__body-list .popular__bottons {
+    margin: 0;
+  }
+  .catalog-choice__body-list-favorit .popular__bottons button,
+  .catalog-choice__body-list .popular__bottons button {
+    width: 100% !important;
+    margin: 0 !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 410px) {
   .catalog-choice__body-list-favorit .popular__items,
   .catalog-choice__body-list .popular__items {
-    margin: 10px 5px;
+    margin: 10px -5px;
     display: -ms-grid;
     display: grid;
     gap: 10px;
@@ -8922,18 +8937,6 @@ h3 {
   .catalog-choice__body-list .popular__items .popular__image img {
     width: 100%;
     max-width: 100px;
-  }
-  .catalog-choice__body-list-favorit .popular__items .popular__bottons,
-  .catalog-choice__body-list .popular__items .popular__bottons {
-    margin: 0;
-  }
-  .catalog-choice__body-list-favorit .popular__items .popular__bottons button,
-  .catalog-choice__body-list .popular__items .popular__bottons button {
-    width: 100%;
-    margin: 0 !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 

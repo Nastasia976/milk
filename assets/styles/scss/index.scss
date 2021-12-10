@@ -6965,11 +6965,24 @@ h3 {
         }
     }
 }
+@media (max-width: 445px) {
+    .catalog-choice__body-list-favorit,
+    .catalog-choice__body-list {
+        .popular__bottons {
+            margin: 0;
+            button {
+                width: 100% !important;
+                margin: 0 !important;
+                justify-content: center;
+            }
+        }
+    }
+}
 @media (max-width: 410px) {
     .catalog-choice__body-list-favorit,
     .catalog-choice__body-list {
         .popular__items {
-            margin: 10px 5px;
+            margin: 10px -5px;
             display: grid;
             gap: 10px;
             grid-template-columns: 0.5fr 1fr;
@@ -6986,14 +6999,7 @@ h3 {
                     max-width: 100px;
                 }
             }
-            .popular__bottons {
-                margin: 0;
-                button {
-                    width: 100%;
-                    margin: 0 !important;
-                    justify-content: center;
-                }
-            }
+            
         }
     }
 }
