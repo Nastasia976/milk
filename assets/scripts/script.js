@@ -525,7 +525,20 @@ $(document).ready(function () {
     })
     $('.popo').click(function(event) {
         $(this).toggleClass('active').next().slideToggle(400);
-    })
+    });
+
+    $('.order-number').click(function(event) {//при клике на блок
+        if(event.target.className == "order-number__header") {//если клик был на
+            $(this).toggleClass('active').children('.profil__wrapper').slideToggle(400);
+            
+        }
+    });
+
+    $('.profil-order__switch').click(function(event) {
+        $('.profil-order__switch').removeClass('active');
+        $(this).toggleClass('active');
+    });
+
 
 });
 
