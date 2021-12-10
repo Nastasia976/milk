@@ -10724,6 +10724,10 @@ h3 {
   display: flex;
 }
 
+.profil-order__header .arrow-d {
+  min-width: 25px;
+}
+
 .profil-order__switches {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10744,11 +10748,13 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: black;
   cursor: pointer;
 }
 
 .profil-order__switch svg {
   margin-right: 12px;
+  display: none;
 }
 
 .profil-order__switch.active {
@@ -10757,6 +10763,10 @@ h3 {
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   font-weight: 500;
+}
+
+.profil-order__switch.active svg {
+  display: block;
 }
 
 .profil-order__switch:first-child {
@@ -10857,6 +10867,35 @@ h3 {
 
 .order-number__marker._flash {
   background-color: #8ed8f3;
+}
+
+.order-number__marker._paid {
+  background-color: #8ED8F3;
+}
+
+.order-number .order-number__remind {
+  position: relative;
+  margin-left: 20px;
+}
+
+.order-number .popup-remind {
+  position: absolute;
+  font-size: 14px;
+  line-height: 120%;
+  color: #565656;
+  background: #fdfaf4;
+  border: 1px solid #f5f5f5;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 22px 25px;
+  visibility: hidden;
+  width: 300px;
+  font-weight: 400;
+}
+
+.order-number .order-number__remind:hover .popup-remind {
+  visibility: visible;
 }
 
 .order-number__top {
@@ -11010,11 +11049,20 @@ h3 {
   display: none;
 }
 
-.order-number.active .order-number__header svg {
+.order-number.active .order-number__header .arrow-d {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-order {
@@ -11125,7 +11173,7 @@ h3 {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .order-number__header svg {
+  .order-number__header .arrow-d {
     margin-left: 15px;
   }
   .order-number__title {
@@ -11137,13 +11185,31 @@ h3 {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .wrap {
+    margin-top: 20px;
+  }
   .order-number__marker {
     margin-left: 0;
-    margin-top: 20px;
+  }
+  .order-number__remind:first-child {
+    margin-left: 0;
   }
 }
 
 @media (max-width: 1050px) {
+  .profil-order-pre .order-number__title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profil-order-pre .order-number__title .wrap {
+    margin-top: 0;
+    margin-left: 20px;
+  }
   .profil-order__conteiner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -11238,6 +11304,25 @@ h3 {
   .profil-order__conteiner .order-number {
     margin-top: 25px;
   }
+  .profil-order-pre .order-number__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .profil-order-pre .order-number__title .wrap {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 510px) {
+  .popup-remind {
+    left: -350%;
+  }
 }
 
 @media (max-width: 445px) {
@@ -11258,11 +11343,13 @@ h3 {
     width: 20px;
     margin-right: 12px;
   }
-  .profil-order__conteiner .order-number__items, .profil-order__conteiner .order-number__elements {
+  .profil-order__conteiner .order-number__items,
+  .profil-order__conteiner .order-number__elements {
     margin-top: 30px;
     margin-left: 0;
   }
-  .profil-order__conteiner .order-number__items svg, .profil-order__conteiner .order-number__elements svg {
+  .profil-order__conteiner .order-number__items svg,
+  .profil-order__conteiner .order-number__elements svg {
     width: 25px;
     margin-top: 0;
   }
@@ -11300,5 +11387,9 @@ h3 {
   }
   .profil-order__conteiner .order-number__body {
     padding: 20px 0 0 0;
+  }
+  .popup-remind {
+    left: -350%;
+    width: 250px !important;
   }
 }
