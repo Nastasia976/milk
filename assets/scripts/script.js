@@ -521,10 +521,10 @@ $(document).ready(function () {
 
     //_________PROFIL-PAGE__________
     $('._p-header').click(function(event) {
-        $(this).toggleClass('active').next().slideToggle(300);
+        $(this).toggleClass('active').next().slideToggle(400);
     })
     $('.popo').click(function(event) {
-        $(this).toggleClass('active').next().slideToggle(300);
+        $(this).toggleClass('active').next().slideToggle(400);
     })
 
 });

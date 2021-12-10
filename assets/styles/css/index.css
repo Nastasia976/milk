@@ -10126,10 +10126,24 @@ h3 {
   display: flex;
 }
 
+.main-profil-ur .sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 27.5%;
+          flex: 0 1 27.5%;
+  min-width: 377px;
+}
+
 .sidebar {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%;
+      -ms-flex: 0 1 27.5%;
+          flex: 0 1 27.5%;
+}
+
+.sidebar .sidebar__description {
+  font-size: 16px;
+  line-height: 120%;
+  color: #8ED8F3;
+  margin-top: 5px;
 }
 
 .sidebar__header {
@@ -10215,6 +10229,15 @@ h3 {
   }
 }
 
+@media (max-width: 440px) {
+  .main-profil-ur .sidebar {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 27.5%;
+            flex: 0 1 27.5%;
+    min-width: 100%;
+  }
+}
+
 .profil__body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -10271,25 +10294,12 @@ h3 {
 }
 
 .personal-data .profil__wrapper,
-.password-profil .profil__wrapper {
+.password-profil .profil__wrapper, .data-company .profil__wrapper {
   padding: 0 44px;
 }
 
-.personal-data__header,
-.password-profil__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .personal-data__body,
-.password-profil__body {
+.password-profil__body, .data-company__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10299,7 +10309,7 @@ h3 {
 }
 
 .personal-data__item,
-.password-profil__item {
+.password-profil__item, .data-company__item {
   font-size: 16px;
   line-height: 120%;
   padding: 10px 15px;
@@ -10309,7 +10319,7 @@ h3 {
 }
 
 .personal-data__item input,
-.password-profil__item input {
+.password-profil__item input, .data-company__item input {
   background-color: #f9fafc;
   width: 100%;
   padding: 16px 21px;
@@ -10319,28 +10329,28 @@ h3 {
 }
 
 .personal-data__item input::-webkit-input-placeholder,
-.password-profil__item input::-webkit-input-placeholder {
+.password-profil__item input::-webkit-input-placeholder, .data-company__item input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 120%;
   color: #cccccc;
 }
 
 .personal-data__item input:-ms-input-placeholder,
-.password-profil__item input:-ms-input-placeholder {
+.password-profil__item input:-ms-input-placeholder, .data-company__item input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 120%;
   color: #cccccc;
 }
 
 .personal-data__item input::-ms-input-placeholder,
-.password-profil__item input::-ms-input-placeholder {
+.password-profil__item input::-ms-input-placeholder, .data-company__item input::-ms-input-placeholder {
   font-size: 16px;
   line-height: 120%;
   color: #cccccc;
 }
 
 .personal-data__item input::placeholder,
-.password-profil__item input::placeholder {
+.password-profil__item input::placeholder, .data-company__item input::placeholder {
   font-size: 16px;
   line-height: 120%;
   color: #cccccc;
@@ -10476,6 +10486,34 @@ h3 {
 
 .data-company {
   margin-top: 35px;
+  background-color: #fff;
+}
+
+.data-company .data-company__body {
+  padding: 0 0 43px 0;
+}
+
+.data-company .data-company__name {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  padding: 0 0 19px;
+}
+
+.data-company .data-company__body._ur .data-company__item:nth-child(1), .data-company .data-company__body._ur .data-company__item:nth-child(2), .data-company .data-company__body._ur .data-company__item:nth-child(3) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+}
+
+.data-company .data-company__body._ur .data-company__item:nth-child(4), .data-company .data-company__body._ur .data-company__item:nth-child(5), .data-company .data-company__body._ur .data-company__item:nth-child(6), .data-company .data-company__body._ur .data-company__item:nth-child(7) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
+.main-profil-ur .delivery-profil .profil__wrapper {
+  display: none;
 }
 
 @media (max-width: 1240px) {
@@ -10492,6 +10530,9 @@ h3 {
 }
 
 @media (max-width: 960px) {
+  .data-company__body {
+    padding: 0 0 30px 0 !important;
+  }
   ._p-header {
     padding: 30px;
   }
@@ -10543,10 +10584,10 @@ h3 {
 
 @media (max-width: 768px) {
   .personal-data__item,
-  .password-profil__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+  .password-profil__item, .data-company__item {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 1 100% !important;
+            flex: 1 1 100% !important;
   }
 }
 
@@ -10589,5 +10630,8 @@ h3 {
   }
   ._p-header {
     padding: 30px 20px;
+  }
+  .data-company__name {
+    padding: 0 0 19px 20px !important;
   }
 }
