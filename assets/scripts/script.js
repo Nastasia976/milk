@@ -325,10 +325,6 @@ $(document).ready(function () {
     $('.user-phone').mask('999) 999-99-99', {
         autoclear: false
     });
-
-    $('.profil-phone').mask('(999) 999-99-99', {
-        autoclear: false
-    });
     
     
 
@@ -528,7 +524,8 @@ $(document).ready(function () {
     //_________PROFIL-PAGE__________
     $('._p-header').click(function(event) {
         $(this).toggleClass('active').next().slideToggle(400);
-    })
+    });
+
     $('.popo').click(function(event) {
         $(this).toggleClass('active').next().slideToggle(400);
     });
@@ -549,6 +546,11 @@ $(document).ready(function () {
     $('.add-adres').click(function (event) {
         event.stopPropagation();
     });
+
+    $('.order-number__remind').click(function (event) {
+        event.stopPropagation();
+    });
+
     $('.add-adres').click(function (event) {
         $(this).toggleClass('active');
         $('.popapp-add-adres').addClass('active');
@@ -567,6 +569,16 @@ $(document).ready(function () {
             $('.popapp-add-adres').removeClass('active');
         }
     });
+
+    $('.profil-phone').mask('+7 (999) 999-99-99', {
+        autoclear: false
+    });
+
+    $('.search-svg').on('click', function(){
+        $('.profil-order__search-form').addClass('active');
+        $('.profil-order__search-form').focus();
+        });
+        
 
 });
 
