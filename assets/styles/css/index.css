@@ -10257,6 +10257,7 @@ h3 {
 
 .sidebar__item.active {
   font-weight: 500;
+  color: #4eb7e5;
 }
 
 .sidebar__item.active svg {
