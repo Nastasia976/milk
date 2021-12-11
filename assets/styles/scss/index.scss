@@ -4576,6 +4576,9 @@ h3 {
             font-size: 14px;
         }
     }
+    .sale-block__button{
+        margin-top: 20px;
+    }
 }
 
 .recommendations {
@@ -4629,23 +4632,38 @@ h3 {
 @media (max-width: 768px) {
     .recommendations {
         .popular__slider {
-            margin: 70px 0 0;
+            margin: 90px 0 0;
         }
         .popular__arrows {
-            bottom: -60px;
+            bottom: -70px;
             right: 0;
         }
     }
 }
-@media (max-width: 380px) {
+@media (max-width: 440px) {
     .recommendations {
         .popular__bottons {
             align-items: center;
+            button{
+                justify-content: center;
+                width: 100%;
+            }
+            .popular__button2{
+                margin-top: 10px !important;
+            }
         }
         .popular__items {
+            display: flex;
+            flex-direction: column;
             margin: 0;
             margin-top: 20px;
             padding: 15px 15px 10px;
+            height: fit-content;
+            padding: 20px 15px;
+        }
+        .popular__image{
+            margin-top: 20px;
+            padding: 0 0 80% 0;
         }
     }
 }
@@ -8922,6 +8940,11 @@ h3 {
     }
 }
 @media (max-width: 1050px) {
+    .main-profil-order{
+        .sidebar{
+            min-width: 100%;
+        }
+    }
     .profil-order-pre {
         .order-number__title {
             flex-direction: row;

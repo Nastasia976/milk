@@ -89,10 +89,23 @@ $(document).ready(function () {
         appendDots: $('.delivery-page__dots'),
 
     });
-    $('.delivery-slider').on('beforeChange', function (nextSlide) {
-        if (nextSlide > 0) {
-            $('.delivery-pay__item').hide();
+    $('.delivery-slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+        if (currentSlide == 0){
+            $('.circle__item').removeClass('active');
+        $('.circle__item1').addClass('active');
         }
+        if (currentSlide == 1){
+            $('.circle__item').removeClass('active');
+        $('.circle__item2').addClass('active');
+        }
+        if (currentSlide == 2){
+            $('.circle__item').removeClass('active');
+        $('.circle__item3').addClass('active');
+        }
+        if (currentSlide == 3){
+            $('.circle__item').removeClass('active');
+        $('.circle__item4').addClass('active');
+        }      
     });
 
     $('.why-we-slider').slick({
@@ -103,6 +116,20 @@ $(document).ready(function () {
         nextArrow: $('.why-we-next'),
         dots: true,
         dots: false,
+    });
+    $('.why-we-slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+        if (currentSlide == 0){
+            $('.why-we__image').removeClass('active');
+        $('.why-we__image1').addClass('active');
+        }
+        if (currentSlide == 1){
+            $('.why-we__image').removeClass('active');
+        $('.why-we__image2').addClass('active');
+        }
+        if (currentSlide == 2){
+            $('.why-we__image').removeClass('active');
+        $('.why-we__image3').addClass('active');
+        }    
     });
 
     $('.production-slider').slick({
@@ -325,8 +352,8 @@ $(document).ready(function () {
     $('.user-phone').mask('999) 999-99-99', {
         autoclear: false
     });
-    
-    
+
+
 
     $('.product-about__el').click(function (event) {
         $('.product-about__el').removeClass('active');
@@ -383,13 +410,13 @@ $(document).ready(function () {
     $('.filter__section').click(function (event) {
         $(this).children('.filter__sub-submenu').slideToggle(300);
     });
-    
+
     /* $('.filter__element').click(function(e) {
         if(e.target.className == ".filter-close") {
             $('.false-input, .for-input').removeClass('act-ive');
         }
     }); */ //если клик внутри блока был на крестике, удаляем acnive у инпута и текста 
-   
+
 
     $('.filter__clear').click(function (event) {
         $('.false-input, .for-input').removeClass('act-ive');
@@ -407,7 +434,7 @@ $(document).ready(function () {
     $('.filter-close4').click(function (event) {
         $('.filter__items4').find('.false-input, .for-input').removeClass('act-ive');
     });
-    
+
 
     $('.false-input').click(function (event) {
         $(this).toggleClass('act-ive').next().toggleClass('act-ive');
@@ -522,26 +549,26 @@ $(document).ready(function () {
     }); */
 
     //_________PROFIL-PAGE__________
-    $('._p-header').click(function(event) {
+    $('._p-header').click(function (event) {
         $(this).toggleClass('active').next().slideToggle(400);
     });
 
-    $('.popo').click(function(event) {
+    $('.popo').click(function (event) {
         $(this).toggleClass('active').next().slideToggle(400);
     });
 
-    $('.order-number').click(function(event) {//при клике на блок
-        if(event.target.className == "order-number__header", "order-number__title", "order-number__marker") {//если клик был на
+    $('.order-number').click(function (event) {//при клике на блок
+        if (event.target.className == "order-number__header", "order-number__title", "order-number__marker") {//если клик был на
             $(this).toggleClass('active').children('.profil__wrapper').slideToggle(400);
-            
+
         }
     });
 
-    $('.profil-order__switch').click(function(event) {
+    $('.profil-order__switch').click(function (event) {
         $('.profil-order__switch').removeClass('active');
         $(this).toggleClass('active');
     });
-    
+
 
     $('.add-adres').click(function (event) {
         event.stopPropagation();
@@ -574,11 +601,11 @@ $(document).ready(function () {
         autoclear: false
     });
 
-    $('.search-svg').on('click', function(){
+    $('.search-svg').on('click', function () {
         $('.profil-order__search-form').addClass('active');
         $('.profil-order__search-form').focus();
-        });
-        
+    });
+
 
 });
 

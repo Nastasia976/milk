@@ -5892,6 +5892,9 @@ h3 {
   .sale-block__price .sale-block__before {
     font-size: 14px;
   }
+  .sale-block__button {
+    margin-top: 20px;
+  }
 }
 
 .recommendations {
@@ -5958,24 +5961,48 @@ h3 {
 
 @media (max-width: 768px) {
   .recommendations .popular__slider {
-    margin: 70px 0 0;
+    margin: 90px 0 0;
   }
   .recommendations .popular__arrows {
-    bottom: -60px;
+    bottom: -70px;
     right: 0;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 440px) {
   .recommendations .popular__bottons {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+  .recommendations .popular__bottons button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .recommendations .popular__bottons .popular__button2 {
+    margin-top: 10px !important;
+  }
   .recommendations .popular__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0;
     margin-top: 20px;
     padding: 15px 15px 10px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 20px 15px;
+  }
+  .recommendations .popular__image {
+    margin-top: 20px;
+    padding: 0 0 80% 0;
   }
 }
 
@@ -11421,6 +11448,9 @@ h3 {
 }
 
 @media (max-width: 1050px) {
+  .main-profil-order .sidebar {
+    min-width: 100%;
+  }
   .profil-order-pre .order-number__title {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
