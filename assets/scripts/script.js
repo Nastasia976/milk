@@ -551,6 +551,21 @@ $(document).ready(function () {
     });
     $('.add-adres').click(function (event) {
         $(this).toggleClass('active');
+        $('.popapp-add-adres').addClass('active');
+        $('body').addClass('lock');
+    });
+
+    $('.popapp-add-adres__close').click(function (event) {
+        $('.add-adres').removeClass('active');
+        $('.popapp-add-adres').removeClass('active');
+        $('body').removeClass('lock');
+    });
+    $(document).mouseup(function (e) {
+        var div = $('.popapp-add-adres__wrapper');
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $('.popapp-add-adres').removeClass('active');
+        }
     });
 
 });

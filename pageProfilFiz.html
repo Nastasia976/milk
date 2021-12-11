@@ -456,13 +456,13 @@
                                 </svg>
                             </div>
                             <div class="profil__wrapper">
-                                <div class="personal-data__body">
+                                <form class="personal-data__body">
                                     <div class="personal-data__item"><input type="text" placeholder="Фамилия" value="Леонов"></div>
                                     <div class="personal-data__item"><input class="profil-phone" type="text" onfocus="this.value = ''" placeholder="Телефон" value="+7 (944) 485-64-84"></div>
                                     <div class="personal-data__item"><input type="text" placeholder="Имя" value="Константин"></div>
                                     <div class="personal-data__item"><input type="text" placeholder="E-mail" value="konstantin.98@gmail.com"></div>
                                     <div class="personal-data__item"><input type="text" placeholder="Отчество" value="Игоревич"></div>
-                                </div>
+                                </form>
                             </div>
 
                         </div>
@@ -477,12 +477,44 @@
                                 </svg>
                             </div>
                             <div class="profil__wrapper">
-                                <div class="password-profil__body">
-                                    <div class="password-profil__item"><input type="text" placeholder="Новый пароль"></div>
-                                    <div class="password-profil__item"><input type="text" placeholder="Повторите пароль"></div>
-                                </div>
+                                <form class="password-profil__body">
+                                    <div class="password-profil__item"><input type="password" placeholder="Новый пароль"></div>
+                                    <div class="password-profil__item"><input type="password" placeholder="Повторите пароль"></div>
+                                </form>
                             </div>
 
+                        </div>
+                        <div class="popapp-add-adres">
+                            <div class="popapp-add-adres__wrapper">
+                                <div class="popapp-add-adres__close">Закрыть X</div>
+                                <div class="popapp-add-adres__title">Добавить адрес</div>
+                                <form class="popapp-add-adres__body">
+                                    <div class="popapp-add-adres__item">
+                                        <input type="text" placeholder="Регион" onfocus="this.value = ''">
+                                    </div>
+                                    <div class="popapp-add-adres__item">
+                                        <input type="text" placeholder="Населенный пункт" onfocus="this.value = ''">
+                                    </div>
+                                    <div class="popapp-add-adres__item">
+                                        <input type="text" placeholder="Улица" onfocus="this.value = ''">
+                                    </div>
+                                    <div class="popapp-add-adres__item">
+                                        <input type="text" placeholder="Дом" onfocus="this.value = ''">
+                                    </div>
+                                    <div class="popapp-add-adres__item">
+                                        <input type="text" placeholder="Корпус" onfocus="this.value = ''">
+                                    </div>
+                                    <div class="popapp-add-adres__item">
+                                        <input type="text" placeholder="Этаж" onfocus="this.value = ''">
+                                    </div>
+                                    <div class="popapp-add-adres__item">
+                                        <input type="text" placeholder="Кв./Офис" onfocus="this.value = ''">
+                                    </div>
+                                </form>
+                                <div class="popapp-add-adres__button">
+                                    <button>Добавить</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="profil__deliveri delivery-profil">
                             <div class="delivery-profil__header _p-header">
@@ -529,7 +561,7 @@
                                         
                                         <li class="delivery-profil__item"><span class="for-mobile-item">Кв./Офис</span>42</li>
                                         <li class="delivery-profil__item">
-                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            <svg class="fdf" width="14" height="14" viewBox="0 0 14 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z"

@@ -10257,7 +10257,6 @@ h3 {
 
 .sidebar__item.active {
   font-weight: 500;
-  color: #4eb7e5;
 }
 
 .sidebar__item.active svg {
@@ -10431,7 +10430,7 @@ h3 {
 .password-profil__item input {
   font-size: 16px;
   line-height: 120%;
-  color: #818181;
+  color: black;
 }
 
 .password-profil__item input::-webkit-input-placeholder {
@@ -10610,6 +10609,151 @@ h3 {
   display: none;
 }
 
+.popapp-add-adres {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+.popapp-add-adres__wrapper {
+  width: 650px;
+  height: 70vh;
+  background-color: #fff;
+  position: relative;
+  overflow: auto;
+  padding: 0 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popapp-add-adres__wrapper::-webkit-scrollbar {
+  width: 5px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.popapp-add-adres__wrapper::-webkit-scrollbar-track {
+  margin-top: 5px;
+}
+
+.popapp-add-adres__wrapper::-webkit-scrollbar-thumb {
+  background-color: #4eb7e5;
+  border-radius: 100px;
+}
+
+.popapp-add-adres__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popapp-add-adres__title {
+  margin: 30px 0 20px 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.popapp-add-adres__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.popapp-add-adres__item {
+  font-size: 16px;
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+.popapp-add-adres__item input {
+  background-color: #f9fafc;
+  width: 100%;
+  padding: 16px 21px;
+  font-size: 16px;
+  line-height: 120%;
+  color: black;
+}
+
+.popapp-add-adres__button {
+  text-align: center;
+}
+
+.popapp-add-adres__button button {
+  margin-top: 20px;
+  background-color: #4EB7E5;
+  border-radius: 10px;
+  padding: 14px 45px;
+  color: white;
+  font-size: 16px;
+  width: 50%;
+}
+
+.popapp-add-adres__button button:hover {
+  opacity: 0.7;
+}
+
+.popapp-add-adres.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .popapp-add-adres__wrapper {
+    width: 420px;
+    height: 80vh;
+    background-color: #fff !important;
+  }
+  .popapp-add-adres__item {
+    font-size: 16px;
+    line-height: 120%;
+    padding: 10px 15px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .popapp-add-adres__item input {
+    background-color: #f9fafc;
+    width: 100%;
+    padding: 11px 21px;
+    font-size: 14px;
+    line-height: 120%;
+    color: black;
+  }
+}
+
+@media (max-width: 445px) {
+  .popapp-add-adres__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+  }
+  .popapp-add-adres .popapp-add-adres__close {
+    top: 30px;
+  }
+}
+
 @media (max-width: 1240px) {
   .profil__conteiner {
     -webkit-box-orient: vertical;
@@ -10667,6 +10811,7 @@ h3 {
             flex-direction: column;
     padding: 20px 30px 30px;
     position: relative;
+    z-index: 1;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
