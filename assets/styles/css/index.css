@@ -10818,6 +10818,7 @@ h3 {
   .delivery-profil__items .for-mobile-item {
     display: block;
     padding: 0 0 8px 0;
+    color: #737373;
   }
   .delivery-profil__items .delivery-profil__item {
     -webkit-box-flex: 0;
