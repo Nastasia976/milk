@@ -247,6 +247,14 @@ $(document).ready(function () {
         ]
     });
 
+    $('.slider-rec').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: false,
+        prevArrow: $('.rec-for-order__prev'),
+        nextArrow: $('.rec-for-order__next'),
+    });
+
 
 
     $('.big-slider__prev').click(function (event) {
@@ -606,6 +614,15 @@ $(document).ready(function () {
         $('.profil-order__search-form').focus();
     });
 
+    //_______BUSKET_________
+
+    $('.heart1').click(function (event) {
+        $(this).hide().next().show();
+    });
+    $('.heart2').click(function (event) {
+        $(this).hide().prev().show();
+    });
+
 
 });
 
@@ -671,7 +688,7 @@ function counterFunction(count) {
 
 }
 
-var counts = document.querySelectorAll('.item-price__choice');
+var counts = document.querySelectorAll('.item-price__choice, .slider-rec__amt, .card-basket__amt');
 
 counts.forEach(counterFunction);
 
