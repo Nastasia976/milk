@@ -452,21 +452,33 @@ $(document).ready(function () {
 
     $('.filter-close1').click(function (event) {
         $('.filter__items1').find('.false-input, .for-input').removeClass('act-ive');
+        $('.filter__items1').find('.checkbox').attr('checked', false);
     });
     $('.filter-close2').click(function (event) {
         $('.filter__items2').find('.false-input, .for-input').removeClass('act-ive');
+        $('.filter__items2').find('.checkbox').attr('checked', false);
     });
     $('.filter-close3').click(function (event) {
         $('.filter__items3').find('.false-input, .for-input').removeClass('act-ive');
+        $('.filter__items3').find('.checkbox').attr('checked', false);
     });
     $('.filter-close4').click(function (event) {
         $('.filter__items4').find('.false-input, .for-input').removeClass('act-ive');
+        $('.filter__items4').find('.checkbox').attr('checked', false);
     });
 
 
     $('.false-input').click(function (event) {
         $(this).toggleClass('act-ive').next().toggleClass('act-ive');
+        if ($('.false-input').hasClass('act-ive')) {
+            $(this).prev('.checkbox').attr('checked', true);
+            console.log('First click');
+        } else {
+            $('.checkbox').attr('checked', false);
+            console.log('Second click');
+        }
     });
+
 
     //-------select----
 
@@ -644,7 +656,80 @@ $(document).ready(function () {
     });
 
 
+    //_____ORDERING________
+    $.each($('.radiobuttons__item'), function(index, val) {
+        if($(this).find('input').prop('checked')==true){
+            $(this).addClass('active');
+        }
+    });
+    $(document).on('click', '.radiobuttons__item', function(event) {
+        $(this).parents('.radiobuttons').find('.radiobuttons__item').removeClass('active');
+        $(this).parents('.radiobuttons').find('.radiobuttons__item input').prop('checked',false);
+        $(this).toggleClass('active');
+        $(this).find('input').prop('checked',true);
+        return false;
+    });
+
+    $.each($('.point-data__items'), function(index, val) {
+        if($(this).find('input').prop('checked')==true){
+            $(this).children('.point-data__input').toggleClass('active');
+        }
+    });
+    $(document).on('click', '.point-data__items', function(event) {
+        $(this).parents('.point-data').find('.point-data__items, .point-data__input').removeClass('active');
+        $(this).parents('.point-data').find('.point-data__items input').prop('checked',false);
+        $(this).children('.point-data__input').toggleClass('active');
+        $(this).find('input').prop('checked',true);
+        return false;
+    });
+
+    $('.review-text').keydown(function(){
+        var count = $(this).val().length;
+        $(this).closest('.ordering__body-or').find('.counter').text(count);
+    });
+    $('.review-text').change(function(){
+        var count = $(this).val().length;
+        $(this).closest('.ordering__body-or').find('.counter').text(count);
+    });
+
+    $('.deliv1').click(function (){
+        $('.ordering__body-adres').hide();
+        $('._adres1').show();
+    });
+    $('.deliv2').click(function (){
+        $('.ordering__body-adres').hide();
+        $('._adres2').show();
+    });
+    $('.deliv3').click(function (){
+        $('.ordering__body-adres').hide();
+        $('._adres3').show();
+    });
+
 });
+
+/* $(document).ready(function(){
+    var maxCount = 1000;
+
+    $("#counter").html(maxCount);
+
+    $("#review-text").keyup(function() {
+    var revText = this.value.length;
+
+        if (this.value.length > maxCount)
+            {
+            this.value = this.value.substr(0, maxCount);
+            }
+        var cnt = (maxCount - revText);
+        if(cnt <= 0){$("#counter").html('0');}
+        else {$("#counter").html(cnt);}
+
+    });
+}); */
+
+
+
+
+    
 
 
 /* function goToPage(numberPage) {
