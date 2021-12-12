@@ -253,6 +253,26 @@ $(document).ready(function () {
         infinite: false,
         prevArrow: $('.rec-for-order__prev'),
         nextArrow: $('.rec-for-order__next'),
+        responsive: [
+            {
+                breakpoint: 1560,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1130,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
 
