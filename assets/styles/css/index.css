@@ -11901,6 +11901,16 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  color: #4EB7E5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.card-basket__close:hover {
+  background-color: #4EB7E5;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider-rec__amt,
@@ -12468,10 +12478,26 @@ h3 {
   margin-top: 10px;
   background-color: transparent;
   padding: 14px 21px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider-rec__buttons button span {
   white-space: nowrap;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider-rec__buttons .slider-rec__button1:hover, .slider-rec__buttons .slider-rec__button3:hover {
+  background-color: #4EB7E5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider-rec__buttons .slider-rec__button1:hover span, .slider-rec__buttons .slider-rec__button3:hover span {
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider-rec__button1 {

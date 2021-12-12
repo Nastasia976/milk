@@ -9333,6 +9333,13 @@ h3 {
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        color: #4EB7E5;
+        transition: 0.4s;
+    }
+    &__close:hover{
+        background-color: #4EB7E5;
+        color: white;
+        transition: 0.4s;
     }
 }
 .slider-rec__amt,
@@ -9779,8 +9786,18 @@ h3 {
             margin-top: 10px;
             background-color: transparent;
             padding: 14px 21px;
+            transition: 0.4s;
             span {
                 white-space: nowrap;
+                transition: 0.4s;
+            }
+        }
+        .slider-rec__button1:hover, .slider-rec__button3:hover{
+            background-color: #4EB7E5;
+            transition: 0.4s;
+            span{
+                color: white;
+                transition: 0.4s;
             }
         }
     }
