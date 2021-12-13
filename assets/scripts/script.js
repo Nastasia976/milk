@@ -693,16 +693,16 @@ $(document).ready(function () {
     });
 
     $('.deliv1').click(function (){
-        $('.ordering__body-adres').hide(200);
-        $('._adres1, .ordering__footer').show(200);
+        $('.ordering__body-adres').hide();
+        $('._adres1, .ordering__footer').show();
     });
     $('.deliv2').click(function (){
-        $('.ordering__body-adres, .ordering__footer').hide(200);
-        $('._adres2').show(200);
+        $('.ordering__body-adres, .ordering__footer').hide();
+        $('._adres2').show();
     });
     $('.deliv3').click(function (){
-        $('.ordering__body-adres, .ordering__footer').hide(200);
-        $('._adres3').show(200);
+        $('.ordering__body-adres, .ordering__footer').hide();
+        $('._adres3').show();
     });
 
 });
