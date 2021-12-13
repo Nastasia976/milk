@@ -10372,6 +10372,7 @@ h3 {
           justify-content: space-between;
   padding: 43px 44px;
   background-color: #fff;
+  position: relative;
   cursor: pointer;
 }
 
@@ -10387,6 +10388,14 @@ h3 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   color: #3EA3CF;
+}
+
+.arrow-absolute {
+  position: absolute;
+  right: 43px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .personal-data .profil__wrapper,
@@ -10503,7 +10512,7 @@ h3 {
   font-weight: 500;
   background-color: transparent;
   padding: 5px;
-  margin-right: calc(10px + 52 * (100vw / 1920));
+  margin-right: 80px;
 }
 
 .delivery-profil__header button ._add {
@@ -10816,6 +10825,11 @@ h3 {
   }
   ._p-header {
     padding: 30px;
+  }
+  .arrow-absolute {
+    top: 37px;
+    right: 30px;
+    margin: 0;
   }
   .profil__wrapper {
     padding: 0 30px 30px !important;
