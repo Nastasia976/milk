@@ -9156,7 +9156,7 @@ h3 {
         h1 {
             font-family: "Story";
             font-weight: 700;
-            font-size: calc(25px + 30 * (100vw / 1920));
+            font-size: calc(20px + 35 * (100vw / 1920));
             line-height: 118%;
             margin-top: calc(22px + 20 * (100vw / 1920));
         }
@@ -9898,13 +9898,13 @@ h3 {
 }
 .ordering {
     margin-top: calc(22px + 20 * (100vw / 1920));
-    padding: 0 0 calc(37px + 50 * (100vw / 1920)) 0;
+    padding: 0 20px calc(37px + 50 * (100vw / 1920));
     &__conteiner {
     }
 
     &__title {
         h1 {
-            font-size: calc(25px + 30 * (100vw / 1920));
+            font-size: calc(20px + 35 * (100vw / 1920));
             font-family: "Story";
             font-weight: 700;
         }
@@ -9923,6 +9923,7 @@ h3 {
         color: black;
         font-size: 16px;
         line-height: 120%;
+        white-space: nowrap;
         svg {
             margin-right: 14px;
         }
@@ -9948,6 +9949,12 @@ h3 {
     &__items {
         background-color: #fff;
         border-radius: 2px;
+        .data-company__name{
+            font-size: 18px;
+            line-height: 150%;
+            font-weight: 500;
+            padding: 43px 0 0 0;
+        }
     }
     &__items:not(:first-child) {
         margin-top: 36px;
@@ -9977,12 +9984,12 @@ h3 {
     }
 
     &__name {
-        font-size: 22px;
+        font-size: calc(16px + 6 * (100vw / 1920));
         line-height: 150%;
         font-weight: 600;
     }
     &__heading {
-        font-size: 18px;
+        font-size: calc(15px + 3 * (100vw / 1920));
         line-height: 150%;
         font-weight: 500;
     }
@@ -10018,6 +10025,7 @@ h3 {
         width: fit-content;
         font-size: 15px;
         line-height: 120%;
+        white-space: nowrap;
         font-weight: 400;
     }
     .point-data {
@@ -10216,7 +10224,7 @@ h3 {
         cursor: pointer;
         span {
             color: #4eb7e5;
-            font-size: 18px;
+            font-size: calc(14px + 4 * (100vw / 1920));
             line-height: 150%;
             border-bottom: 1px dashed #4eb7e5;
         }
@@ -10333,7 +10341,8 @@ h3 {
         &__list {
         }
 
-        &__el {
+        &__el:last-child{
+            font-size: calc(16px + 2 * (100vw / 1920));
         }
 
         &__sum {
@@ -10359,3 +10368,107 @@ h3 {
         }
     }
 }
+@media(max-width:1290px){
+    .ordering__wrapper{
+        flex-direction: column;
+        .sidebar-pay{
+            order: 1;
+            width: 100%;
+            margin-left: 0;
+        }
+        .ordering__body{
+            order: 2;
+            margin-top: 36px;
+        }
+        .sidebar-pay__image{
+            padding: 0 0 14% 13%;
+            min-width: 130px;
+            min-height: 140px;
+        }
+        .sidebar-pay__name{
+            font-size: calc(14px + 7 * (100vw / 1290));
+        }
+    }
+}
+@media(max-width:945px){
+    ._adres2{
+        .data-company__body{
+            flex-direction: column;
+            padding: 0 !important;
+        }
+    }
+    ._adres1{
+        .point-data{
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            &__items{
+                margin-top: 25px;
+            }
+        }
+    }
+}
+@media(max-width:670px){
+    .ordering__header{
+        padding: 30px 20px !important;
+    }
+    .ordering__body-adres, .ordering__body-or, .ordering__footer{
+        padding: 30px 20px !important;
+    }
+    .ordering-form{
+        margin-top: 0px;
+    }
+    .radiobuttons__item{
+        margin-top: 25px;
+    }
+    .radiobuttons{
+        flex-direction: column;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    }
+    .sidebar-pay{
+        padding: 30px 20px;
+    }
+}
+@media(max-width:545px){
+    .ordering__switch{
+        flex-direction: column;
+        align-items: flex-start;
+        .ordering__element{
+            padding: 13px 25px;
+        }
+        .ordering__element:last-child{
+            margin-top: 15px;
+        }
+    }
+}
+@media(max-width:500px){
+    .ordering__wrapper{
+        .sidebar-pay{
+            padding: 30px 20px;
+            .side-basket__total{
+                margin-top: 30px;
+            }
+        }
+        .sidebar-pay__image{
+            min-width: 80px;
+            min-height: 90px;
+        }
+        .ordering__header{
+            padding: 30px 20px;
+        }
+    }
+}
+@media(max-width:380px){
+    .ordering__wrapper{
+        .sidebar-pay__name{
+            font-size: 14px;
+        }
+        .ordering__but{
+            width: 100%;
+            text-align: center;
+            padding: 14px;
+        }
+    }
+}
+@media(max-width:380px){}
