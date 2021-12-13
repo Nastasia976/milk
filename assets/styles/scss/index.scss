@@ -8151,8 +8151,9 @@ h3 {
 }
 ._p-header.active {
     svg {
-        transform: rotate(-180deg);
+        transform: rotate(90deg);
         transition: 0.4s;
+        color: #3EA3CF;
     }
 }
 .personal-data,
@@ -8823,11 +8824,20 @@ h3 {
         display: none;
     }
 }
+.order-number{
+    .order-number__header {
+        .arrow-d {
+            
+            transition: 0.4s;
+        }
+    }
+}
 .order-number.active {
     .order-number__header {
         .arrow-d {
-            transform: rotate(-180deg);
+            transform: rotate(90deg);
             transition: 0.4s;
+            color: #3EA3CF;
         }
     }
 }
