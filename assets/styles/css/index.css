@@ -5212,8 +5212,10 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border-bottom: 1px dashed #cccccc;
     padding: 0 0 5px 0;
+  }
+  .characters .about__details:not(:last-child) {
+    border-bottom: 1px dashed #cccccc;
   }
   .consist__body {
     padding: 20px 0 0 0;
@@ -8896,9 +8898,13 @@ h3 {
     width: 20px;
     height: 20px;
   }
+  .catalog-choice__body-list-favorit .popular__items .item-price__choice,
+  .catalog-choice__body-list .popular__items .item-price__choice {
+    height: 28px;
+  }
   .catalog-choice__body-list-favorit .popular__items .item-price__choice button,
   .catalog-choice__body-list .popular__items .item-price__choice button {
-    height: 25px;
+    height: 28px;
   }
   .catalog-choice__body-list-favorit .popular__items .item-price__choice input,
   .catalog-choice__body-list .popular__items .item-price__choice input {
@@ -9892,6 +9898,9 @@ h3 {
             flex: 0 1 100%;
     padding: 10px 15px;
   }
+  .payment__body {
+    padding: 30px 20px !important;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -10172,9 +10181,6 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .about-our-company__item:last-child {
-    margin-top: 24px;
   }
 }
 
@@ -11504,7 +11510,7 @@ h3 {
     margin-top: 10px;
   }
   .profil-order__conteiner .order-number__top {
-    padding: 0 25px 26px;
+    padding: 0 25px 30px;
   }
   .profil-order__conteiner .order-number__body {
     padding: 30px 20px 0 0;
@@ -11607,7 +11613,7 @@ h3 {
     padding: 0 0 15px 0 !important;
   }
   .profil-order__conteiner .order-number__top {
-    padding: 0 20px 15px;
+    padding: 0 20px 30px;
   }
   .profil-order__conteiner .order-number__top svg {
     width: 20px;

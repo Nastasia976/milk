@@ -693,16 +693,16 @@ $(document).ready(function () {
     });
 
     $('.deliv1').click(function (){
-        $('.ordering__body-adres').hide();
-        $('._adres1').show();
+        $('.ordering__body-adres').hide(200);
+        $('._adres1, .ordering__footer').show(200);
     });
     $('.deliv2').click(function (){
-        $('.ordering__body-adres').hide();
-        $('._adres2').show();
+        $('.ordering__body-adres, .ordering__footer').hide(200);
+        $('._adres2').show(200);
     });
     $('.deliv3').click(function (){
-        $('.ordering__body-adres').hide();
-        $('._adres3').show();
+        $('.ordering__body-adres, .ordering__footer').hide(200);
+        $('._adres3').show(200);
     });
 
 });
@@ -859,6 +859,7 @@ let elSwiper = new Swiper('.swiper-condition', {
     mode: 'horizontal',
     effect: 'fade',
     autoHeight: true,
+    touchRatio: 0,
     fadeEffect: {
         crossFade: true,
     }
@@ -866,6 +867,7 @@ let elSwiper = new Swiper('.swiper-condition', {
 let pickUpSwiper = new Swiper('.swiper-pick-up', {
     slidesPerView: 1,
     effect: 'fade',
+    touchRatio: 0,
     fadeEffect: {
         crossFade: true,
     }

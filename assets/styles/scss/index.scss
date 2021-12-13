@@ -4041,8 +4041,10 @@ h3 {
         }
         .about__details {
             flex-direction: column;
-            border-bottom: 1px dashed #cccccc;
             padding: 0 0 5px 0;
+        }
+        .about__details:not(:last-child){
+            border-bottom: 1px dashed #cccccc;
         }
     }
     .consist__body {
@@ -6957,8 +6959,9 @@ h3 {
                 }
             }
             .item-price__choice {
+                height: 28px;
                 button {
-                    height: 25px;
+                    height: 28px;
                 }
                 input {
                     font-size: 13px;
@@ -7762,6 +7765,9 @@ h3 {
         flex: 0 1 100%;
         padding: 10px 15px;
     }
+    .payment__body{
+        padding: 30px 20px !important;
+    }
 }
 @media (max-width: 1350px) {
     .payment__body {
@@ -7981,9 +7987,6 @@ h3 {
 @media (max-width: 620px) {
     .about-our-company__items {
         flex-direction: column;
-    }
-    .about-our-company__item:last-child {
-        margin-top: 24px;
     }
 }
 @media (max-width: 445px) {
@@ -8990,7 +8993,7 @@ h3 {
             margin-top: 10px;
         }
         .order-number__top {
-            padding: 0 25px 26px;
+            padding: 0 25px 30px;
         }
         .order-number__body {
             padding: 30px 20px 0 0;
@@ -9085,7 +9088,7 @@ h3 {
             padding: 0 0 15px 0 !important;
         }
         .order-number__top {
-            padding: 0 20px 15px;
+            padding: 0 20px 30px;
             svg {
                 width: 20px;
                 margin-right: 12px;
