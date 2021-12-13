@@ -197,7 +197,7 @@ $(document).ready(function () {
             },
         ]
     });
-    $('.sertificates__body').slick({
+    /* $('.sertificates__body').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         touchTreshold: 100,
@@ -217,7 +217,7 @@ $(document).ready(function () {
                 }
             },
         ]
-    });
+    }); */
 
     $('.sertif-block__slider').slick({
         slidesToShow: 2,
@@ -227,19 +227,19 @@ $(document).ready(function () {
         nextArrow: $('.sertif-block-next'),
         responsive: [
             {
-                breakpoint: 1501,
+                breakpoint: 1331,
                 settings: {
                     slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 930,
+                breakpoint: 730,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 481,
                 settings: {
                     slidesToShow: 1,
                 }
