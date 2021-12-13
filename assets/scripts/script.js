@@ -646,6 +646,14 @@ $(document).ready(function () {
         $('.profil-order__search-form').focus();
     });
 
+    //_____FAVORITES__
+    $('.popular__heart1').click(function(){
+        $(this).hide().next().show();
+    });
+    $('.popular__heart2').click(function(){
+        $(this).hide().prev().show();
+    });
+
     //_______BUSKET_________
 
     $('.heart1').click(function (event) {

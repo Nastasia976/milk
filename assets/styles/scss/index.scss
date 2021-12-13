@@ -1207,21 +1207,23 @@ h2 {
         margin-left: 26px;
         cursor: pointer;
         position: relative;
-        padding: 0 20px 0 0;
-        .popular__heart1,
+        .popular__heart2{
+            display: none;
+        }
+        /* .popular__heart1,
         .popular__heart2 {
             position: absolute;
-        }
-        .popular__heart1 {
+        } */
+        /* .popular__heart1 {
             z-index: 2;
             background-color: #fff;
         }
         .popular__heart2 {
             z-index: 1;
-        }
-        .popular__heart1.passive {
+        } */
+        /* .popular__heart1.passive {
             opacity: 0;
-        }
+        } */
     }
     &__name {
         font-size: calc(16px + 4 * (100vw / 1920));
@@ -3119,16 +3121,19 @@ h2 {
             left: 0;
             cursor: pointer;
         }
-        .popular__heart1 {
+        .popular__heart2{
+            display: none;
+        }
+        /* .popular__heart1 {
             z-index: 2;
             background-color: #fff;
         }
         .popular__heart2 {
             z-index: 1;
-        }
-        .popular__heart1.passive {
+        } */
+        /* .popular__heart1.passive {
             opacity: 0;
-        }
+        } */
     }
     &__title {
         margin-top: 43px;
@@ -6199,6 +6204,11 @@ h3 {
         border-radius: 10px;
         padding: 14px 24px;
         margin-right: 33px;
+        transition: 0.4s;
+    }
+    &__apply:hover{
+        background-color: #1584b4;
+        transition: 0.4s;
     }
     &__clear {
         color: white;
@@ -6403,7 +6413,7 @@ h3 {
     }
     .popular__header {
         position: absolute;
-        right: 46px;
+        right: 26px;
         top: 28px;
     }
     .popular__sell {
@@ -6742,6 +6752,12 @@ h3 {
     .popular__heart1 {
         display: none;
     }
+    .popular__heart2 {
+        display: block;
+    }
+    .popular__like{
+        padding: 0;
+    }
 }
 .favorit-catalog {
     .catalog-choice__header {
@@ -6785,7 +6801,7 @@ h3 {
         }
         .popular__header {
             position: absolute;
-            right: 46px;
+            right: 26px;
             top: 30px;
         }
         .popular__sell2 {
@@ -8299,7 +8315,7 @@ h3 {
             }
         }
         button:hover {
-            background: rgba(78, 183, 229, 0.8);
+            background-color: #1584b4;
             transition: 0.4s;
         }
     }
@@ -8411,9 +8427,11 @@ h3 {
             color: white;
             font-size: 16px;
             width: 50%;
+            transition: 0.4s;
         }
         button:hover {
-            opacity: 0.7;
+            background-color: #1584b4;
+            transition: 0.4s;
         }
     }
 }
@@ -10068,6 +10086,11 @@ h3 {
         line-height: 120%;
         white-space: nowrap;
         font-weight: 400;
+        cursor: pointer;
+    }
+    .ordering__but:hover{
+        background-color: #1584b4;
+        transition: 0.4s;
     }
     .point-data {
         display: flex;
@@ -10760,8 +10783,12 @@ h3 {
             margin-right: 15px;
             }
         }
+        button:hover{
+            background-color: #1584b4;
+            transition: 0.4s;
+        }
     }
 }
-@media(max-width:1020px){
-
+.popular__text{
+    font-weight: 400;
 }
