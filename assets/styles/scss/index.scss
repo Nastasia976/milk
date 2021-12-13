@@ -10444,16 +10444,18 @@ h3 {
 @media (max-width: 670px) {
     .main-ordering{
         .profil__wrapper{
-            padding: 30px 20px;
+            padding: 0 20px 30px;
         }
     }
     .ordering__header {
         padding: 30px 20px !important;
     }
     .ordering__body-adres,
-    .ordering__body-or,
     .ordering__footer {
         padding: 30px 20px !important;
+    }
+    .ordering__body-or{
+        padding: 0px 20px 30px;
     }
     .ordering-form {
         margin-top: 0px;
