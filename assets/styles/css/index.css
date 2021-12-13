@@ -12102,7 +12102,7 @@ h3 {
 }
 
 .side-basket__button button:hover {
-  opacity: 0.8;
+  background-color: #1584b4;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
