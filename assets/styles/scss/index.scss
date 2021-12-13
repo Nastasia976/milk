@@ -7202,16 +7202,25 @@ h3 {
 
 @media (max-width: 1445px) {
     .catalog-choice__body {
-        grid-template-rows: repeat(auto-fit);
-        grid-template-columns: minmax(260px, 1fr) minmax(260px, 1fr);
+        /* grid-template-rows: repeat(auto-fit);
+        grid-template-columns: minmax(260px, 1fr) minmax(260px, 1fr); */
+        grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr) minmax(220px, 1fr);
         gap: 10px;
         .item-price,
         .popular__bottons {
             flex-wrap: wrap;
+            padding: 0;
         }
         .popular__image {
             min-height: 250px;
         }
+    }
+}
+@media (max-width: 1170px) {
+    .catalog-choice__body {
+        grid-template-rows: repeat(auto-fit);
+        grid-template-columns: minmax(260px, 1fr) minmax(260px, 1fr);
+        
     }
 }
 @media (max-width: 1445px) {
