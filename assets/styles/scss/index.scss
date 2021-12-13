@@ -4043,7 +4043,7 @@ h3 {
             flex-direction: column;
             padding: 0 0 5px 0;
         }
-        .about__details:not(:last-child){
+        .about__details:not(:last-child) {
             border-bottom: 1px dashed #cccccc;
         }
     }
@@ -7765,7 +7765,7 @@ h3 {
         flex: 0 1 100%;
         padding: 10px 15px;
     }
-    .payment__body{
+    .payment__body {
         padding: 30px 20px !important;
     }
 }
@@ -8154,10 +8154,10 @@ h3 {
     svg {
         transform: rotate(90deg);
         transition: 0.4s;
-        color: #3EA3CF;
+        color: #3ea3cf;
     }
 }
-.arrow-absolute{
+.arrow-absolute {
     position: absolute;
     right: 43px;
     top: 0;
@@ -8476,13 +8476,16 @@ h3 {
     ._p-header {
         padding: 30px;
     }
-    .arrow-absolute{
+    .arrow-absolute {
         top: 37px;
         right: 30px;
         margin: 0;
     }
-    .profil__wrapper {
-        padding: 0 30px 30px !important;
+    .main-profil,
+    .main-profil-ur {
+        .profil__wrapper {
+            padding: 0 30px 30px !important;
+        }
     }
     .delivery-profil__body {
         display: flex;
@@ -8526,18 +8529,26 @@ h3 {
     }
 }
 @media (max-width: 768px) {
-    .personal-data__item,
-    .password-profil__item,
-    .data-company__item {
-        flex: 1 1 100% !important;
-        padding: 10px 0;
-    }
-    .delivery-profil__items {
-        padding: 30px 0;
-        .delivery-profil__item:last-child {
-            position: absolute;
-            top: 0px;
-            right: 30px;
+.personal-data__item,
+        .password-profil__item,
+        .data-company__item {
+            flex: 1 1 100% !important;
+        }
+    .main-profil,
+    .main-profil-ur {
+        .delivery-profil__items {
+            padding: 30px 0;
+            .delivery-profil__item:last-child {
+                position: absolute;
+                top: 0px;
+                right: 30px;
+            }
+        }
+        .personal-data__item,
+        .password-profil__item,
+        .data-company__item {
+            flex: 1 1 100% !important;
+            padding: 10px 0;
         }
     }
 }
@@ -8837,10 +8848,9 @@ h3 {
         display: none;
     }
 }
-.order-number{
+.order-number {
     .order-number__header {
         .arrow-d {
-            
             transition: 0.4s;
         }
     }
@@ -8850,7 +8860,7 @@ h3 {
         .arrow-d {
             transform: rotate(90deg);
             transition: 0.4s;
-            color: #3EA3CF;
+            color: #3ea3cf;
         }
     }
 }
@@ -9972,7 +9982,7 @@ h3 {
     &__items {
         background-color: #fff;
         border-radius: 2px;
-        .data-company__name{
+        .data-company__name {
             font-size: 18px;
             line-height: 150%;
             font-weight: 500;
@@ -10364,7 +10374,7 @@ h3 {
         &__list {
         }
 
-        &__el:last-child{
+        &__el:last-child {
             font-size: calc(16px + 2 * (100vw / 1920));
         }
 
@@ -10391,107 +10401,115 @@ h3 {
         }
     }
 }
-@media(max-width:1290px){
-    .ordering__wrapper{
+@media (max-width: 1290px) {
+    .ordering__wrapper {
         flex-direction: column;
-        .sidebar-pay{
+        .sidebar-pay {
             order: 1;
             width: 100%;
             margin-left: 0;
         }
-        .ordering__body{
+        .ordering__body {
             order: 2;
             margin-top: 36px;
         }
-        .sidebar-pay__image{
+        .sidebar-pay__image {
             padding: 0 0 14% 13%;
             min-width: 130px;
             min-height: 140px;
         }
-        .sidebar-pay__name{
+        .sidebar-pay__name {
             font-size: calc(14px + 7 * (100vw / 1290));
         }
     }
 }
-@media(max-width:945px){
-    ._adres2{
-        .data-company__body{
+@media (max-width: 945px) {
+    ._adres2 {
+        .data-company__body {
             flex-direction: column;
             padding: 0 !important;
         }
     }
-    ._adres1{
-        .point-data{
+    ._adres1 {
+        .point-data {
             margin-top: 0px;
             display: flex;
             flex-direction: column;
-            &__items{
+            &__items {
                 margin-top: 25px;
             }
         }
     }
 }
-@media(max-width:670px){
-    .ordering__header{
+@media (max-width: 670px) {
+    .main-ordering{
+        .profil__wrapper{
+            padding: 30px 20px;
+        }
+    }
+    .ordering__header {
         padding: 30px 20px !important;
     }
-    .ordering__body-adres, .ordering__body-or, .ordering__footer{
+    .ordering__body-adres,
+    .ordering__body-or,
+    .ordering__footer {
         padding: 30px 20px !important;
     }
-    .ordering-form{
+    .ordering-form {
         margin-top: 0px;
     }
-    .radiobuttons__item{
+    .radiobuttons__item {
         margin-top: 25px;
     }
-    .radiobuttons{
+    .radiobuttons {
         flex-direction: column;
         align-items: flex-start !important;
         justify-content: flex-start !important;
     }
-    .sidebar-pay{
+    .sidebar-pay {
         padding: 30px 20px;
     }
 }
-@media(max-width:545px){
-    .ordering__switch{
+@media (max-width: 545px) {
+    .ordering__switch {
         flex-direction: column;
         align-items: flex-start;
-        .ordering__element{
+        .ordering__element {
             padding: 13px 25px;
         }
-        .ordering__element:last-child{
+        .ordering__element:last-child {
             margin-top: 15px;
         }
     }
 }
-@media(max-width:500px){
-    .ordering__wrapper{
-        .sidebar-pay{
+@media (max-width: 500px) {
+    .ordering__wrapper {
+        .sidebar-pay {
             padding: 30px 20px;
-            .side-basket__total{
+            .side-basket__total {
                 margin-top: 30px;
             }
         }
-        .sidebar-pay__image{
+        .sidebar-pay__image {
             min-width: 80px;
             min-height: 90px;
         }
-        .ordering__header{
+        .ordering__header {
             padding: 30px 20px;
         }
     }
 }
-@media(max-width:380px){
-    .ordering__wrapper{
-        .sidebar-pay__name{
+@media (max-width: 380px) {
+    .ordering__wrapper {
+        .sidebar-pay__name {
             font-size: 14px;
         }
-        .ordering__but{
+        .ordering__but {
             width: 100%;
             text-align: center;
             padding: 14px;
         }
     }
 }
-@media(max-width:380px){}
+@media (max-width: 380px) {
+}

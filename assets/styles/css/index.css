@@ -10387,7 +10387,7 @@ h3 {
           transform: rotate(90deg);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  color: #3EA3CF;
+  color: #3ea3cf;
 }
 
 .arrow-absolute {
@@ -10831,7 +10831,8 @@ h3 {
     right: 30px;
     margin: 0;
   }
-  .profil__wrapper {
+  .main-profil .profil__wrapper,
+  .main-profil-ur .profil__wrapper {
     padding: 0 30px 30px !important;
   }
   .delivery-profil__body {
@@ -10896,15 +10897,27 @@ h3 {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 100% !important;
             flex: 1 1 100% !important;
-    padding: 10px 0;
   }
-  .delivery-profil__items {
+  .main-profil .delivery-profil__items,
+  .main-profil-ur .delivery-profil__items {
     padding: 30px 0;
   }
-  .delivery-profil__items .delivery-profil__item:last-child {
+  .main-profil .delivery-profil__items .delivery-profil__item:last-child,
+  .main-profil-ur .delivery-profil__items .delivery-profil__item:last-child {
     position: absolute;
     top: 0px;
     right: 30px;
+  }
+  .main-profil .personal-data__item,
+  .main-profil .password-profil__item,
+  .main-profil .data-company__item,
+  .main-profil-ur .personal-data__item,
+  .main-profil-ur .password-profil__item,
+  .main-profil-ur .data-company__item {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 1 100% !important;
+            flex: 1 1 100% !important;
+    padding: 10px 0;
   }
 }
 
@@ -11321,7 +11334,7 @@ h3 {
           transform: rotate(90deg);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  color: #3EA3CF;
+  color: #3ea3cf;
 }
 
 .wrap {
@@ -13244,10 +13257,15 @@ h3 {
 }
 
 @media (max-width: 670px) {
+  .main-ordering .profil__wrapper {
+    padding: 30px 20px;
+  }
   .ordering__header {
     padding: 30px 20px !important;
   }
-  .ordering__body-adres, .ordering__body-or, .ordering__footer {
+  .ordering__body-adres,
+  .ordering__body-or,
+  .ordering__footer {
     padding: 30px 20px !important;
   }
   .ordering-form {
