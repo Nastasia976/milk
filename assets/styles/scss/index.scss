@@ -6574,14 +6574,14 @@ h3 {
 .catalog-choice__catalog{
     width: 100%;
 }
-.catalog-choice__body {
+.catalog-choice__body{
     padding: 32px 0 63px;
     min-width: 100% !important;
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
     .popular__items {
-        flex: 0 1 30%;
+        flex: 0 1 30.8%;
         margin: 15px;
         display: flex;
         flex-direction: column;
@@ -7075,7 +7075,7 @@ h3 {
     }
 }
 
-@media (max-width: 1545px) {
+@media (max-width: 1600px) {
     .main-catalog-page{
         .catalog-choice__body._grid {
             margin: -10px;
@@ -7087,7 +7087,7 @@ h3 {
             .popular__bottons {
                 flex-direction: column;
                 justify-content: flex-end;
-                height: 130px;
+                height: 140px;
                 button {
                     width: 100%;
                     justify-content: center;
@@ -7124,6 +7124,9 @@ h3 {
                 .popular__image{
                     flex: 0 1 30%;
                     padding: 0 0 80% 0;
+                }
+                .popular__bottons{
+                    height: 110px;
                 }
             }
         }
@@ -7168,7 +7171,7 @@ h3 {
         justify-content: flex-start;
         .popular__items{
             .popular__image{
-                padding: 0 0 50% 0;
+                padding: 0 0 55% 0 !important;
             }
         }
         .popular__item,
@@ -9170,13 +9173,12 @@ h3 {
     }
 
     &__items {
-        flex: 1 1 50%;
+        flex: 0 0 50%;
         display: flex;
         align-items: center;
         color: #737373;
         span {
-            margin-right: 77px;
-            white-space: nowrap;
+            flex: 0 1 30%;
         }
     }
 
@@ -9190,19 +9192,22 @@ h3 {
     }
 }
 .basket__bottom {
-    padding: 30px 20px 30px calc(20px + 60 * (100vw / 1920));
+    padding: 30px 30px 30px 50px;
     display: flex;
     align-items: center;
     background-color: #f9fafc;
+    p{
+        margin-left: 18px;
+    }
 }
 .card-basket {
     padding: 51px 30px 51px 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     &__image {
         position: relative;
         padding: 0 0 15% 12.7%;
+        flex: 0 1 13%;
         img {
             position: absolute;
             width: 100%;
@@ -9213,9 +9218,8 @@ h3 {
     }
 
     &__items {
-        max-width: 330px;
-        padding: 0 40px 0 0;
-        margin-left: 10px;
+        padding: 0 30px 0 calc(0px + 60 * (100vw / 1920));
+        flex: 1 1 auto;
     }
     .basket__bottom {
         display: none;
@@ -9224,6 +9228,7 @@ h3 {
         font-size: 20px;
         line-height: 120%;
         font-weight: 500;
+        max-width: 300px;
     }
 
     &__description {
@@ -9236,12 +9241,17 @@ h3 {
         line-height: 120%;
         font-weight: 600;
         padding: 0 15px 0 0;
+        flex: 0 0 30%;
+        color: black;
+        white-space: nowrap;
     }
 
     &__amt {
         display: flex;
         align-items: center;
         padding: 0 15px 0 0;
+        flex: 0 0 30%;
+        color: black;
         .item-price {
             &__numbers {
                 width: 35px;
@@ -9279,8 +9289,13 @@ h3 {
         line-height: 120%;
         font-weight: 600;
         padding: 0 15px 0 0;
+        flex: 0 0 30%;
+        color: black;
+        white-space: nowrap;
     }
-
+    &__closes{
+        flex: 0 0 4%;
+    }
     &__close {
         width: 48px;
         height: 48px;
@@ -9436,7 +9451,10 @@ h3 {
     display: none;
 }
 @media (max-width: 1430px) {
-    .card-basket {
+    .card-basket__items{
+        padding: 0 20px 0 10px;
+    }
+    /* .card-basket {
         padding: 51px 20px 51px 20px;
         &__items {
             padding: 0 10px 0 0;
@@ -9445,7 +9463,7 @@ h3 {
         &__name {
             font-size: 16px;
         }
-    }
+    } */
 }
 @media (max-width: 1280px) {
     .basket__wrapper {
@@ -9462,45 +9480,36 @@ h3 {
             }
         }
     }
-    .basket {
-        &__items {
-            flex: 0 1 44%;
-        }
-        &__items:last-child {
-            flex: 0 1 56%;
-            span {
-                margin: 0;
-                flex: 0 1 35%;
-            }
-        }
+    .basket__items{
+        flex: 0 0 50%;
+    }
+    .basket__bottom{
+        justify-content: space-between;
     }
     .card-basket {
         &__price,
         &__sum {
+            flex: 0 1 30%;
             font-size: calc(14px + 6 * (100vw / 1280));
+        }
+        &__amt{
+            flex: 0 1 30%;
         }
     }
 }
-@media (max-width: 830px) {
-    .about_hide {
-        display: block;
-        font-size: 16px;
-        min-width: 140px;
-        font-weight: 400;
-    }
-    .basket__bottom {
-        display: none;
-    }
-    .basket__top {
+@media (max-width: 910px) {
+    .basket__top{
         padding: 30px 20px;
-        .basket__title {
-            font-size: calc(12px + 10 * (100vw / 830));
-        }
     }
-    .card-basket {
+    .card-basket{
+        padding: 30px 20px;
         flex-wrap: wrap;
         justify-content: flex-start;
         position: relative;
+        .basket__items{
+            flex: 1 1 100%;
+            flex-wrap: wrap;
+        }
         &__image {
             flex: 0 1 25%;
             padding: 0 0 25% 15%;
@@ -9510,6 +9519,9 @@ h3 {
         &__items {
             flex: 1 0 70%;
             max-width: 60%;
+        }
+        &__name{
+            min-width: 100%;
         }
         &__price {
             flex: 1 1 100%;
@@ -9534,8 +9546,33 @@ h3 {
             right: 20px;
         }
     }
+    .basket__bottom{
+        padding: 30px 20px;
+    }
+    .about_hide {
+        display: block;
+        font-size: 16px;
+        max-width: 140px;
+        min-width: 140px;
+        font-weight: 400;
+    }
+    .basket__bottom {
+        display: none;
+    }
+    .basket__title {
+        font-size: calc(12px + 10 * (100vw / 830));
+    }
+    
 }
+
 @media (max-width: 470px) {
+    .basket__top{
+        flex-direction: column;
+        align-items: flex-start;
+        button{
+            margin-top: 15px;
+        }
+    }
     .card-basket {
         flex-direction: column;
         align-items: flex-start;
@@ -9546,8 +9583,16 @@ h3 {
             min-width: 160px;
             min-height: 160px;
             img {
+                left: 0;
+                right: 0;
+                margin: auto;
                 width: 50%;
             }
+        }
+        &__name{
+            width: 100%;
+            font-size: calc(14px + 4 * (100vw / 470));
+            margin-top: 20px;
         }
         &__price {
         }
