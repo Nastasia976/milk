@@ -8806,18 +8806,6 @@ h3 {
     width: 20px;
     height: 20px;
   }
-  .catalog-choice__body-list-favorit .popular__items .item-price__choice,
-  .catalog-choice__body-list .popular__items .item-price__choice {
-    height: 28px;
-  }
-  .catalog-choice__body-list-favorit .popular__items .item-price__choice button,
-  .catalog-choice__body-list .popular__items .item-price__choice button {
-    height: 28px;
-  }
-  .catalog-choice__body-list-favorit .popular__items .item-price__choice input,
-  .catalog-choice__body-list .popular__items .item-price__choice input {
-    font-size: 13px;
-  }
   .catalog-choice__body-list .popular__items {
     padding: 20px 10px;
   }
