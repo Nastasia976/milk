@@ -1660,7 +1660,7 @@ h2 {
     z-index: 2;
     &__conteiner {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
     }
     &__body {
         position: absolute;
@@ -2844,7 +2844,7 @@ h2 {
 }
 .swiper__conteiner {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     padding: 150px 0;
 }
 .swiper__body {
@@ -2885,7 +2885,7 @@ h2 {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
     margin-top: -25px;
     .swiper-prev {
         margin-right: 50px;
@@ -3110,7 +3110,7 @@ h2 {
     &__favorites {
         display: flex;
         align-items: center;
-        justify-content: right;
+        justify-content: flex-end;
         position: relative;
         width: 156px;
         font-size: 18px;
@@ -10813,7 +10813,7 @@ h3 {
 
     &__close {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
         min-width: 100%;
         svg {
             margin-left: 10px;
