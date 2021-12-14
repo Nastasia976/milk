@@ -9197,11 +9197,6 @@ h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .catalog-choice__body._grid .popular__items {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
   .catalog-choice__body._grid .popular__items .popular__image {
     padding: 0 0 50% 0;
   }
