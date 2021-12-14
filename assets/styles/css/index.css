@@ -5112,6 +5112,7 @@ h3 {
   }
   .swiper-characters {
     display: block;
+    overflow: hidden;
   }
   .consist {
     padding: 0 !important;
@@ -6004,9 +6005,6 @@ h3 {
     margin: 0;
     margin-top: 20px;
     padding: 15px 15px 10px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     padding: 20px 15px;
   }
   .recommendations .popular__image {

@@ -953,6 +953,7 @@ new Swiper('.swiper-consist', {
 });
 
 new Swiper('.swiper-characters', {
+    slidesPerView: 1,
     navigation: {
         nextEl: '.consist__next',
         prevEl: '.consist__prev',
