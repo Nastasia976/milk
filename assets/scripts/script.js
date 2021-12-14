@@ -5,11 +5,10 @@ $(document).ready(function () {
         $('.header__link-open').removeClass('active');
         $('.burg-menu').slideUp(500);
         $('.header__submenu').toggleClass('active');
-        $('body').toggleClass('lock');
+        $('body').toggleClass('locking');
         $('.head-link').removeClass('active');
         $('.header__link-open').removeClass('passive');
     });
-
 
     $('.title-page__slider').slick({
         slidesToShow: 1,
