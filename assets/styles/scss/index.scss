@@ -10657,7 +10657,7 @@ h3 {
 }
 //___________POP_UP_TITLE_PAGE_________
 
-.popup-register, .popup-autoriz, .popapp-add-adres{
+.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question{
     display: none;
     z-index: 50000;
     position: fixed;
@@ -10852,12 +10852,18 @@ h3 {
         }
     }
 }
-.popup-register, .popapp-add-adres{
+.popup-register, .popapp-add-adres, .popup-question{
     &__wrapper {
         height: fit-content;
         padding: 30px 60px;
     }
 }
+.popup-question{
+    &__title{
+        margin-top: 20px;
+    }
+}
+
 /* .popup-register__wrapper::-webkit-scrollbar, .popup-autoriz__wrapper::-webkit-scrollbar {
     width: 5px;
     height: 100%;
@@ -10870,7 +10876,7 @@ h3 {
     background: #4eb7e5;
 } */
 @media(max-width:600px){
-    .popup-autoriz__wrapper, .popapp-add-adres__wrapper{
+    .popup-autoriz__wrapper, .popapp-add-adres__wrapper, .popup-question__wrapper{
         padding: 30px;
         width: 100%;
     }
@@ -10895,7 +10901,6 @@ h3 {
             margin-top: 14px;
         }
         &__bottom{
-            margin-top: 15px;
         }
     }
 }
@@ -10910,7 +10915,7 @@ h3 {
             margin-top: 20px;
         }
     }
-    .popup-register__wrapper, .popup-autoriz__wrapper, .popapp-add-adres__wrapper{
+    .popup-register__wrapper, .popup-autoriz__wrapper, .popapp-add-adres__wrapper, .popup-question__wrapper{
         padding: 30px 20px;
         button{
             padding: 20px;

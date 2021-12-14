@@ -719,13 +719,19 @@ $(document).ready(function () {
         $('.reg-inp').css('background', '#f9fafc');
         $('.popup-register__error').hide();
     });
+
+    $('.add-question').click(function () {
+        $('.popup-question').show();
+        $('body').addClass('lock');
+    });
+
     $('.close-register__item').click(function () {
-        $('.popup-register, .popup-autoriz, .popapp-add-adres').hide();
+        $('.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question').hide();
         $('body').removeClass('lock');
     });
 
     $('._ur').click(function () {
-        $(this).toggleClass('active').prev().removeClass('active');
+        $(this).addClass('active').prev().removeClass('active');
         $('.popup-register__body').hide();
         $('.popup-register__body_ur').show();
         $('.reg-inp').css('background', '#f9fafc');
@@ -733,7 +739,7 @@ $(document).ready(function () {
     });
 
     $('._fz').click(function () {
-        $(this).toggleClass('active').next().removeClass('active');
+        $(this).addClass('active').next().removeClass('active');
         $('.popup-register__body').show();
         $('.popup-register__body_ur').hide();
         $('.reg-inp').css('background', '#f9fafc');
