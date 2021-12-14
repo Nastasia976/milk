@@ -337,13 +337,18 @@ $(document).ready(function () {
         $('.circle__item2').addClass('active');
     } */
 
-    $('.header__link-open').click(function (event) {
+    /* $('.header__link-open').click(function (event) {
         $('.header__link-open').toggleClass('active');
         $('.burg-menu').toggleClass('active');
         $('.head-link').removeClass('active');
+    }); */
+    $('.header__link-open').click(function (event) {
+        $('.head-link').removeClass('active');
+        $(this).toggleClass('active').next().slideToggle(500);
+        $('.header__link-open').removeClass('passive');
     });
 
-    $('.header__links').click(function (event) {
+    /* $('.header__links').click(function (event) {
         if ($('.header__link-open').hasClass('active')) {
             $('.burg-menu.active').slideDown(500);
             console.log('First click');
@@ -351,10 +356,11 @@ $(document).ready(function () {
             $('.burg-menu').slideUp(500);
             console.log('Second click');
         }
-    });
+    }); */
 
     $('.head-link').click(function (event) {
-        $(this).toggleClass('active').not($(this)).removeClass('active');
+        $('.head-link').removeClass('active');
+        $(this).toggleClass('active');
         $('.head-link').not($(this)).removeClass('active');
         $('.header__link-open').removeClass('active');
         $('.header__link-open').addClass('passive');
@@ -618,22 +624,8 @@ $(document).ready(function () {
     });
 
     $('.add-adres').click(function (event) {
-        $(this).toggleClass('active');
-        $('.popapp-add-adres').addClass('active');
+        $('.popapp-add-adres').show();
         $('body').addClass('lock');
-    });
-
-    $('.popapp-add-adres__close').click(function (event) {
-        $('.add-adres').removeClass('active');
-        $('.popapp-add-adres').removeClass('active');
-        $('body').removeClass('lock');
-    });
-    $(document).mouseup(function (e) {
-        var div = $('.popapp-add-adres__wrapper');
-        if (!div.is(e.target)
-            && div.has(e.target).length === 0) {
-            $('.popapp-add-adres').removeClass('active');
-        }
     });
 
     $('.profil-phone').mask('+7 (999) 999-99-99', {
@@ -717,18 +709,18 @@ $(document).ready(function () {
         $('.popup-register').show();
         $('.popup-autoriz').hide();
         $('body').addClass('lock');
-        $('input').css('background', '#f9fafc');
+        $('.reg-inp').css('background', '#f9fafc');
         $('.popup-register__error').hide();
     });
     $('.account__item_enter').click(function () {
         $('.popup-register').hide();
         $('.popup-autoriz').show();
         $('body').addClass('lock');
-        $('input').css('background', '#f9fafc');
+        $('.reg-inp').css('background', '#f9fafc');
         $('.popup-register__error').hide();
     });
     $('.close-register__item').click(function () {
-        $('.popup-register, .popup-autoriz').hide();
+        $('.popup-register, .popup-autoriz, .popapp-add-adres').hide();
         $('body').removeClass('lock');
     });
 
@@ -736,7 +728,7 @@ $(document).ready(function () {
         $(this).toggleClass('active').prev().removeClass('active');
         $('.popup-register__body').hide();
         $('.popup-register__body_ur').show();
-        $('input').css('background', '#f9fafc');
+        $('.reg-inp').css('background', '#f9fafc');
         $('.popup-register__error').hide();
     });
 
@@ -744,7 +736,7 @@ $(document).ready(function () {
         $(this).toggleClass('active').next().removeClass('active');
         $('.popup-register__body').show();
         $('.popup-register__body_ur').hide();
-        $('input').css('background', '#f9fafc');
+        $('.reg-inp').css('background', '#f9fafc');
         $('.popup-register__error').hide();
     });
 
@@ -783,7 +775,7 @@ $(document).ready(function () {
 
     $(function () {
         $(':submit').click(function (e) {
-            $('input').each(function () {
+            $('.reg-inp').each(function () {
                 if ($(this).val().length < 1) {
                     $(this).css('background', 'rgba(229, 78, 78, 0.06)');
                     $('.popup-register__error').show();
@@ -793,7 +785,7 @@ $(document).ready(function () {
         });
     });
 
-    $('input').focus(function () {
+    $('.reg-inp').focus(function () {
         $(this).css('background', '#f9fafc');
     });
     //--------------autoriz

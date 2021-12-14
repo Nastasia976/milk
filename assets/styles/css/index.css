@@ -10571,120 +10571,6 @@ h3 {
   display: none;
 }
 
-.popapp-add-adres {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: 2;
-}
-
-.popapp-add-adres__wrapper {
-  width: 650px;
-  height: 70vh;
-  background-color: #fff;
-  position: relative;
-  overflow: auto;
-  padding: 0 0 30px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.popapp-add-adres__wrapper::-webkit-scrollbar {
-  width: 5px;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.popapp-add-adres__wrapper::-webkit-scrollbar-track {
-  margin-top: 5px;
-}
-
-.popapp-add-adres__wrapper::-webkit-scrollbar-thumb {
-  background-color: #4eb7e5;
-  border-radius: 100px;
-}
-
-.popapp-add-adres__close {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.popapp-add-adres__title {
-  margin: 30px 0 20px 20px;
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.popapp-add-adres__body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.popapp-add-adres__item {
-  font-size: 16px;
-  line-height: 120%;
-  padding: 10px 15px;
-}
-
-.popapp-add-adres__item input {
-  background-color: #f9fafc;
-  width: 100%;
-  padding: 16px 21px;
-  font-size: 16px;
-  line-height: 120%;
-  color: black;
-}
-
-.popapp-add-adres__button {
-  text-align: center;
-}
-
-.popapp-add-adres__button button {
-  margin-top: 20px;
-  background-color: #4eb7e5;
-  border-radius: 10px;
-  padding: 14px 45px;
-  color: white;
-  font-size: 16px;
-  width: 50%;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.popapp-add-adres__button button:hover {
-  background-color: #1584b4;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.popapp-add-adres.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @media (max-width: 768px) {
   .popapp-add-adres__wrapper {
     width: 420px;
@@ -13631,7 +13517,7 @@ h3 {
   font-weight: 400;
 }
 
-.popup-register, .popup-autoriz {
+.popup-register, .popup-autoriz, .popapp-add-adres {
   display: none;
   z-index: 50000;
   position: fixed;
@@ -13643,7 +13529,7 @@ h3 {
   overflow: auto;
 }
 
-.popup-register__conteiner, .popup-autoriz__conteiner {
+.popup-register__conteiner, .popup-autoriz__conteiner, .popapp-add-adres__conteiner {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -13658,17 +13544,16 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: auto;
 }
 
-.popup-register__wrapper, .popup-autoriz__wrapper {
+.popup-register__wrapper, .popup-autoriz__wrapper, .popapp-add-adres__wrapper {
   width: 600px;
   background-color: #fff;
   padding: 50px 60px;
   height: 550px;
 }
 
-.popup-register__close, .popup-autoriz__close {
+.popup-register__close, .popup-autoriz__close, .popapp-add-adres__close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13678,11 +13563,11 @@ h3 {
   min-width: 100%;
 }
 
-.popup-register__close svg, .popup-autoriz__close svg {
+.popup-register__close svg, .popup-autoriz__close svg, .popapp-add-adres__close svg {
   margin-left: 10px;
 }
 
-.popup-register__close .close-register__item, .popup-autoriz__close .close-register__item {
+.popup-register__close .close-register__item, .popup-autoriz__close .close-register__item, .popapp-add-adres__close .close-register__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13697,14 +13582,14 @@ h3 {
   cursor: pointer;
 }
 
-.popup-register__title, .popup-autoriz__title {
+.popup-register__title, .popup-autoriz__title, .popapp-add-adres__title {
   font-size: calc(20px + 20 * (100vw / 1920));
   line-height: 107.5%;
   font-family: "Story";
   font-weight: 700;
 }
 
-.popup-register__switches, .popup-autoriz__switches {
+.popup-register__switches, .popup-autoriz__switches, .popapp-add-adres__switches {
   margin-top: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13714,7 +13599,7 @@ h3 {
           align-items: center;
 }
 
-.popup-register__el, .popup-autoriz__el {
+.popup-register__el, .popup-autoriz__el, .popapp-add-adres__el {
   font-size: 16px;
   line-height: 120%;
   color: #c4c4c4;
@@ -13722,24 +13607,24 @@ h3 {
   cursor: pointer;
 }
 
-.popup-register__el.active, .popup-autoriz__el.active {
+.popup-register__el.active, .popup-autoriz__el.active, .popapp-add-adres__el.active {
   color: #4eb7e5;
   border-bottom: 1px dashed #4eb7e5;
 }
 
-.popup-register__el:first-child, .popup-autoriz__el:first-child {
+.popup-register__el:first-child, .popup-autoriz__el:first-child, .popapp-add-adres__el:first-child {
   margin-right: 35px;
 }
 
-.popup-register__body, .popup-register__body_ur, .popup-autoriz__body, .popup-autoriz__body_ur {
+.popup-register__body, .popup-register__body_ur, .popup-autoriz__body, .popup-autoriz__body_ur, .popapp-add-adres__body, .popapp-add-adres__body_ur {
   margin-top: 38px;
 }
 
-.popup-register__body_ur, .popup-autoriz__body_ur {
+.popup-register__body_ur, .popup-autoriz__body_ur, .popapp-add-adres__body_ur {
   display: none;
 }
 
-.popup-register .popup-autoriz__item, .popup-autoriz .popup-autoriz__item {
+.popup-register .popup-autoriz__item, .popup-autoriz .popup-autoriz__item, .popapp-add-adres .popup-autoriz__item {
   margin-top: 32px;
   font-size: 16px;
   line-height: 120%;
@@ -13751,56 +13636,58 @@ h3 {
   padding: 0;
 }
 
-.popup-register__item, .popup-autoriz__item {
+.popup-register__item, .popup-autoriz__item, .popapp-add-adres__item {
   padding: 10px 0;
   width: 100%;
   position: relative;
 }
 
-.popup-register__item input, .popup-autoriz__item input {
+.popup-register__item input, .popup-autoriz__item input, .popapp-add-adres__item input {
   padding: 17px 55px 15px 21px;
   width: 100%;
   background: #f9fafc;
   border-radius: 2px;
 }
 
-.popup-register__item input::-webkit-input-placeholder, .popup-autoriz__item input::-webkit-input-placeholder {
+.popup-register__item input::-webkit-input-placeholder, .popup-autoriz__item input::-webkit-input-placeholder, .popapp-add-adres__item input::-webkit-input-placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
 }
 
-.popup-register__item input:-ms-input-placeholder, .popup-autoriz__item input:-ms-input-placeholder {
+.popup-register__item input:-ms-input-placeholder, .popup-autoriz__item input:-ms-input-placeholder, .popapp-add-adres__item input:-ms-input-placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
 }
 
-.popup-register__item input::-ms-input-placeholder, .popup-autoriz__item input::-ms-input-placeholder {
+.popup-register__item input::-ms-input-placeholder, .popup-autoriz__item input::-ms-input-placeholder, .popapp-add-adres__item input::-ms-input-placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
 }
 
-.popup-register__item input::placeholder, .popup-autoriz__item input::placeholder {
+.popup-register__item input::placeholder, .popup-autoriz__item input::placeholder, .popapp-add-adres__item input::placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
 }
 
-.popup-register__item input:focus, .popup-autoriz__item input:focus {
+.popup-register__item input:focus, .popup-autoriz__item input:focus, .popapp-add-adres__item input:focus {
   background: #f9fafc;
 }
 
 .popup-register__item input[type="password"]::-ms-reveal,
 .popup-register__item input[type="password"]::-ms-clear, .popup-autoriz__item input[type="password"]::-ms-reveal,
-.popup-autoriz__item input[type="password"]::-ms-clear {
+.popup-autoriz__item input[type="password"]::-ms-clear, .popapp-add-adres__item input[type="password"]::-ms-reveal,
+.popapp-add-adres__item input[type="password"]::-ms-clear {
   display: none;
 }
 
 .popup-register__item input[type="number"]::-webkit-outer-spin-button,
 .popup-register__item input[type="number"]::-webkit-inner-spin-button, .popup-autoriz__item input[type="number"]::-webkit-outer-spin-button,
-.popup-autoriz__item input[type="number"]::-webkit-inner-spin-button {
+.popup-autoriz__item input[type="number"]::-webkit-inner-spin-button, .popapp-add-adres__item input[type="number"]::-webkit-outer-spin-button,
+.popapp-add-adres__item input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
@@ -13808,13 +13695,15 @@ h3 {
 .popup-register__item input[type="number"]:hover,
 .popup-register__item input[type="number"]:focus, .popup-autoriz__item input[type="number"],
 .popup-autoriz__item input[type="number"]:hover,
-.popup-autoriz__item input[type="number"]:focus {
+.popup-autoriz__item input[type="number"]:focus, .popapp-add-adres__item input[type="number"],
+.popapp-add-adres__item input[type="number"]:hover,
+.popapp-add-adres__item input[type="number"]:focus {
   -webkit-appearance: none;
           appearance: none;
   -moz-appearance: textfield;
 }
 
-.popup-register__item svg, .popup-autoriz__item svg {
+.popup-register__item svg, .popup-autoriz__item svg, .popapp-add-adres__item svg {
   position: absolute;
   right: 20px;
   top: 0;
@@ -13828,7 +13717,10 @@ h3 {
 .popup-register__item .eye-show2, .popup-autoriz__item .eye-hide,
 .popup-autoriz__item .eye-show,
 .popup-autoriz__item .eye-hide2,
-.popup-autoriz__item .eye-show2 {
+.popup-autoriz__item .eye-show2, .popapp-add-adres__item .eye-hide,
+.popapp-add-adres__item .eye-show,
+.popapp-add-adres__item .eye-hide2,
+.popapp-add-adres__item .eye-show2 {
   display: none;
 }
 
@@ -13838,20 +13730,23 @@ h3 {
 .popup-register__item .eye-show2.active, .popup-autoriz__item .eye-hide.active,
 .popup-autoriz__item .eye-show.active,
 .popup-autoriz__item .eye-hide2.active,
-.popup-autoriz__item .eye-show2.active {
+.popup-autoriz__item .eye-show2.active, .popapp-add-adres__item .eye-hide.active,
+.popapp-add-adres__item .eye-show.active,
+.popapp-add-adres__item .eye-hide2.active,
+.popapp-add-adres__item .eye-show2.active {
   display: block;
   cursor: pointer;
 }
 
-.popup-register__footer, .popup-autoriz__footer {
+.popup-register__footer, .popup-autoriz__footer, .popapp-add-adres__footer {
   margin-top: 34px;
 }
 
-.popup-register .popup-autoriz__footer, .popup-autoriz .popup-autoriz__footer {
+.popup-register .popup-autoriz__footer, .popup-autoriz .popup-autoriz__footer, .popapp-add-adres .popup-autoriz__footer {
   margin-top: 24px;
 }
 
-.popup-register__error, .popup-autoriz__error {
+.popup-register__error, .popup-autoriz__error, .popapp-add-adres__error {
   margin-bottom: 47px;
   color: #FF4E4E;
   font-size: 14px;
@@ -13859,22 +13754,22 @@ h3 {
   display: none;
 }
 
-.popup-register__text, .popup-autoriz__text {
+.popup-register__text, .popup-autoriz__text, .popapp-add-adres__text {
   max-width: 445px;
   font-size: 14px;
   line-height: 120%;
 }
 
-.popup-register__text a, .popup-autoriz__text a {
+.popup-register__text a, .popup-autoriz__text a, .popapp-add-adres__text a {
   color: #4eb7e5;
 }
 
-.popup-register__button, .popup-autoriz__button {
+.popup-register__button, .popup-autoriz__button, .popapp-add-adres__button {
   margin-top: 24px;
   max-width: 458px;
 }
 
-.popup-register__button button, .popup-autoriz__button button {
+.popup-register__button button, .popup-autoriz__button button, .popapp-add-adres__button button {
   width: 100%;
   padding: 28px;
   background-color: #4eb7e5;
@@ -13885,24 +13780,24 @@ h3 {
   text-transform: uppercase;
 }
 
-.popup-register__button button:hover, .popup-autoriz__button button:hover {
+.popup-register__button button:hover, .popup-autoriz__button button:hover, .popapp-add-adres__button button:hover {
   background-color: #3EA3CF;
 }
 
-.popup-register__bottom, .popup-autoriz__bottom {
+.popup-register__bottom, .popup-autoriz__bottom, .popapp-add-adres__bottom {
   margin-top: 31px;
   font-size: 15px;
   line-height: 120%;
   color: #818181;
 }
 
-.popup-register__bottom span, .popup-autoriz__bottom span {
+.popup-register__bottom span, .popup-autoriz__bottom span, .popapp-add-adres__bottom span {
   font-weight: 500;
   color: black;
   cursor: pointer;
 }
 
-.popup-register__wrapper {
+.popup-register__wrapper, .popapp-add-adres__wrapper {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -13921,9 +13816,15 @@ h3 {
     background: #4eb7e5;
 } */
 @media (max-width: 600px) {
-  .popup-autoriz__wrapper {
+  .popup-autoriz__wrapper, .popapp-add-adres__wrapper {
     padding: 30px;
     width: 100%;
+  }
+  .popapp-add-adres__button {
+    min-width: 100%;
+  }
+  .popapp-add-adres__button button {
+    min-width: 100% !important;
   }
   .popup-register__wrapper {
     padding: 30px;
@@ -13944,6 +13845,9 @@ h3 {
 }
 
 @media (max-width: 445px) {
+  .popapp-add-adres__title {
+    margin-top: 20px;
+  }
   .popup-register__switches {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -13956,10 +13860,10 @@ h3 {
   .popup-register__switches ._ur {
     margin-top: 20px;
   }
-  .popup-register__wrapper, .popup-autoriz__wrapper {
+  .popup-register__wrapper, .popup-autoriz__wrapper, .popapp-add-adres__wrapper {
     padding: 30px 20px;
   }
-  .popup-register__wrapper button, .popup-autoriz__wrapper button {
+  .popup-register__wrapper button, .popup-autoriz__wrapper button, .popapp-add-adres__wrapper button {
     padding: 20px;
   }
 }

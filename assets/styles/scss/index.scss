@@ -8258,91 +8258,7 @@ h3 {
         }
     }
 }
-.popapp-add-adres {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    &__wrapper {
-        width: 650px;
-        height: 70vh;
-        background-color: #fff;
-        position: relative;
-        overflow: auto;
-        padding: 0 0 30px 0;
-        display: flex;
-        flex-direction: column;
-    }
-    &__wrapper::-webkit-scrollbar {
-        width: 5px;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0);
-    }
-    &__wrapper::-webkit-scrollbar-track {
-        margin-top: 5px;
-    }
-    &__wrapper::-webkit-scrollbar-thumb {
-        background-color: rgb(78, 183, 229);
-        border-radius: 100px;
-    }
-    &__close {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-    &__title {
-        margin: 30px 0 20px 20px;
-        font-size: 24px;
-        font-weight: 500;
-    }
-    &__body {
-        flex: 1 1 auto;
-    }
-    &__item {
-        font-size: 16px;
-        line-height: 120%;
-        padding: 10px 15px;
-        input {
-            background-color: #f9fafc;
-            width: 100%;
-            padding: 16px 21px;
-            font-size: 16px;
-            line-height: 120%;
-            color: black;
-        }
-    }
-    &__button {
-        text-align: center;
-        button {
-            margin-top: 20px;
-            background-color: #4eb7e5;
-            border-radius: 10px;
-            padding: 14px 45px;
-            color: white;
-            font-size: 16px;
-            width: 50%;
-            transition: 0.4s;
-        }
-        button:hover {
-            background-color: #1584b4;
-            transition: 0.4s;
-        }
-    }
-}
-.popapp-add-adres.active {
-    display: flex;
-}
+
 @media (max-width: 768px) {
     .popapp-add-adres {
         &__wrapper {
@@ -10741,7 +10657,7 @@ h3 {
 }
 //___________POP_UP_TITLE_PAGE_________
 
-.popup-register, .popup-autoriz{
+.popup-register, .popup-autoriz, .popapp-add-adres{
     display: none;
     z-index: 50000;
     position: fixed;
@@ -10760,7 +10676,6 @@ h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: auto;
     }
     &__wrapper {
         width: 600px;
@@ -10937,7 +10852,7 @@ h3 {
         }
     }
 }
-.popup-register{
+.popup-register, .popapp-add-adres{
     &__wrapper {
         height: fit-content;
         padding: 30px 60px;
@@ -10955,9 +10870,15 @@ h3 {
     background: #4eb7e5;
 } */
 @media(max-width:600px){
-    .popup-autoriz__wrapper{
+    .popup-autoriz__wrapper, .popapp-add-adres__wrapper{
         padding: 30px;
         width: 100%;
+    }
+    .popapp-add-adres__button{
+        min-width: 100%;
+        button{
+            min-width: 100% !important;
+        }
     }
     .popup-register{
         &__wrapper{
@@ -10979,6 +10900,9 @@ h3 {
     }
 }
 @media(max-width:445px){
+    .popapp-add-adres__title{
+        margin-top: 20px;
+    }
     .popup-register__switches{
         flex-direction: column;
         align-items: flex-start;
@@ -10986,7 +10910,7 @@ h3 {
             margin-top: 20px;
         }
     }
-    .popup-register__wrapper, .popup-autoriz__wrapper{
+    .popup-register__wrapper, .popup-autoriz__wrapper, .popapp-add-adres__wrapper{
         padding: 30px 20px;
         button{
             padding: 20px;
