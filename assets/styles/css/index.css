@@ -13686,6 +13686,7 @@ h3 {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  min-width: 100%;
 }
 
 .popup-register__close svg, .popup-autoriz__close svg {

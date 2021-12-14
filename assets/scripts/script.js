@@ -718,11 +718,13 @@ $(document).ready(function () {
         $('.popup-register').show();
         $('.popup-autoriz').hide();
         $('body').addClass('lock');
+        $('input').css('background', '#f9fafc');
     });
     $('.account__item_enter').click(function () {
         $('.popup-register').hide();
         $('.popup-autoriz').show();
         $('body').addClass('lock');
+        $('input').css('background', '#f9fafc');
     });
     $('.close-register__item').click(function () {
         $('.popup-register, .popup-autoriz').hide();

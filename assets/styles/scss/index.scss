@@ -10814,6 +10814,7 @@ h3 {
     &__close {
         display: flex;
         justify-content: right;
+        min-width: 100%;
         svg {
             margin-left: 10px;
         }
