@@ -719,12 +719,14 @@ $(document).ready(function () {
         $('.popup-autoriz').hide();
         $('body').addClass('lock');
         $('input').css('background', '#f9fafc');
+        $('.popup-register__error').hide();
     });
     $('.account__item_enter').click(function () {
         $('.popup-register').hide();
         $('.popup-autoriz').show();
         $('body').addClass('lock');
         $('input').css('background', '#f9fafc');
+        $('.popup-register__error').hide();
     });
     $('.close-register__item').click(function () {
         $('.popup-register, .popup-autoriz').hide();
