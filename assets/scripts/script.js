@@ -785,7 +785,7 @@ $(document).ready(function () {
     $(function () {
         $(':submit').click(function (e) {
             $('input').each(function () {
-                if ($(this).val().length < 10) {
+                if ($(this).val().length < 1) {
                     $(this).css('background', 'rgba(229, 78, 78, 0.06)');
                     $('.popup-register__error').show();
                     e.preventDefault();
