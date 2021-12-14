@@ -13636,16 +13636,36 @@ h3 {
   z-index: 50000;
   position: fixed;
   width: 100%;
-  height: 100%;
-  background-color: #fff;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
   left: 0;
   top: 0px;
-  padding: calc(20px + 30 * (100vw / 1920)) 20px 50px;
+  overflow: auto;
+}
+
+.popup-register__conteiner, .popup-autoriz__conteiner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: auto;
 }
 
 .popup-register__wrapper, .popup-autoriz__wrapper {
-  max-width: 750px;
+  width: 600px;
+  background-color: #fff;
+  padding: 50px 60px;
+  height: 550px;
 }
 
 .popup-register__close, .popup-autoriz__close {
@@ -13882,14 +13902,45 @@ h3 {
   cursor: pointer;
 }
 
-.popup-register::-webkit-scrollbar, .popup-autoriz::-webkit-scrollbar {
-  width: 100%;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0);
+.popup-register__wrapper {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 30px 60px;
 }
 
-.popup-register::-webkit-scrollbar-track, .popup-autoriz::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0);
+/* .popup-register__wrapper::-webkit-scrollbar, .popup-autoriz__wrapper::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.popup-register__wrapper::-webkit-scrollbar-track, .popup-autoriz__wrapper::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+.popup-register__wrapper::-webkit-scrollbar-thumb, .popup-autoriz__wrapper::-webkit-scrollbar-thumb {
+    background: #4eb7e5;
+} */
+@media (max-width: 600px) {
+  .popup-autoriz__wrapper {
+    padding: 30px;
+    width: 100%;
+  }
+  .popup-register__wrapper {
+    padding: 30px;
+    margin: 50px 0;
+  }
+  .popup-register__switches {
+    margin-top: 18px;
+  }
+  .popup-register__body, .popup-register__body_ur {
+    margin-top: 10px !important;
+  }
+  .popup-register__footer {
+    margin-top: 14px;
+  }
+  .popup-register__bottom {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 445px) {
@@ -13904,5 +13955,11 @@ h3 {
   }
   .popup-register__switches ._ur {
     margin-top: 20px;
+  }
+  .popup-register__wrapper, .popup-autoriz__wrapper {
+    padding: 30px 20px;
+  }
+  .popup-register__wrapper button, .popup-autoriz__wrapper button {
+    padding: 20px;
   }
 }
