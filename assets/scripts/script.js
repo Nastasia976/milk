@@ -933,6 +933,7 @@ new Swiper('.tradishon-swiper', {
 });
 
 new Swiper('.swiper-consist', {
+    touchRatio: 0,
     navigation: {
         nextEl: '.consist__next',
         prevEl: '.consist__prev',
