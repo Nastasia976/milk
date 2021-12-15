@@ -451,13 +451,13 @@
                                         Введите адрес доставки
                                     </div>
                                     <div class="data-company__body">
-                                        <div class="data-company__item"><input type="text" placeholder="Регион"></div>
-                                        <div class="data-company__item"><input type="text" placeholder="Населенный пункт"></div>
-                                        <div class="data-company__item"><input type="text" placeholder="Улица"></div>
-                                        <div class="data-company__item"><input type="text" placeholder="Дом"></div>
-                                        <div class="data-company__item"><input type="text" placeholder="Корпус"></div>
-                                        <div class="data-company__item"><input type="text" placeholder="Этаж"></div>
-                                        <div class="data-company__item"><input type="text" placeholder="Кв./Офис"></div>
+                                        <div class="data-company__item"><input class="choice-inp" type="text" id="region" placeholder="Регион"></div>
+                                        <div class="data-company__item"><input type="text" id="city" placeholder="Населенный пункт"></div>
+                                        <div class="data-company__item"><input type="text" id="street" placeholder="Улица"></div>
+                                        <div class="data-company__item"><input type="text" id="house" placeholder="Дом"></div>
+                                        <div class="data-company__item"><input type="text" id="frame" placeholder="Корпус"></div>
+                                        <div class="data-company__item"><input type="text" id="floor" placeholder="Этаж"></div>
+                                        <div class="data-company__item"><input type="text" id="apartment" placeholder="Кв./Офис"></div>
                                     </div>
                                 </div>
                                 <div class="ordering__body-adres _adres1">
@@ -504,8 +504,129 @@
                                             <span>или выберите из списка</span>
                                     </div>
                                     <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z" fill="black"/>
+                                        <path d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z" fill="currentColor"/>
                                         </svg>                                        
+                                </div>
+                                <div class="ordering__sub-footer choice-adres">
+                                    <div class="choice-adres__header">
+                                        <div class="choice-adres__item">Регион</div>
+                                        <div class="choice-adres__item">Населенный пункт</div>
+                                        <div class="choice-adres__item">Улица</div>
+                                        <div class="choice-adres__item">Дом</div>
+                                        <div class="choice-adres__item">Корпус</div>
+                                        <div class="choice-adres__item">Этаж</div>
+                                        <div class="choice-adres__item">Кв./Офис</div>
+                                    </div>
+                                    <div class="choice-adres__body">
+                                        <div class="choice-adres__items">
+                                            <div class="choice-adres__item _hide">Регион</div>
+                                            <div class="choice-adres__item choice1">Краснодарский край</div>
+
+                                            <div class="choice-adres__item _hide">Населенный пункт</div>
+                                            <div class="choice-adres__item choice2">Краснодар</div>
+
+                                            <div class="choice-adres__item _hide">Улица</div>
+                                            <div class="choice-adres__item choice3">Северная</div>
+
+                                            <div class="choice-adres__item _hide">Дом</div>
+                                            <div class="choice-adres__item choice4">422</div>
+
+                                            <div class="choice-adres__item _hide">Корпус</div>
+                                            <div class="choice-adres__item choice5"></div>
+
+                                            <div class="choice-adres__item _hide">Этаж</div>
+                                            <div class="choice-adres__item choice6"></div>
+
+                                            <div class="choice-adres__item _hide">Кв./Офис</div>
+                                            <div class="choice-adres__item choice7">42</div>
+                                            <div class="choice-adres__item _close">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z" fill="currentColor"/>
+                                                    </svg>                                                    
+                                            </div>
+                                        </div>
+                                        <div class="choice-adres__items">
+                                            <div class="choice-adres__item _hide">Регион</div>
+                                            <div class="choice-adres__item choice1">Краснодарский край</div>
+
+                                            <div class="choice-adres__item _hide">Населенный пункт</div>
+                                            <div class="choice-adres__item choice2">Краснодар</div>
+
+                                            <div class="choice-adres__item _hide">Улица</div>
+                                            <div class="choice-adres__item choice3">Рашпилевская</div>
+
+                                            <div class="choice-adres__item _hide">Дом</div>
+                                            <div class="choice-adres__item choice4">244</div>
+
+                                            <div class="choice-adres__item _hide">Корпус</div>
+                                            <div class="choice-adres__item choice5">3</div>
+
+                                            <div class="choice-adres__item _hide">Этаж</div>
+                                            <div class="choice-adres__item choice6">12</div>
+
+                                            <div class="choice-adres__item _hide">Кв./Офис</div>
+                                            <div class="choice-adres__item choice7">44</div>
+                                            <div class="choice-adres__item _close">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z" fill="currentColor"/>
+                                                    </svg>                                                    
+                                            </div>
+                                        </div>
+                                        <div class="choice-adres__items">
+                                            <div class="choice-adres__item _hide">Регион</div>
+                                            <div class="choice-adres__item choice1">Московская обл</div>
+
+                                            <div class="choice-adres__item _hide">Населенный пункт</div>
+                                            <div class="choice-adres__item choice2">Краснодар</div>
+
+                                            <div class="choice-adres__item _hide">Улица</div>
+                                            <div class="choice-adres__item choice3">Рашпилевская</div>
+
+                                            <div class="choice-adres__item _hide">Дом</div>
+                                            <div class="choice-adres__item choice4">42</div>
+
+                                            <div class="choice-adres__item _hide">Корпус</div>
+                                            <div class="choice-adres__item choice5">3</div>
+
+                                            <div class="choice-adres__item _hide">Этаж</div>
+                                            <div class="choice-adres__item choice6">12</div>
+
+                                            <div class="choice-adres__item _hide">Кв./Офис</div>
+                                            <div class="choice-adres__item choice7">44</div>
+                                            <div class="choice-adres__item _close">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z" fill="currentColor"/>
+                                                    </svg>                                                    
+                                            </div>
+                                        </div>
+                                        <div class="choice-adres__items">
+                                            <div class="choice-adres__item _hide">Регион</div>
+                                            <div class="choice-adres__item choice1">Карачаево-Черкесская респ</div>
+
+                                            <div class="choice-adres__item _hide">Населенный пункт</div>
+                                            <div class="choice-adres__item choice2">Краснодар</div>
+
+                                            <div class="choice-adres__item _hide">Улица</div>
+                                            <div class="choice-adres__item choice3">Рашпилевская</div>
+
+                                            <div class="choice-adres__item _hide">Дом</div>
+                                            <div class="choice-adres__item choice4">86</div>
+
+                                            <div class="choice-adres__item _hide">Корпус</div>
+                                            <div class="choice-adres__item choice5">3</div>
+
+                                            <div class="choice-adres__item _hide">Этаж</div>
+                                            <div class="choice-adres__item choice6">12</div>
+
+                                            <div class="choice-adres__item _hide">Кв./Офис</div>
+                                            <div class="choice-adres__item choice7">44</div>
+                                            <div class="choice-adres__item _close">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 1.64973L12.3503 0L6.99998 5.35025L1.64973 0L0 1.64973L5.35025 6.99998L0 12.3503L1.64973 14L6.99998 8.64975L12.3502 14L14 12.3503L8.64975 6.99998L14 1.64973Z" fill="currentColor"/>
+                                                    </svg>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="ordering__items">

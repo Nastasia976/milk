@@ -794,7 +794,30 @@ $(document).ready(function () {
     $('.reg-inp').focus(function () {
         $(this).css('background', '#f9fafc');
     });
-    //--------------autoriz
+    //-------------choice-adres---------
+    $('.ordering__footer').click(function(){
+        $(this).toggleClass('active').next().slideToggle();
+    })
+
+    $(document).on('click','.choice-adres__items',function(e){
+        $('.choice-adres__items').removeClass('active');
+        $(this).addClass('active');
+        var name1 = $(this).children('.choice1').text();
+        var name2 = $(this).children('.choice2').text();
+        var name3 = $(this).children('.choice3').text();
+        var name4 = $(this).children('.choice4').text();
+        var name5 = $(this).children('.choice5').text();
+        var name6 = $(this).children('.choice6').text();
+        var name7 = $(this).children('.choice7').text();
+        $("#region").val(name1);
+        $("#city").val(name2);
+        $("#street").val(name3);
+        $("#house").val(name4);
+        $("#frame").val(name5);
+        $("#floor").val(name6);
+        $("#apartment").val(name7);
+    });
+        
 
 
 
