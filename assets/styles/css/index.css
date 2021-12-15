@@ -10566,6 +10566,10 @@ h3 {
   padding: 0 0 19px;
 }
 
+.data-company .data-company__body._ur {
+  padding: 0;
+}
+
 .data-company .data-company__body._ur .data-company__item:nth-child(1),
 .data-company .data-company__body._ur .data-company__item:nth-child(2),
 .data-company .data-company__body._ur .data-company__item:nth-child(3) {
@@ -10644,6 +10648,9 @@ h3 {
 @media (max-width: 960px) {
   .data-company__body {
     padding: 0 0 30px 0 !important;
+  }
+  .data-company__body._ur {
+    padding: 0 !important;
   }
   ._p-header {
     padding: 30px;
