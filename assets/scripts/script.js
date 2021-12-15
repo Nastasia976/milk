@@ -733,7 +733,7 @@ $(document).ready(function () {
     });
     
     $('.close-register__item').click(function () {
-        $('.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question, .popup-reviews, .popup-quick').hide();
+        $('.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question, .popup-reviews, .popup-quick, .popup-thx').hide();
         $('body').removeClass('lock');
     });
 
@@ -843,6 +843,10 @@ $(document).ready(function () {
 
     $('.popular__button2').click(function(){
         $('.popup-quick').show();
+    });
+    $('.button-popup-quick').click(function(){
+        $('.popup-thx').show();
+        $('.popup-quick').hide();
     })
 
 });
