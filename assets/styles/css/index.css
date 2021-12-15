@@ -10065,10 +10065,15 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about-our-company__item {
-  max-width: 445px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
 }
 
 .about-our-company__item:not(:last-child) {
@@ -10099,12 +10104,15 @@ h3 {
   display: block;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 720px) {
   .about-our-company__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .about-our-company__item:not(:first-child) {
+    margin-top: 15px;
   }
 }
 
@@ -13859,6 +13867,7 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0;
+  cursor: pointer;
 }
 
 .popup-register__item,

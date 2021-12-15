@@ -692,15 +692,17 @@ $(document).ready(function () {
     });
 
     $('.deliv1').click(function () {
-        $('.ordering__body-adres').hide();
-        $('._adres1, .ordering__footer').show();
+        $('.ordering__body-adres, .choice-adres ').hide();
+        $('._adres1').show();
+        $('.ordering__footer').hide();
     });
     $('.deliv2').click(function () {
-        $('.ordering__body-adres, .ordering__footer').hide();
+        $('.ordering__body-adres, ._adres1').hide();
         $('._adres2').show();
+        $('.ordering__footer').show();
     });
     $('.deliv3').click(function () {
-        $('.ordering__body-adres, .ordering__footer').hide();
+        $('.ordering__body-adres, .ordering__footer, .choice-adres ').hide();
         $('._adres3').show();
     });
 
