@@ -795,11 +795,11 @@ $(document).ready(function () {
         $(this).css('background', '#f9fafc');
     });
     //-------------choice-adres---------
-    $('.ordering__footer').click(function(){
+    $('.ordering__footer').click(function () {
         $(this).toggleClass('active').next().slideToggle();
     })
 
-    $(document).on('click','.choice-adres__items',function(e){
+    $(document).on('click', '.choice-adres__items', function (e) {
         $('.choice-adres__items').removeClass('active');
         $(this).addClass('active');
         var name1 = $(this).children('.choice1').text();
@@ -817,7 +817,7 @@ $(document).ready(function () {
         $("#floor").val(name6);
         $("#apartment").val(name7);
     });
-        
+
 
 
 
@@ -880,6 +880,27 @@ var filterOut = function () {
     });
 }
 
+
+$(window).on('resize', function () {
+    if ($(window).width() < 1081) {
+        inputHide();
+    }
+});
+
+var inputHide = function () {
+    $(document).ready(function () {
+        $('.choice-adres__item').each(function () {
+            if ($(this).text().length == '')
+                $(this).hide().prev().hide();
+        });
+    });
+}
+/* var inputHide = function () {
+    var div = $('.choice-adres__item').val();
+    if(div == !str){
+        $('.choice-adres__item').hide();
+    }    
+} */
 /* $(document).ready(function () {
     function classFunction() {
         if ($('body').width() < 1020) {
