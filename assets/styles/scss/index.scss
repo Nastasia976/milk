@@ -8454,11 +8454,14 @@ h3 {
             padding: 0;
         }
     }
-    .profil__wrapper{
+    .profil__wrapper, .profil__wrapper._ur{
         .choice-adres{
             margin: 0 -10px !important;
             &__body{
                 padding: 0;
+            }
+            &__items{
+                padding: 15px 0 !important;
             }
             &__items:last-child{
                 padding: 15px 0 0 0 !important;
@@ -8471,9 +8474,12 @@ h3 {
             }
         }
     }
-    .choice-adres{
-        &__item._close{
-            right: 20px !important;
+    .choice-adres._ordering{
+        .choice-adres__item._close{
+            right: 20px;
+        }
+        .choice-adres__items{
+            padding: 15px 20px;
         }
     }
 }

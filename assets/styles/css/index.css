@@ -10794,23 +10794,29 @@ h3 {
   .delivery-profil__add button {
     padding: 0;
   }
-  .profil__wrapper .choice-adres {
+  .profil__wrapper .choice-adres, .profil__wrapper._ur .choice-adres {
     margin: 0 -10px !important;
   }
-  .profil__wrapper .choice-adres__body {
+  .profil__wrapper .choice-adres__body, .profil__wrapper._ur .choice-adres__body {
     padding: 0;
   }
-  .profil__wrapper .choice-adres__items:last-child {
+  .profil__wrapper .choice-adres__items, .profil__wrapper._ur .choice-adres__items {
+    padding: 15px 0 !important;
+  }
+  .profil__wrapper .choice-adres__items:last-child, .profil__wrapper._ur .choice-adres__items:last-child {
     padding: 15px 0 0 0 !important;
   }
-  .profil__wrapper .choice-adres__items:first-child {
+  .profil__wrapper .choice-adres__items:first-child, .profil__wrapper._ur .choice-adres__items:first-child {
     padding: 0 0 15px 0 !important;
   }
-  .profil__wrapper .choice-adres__item._close {
+  .profil__wrapper .choice-adres__item._close, .profil__wrapper._ur .choice-adres__item._close {
     right: 10px !important;
   }
-  .choice-adres__item._close {
-    right: 20px !important;
+  .choice-adres._ordering .choice-adres__item._close {
+    right: 20px;
+  }
+  .choice-adres._ordering .choice-adres__items {
+    padding: 15px 20px;
   }
 }
 
