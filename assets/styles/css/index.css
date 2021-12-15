@@ -10756,7 +10756,7 @@ h3 {
     padding: 10px 0;
   }
   .choice-adres__items {
-    padding: 15px 0 !important;
+    padding: 15px 20px !important;
   }
 }
 
@@ -10805,6 +10805,12 @@ h3 {
   }
   .profil__wrapper .choice-adres__items:first-child {
     padding: 0 0 15px 0 !important;
+  }
+  .profil__wrapper .choice-adres__item._close {
+    right: 10px !important;
+  }
+  .choice-adres__item._close {
+    right: 20px !important;
   }
 }
 

@@ -8422,7 +8422,7 @@ h3 {
     }
     .choice-adres{
         &__items{
-            padding: 15px 0 !important;
+            padding: 15px 20px !important;
         }
     }
 }
@@ -8466,6 +8466,14 @@ h3 {
             &__items:first-child{
                 padding: 0 0 15px 0 !important;
             }
+            &__item._close{
+                right: 10px !important;
+            }
+        }
+    }
+    .choice-adres{
+        &__item._close{
+            right: 20px !important;
         }
     }
 }
