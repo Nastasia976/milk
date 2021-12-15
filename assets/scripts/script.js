@@ -727,8 +727,13 @@ $(document).ready(function () {
         $('body').addClass('lock');
     });
 
+    $('.add-reviews').click(function () {
+        $('.popup-reviews').show();
+        $('body').addClass('lock');
+    });
+    
     $('.close-register__item').click(function () {
-        $('.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question').hide();
+        $('.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question, .popup-reviews, .popup-quick').hide();
         $('body').removeClass('lock');
     });
 
@@ -820,10 +825,31 @@ $(document).ready(function () {
         $("#apartment").val(name7);
     });
 
+    $(document).on('click', '#reitings1', function (e) {
+        $('.leave-reiting__value').text(1);
+    });
+    $(document).on('click', '#reitings2', function (e) {
+        $('.leave-reiting__value').text(2);
+    });
+    $(document).on('click', '#reitings3', function (e) {
+        $('.leave-reiting__value').text(3);
+    });
+    $(document).on('click', '#reitings4', function (e) {
+        $('.leave-reiting__value').text(4);
+    });
+    $(document).on('click', '#reitings5', function (e) {
+        $('.leave-reiting__value').text(5);
+    });
 
-
+    $('.popular__button2').click(function(){
+        $('.popup-quick').show();
+    })
 
 });
+
+ //----------------reiting------
+
+
 
 
 /* function validateCreditCardForm(){

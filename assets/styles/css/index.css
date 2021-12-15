@@ -112,6 +112,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+input {
+  font-size: 16px;
+  line-height: 120%;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 120%;
+}
+
+input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 120%;
+}
+
+input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 120%;
+}
+
+input::placeholder {
+  font-size: 16px;
+  line-height: 120%;
+}
+
 .granello-main {
   padding: 40px 20px;
 }
@@ -6002,14 +6027,23 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 15px 15px 10px;
     padding: 20px 15px;
   }
   .recommendations .popular__image {
     margin-top: 20px;
-    padding: 0 0 80% 0;
+    padding: 0 0 70% 0;
+  }
+  .recommendations .popular__name {
+    margin-top: 0;
+  }
+  .recommendations .popular__text {
+    margin-top: 8px;
+  }
+  .recommendations .item-price__choice {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 
@@ -13708,7 +13742,7 @@ h3 {
 .popup-register,
 .popup-autoriz,
 .popapp-add-adres,
-.popup-question {
+.popup-question, .popup-reviews, .popup-quick {
   display: none;
   z-index: 50000;
   position: fixed;
@@ -13723,7 +13757,7 @@ h3 {
 .popup-register__conteiner,
 .popup-autoriz__conteiner,
 .popapp-add-adres__conteiner,
-.popup-question__conteiner {
+.popup-question__conteiner, .popup-reviews__conteiner, .popup-quick__conteiner {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -13743,7 +13777,7 @@ h3 {
 .popup-register__wrapper,
 .popup-autoriz__wrapper,
 .popapp-add-adres__wrapper,
-.popup-question__wrapper {
+.popup-question__wrapper, .popup-reviews__wrapper, .popup-quick__wrapper {
   width: 600px;
   background-color: #fff;
   padding: 50px 60px;
@@ -13753,7 +13787,7 @@ h3 {
 .popup-register__close,
 .popup-autoriz__close,
 .popapp-add-adres__close,
-.popup-question__close {
+.popup-question__close, .popup-reviews__close, .popup-quick__close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13766,14 +13800,14 @@ h3 {
 .popup-register__close svg,
 .popup-autoriz__close svg,
 .popapp-add-adres__close svg,
-.popup-question__close svg {
+.popup-question__close svg, .popup-reviews__close svg, .popup-quick__close svg {
   margin-left: 10px;
 }
 
 .popup-register__close .close-register__item,
 .popup-autoriz__close .close-register__item,
 .popapp-add-adres__close .close-register__item,
-.popup-question__close .close-register__item {
+.popup-question__close .close-register__item, .popup-reviews__close .close-register__item, .popup-quick__close .close-register__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13791,8 +13825,8 @@ h3 {
 .popup-register__title,
 .popup-autoriz__title,
 .popapp-add-adres__title,
-.popup-question__title {
-  font-size: calc(20px + 20 * (100vw / 1920));
+.popup-question__title, .popup-reviews__title, .popup-quick__title {
+  font-size: calc(24px + 16 * (100vw / 1920));
   line-height: 107.5%;
   font-family: "Story";
   font-weight: 700;
@@ -13801,7 +13835,7 @@ h3 {
 .popup-register__switches,
 .popup-autoriz__switches,
 .popapp-add-adres__switches,
-.popup-question__switches {
+.popup-question__switches, .popup-reviews__switches, .popup-quick__switches {
   margin-top: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13814,7 +13848,7 @@ h3 {
 .popup-register__el,
 .popup-autoriz__el,
 .popapp-add-adres__el,
-.popup-question__el {
+.popup-question__el, .popup-reviews__el, .popup-quick__el {
   font-size: 16px;
   line-height: 120%;
   color: #c4c4c4;
@@ -13825,7 +13859,7 @@ h3 {
 .popup-register__el.active,
 .popup-autoriz__el.active,
 .popapp-add-adres__el.active,
-.popup-question__el.active {
+.popup-question__el.active, .popup-reviews__el.active, .popup-quick__el.active {
   color: #4eb7e5;
   border-bottom: 1px dashed #4eb7e5;
 }
@@ -13833,7 +13867,7 @@ h3 {
 .popup-register__el:first-child,
 .popup-autoriz__el:first-child,
 .popapp-add-adres__el:first-child,
-.popup-question__el:first-child {
+.popup-question__el:first-child, .popup-reviews__el:first-child, .popup-quick__el:first-child {
   margin-right: 35px;
 }
 
@@ -13843,21 +13877,21 @@ h3 {
 .popapp-add-adres__body,
 .popapp-add-adres__body_ur,
 .popup-question__body,
-.popup-question__body_ur {
+.popup-question__body_ur, .popup-reviews__body, .popup-reviews__body_ur, .popup-quick__body, .popup-quick__body_ur {
   margin-top: 38px;
 }
 
 .popup-register__body_ur,
 .popup-autoriz__body_ur,
 .popapp-add-adres__body_ur,
-.popup-question__body_ur {
+.popup-question__body_ur, .popup-reviews__body_ur, .popup-quick__body_ur {
   display: none;
 }
 
 .popup-register .popup-autoriz__item,
 .popup-autoriz .popup-autoriz__item,
 .popapp-add-adres .popup-autoriz__item,
-.popup-question .popup-autoriz__item {
+.popup-question .popup-autoriz__item, .popup-reviews .popup-autoriz__item, .popup-quick .popup-autoriz__item {
   margin-top: 32px;
   font-size: 16px;
   line-height: 120%;
@@ -13873,7 +13907,7 @@ h3 {
 .popup-register__item,
 .popup-autoriz__item,
 .popapp-add-adres__item,
-.popup-question__item {
+.popup-question__item, .popup-reviews__item, .popup-quick__item {
   padding: 10px 0;
   width: 100%;
   position: relative;
@@ -13882,7 +13916,7 @@ h3 {
 .popup-register__item input,
 .popup-autoriz__item input,
 .popapp-add-adres__item input,
-.popup-question__item input {
+.popup-question__item input, .popup-reviews__item input, .popup-quick__item input {
   padding: 17px 55px 15px 21px;
   width: 100%;
   background: #f9fafc;
@@ -13892,7 +13926,7 @@ h3 {
 .popup-register__item input::-webkit-input-placeholder,
 .popup-autoriz__item input::-webkit-input-placeholder,
 .popapp-add-adres__item input::-webkit-input-placeholder,
-.popup-question__item input::-webkit-input-placeholder {
+.popup-question__item input::-webkit-input-placeholder, .popup-reviews__item input::-webkit-input-placeholder, .popup-quick__item input::-webkit-input-placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
@@ -13901,7 +13935,7 @@ h3 {
 .popup-register__item input:-ms-input-placeholder,
 .popup-autoriz__item input:-ms-input-placeholder,
 .popapp-add-adres__item input:-ms-input-placeholder,
-.popup-question__item input:-ms-input-placeholder {
+.popup-question__item input:-ms-input-placeholder, .popup-reviews__item input:-ms-input-placeholder, .popup-quick__item input:-ms-input-placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
@@ -13910,7 +13944,7 @@ h3 {
 .popup-register__item input::-ms-input-placeholder,
 .popup-autoriz__item input::-ms-input-placeholder,
 .popapp-add-adres__item input::-ms-input-placeholder,
-.popup-question__item input::-ms-input-placeholder {
+.popup-question__item input::-ms-input-placeholder, .popup-reviews__item input::-ms-input-placeholder, .popup-quick__item input::-ms-input-placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
@@ -13919,7 +13953,7 @@ h3 {
 .popup-register__item input::placeholder,
 .popup-autoriz__item input::placeholder,
 .popapp-add-adres__item input::placeholder,
-.popup-question__item input::placeholder {
+.popup-question__item input::placeholder, .popup-reviews__item input::placeholder, .popup-quick__item input::placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
@@ -13928,7 +13962,7 @@ h3 {
 .popup-register__item input:focus,
 .popup-autoriz__item input:focus,
 .popapp-add-adres__item input:focus,
-.popup-question__item input:focus {
+.popup-question__item input:focus, .popup-reviews__item input:focus, .popup-quick__item input:focus {
   background: #f9fafc;
 }
 
@@ -13939,7 +13973,9 @@ h3 {
 .popapp-add-adres__item input[type="password"]::-ms-reveal,
 .popapp-add-adres__item input[type="password"]::-ms-clear,
 .popup-question__item input[type="password"]::-ms-reveal,
-.popup-question__item input[type="password"]::-ms-clear {
+.popup-question__item input[type="password"]::-ms-clear, .popup-reviews__item input[type="password"]::-ms-reveal,
+.popup-reviews__item input[type="password"]::-ms-clear, .popup-quick__item input[type="password"]::-ms-reveal,
+.popup-quick__item input[type="password"]::-ms-clear {
   display: none;
 }
 
@@ -13950,7 +13986,9 @@ h3 {
 .popapp-add-adres__item input[type="number"]::-webkit-outer-spin-button,
 .popapp-add-adres__item input[type="number"]::-webkit-inner-spin-button,
 .popup-question__item input[type="number"]::-webkit-outer-spin-button,
-.popup-question__item input[type="number"]::-webkit-inner-spin-button {
+.popup-question__item input[type="number"]::-webkit-inner-spin-button, .popup-reviews__item input[type="number"]::-webkit-outer-spin-button,
+.popup-reviews__item input[type="number"]::-webkit-inner-spin-button, .popup-quick__item input[type="number"]::-webkit-outer-spin-button,
+.popup-quick__item input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
@@ -13965,7 +14003,11 @@ h3 {
 .popapp-add-adres__item input[type="number"]:focus,
 .popup-question__item input[type="number"],
 .popup-question__item input[type="number"]:hover,
-.popup-question__item input[type="number"]:focus {
+.popup-question__item input[type="number"]:focus, .popup-reviews__item input[type="number"],
+.popup-reviews__item input[type="number"]:hover,
+.popup-reviews__item input[type="number"]:focus, .popup-quick__item input[type="number"],
+.popup-quick__item input[type="number"]:hover,
+.popup-quick__item input[type="number"]:focus {
   -webkit-appearance: none;
           appearance: none;
   -moz-appearance: textfield;
@@ -13974,7 +14016,7 @@ h3 {
 .popup-register__item svg,
 .popup-autoriz__item svg,
 .popapp-add-adres__item svg,
-.popup-question__item svg {
+.popup-question__item svg, .popup-reviews__item svg, .popup-quick__item svg {
   position: absolute;
   right: 20px;
   top: 0;
@@ -13997,7 +14039,13 @@ h3 {
 .popup-question__item .eye-hide,
 .popup-question__item .eye-show,
 .popup-question__item .eye-hide2,
-.popup-question__item .eye-show2 {
+.popup-question__item .eye-show2, .popup-reviews__item .eye-hide,
+.popup-reviews__item .eye-show,
+.popup-reviews__item .eye-hide2,
+.popup-reviews__item .eye-show2, .popup-quick__item .eye-hide,
+.popup-quick__item .eye-show,
+.popup-quick__item .eye-hide2,
+.popup-quick__item .eye-show2 {
   display: none;
 }
 
@@ -14016,7 +14064,13 @@ h3 {
 .popup-question__item .eye-hide.active,
 .popup-question__item .eye-show.active,
 .popup-question__item .eye-hide2.active,
-.popup-question__item .eye-show2.active {
+.popup-question__item .eye-show2.active, .popup-reviews__item .eye-hide.active,
+.popup-reviews__item .eye-show.active,
+.popup-reviews__item .eye-hide2.active,
+.popup-reviews__item .eye-show2.active, .popup-quick__item .eye-hide.active,
+.popup-quick__item .eye-show.active,
+.popup-quick__item .eye-hide2.active,
+.popup-quick__item .eye-show2.active {
   display: block;
   cursor: pointer;
 }
@@ -14024,21 +14078,21 @@ h3 {
 .popup-register__footer,
 .popup-autoriz__footer,
 .popapp-add-adres__footer,
-.popup-question__footer {
+.popup-question__footer, .popup-reviews__footer, .popup-quick__footer {
   margin-top: 34px;
 }
 
 .popup-register .popup-autoriz__footer,
 .popup-autoriz .popup-autoriz__footer,
 .popapp-add-adres .popup-autoriz__footer,
-.popup-question .popup-autoriz__footer {
+.popup-question .popup-autoriz__footer, .popup-reviews .popup-autoriz__footer, .popup-quick .popup-autoriz__footer {
   margin-top: 24px;
 }
 
 .popup-register__error,
 .popup-autoriz__error,
 .popapp-add-adres__error,
-.popup-question__error {
+.popup-question__error, .popup-reviews__error, .popup-quick__error {
   margin-bottom: 47px;
   color: #ff4e4e;
   font-size: 14px;
@@ -14049,7 +14103,7 @@ h3 {
 .popup-register__text,
 .popup-autoriz__text,
 .popapp-add-adres__text,
-.popup-question__text {
+.popup-question__text, .popup-reviews__text, .popup-quick__text {
   max-width: 445px;
   font-size: 14px;
   line-height: 120%;
@@ -14058,14 +14112,14 @@ h3 {
 .popup-register__text a,
 .popup-autoriz__text a,
 .popapp-add-adres__text a,
-.popup-question__text a {
+.popup-question__text a, .popup-reviews__text a, .popup-quick__text a {
   color: #4eb7e5;
 }
 
 .popup-register__button,
 .popup-autoriz__button,
 .popapp-add-adres__button,
-.popup-question__button {
+.popup-question__button, .popup-reviews__button, .popup-quick__button {
   margin-top: 24px;
   max-width: 458px;
 }
@@ -14073,7 +14127,7 @@ h3 {
 .popup-register__button button,
 .popup-autoriz__button button,
 .popapp-add-adres__button button,
-.popup-question__button button {
+.popup-question__button button, .popup-reviews__button button, .popup-quick__button button {
   width: 100%;
   padding: 28px;
   background-color: #4eb7e5;
@@ -14087,14 +14141,14 @@ h3 {
 .popup-register__button button:hover,
 .popup-autoriz__button button:hover,
 .popapp-add-adres__button button:hover,
-.popup-question__button button:hover {
+.popup-question__button button:hover, .popup-reviews__button button:hover, .popup-quick__button button:hover {
   background-color: #3ea3cf;
 }
 
 .popup-register__bottom,
 .popup-autoriz__bottom,
 .popapp-add-adres__bottom,
-.popup-question__bottom {
+.popup-question__bottom, .popup-reviews__bottom, .popup-quick__bottom {
   margin-top: 31px;
   font-size: 15px;
   line-height: 120%;
@@ -14104,7 +14158,7 @@ h3 {
 .popup-register__bottom span,
 .popup-autoriz__bottom span,
 .popapp-add-adres__bottom span,
-.popup-question__bottom span {
+.popup-question__bottom span, .popup-reviews__bottom span, .popup-quick__bottom span {
   font-weight: 500;
   color: black;
   cursor: pointer;
@@ -14112,54 +14166,22 @@ h3 {
 
 .popup-register__wrapper,
 .popapp-add-adres__wrapper,
-.popup-question__wrapper {
+.popup-question__wrapper, .popup-reviews__wrapper, .popup-quick__wrapper {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 30px 60px;
 }
 
-.popup-question__title {
+.popup-question__title, .popup-reviews__title {
   margin-top: 20px;
 }
 
-.popup-question__body {
+.popup-question__body, .popup-reviews__body {
   position: relative;
 }
 
-.popup-question__body textarea {
-  background: #f9fafc;
-  border-radius: 2px;
-  width: 100%;
-  resize: none;
-  padding: 16px 21px 40px;
-}
-
-.popup-question__body textarea::-webkit-input-placeholder {
-  color: #818181;
-  font-size: 16px;
-  line-height: 120%;
-}
-
-.popup-question__body textarea:-ms-input-placeholder {
-  color: #818181;
-  font-size: 16px;
-  line-height: 120%;
-}
-
-.popup-question__body textarea::-ms-input-placeholder {
-  color: #818181;
-  font-size: 16px;
-  line-height: 120%;
-}
-
-.popup-question__body textarea::placeholder {
-  color: #818181;
-  font-size: 16px;
-  line-height: 120%;
-}
-
-.popup-question__body .current-text {
+.popup-question__body .current-text, .popup-reviews__body .current-text {
   position: absolute;
   right: 21px;
   bottom: 21px;
@@ -14169,21 +14191,132 @@ h3 {
   font-weight: 500;
 }
 
-/* .popup-register__wrapper::-webkit-scrollbar, .popup-autoriz__wrapper::-webkit-scrollbar {
-    width: 5px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
+.popup-question textarea, .popup-reviews textarea {
+  background: #f9fafc;
+  border-radius: 2px;
+  width: 100%;
+  resize: none;
+  padding: 16px 21px 40px;
 }
-.popup-register__wrapper::-webkit-scrollbar-track, .popup-autoriz__wrapper::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0);
+
+.popup-question textarea::-webkit-input-placeholder, .popup-reviews textarea::-webkit-input-placeholder {
+  color: #818181;
+  font-size: 16px;
+  line-height: 120%;
 }
-.popup-register__wrapper::-webkit-scrollbar-thumb, .popup-autoriz__wrapper::-webkit-scrollbar-thumb {
-    background: #4eb7e5;
-} */
+
+.popup-question textarea:-ms-input-placeholder, .popup-reviews textarea:-ms-input-placeholder {
+  color: #818181;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.popup-question textarea::-ms-input-placeholder, .popup-reviews textarea::-ms-input-placeholder {
+  color: #818181;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.popup-question textarea::placeholder, .popup-reviews textarea::placeholder {
+  color: #818181;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.popup-reviews__name {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 17px;
+}
+
+.popup-reviews .question-form {
+  margin-top: 45px;
+}
+
+.popup-reviews__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-reviews__wrap .leave-reiting__value {
+  margin-left: 17px;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.leave-reiting {
+  position: relative;
+  font-family: 20px;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.leave-reiting__active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.leave-reiting__active svg {
+  margin: 0 7px;
+}
+
+.leave-reiting__items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.leave-reiting__item {
+  position: absolute;
+  visibility: hidden;
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.leave-reiting .leave-reiting__item:checked, .leave-reiting .leave-reiting__item:checked ~ .leave-reiting__label {
+  opacity: 1;
+}
+
+.leave-reiting__label {
+  height: 100%;
+  cursor: pointer;
+  margin: 0 7px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  position: relative;
+}
+
+.leave-reiting__label:hover,
+.leave-reiting__label:hover ~ .leave-reiting__label,
+.leave-reiting__label:checked ~ .leave-reiting__label:hover {
+  opacity: 1;
+}
+
 @media (max-width: 600px) {
   .popup-autoriz__wrapper,
   .popapp-add-adres__wrapper,
-  .popup-question__wrapper {
+  .popup-question__wrapper, .popup-reviews__wrapper, .popup-quick__wrapper {
     padding: 30px;
     width: 100%;
   }
@@ -14236,13 +14369,16 @@ h3 {
   .popup-register__wrapper,
   .popup-autoriz__wrapper,
   .popapp-add-adres__wrapper,
-  .popup-question__wrapper {
+  .popup-question__wrapper, .popup-reviews__wrapper, .popup-quick__wrapper {
     padding: 30px 20px;
   }
   .popup-register__wrapper button,
   .popup-autoriz__wrapper button,
   .popapp-add-adres__wrapper button,
-  .popup-question__wrapper button {
+  .popup-question__wrapper button, .popup-reviews__wrapper button, .popup-quick__wrapper button {
     padding: 18px;
+  }
+  .popup-quick__title {
+    margin-top: 15px;
   }
 }
