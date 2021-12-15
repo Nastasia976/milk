@@ -13818,6 +13818,52 @@ h3 {
   margin-top: 20px;
 }
 
+.popup-question__body {
+  position: relative;
+}
+
+.popup-question__body textarea {
+  background: #f9fafc;
+  border-radius: 2px;
+  width: 100%;
+  resize: none;
+  padding: 16px 21px 40px;
+}
+
+.popup-question__body textarea::-webkit-input-placeholder {
+  color: #818181;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.popup-question__body textarea:-ms-input-placeholder {
+  color: #818181;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.popup-question__body textarea::-ms-input-placeholder {
+  color: #818181;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.popup-question__body textarea::placeholder {
+  color: #818181;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.popup-question__body .current-text {
+  position: absolute;
+  right: 21px;
+  bottom: 21px;
+  color: black;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 500;
+}
+
 /* .popup-register__wrapper::-webkit-scrollbar, .popup-autoriz__wrapper::-webkit-scrollbar {
     width: 5px;
     height: 100%;

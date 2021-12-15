@@ -10862,6 +10862,31 @@ h3 {
     &__title{
         margin-top: 20px;
     }
+    &__body{
+        position: relative;
+        textarea{
+            background: #f9fafc;
+            border-radius: 2px;
+            width: 100%;
+            resize: none;
+            padding: 16px 21px 40px;
+        }
+        textarea::placeholder {
+            color: #818181;
+            font-size: 16px;
+            line-height: 120%;
+        }
+        .current-text {
+            position: absolute;
+            right: 21px;
+            bottom: 21px;
+            color: black;
+            font-size: 14px;
+            line-height: 120%;
+            font-weight: 500;
+        }
+
+    }
 }
 
 /* .popup-register__wrapper::-webkit-scrollbar, .popup-autoriz__wrapper::-webkit-scrollbar {
