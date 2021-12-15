@@ -8340,6 +8340,11 @@ h3 {
     .main-profil-ur {
         .profil__wrapper {
             padding: 0 30px 30px !important;
+            .choice-adres{
+                margin: 0 -30px;
+            }
+            .choice-adres__items{
+            }
         }
     }
     .delivery-profil__body {
@@ -8384,6 +8389,11 @@ h3 {
     }
 }
 @media (max-width: 768px) {
+    .profil__wrapper{
+        .choice-adres{
+            margin: 0 !important;
+        }
+    }
     .personal-data__item,
     .password-profil__item,
     .data-company__item {
@@ -8404,6 +8414,11 @@ h3 {
         .data-company__item {
             flex: 1 1 100% !important;
             padding: 10px 0;
+        }
+    }
+    .choice-adres{
+        &__items{
+            padding: 15px 0 !important;
         }
     }
 }
@@ -8433,6 +8448,20 @@ h3 {
         margin-top: 20px;
         button {
             padding: 0;
+        }
+    }
+    .profil__wrapper{
+        .choice-adres{
+            margin: 0 -10px !important;
+            &__body{
+                padding: 0;
+            }
+            &__items:last-child{
+                padding: 15px 0 0 0 !important;
+            }
+            &__items:first-child{
+                padding: 0 0 15px 0 !important;
+            }
         }
     }
 }
@@ -10475,7 +10504,7 @@ h3 {
             padding: 15px 30px;
             border: 0 !important;
             position: relative;
-            min-width: 280px;
+            min-width: 250px;
         }
         &__item._hide{
             display: block;
@@ -10552,6 +10581,11 @@ h3 {
         }
         .ordering__element:last-child {
             margin-top: 15px;
+        }
+    }
+    .choice-adres {
+        &__items{
+            min-width: 100%;
         }
     }
 }
