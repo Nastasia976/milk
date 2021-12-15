@@ -14193,9 +14193,12 @@ h3 {
   .popapp-add-adres__button button {
     min-width: 100% !important;
   }
+  .popup-register__title {
+    margin-top: -25px;
+  }
   .popup-register__wrapper {
     padding: 30px;
-    margin: 50px 0;
+    min-height: 100%;
   }
   .popup-register__switches {
     margin-top: 18px;
@@ -14224,6 +14227,12 @@ h3 {
   .popup-register__switches ._ur {
     margin-top: 20px;
   }
+  .popup-register__bottom, .popup-autoriz__bottom, .popapp-add-adres__bottom, .popup-question__bottom {
+    margin-top: 15px !important;
+  }
+  .popup-register__button, .popup-autoriz__button, .popapp-add-adres__button, .popup-question__button {
+    margin-top: 15px;
+  }
   .popup-register__wrapper,
   .popup-autoriz__wrapper,
   .popapp-add-adres__wrapper,
@@ -14234,6 +14243,6 @@ h3 {
   .popup-autoriz__wrapper button,
   .popapp-add-adres__wrapper button,
   .popup-question__wrapper button {
-    padding: 20px;
+    padding: 18px;
   }
 }
