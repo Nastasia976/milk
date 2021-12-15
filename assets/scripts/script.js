@@ -884,14 +884,26 @@ var filterOut = function () {
 $(window).on('resize', function () {
     if ($(window).width() < 1081) {
         inputHide();
+    } else{
+        inputShow();
     }
 });
 
 var inputHide = function () {
     $(document).ready(function () {
         $('.choice-adres__item').each(function () {
-            if ($(this).text().length == '')
+            if ($(this).text().length == ''){
                 $(this).hide().prev().hide();
+            } 
+        });
+    });
+}
+var inputShow = function () {
+    $(document).ready(function () {
+        $('.choice-adres__item').each(function () {
+            if ($(this).text().length == ''){
+                $(this).show().show();
+            } 
         });
     });
 }
