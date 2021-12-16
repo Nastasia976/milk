@@ -4385,7 +4385,7 @@ h3 {
     }
     .review__item {
         white-space: nowrap;
-        svg{
+        svg {
             transform: scale(0.7);
         }
         svg:not(:last-child) {
@@ -11052,7 +11052,7 @@ h3 {
 .popup-quick,
 .popup-thx {
     &__wrapper {
-       /*  height: fit-content; */
+        height: fit-content;
         padding: 30px 60px;
     }
 }
@@ -11162,7 +11162,7 @@ h3 {
         opacity: 1;
     }
 }
-.popup-thx__message{
+.popup-thx__message {
     font-size: 16px;
 }
 @media (max-width: 600px) {
@@ -11171,10 +11171,11 @@ h3 {
     .popup-question,
     .popup-reviews,
     .popup-quick,
-    .popup-thx{
-        &__wrapper{
+    .popup-thx {
+        &__wrapper {
             padding: 30px;
             width: 100%;
+            min-height: 100vh;
         }
         &__button {
             min-width: 100%;
@@ -11234,13 +11235,14 @@ h3 {
     .popup-question__wrapper,
     .popup-reviews__wrapper,
     .popup-quick__wrapper,
-    .popup-thx__wrapper{
+    .popup-thx__wrapper {
         padding: 30px 20px;
         button {
             padding: 18px;
         }
     }
-    .popup-quick__title, .popup-thx__title {
+    .popup-quick__title,
+    .popup-thx__title {
         margin-top: 15px;
     }
 }

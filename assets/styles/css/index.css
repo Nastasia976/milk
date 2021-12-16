@@ -14296,7 +14296,9 @@ h3 {
 .popup-reviews__wrapper,
 .popup-quick__wrapper,
 .popup-thx__wrapper {
-  /*  height: fit-content; */
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 30px 60px;
 }
 
@@ -14462,6 +14464,7 @@ h3 {
   .popup-thx__wrapper {
     padding: 30px;
     width: 100%;
+    min-height: 100vh;
   }
   .popup-autoriz__button,
   .popapp-add-adres__button,
@@ -14543,7 +14546,8 @@ h3 {
   .popup-thx__wrapper button {
     padding: 18px;
   }
-  .popup-quick__title, .popup-thx__title {
+  .popup-quick__title,
+  .popup-thx__title {
     margin-top: 15px;
   }
 }
