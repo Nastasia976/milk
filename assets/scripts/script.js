@@ -732,8 +732,8 @@ $(document).ready(function () {
         $('body').addClass('lock');
     });
     
-    $('.close-register__item').click(function () {
-        $('.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question, .popup-reviews, .popup-quick, .popup-thx, .popup-del, .popup-subscription').hide();
+    $('.close-register__item, .popup-thx__button').click(function () {
+        $('.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question, .popup-reviews, .popup-quick, .popup-thx, .popup-del, .popup-pre-order, .popup-subscription, .popup-thx-order, popup-thx-profil').hide();
         $('body').removeClass('lock');
         $('.leave-reiting__value').text('4,8');
         $('.leave-reiting__item, leave-reiting__label').prop('checked', false);
@@ -872,6 +872,16 @@ $(document).ready(function () {
         $('.popup-subscription').show();
     });
 
+    $('.popup-pre-order__prepayment').click(function(){
+        $('.popup-thx-order').show();
+        $('.popup-pre-order').hide();
+    });
+
+    $('.save-data').click(function(){
+        $('.popup-thx-profil').show();
+        $('body').addClass('lock');
+    });
+    
 });
 
  //----------------reiting------

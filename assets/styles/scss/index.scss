@@ -39,6 +39,10 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
 
+
+button, a{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 input {
     font-size: 16px;
     line-height: 120%;
@@ -11194,9 +11198,19 @@ h3 {
         max-width: 318px;
     }
 }
-.popup-pre-order, .popup-del{
+.popup-pre-order, .popup-del, .popup-subscription, .popup-thx {
+    &__wrapper{
+        max-width: 560px;
+        padding: 44px 50px 80px;
+    }
+    &__title{
+        margin-top: 20px;
+    }
     &__footer{
         margin-top: calc(15px + 19 * (100vw / 1920));
+    }
+    p{
+        margin-top: 20px;
     }
 }
 .popup-pre-order{
