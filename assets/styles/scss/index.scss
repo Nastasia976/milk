@@ -7921,6 +7921,9 @@ h3 {
         display: none;
         padding: 7px 0 calc(21px + 60 * (100vw / 1920));
     }
+    &__items:first-child{
+        justify-content: flex-start;
+    }
     &__items {
         display: flex;
         justify-content: space-between;
