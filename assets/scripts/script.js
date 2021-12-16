@@ -844,7 +844,7 @@ $(document).ready(function () {
         $('.leave-reiting__value').text(5);
     });
 
-    $('.popular__button2').click(function(){
+    $('.popular__button2, .slider-rec__button2').click(function(){
         $('.popup-quick').show();
         $('body').addClass('lock');
     });
