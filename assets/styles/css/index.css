@@ -14465,6 +14465,7 @@ h3 {
     padding: 30px;
     width: 100%;
     min-height: 100vh;
+    border: 2px solid blue;
   }
   .popup-autoriz__button,
   .popapp-add-adres__button,
