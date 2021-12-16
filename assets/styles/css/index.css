@@ -14483,7 +14483,7 @@ h3 {
   .popup-register__title {
     margin-top: -25px;
   }
-  .popup-register__wrapper {
+  .popup-register__wrapper, .popup-register .popup-question__wrapper {
     padding: 30px;
     min-height: 100vh;
   }
