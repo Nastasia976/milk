@@ -441,7 +441,7 @@ $(document).ready(function () {
     });
 
     $('.filter__section').click(function (event) {
-        $(this).children('.filter__sub-submenu').slideToggle(300);
+        $(this).toggleClass('active').children('.filter__sub-submenu').slideToggle(300);
     });
 
     /* $('.filter__element').click(function(e) {

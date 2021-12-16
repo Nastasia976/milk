@@ -1786,7 +1786,7 @@ h2 {
   position: absolute;
   content: "";
   min-width: 180%;
-  height: 80vh;
+  height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(#f4f9ff), to(#f4f9ff)), -webkit-gradient(linear, left bottom, left top, from(#fbf7f2), to(#fbf7f2));
   background: linear-gradient(0deg, #f4f9ff, #f4f9ff), linear-gradient(0deg, #fbf7f2, #fbf7f2);
   left: -40%;
@@ -2171,7 +2171,7 @@ h2 {
   position: absolute;
   content: "";
   min-width: 180%;
-  height: 80vh;
+  height: 110vh;
   background: -webkit-gradient(linear, left bottom, left top, from(#f4f9ff), to(#f4f9ff)), -webkit-gradient(linear, left bottom, left top, from(#fbf7f2), to(#fbf7f2));
   background: linear-gradient(0deg, #f4f9ff, #f4f9ff), linear-gradient(0deg, #fbf7f2, #fbf7f2);
   left: -40%;
@@ -3838,11 +3838,18 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   max-width: 48%;
   margin-right: 20px;
+}
+
+.product-card__image-assort .product-card__items {
+  margin-top: 10px;
 }
 
 .product-card__body {
@@ -5190,8 +5197,13 @@ h3 {
     font-size: calc(16px + 4 * (100vw / 768)) !important;
     margin: 0;
   }
-  .characters .characters__items {
+  .characters .characters__items:first-child {
+    margin-top: 0;
+  }
+  .characters .characters__items:not(:first-child) {
     margin-top: calc(14px + 20 * (100vw / 768));
+  }
+  .characters .characters__items {
     padding: calc(15px + 15 * (100vw / 768)) 20px;
   }
   .characters .characters__items .about__details {
@@ -7172,6 +7184,7 @@ h3 {
 }
 
 .main-about-page .our-productss__items:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
   background: #ffffff;
   -webkit-box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
@@ -7773,6 +7786,13 @@ h3 {
 
 .filter__submenu .filter__section {
   margin-top: 24px;
+}
+
+.filter__submenu .filter__section.active .arrow-down {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .filter__submenu._without {

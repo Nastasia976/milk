@@ -1335,7 +1335,7 @@ h2 {
         position: absolute;
         content: "";
         min-width: 180%;
-        height: 80vh;
+        height: 100vh;
         background: linear-gradient(0deg, #f4f9ff, #f4f9ff), linear-gradient(0deg, #fbf7f2, #fbf7f2);
         left: -40%;
         bottom: -12%;
@@ -1629,7 +1629,7 @@ h2 {
     position: absolute;
     content: "";
     min-width: 180%;
-    height: 80vh;
+    height: 110vh;
     background: linear-gradient(0deg, #f4f9ff, #f4f9ff), linear-gradient(0deg, #fbf7f2, #fbf7f2);
     left: -40%;
     top: -130px;
@@ -2947,9 +2947,15 @@ h2 {
     &__image {
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
         flex: 0 1 50%;
         max-width: 48%;
         margin-right: 20px;
+    }
+    &__image-assort{
+        .product-card__items{
+            margin-top: 10px;
+        }
     }
     &__body {
         display: flex;
@@ -4013,8 +4019,13 @@ h3 {
             font-size: calc(16px + 4 * (100vw / 768)) !important;
             margin: 0;
         }
-        .characters__items {
+        .characters__items:first-child{
+            margin-top: 0;
+        }
+        .characters__items:not(:first-child){
             margin-top: calc(14px + 20 * (100vw / 768));
+        }
+        .characters__items {
             padding: calc(15px + 15 * (100vw / 768)) 20px;
             .about__details {
                 margin-top: calc(10px + 12 * (100vw / 768));
@@ -5638,6 +5649,7 @@ h3 {
             margin-top: 34px;
         }
         &__items:hover {
+            border: 1px solid rgba(0,0,0,0);
             background: #ffffff;
             box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
             border-radius: 18px;
@@ -6127,6 +6139,12 @@ h3 {
         background-color: #fff;
         .filter__section {
             margin-top: 24px;
+        }
+        .filter__section.active{
+            .arrow-down{
+                transform: rotate(-180deg);
+                transition: 0.4s;
+            }
         }
     }
     &__submenu._without {
