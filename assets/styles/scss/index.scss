@@ -10849,7 +10849,10 @@ h3 {
 .popup-question,
 .popup-reviews,
 .popup-quick,
-.popup-thx {
+.popup-thx,
+.popup-del,
+.popup-pre-order,
+.popup-subscription {
     display: none;
     z-index: 50000;
     position: fixed;
@@ -11049,10 +11052,17 @@ h3 {
 .popup-question,
 .popup-reviews,
 .popup-quick,
-.popup-thx {
+.popup-thx,
+.popup-del,
+.popup-subscription {
     &__wrapper {
         height: fit-content;
         padding: 30px 60px;
+    }
+}
+.popup-reviews{
+    textarea{
+        min-height: 150px;
     }
 }
 .popup-question,
@@ -11164,14 +11174,55 @@ h3 {
 .popup-thx__message {
     font-size: 16px;
 }
+.popup-del{
+    &__button{
+        display: flex;
+        justify-content: space-between;
+        button{
+            width: 49%;
+        }
+    }
+    .popup-del__cancel{
+        border: 1px solid #4EB7E5;
+        background-color: #fff;
+        color: black;
+    }
+    .popup-del__cancel:hover{
+        background-color: #fff;
+    }
+    .popup-del__message {
+        max-width: 318px;
+    }
+}
+.popup-pre-order, .popup-del{
+    &__footer{
+        margin-top: calc(15px + 19 * (100vw / 1920));
+    }
+}
+.popup-pre-order{
+    &__button{
+        flex-direction: column;
+        .popup-pre-order__notice{
+            margin-bottom: 15px;
+            background-color: #fff;
+            border: 1px solid #4EB7E5;
+            color: black;
+        }
+        .popup-pre-order__notice:hover{
+            background-color: #fff;
+        }
+    }
+}
 @media (max-width: 600px) {
     .popup-autoriz,
     .popapp-add-adres,
     .popup-question,
     .popup-reviews,
     .popup-quick,
-    .popup-thx {
-        &__wrapper {
+    .popup-thx,
+    .popup-pre-order,
+    .popup-subscription{
+        &__wrapper, .popup-del__wrapper{
             padding: 30px;
             width: 100%;
         }
@@ -11182,7 +11233,6 @@ h3 {
             }
         }
     }
-
     .popup-register {
         &__title {
             margin-top: -25px;
@@ -11233,7 +11283,10 @@ h3 {
     .popup-question__wrapper,
     .popup-reviews__wrapper,
     .popup-quick__wrapper,
-    .popup-thx__wrapper {
+    .popup-thx__wrapper, 
+    .popup-del__wrapper,
+    .popup-pre-order__wrapper,
+    .popup-subscription__wrapper{
         padding: 30px 20px;
         button {
             padding: 18px;

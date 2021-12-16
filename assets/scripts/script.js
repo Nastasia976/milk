@@ -733,8 +733,11 @@ $(document).ready(function () {
     });
     
     $('.close-register__item').click(function () {
-        $('.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question, .popup-reviews, .popup-quick, .popup-thx').hide();
+        $('.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question, .popup-reviews, .popup-quick, .popup-thx, .popup-del, .popup-subscription').hide();
         $('body').removeClass('lock');
+        $('.leave-reiting__value').text('4,8');
+        $('.leave-reiting__item, leave-reiting__label').prop('checked', false);
+        $('#reitings4').prop('checked', true);
     });
 
     $('._ur').click(function () {
@@ -843,11 +846,31 @@ $(document).ready(function () {
 
     $('.popular__button2').click(function(){
         $('.popup-quick').show();
+        $('body').addClass('lock');
     });
     $('.button-popup-quick').click(function(){
         $('.popup-thx').show();
         $('.popup-quick').hide();
-    })
+    });
+
+    $('.card-basket__close').click(function(){
+        $('.popup-del').show();
+        $('body').addClass('lock');
+    });
+    $('.popup-del__cancel').click(function(){
+        $('.popup-del').hide();
+        $('body').removeClass('lock');
+    });
+
+    $('.side-basket__button').click(function(){
+        $('.popup-pre-order').show();
+        $('body').addClass('lock');
+    });
+
+    $('.popup-pre-order__notice').click(function(){
+        $('.popup-pre-order').hide();
+        $('.popup-subscription').show();
+    });
 
 });
 

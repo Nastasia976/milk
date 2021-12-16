@@ -13747,7 +13747,10 @@ h3 {
 .popup-question,
 .popup-reviews,
 .popup-quick,
-.popup-thx {
+.popup-thx,
+.popup-del,
+.popup-pre-order,
+.popup-subscription {
   display: none;
   z-index: 50000;
   position: fixed;
@@ -13765,7 +13768,10 @@ h3 {
 .popup-question__conteiner,
 .popup-reviews__conteiner,
 .popup-quick__conteiner,
-.popup-thx__conteiner {
+.popup-thx__conteiner,
+.popup-del__conteiner,
+.popup-pre-order__conteiner,
+.popup-subscription__conteiner {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -13788,7 +13794,10 @@ h3 {
 .popup-question__wrapper,
 .popup-reviews__wrapper,
 .popup-quick__wrapper,
-.popup-thx__wrapper {
+.popup-thx__wrapper,
+.popup-del__wrapper,
+.popup-pre-order__wrapper,
+.popup-subscription__wrapper {
   width: 600px;
   background-color: #fff;
   padding: 50px 60px;
@@ -13800,7 +13809,10 @@ h3 {
 .popup-question__close,
 .popup-reviews__close,
 .popup-quick__close,
-.popup-thx__close {
+.popup-thx__close,
+.popup-del__close,
+.popup-pre-order__close,
+.popup-subscription__close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13816,7 +13828,10 @@ h3 {
 .popup-question__close svg,
 .popup-reviews__close svg,
 .popup-quick__close svg,
-.popup-thx__close svg {
+.popup-thx__close svg,
+.popup-del__close svg,
+.popup-pre-order__close svg,
+.popup-subscription__close svg {
   margin-left: 10px;
 }
 
@@ -13826,7 +13841,10 @@ h3 {
 .popup-question__close .close-register__item,
 .popup-reviews__close .close-register__item,
 .popup-quick__close .close-register__item,
-.popup-thx__close .close-register__item {
+.popup-thx__close .close-register__item,
+.popup-del__close .close-register__item,
+.popup-pre-order__close .close-register__item,
+.popup-subscription__close .close-register__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13847,7 +13865,10 @@ h3 {
 .popup-question__title,
 .popup-reviews__title,
 .popup-quick__title,
-.popup-thx__title {
+.popup-thx__title,
+.popup-del__title,
+.popup-pre-order__title,
+.popup-subscription__title {
   font-size: calc(24px + 16 * (100vw / 1920));
   line-height: 107.5%;
   font-family: "Story";
@@ -13860,7 +13881,10 @@ h3 {
 .popup-question__switches,
 .popup-reviews__switches,
 .popup-quick__switches,
-.popup-thx__switches {
+.popup-thx__switches,
+.popup-del__switches,
+.popup-pre-order__switches,
+.popup-subscription__switches {
   margin-top: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13876,7 +13900,10 @@ h3 {
 .popup-question__el,
 .popup-reviews__el,
 .popup-quick__el,
-.popup-thx__el {
+.popup-thx__el,
+.popup-del__el,
+.popup-pre-order__el,
+.popup-subscription__el {
   font-size: 16px;
   line-height: 120%;
   color: #c4c4c4;
@@ -13890,7 +13917,10 @@ h3 {
 .popup-question__el.active,
 .popup-reviews__el.active,
 .popup-quick__el.active,
-.popup-thx__el.active {
+.popup-thx__el.active,
+.popup-del__el.active,
+.popup-pre-order__el.active,
+.popup-subscription__el.active {
   color: #4eb7e5;
   border-bottom: 1px dashed #4eb7e5;
 }
@@ -13901,7 +13931,10 @@ h3 {
 .popup-question__el:first-child,
 .popup-reviews__el:first-child,
 .popup-quick__el:first-child,
-.popup-thx__el:first-child {
+.popup-thx__el:first-child,
+.popup-del__el:first-child,
+.popup-pre-order__el:first-child,
+.popup-subscription__el:first-child {
   margin-right: 35px;
 }
 
@@ -13917,7 +13950,13 @@ h3 {
 .popup-quick__body,
 .popup-quick__body_ur,
 .popup-thx__body,
-.popup-thx__body_ur {
+.popup-thx__body_ur,
+.popup-del__body,
+.popup-del__body_ur,
+.popup-pre-order__body,
+.popup-pre-order__body_ur,
+.popup-subscription__body,
+.popup-subscription__body_ur {
   margin-top: 38px;
 }
 
@@ -13927,7 +13966,10 @@ h3 {
 .popup-question__body_ur,
 .popup-reviews__body_ur,
 .popup-quick__body_ur,
-.popup-thx__body_ur {
+.popup-thx__body_ur,
+.popup-del__body_ur,
+.popup-pre-order__body_ur,
+.popup-subscription__body_ur {
   display: none;
 }
 
@@ -13937,7 +13979,10 @@ h3 {
 .popup-question .popup-autoriz__item,
 .popup-reviews .popup-autoriz__item,
 .popup-quick .popup-autoriz__item,
-.popup-thx .popup-autoriz__item {
+.popup-thx .popup-autoriz__item,
+.popup-del .popup-autoriz__item,
+.popup-pre-order .popup-autoriz__item,
+.popup-subscription .popup-autoriz__item {
   margin-top: 32px;
   font-size: 16px;
   line-height: 120%;
@@ -13956,7 +14001,10 @@ h3 {
 .popup-question__item,
 .popup-reviews__item,
 .popup-quick__item,
-.popup-thx__item {
+.popup-thx__item,
+.popup-del__item,
+.popup-pre-order__item,
+.popup-subscription__item {
   padding: 10px 0;
   width: 100%;
   position: relative;
@@ -13968,7 +14016,10 @@ h3 {
 .popup-question__item input,
 .popup-reviews__item input,
 .popup-quick__item input,
-.popup-thx__item input {
+.popup-thx__item input,
+.popup-del__item input,
+.popup-pre-order__item input,
+.popup-subscription__item input {
   padding: 17px 55px 15px 21px;
   width: 100%;
   background: #f9fafc;
@@ -13981,7 +14032,10 @@ h3 {
 .popup-question__item input::-webkit-input-placeholder,
 .popup-reviews__item input::-webkit-input-placeholder,
 .popup-quick__item input::-webkit-input-placeholder,
-.popup-thx__item input::-webkit-input-placeholder {
+.popup-thx__item input::-webkit-input-placeholder,
+.popup-del__item input::-webkit-input-placeholder,
+.popup-pre-order__item input::-webkit-input-placeholder,
+.popup-subscription__item input::-webkit-input-placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
@@ -13993,7 +14047,10 @@ h3 {
 .popup-question__item input:-ms-input-placeholder,
 .popup-reviews__item input:-ms-input-placeholder,
 .popup-quick__item input:-ms-input-placeholder,
-.popup-thx__item input:-ms-input-placeholder {
+.popup-thx__item input:-ms-input-placeholder,
+.popup-del__item input:-ms-input-placeholder,
+.popup-pre-order__item input:-ms-input-placeholder,
+.popup-subscription__item input:-ms-input-placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
@@ -14005,7 +14062,10 @@ h3 {
 .popup-question__item input::-ms-input-placeholder,
 .popup-reviews__item input::-ms-input-placeholder,
 .popup-quick__item input::-ms-input-placeholder,
-.popup-thx__item input::-ms-input-placeholder {
+.popup-thx__item input::-ms-input-placeholder,
+.popup-del__item input::-ms-input-placeholder,
+.popup-pre-order__item input::-ms-input-placeholder,
+.popup-subscription__item input::-ms-input-placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
@@ -14017,7 +14077,10 @@ h3 {
 .popup-question__item input::placeholder,
 .popup-reviews__item input::placeholder,
 .popup-quick__item input::placeholder,
-.popup-thx__item input::placeholder {
+.popup-thx__item input::placeholder,
+.popup-del__item input::placeholder,
+.popup-pre-order__item input::placeholder,
+.popup-subscription__item input::placeholder {
   color: #818181;
   font-size: 16px;
   line-height: 120%;
@@ -14029,7 +14092,10 @@ h3 {
 .popup-question__item input:focus,
 .popup-reviews__item input:focus,
 .popup-quick__item input:focus,
-.popup-thx__item input:focus {
+.popup-thx__item input:focus,
+.popup-del__item input:focus,
+.popup-pre-order__item input:focus,
+.popup-subscription__item input:focus {
   background: #f9fafc;
 }
 
@@ -14046,7 +14112,13 @@ h3 {
 .popup-quick__item input[type="password"]::-ms-reveal,
 .popup-quick__item input[type="password"]::-ms-clear,
 .popup-thx__item input[type="password"]::-ms-reveal,
-.popup-thx__item input[type="password"]::-ms-clear {
+.popup-thx__item input[type="password"]::-ms-clear,
+.popup-del__item input[type="password"]::-ms-reveal,
+.popup-del__item input[type="password"]::-ms-clear,
+.popup-pre-order__item input[type="password"]::-ms-reveal,
+.popup-pre-order__item input[type="password"]::-ms-clear,
+.popup-subscription__item input[type="password"]::-ms-reveal,
+.popup-subscription__item input[type="password"]::-ms-clear {
   display: none;
 }
 
@@ -14063,7 +14135,13 @@ h3 {
 .popup-quick__item input[type="number"]::-webkit-outer-spin-button,
 .popup-quick__item input[type="number"]::-webkit-inner-spin-button,
 .popup-thx__item input[type="number"]::-webkit-outer-spin-button,
-.popup-thx__item input[type="number"]::-webkit-inner-spin-button {
+.popup-thx__item input[type="number"]::-webkit-inner-spin-button,
+.popup-del__item input[type="number"]::-webkit-outer-spin-button,
+.popup-del__item input[type="number"]::-webkit-inner-spin-button,
+.popup-pre-order__item input[type="number"]::-webkit-outer-spin-button,
+.popup-pre-order__item input[type="number"]::-webkit-inner-spin-button,
+.popup-subscription__item input[type="number"]::-webkit-outer-spin-button,
+.popup-subscription__item input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
@@ -14087,7 +14165,16 @@ h3 {
 .popup-quick__item input[type="number"]:focus,
 .popup-thx__item input[type="number"],
 .popup-thx__item input[type="number"]:hover,
-.popup-thx__item input[type="number"]:focus {
+.popup-thx__item input[type="number"]:focus,
+.popup-del__item input[type="number"],
+.popup-del__item input[type="number"]:hover,
+.popup-del__item input[type="number"]:focus,
+.popup-pre-order__item input[type="number"],
+.popup-pre-order__item input[type="number"]:hover,
+.popup-pre-order__item input[type="number"]:focus,
+.popup-subscription__item input[type="number"],
+.popup-subscription__item input[type="number"]:hover,
+.popup-subscription__item input[type="number"]:focus {
   -webkit-appearance: none;
           appearance: none;
   -moz-appearance: textfield;
@@ -14099,7 +14186,10 @@ h3 {
 .popup-question__item svg,
 .popup-reviews__item svg,
 .popup-quick__item svg,
-.popup-thx__item svg {
+.popup-thx__item svg,
+.popup-del__item svg,
+.popup-pre-order__item svg,
+.popup-subscription__item svg {
   position: absolute;
   right: 20px;
   top: 0;
@@ -14134,7 +14224,19 @@ h3 {
 .popup-thx__item .eye-hide,
 .popup-thx__item .eye-show,
 .popup-thx__item .eye-hide2,
-.popup-thx__item .eye-show2 {
+.popup-thx__item .eye-show2,
+.popup-del__item .eye-hide,
+.popup-del__item .eye-show,
+.popup-del__item .eye-hide2,
+.popup-del__item .eye-show2,
+.popup-pre-order__item .eye-hide,
+.popup-pre-order__item .eye-show,
+.popup-pre-order__item .eye-hide2,
+.popup-pre-order__item .eye-show2,
+.popup-subscription__item .eye-hide,
+.popup-subscription__item .eye-show,
+.popup-subscription__item .eye-hide2,
+.popup-subscription__item .eye-show2 {
   display: none;
 }
 
@@ -14165,7 +14267,19 @@ h3 {
 .popup-thx__item .eye-hide.active,
 .popup-thx__item .eye-show.active,
 .popup-thx__item .eye-hide2.active,
-.popup-thx__item .eye-show2.active {
+.popup-thx__item .eye-show2.active,
+.popup-del__item .eye-hide.active,
+.popup-del__item .eye-show.active,
+.popup-del__item .eye-hide2.active,
+.popup-del__item .eye-show2.active,
+.popup-pre-order__item .eye-hide.active,
+.popup-pre-order__item .eye-show.active,
+.popup-pre-order__item .eye-hide2.active,
+.popup-pre-order__item .eye-show2.active,
+.popup-subscription__item .eye-hide.active,
+.popup-subscription__item .eye-show.active,
+.popup-subscription__item .eye-hide2.active,
+.popup-subscription__item .eye-show2.active {
   display: block;
   cursor: pointer;
 }
@@ -14176,7 +14290,10 @@ h3 {
 .popup-question__footer,
 .popup-reviews__footer,
 .popup-quick__footer,
-.popup-thx__footer {
+.popup-thx__footer,
+.popup-del__footer,
+.popup-pre-order__footer,
+.popup-subscription__footer {
   margin-top: 34px;
 }
 
@@ -14186,7 +14303,10 @@ h3 {
 .popup-question .popup-autoriz__footer,
 .popup-reviews .popup-autoriz__footer,
 .popup-quick .popup-autoriz__footer,
-.popup-thx .popup-autoriz__footer {
+.popup-thx .popup-autoriz__footer,
+.popup-del .popup-autoriz__footer,
+.popup-pre-order .popup-autoriz__footer,
+.popup-subscription .popup-autoriz__footer {
   margin-top: 24px;
 }
 
@@ -14196,7 +14316,10 @@ h3 {
 .popup-question__error,
 .popup-reviews__error,
 .popup-quick__error,
-.popup-thx__error {
+.popup-thx__error,
+.popup-del__error,
+.popup-pre-order__error,
+.popup-subscription__error {
   margin-bottom: calc(17px + 30 * (100vw / 1920));
   color: #ff4e4e;
   font-size: 14px;
@@ -14210,7 +14333,10 @@ h3 {
 .popup-question__text,
 .popup-reviews__text,
 .popup-quick__text,
-.popup-thx__text {
+.popup-thx__text,
+.popup-del__text,
+.popup-pre-order__text,
+.popup-subscription__text {
   max-width: 445px;
   font-size: 14px;
   line-height: 120%;
@@ -14222,7 +14348,10 @@ h3 {
 .popup-question__text a,
 .popup-reviews__text a,
 .popup-quick__text a,
-.popup-thx__text a {
+.popup-thx__text a,
+.popup-del__text a,
+.popup-pre-order__text a,
+.popup-subscription__text a {
   color: #4eb7e5;
 }
 
@@ -14232,7 +14361,10 @@ h3 {
 .popup-question__button,
 .popup-reviews__button,
 .popup-quick__button,
-.popup-thx__button {
+.popup-thx__button,
+.popup-del__button,
+.popup-pre-order__button,
+.popup-subscription__button {
   margin-top: 24px;
   max-width: 458px;
 }
@@ -14243,7 +14375,10 @@ h3 {
 .popup-question__button button,
 .popup-reviews__button button,
 .popup-quick__button button,
-.popup-thx__button button {
+.popup-thx__button button,
+.popup-del__button button,
+.popup-pre-order__button button,
+.popup-subscription__button button {
   width: 100%;
   padding: 28px;
   background-color: #4eb7e5;
@@ -14260,7 +14395,10 @@ h3 {
 .popup-question__button button:hover,
 .popup-reviews__button button:hover,
 .popup-quick__button button:hover,
-.popup-thx__button button:hover {
+.popup-thx__button button:hover,
+.popup-del__button button:hover,
+.popup-pre-order__button button:hover,
+.popup-subscription__button button:hover {
   background-color: #3ea3cf;
 }
 
@@ -14270,7 +14408,10 @@ h3 {
 .popup-question__bottom,
 .popup-reviews__bottom,
 .popup-quick__bottom,
-.popup-thx__bottom {
+.popup-thx__bottom,
+.popup-del__bottom,
+.popup-pre-order__bottom,
+.popup-subscription__bottom {
   margin-top: 31px;
   font-size: 15px;
   line-height: 120%;
@@ -14283,7 +14424,10 @@ h3 {
 .popup-question__bottom span,
 .popup-reviews__bottom span,
 .popup-quick__bottom span,
-.popup-thx__bottom span {
+.popup-thx__bottom span,
+.popup-del__bottom span,
+.popup-pre-order__bottom span,
+.popup-subscription__bottom span {
   font-weight: 500;
   color: black;
   cursor: pointer;
@@ -14294,11 +14438,17 @@ h3 {
 .popup-question__wrapper,
 .popup-reviews__wrapper,
 .popup-quick__wrapper,
-.popup-thx__wrapper {
+.popup-thx__wrapper,
+.popup-del__wrapper,
+.popup-subscription__wrapper {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 30px 60px;
+}
+
+.popup-reviews textarea {
+  min-height: 150px;
 }
 
 .popup-question__title,
@@ -14454,13 +14604,71 @@ h3 {
   font-size: 16px;
 }
 
+.popup-del__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popup-del__button button {
+  width: 49%;
+}
+
+.popup-del .popup-del__cancel {
+  border: 1px solid #4EB7E5;
+  background-color: #fff;
+  color: black;
+}
+
+.popup-del .popup-del__cancel:hover {
+  background-color: #fff;
+}
+
+.popup-del .popup-del__message {
+  max-width: 318px;
+}
+
+.popup-pre-order__footer, .popup-del__footer {
+  margin-top: calc(15px + 19 * (100vw / 1920));
+}
+
+.popup-pre-order__button {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup-pre-order__button .popup-pre-order__notice {
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #4EB7E5;
+  color: black;
+}
+
+.popup-pre-order__button .popup-pre-order__notice:hover {
+  background-color: #fff;
+}
+
 @media (max-width: 600px) {
-  .popup-autoriz__wrapper,
+  .popup-autoriz__wrapper, .popup-autoriz .popup-del__wrapper,
   .popapp-add-adres__wrapper,
+  .popapp-add-adres .popup-del__wrapper,
   .popup-question__wrapper,
+  .popup-question .popup-del__wrapper,
   .popup-reviews__wrapper,
+  .popup-reviews .popup-del__wrapper,
   .popup-quick__wrapper,
-  .popup-thx__wrapper {
+  .popup-quick .popup-del__wrapper,
+  .popup-thx__wrapper,
+  .popup-thx .popup-del__wrapper,
+  .popup-pre-order__wrapper,
+  .popup-pre-order .popup-del__wrapper,
+  .popup-subscription__wrapper,
+  .popup-subscription .popup-del__wrapper {
     padding: 30px;
     width: 100%;
   }
@@ -14469,7 +14677,9 @@ h3 {
   .popup-question__button,
   .popup-reviews__button,
   .popup-quick__button,
-  .popup-thx__button {
+  .popup-thx__button,
+  .popup-pre-order__button,
+  .popup-subscription__button {
     min-width: 100%;
   }
   .popup-autoriz__button button,
@@ -14477,7 +14687,9 @@ h3 {
   .popup-question__button button,
   .popup-reviews__button button,
   .popup-quick__button button,
-  .popup-thx__button button {
+  .popup-thx__button button,
+  .popup-pre-order__button button,
+  .popup-subscription__button button {
     min-width: 100% !important;
   }
   .popup-register__title {
@@ -14532,7 +14744,10 @@ h3 {
   .popup-question__wrapper,
   .popup-reviews__wrapper,
   .popup-quick__wrapper,
-  .popup-thx__wrapper {
+  .popup-thx__wrapper,
+  .popup-del__wrapper,
+  .popup-pre-order__wrapper,
+  .popup-subscription__wrapper {
     padding: 30px 20px;
   }
   .popup-register__wrapper button,
@@ -14541,7 +14756,10 @@ h3 {
   .popup-question__wrapper button,
   .popup-reviews__wrapper button,
   .popup-quick__wrapper button,
-  .popup-thx__wrapper button {
+  .popup-thx__wrapper button,
+  .popup-del__wrapper button,
+  .popup-pre-order__wrapper button,
+  .popup-subscription__wrapper button {
     padding: 18px;
   }
   .popup-quick__title,
