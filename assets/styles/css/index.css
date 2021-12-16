@@ -14198,7 +14198,7 @@ h3 {
 .popup-reviews__error,
 .popup-quick__error,
 .popup-thx__error {
-  margin-bottom: 47px;
+  margin-bottom: calc(17px + 30 * (100vw / 1920));
   color: #ff4e4e;
   font-size: 14px;
   line-height: 120%;
@@ -14296,9 +14296,7 @@ h3 {
 .popup-reviews__wrapper,
 .popup-quick__wrapper,
 .popup-thx__wrapper {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  /*  height: fit-content; */
   padding: 30px 60px;
 }
 

@@ -11001,7 +11001,7 @@ h3 {
         margin-top: 24px;
     }
     &__error {
-        margin-bottom: 47px;
+        margin-bottom: calc(17px + 30 * (100vw / 1920));
         color: #ff4e4e;
         font-size: 14px;
         line-height: 120%;
@@ -11052,7 +11052,7 @@ h3 {
 .popup-quick,
 .popup-thx {
     &__wrapper {
-        height: fit-content;
+       /*  height: fit-content; */
         padding: 30px 60px;
     }
 }
