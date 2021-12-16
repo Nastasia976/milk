@@ -11233,11 +11233,15 @@ h3 {
             }
         }
     }
+    .popup-question__wrapper {
+        min-height: 100vh;
+    }
+
     .popup-register {
         &__title {
             margin-top: -25px;
         }
-        &__wrapper, .popup-question__wrapper {
+        &__wrapper{
             padding: 30px;
             min-height: 100vh;
         }

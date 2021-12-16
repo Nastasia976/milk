@@ -14692,10 +14692,13 @@ h3 {
   .popup-subscription__button button {
     min-width: 100% !important;
   }
+  .popup-question__wrapper {
+    min-height: 100vh;
+  }
   .popup-register__title {
     margin-top: -25px;
   }
-  .popup-register__wrapper, .popup-register .popup-question__wrapper {
+  .popup-register__wrapper {
     padding: 30px;
     min-height: 100vh;
   }
