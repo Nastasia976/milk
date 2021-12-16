@@ -881,6 +881,11 @@ $(document).ready(function () {
         $('.popup-thx-profil').show();
         $('body').addClass('lock');
     });
+
+    $('.side-basket__button-thx').click(function(){
+        $('.popup-thx-order').show();
+        $('body').addClass('lock');
+    });
     
 });
 
