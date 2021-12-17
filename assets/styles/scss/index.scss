@@ -6362,7 +6362,7 @@ h3 {
         }
     }
     &__item._reitings.active {
-        padding: 22.5px 19px;
+        padding: 22px 19px;
         border-radius: 50px;
         position: relative;
         display: flex;
@@ -8449,6 +8449,21 @@ h3 {
     .password-profil__item,
     .data-company__item {
         flex: 1 1 100% !important;
+    }
+    .personal-data__item._sername{
+        order: 1;
+    }
+    .personal-data__item._name{
+        order: 2;
+    }
+    .personal-data__item.__patronymic{
+        order: 3;
+    }
+    .personal-data__item._tel{
+        order: 4;
+    }
+    .personal-data__item._email{
+        order: 5;
     }
     .main-profil,
     .main-profil-ur {

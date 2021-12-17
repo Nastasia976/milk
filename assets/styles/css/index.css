@@ -8098,7 +8098,7 @@ h3 {
 }
 
 .sorter__item._reitings.active {
-  padding: 22.5px 19px;
+  padding: 22px 19px;
   border-radius: 50px;
   position: relative;
   display: -webkit-box;
@@ -10807,6 +10807,31 @@ h3 {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 100% !important;
             flex: 1 1 100% !important;
+  }
+  .personal-data__item._sername {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .personal-data__item._name {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .personal-data__item.__patronymic {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .personal-data__item._tel {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .personal-data__item._email {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
   .main-profil .delivery-profil__items,
   .main-profil-ur .delivery-profil__items {
