@@ -112,7 +112,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-button, a {
+button,
+a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -14691,7 +14692,7 @@ h3 {
 }
 
 .popup-del .popup-del__cancel {
-  border: 1px solid #4EB7E5;
+  border: 1px solid #4eb7e5;
   background-color: #fff;
   color: black;
 }
@@ -14704,20 +14705,32 @@ h3 {
   max-width: 318px;
 }
 
-.popup-pre-order__wrapper, .popup-del__wrapper, .popup-subscription__wrapper, .popup-thx__wrapper {
+.popup-pre-order__wrapper,
+.popup-del__wrapper,
+.popup-subscription__wrapper,
+.popup-thx__wrapper {
   max-width: 560px;
   padding: 44px 50px 80px;
 }
 
-.popup-pre-order__title, .popup-del__title, .popup-subscription__title, .popup-thx__title {
+.popup-pre-order__title,
+.popup-del__title,
+.popup-subscription__title,
+.popup-thx__title {
   margin-top: 20px;
 }
 
-.popup-pre-order__footer, .popup-del__footer, .popup-subscription__footer, .popup-thx__footer {
+.popup-pre-order__footer,
+.popup-del__footer,
+.popup-subscription__footer,
+.popup-thx__footer {
   margin-top: calc(15px + 19 * (100vw / 1920));
 }
 
-.popup-pre-order p, .popup-del p, .popup-subscription p, .popup-thx p {
+.popup-pre-order p,
+.popup-del p,
+.popup-subscription p,
+.popup-thx p {
   margin-top: 20px;
 }
 
@@ -14731,7 +14744,7 @@ h3 {
 .popup-pre-order__button .popup-pre-order__notice {
   margin-bottom: 15px;
   background-color: #fff;
-  border: 1px solid #4EB7E5;
+  border: 1px solid #4eb7e5;
   color: black;
 }
 
@@ -14740,7 +14753,8 @@ h3 {
 }
 
 @media (max-width: 600px) {
-  .popup-autoriz__wrapper, .popup-autoriz .popup-del__wrapper,
+  .popup-autoriz__wrapper,
+  .popup-autoriz .popup-del__wrapper,
   .popapp-add-adres__wrapper,
   .popapp-add-adres .popup-del__wrapper,
   .popup-question__wrapper,

@@ -39,8 +39,8 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
 
-
-button, a{
+button,
+a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 input {
@@ -2952,8 +2952,8 @@ h2 {
         max-width: 48%;
         margin-right: 20px;
     }
-    &__image-assort{
-        .product-card__items{
+    &__image-assort {
+        .product-card__items {
             margin-top: 10px;
         }
     }
@@ -4019,10 +4019,10 @@ h3 {
             font-size: calc(16px + 4 * (100vw / 768)) !important;
             margin: 0;
         }
-        .characters__items:first-child{
+        .characters__items:first-child {
             margin-top: 0;
         }
-        .characters__items:not(:first-child){
+        .characters__items:not(:first-child) {
             margin-top: calc(14px + 20 * (100vw / 768));
         }
         .characters__items {
@@ -5649,7 +5649,7 @@ h3 {
             margin-top: 34px;
         }
         &__items:hover {
-            border: 1px solid rgba(0,0,0,0);
+            border: 1px solid rgba(0, 0, 0, 0);
             background: #ffffff;
             box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
             border-radius: 18px;
@@ -6140,8 +6140,8 @@ h3 {
         .filter__section {
             margin-top: 24px;
         }
-        .filter__section.active{
-            .arrow-down{
+        .filter__section.active {
+            .arrow-down {
                 transform: rotate(-180deg);
                 transition: 0.4s;
             }
@@ -7921,7 +7921,7 @@ h3 {
         display: none;
         padding: 7px 0 calc(21px + 60 * (100vw / 1920));
     }
-    &__items:first-child{
+    &__items:first-child {
         justify-content: flex-start;
     }
     &__items {
@@ -8450,19 +8450,19 @@ h3 {
     .data-company__item {
         flex: 1 1 100% !important;
     }
-    .personal-data__item._sername{
+    .personal-data__item._sername {
         order: 1;
     }
-    .personal-data__item._name{
+    .personal-data__item._name {
         order: 2;
     }
-    .personal-data__item.__patronymic{
+    .personal-data__item.__patronymic {
         order: 3;
     }
-    .personal-data__item._tel{
+    .personal-data__item._tel {
         order: 4;
     }
-    .personal-data__item._email{
+    .personal-data__item._email {
         order: 5;
     }
     .main-profil,
@@ -9672,7 +9672,7 @@ h3 {
     }
     .side-basket__sum {
         margin-top: 25px;
-        p{
+        p {
             margin-top: 26px !important;
         }
     }
@@ -10037,7 +10037,7 @@ h3 {
         display: flex;
         align-items: center;
     }
-    .ordering__name._hover{
+    .ordering__name._hover {
         display: flex;
         align-items: center;
     }
@@ -10404,7 +10404,7 @@ h3 {
         transition: 0.4s;
     }
 }
-.radiobuttons__item._hover{
+.radiobuttons__item._hover {
     display: flex;
     align-items: center;
 }
@@ -10414,7 +10414,7 @@ h3 {
     width: 16px;
     height: 16px;
     margin-left: 10px;
-    svg{
+    svg {
         position: absolute;
     }
     .info-hint {
@@ -10551,7 +10551,6 @@ h3 {
             margin-top: 36px;
         }
         .ordering__body {
-            
         }
         .sidebar-pay__image {
             padding: 0 0 14% 13%;
@@ -10562,7 +10561,7 @@ h3 {
             font-size: calc(14px + 7 * (100vw / 1290));
             max-width: 600px;
         }
-        .side-basket__sum{
+        .side-basket__sum {
             max-width: 400px;
             margin: 43px auto 0;
         }
@@ -11115,8 +11114,8 @@ h3 {
         padding: 30px 60px;
     }
 }
-.popup-reviews{
-    textarea{
+.popup-reviews {
+    textarea {
         min-height: 150px;
     }
 }
@@ -11229,51 +11228,54 @@ h3 {
 .popup-thx__message {
     font-size: 16px;
 }
-.popup-del{
-    &__button{
+.popup-del {
+    &__button {
         display: flex;
         justify-content: space-between;
-        button{
+        button {
             width: 49%;
         }
     }
-    .popup-del__cancel{
-        border: 1px solid #4EB7E5;
+    .popup-del__cancel {
+        border: 1px solid #4eb7e5;
         background-color: #fff;
         color: black;
     }
-    .popup-del__cancel:hover{
+    .popup-del__cancel:hover {
         background-color: #fff;
     }
     .popup-del__message {
         max-width: 318px;
     }
 }
-.popup-pre-order, .popup-del, .popup-subscription, .popup-thx {
-    &__wrapper{
+.popup-pre-order,
+.popup-del,
+.popup-subscription,
+.popup-thx {
+    &__wrapper {
         max-width: 560px;
         padding: 44px 50px 80px;
     }
-    &__title{
+    &__title {
         margin-top: 20px;
     }
-    &__footer{
+    &__footer {
         margin-top: calc(15px + 19 * (100vw / 1920));
     }
-    p{
+    p {
         margin-top: 20px;
     }
 }
-.popup-pre-order{
-    &__button{
+.popup-pre-order {
+    &__button {
         flex-direction: column;
-        .popup-pre-order__notice{
+        .popup-pre-order__notice {
             margin-bottom: 15px;
             background-color: #fff;
-            border: 1px solid #4EB7E5;
+            border: 1px solid #4eb7e5;
             color: black;
         }
-        .popup-pre-order__notice:hover{
+        .popup-pre-order__notice:hover {
             background-color: #fff;
         }
     }
@@ -11286,8 +11288,9 @@ h3 {
     .popup-quick,
     .popup-thx,
     .popup-pre-order,
-    .popup-subscription{
-        &__wrapper, .popup-del__wrapper{
+    .popup-subscription {
+        &__wrapper,
+        .popup-del__wrapper {
             padding: 30px;
             width: 100%;
         }
@@ -11306,7 +11309,7 @@ h3 {
         &__title {
             margin-top: -25px;
         }
-        &__wrapper{
+        &__wrapper {
             padding: 30px;
             min-height: 100vh;
         }
@@ -11352,10 +11355,10 @@ h3 {
     .popup-question__wrapper,
     .popup-reviews__wrapper,
     .popup-quick__wrapper,
-    .popup-thx__wrapper, 
+    .popup-thx__wrapper,
     .popup-del__wrapper,
     .popup-pre-order__wrapper,
-    .popup-subscription__wrapper{
+    .popup-subscription__wrapper {
         padding: 30px 20px;
         button {
             padding: 18px;
