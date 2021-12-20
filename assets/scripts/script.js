@@ -196,27 +196,6 @@ $(document).ready(function () {
             },
         ]
     });
-    /* $('.sertificates__body').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        touchTreshold: 100,
-        prevArrow: $('.sertificates__prev'),
-        nextArrow: $('.sertificates__next'),
-        responsive: [
-            {
-                breakpoint: 845,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 560,
-                settings: {
-                    slidesToShow: 1,
-                }
-            },
-        ]
-    }); */
 
     $('.sertif-block__slider').slick({
         slidesToShow: 2,
@@ -316,47 +295,11 @@ $(document).ready(function () {
         $('.circle__item1').addClass('active');
     };
 
-
-
-
-
-    /*  $('.why-we__image').click(function (event) {
-         $('.why-we__image').removeClass('active');
-         $(this).toggleClass('active');
-     }); */
-
-    /* $('.circle__item').click(function (event) {
-        $('.circle__item').removeClass('active');
-        $(this).toggleClass('active');
-    }); */
-
-    /* if ($('#slick-slide40').hasClass('slick-active')) {
-        $('.circle__item1').addClass('active');
-    }
-    if ($('.delivery-slider__items2').hasClass('slick-current')) {
-        $('.circle__item2').addClass('active');
-    } */
-
-    /* $('.header__link-open').click(function (event) {
-        $('.header__link-open').toggleClass('active');
-        $('.burg-menu').toggleClass('active');
-        $('.head-link').removeClass('active');
-    }); */
     $('.header__link-open').click(function (event) {
         $('.head-link').removeClass('active');
         $(this).toggleClass('active').next().slideToggle(500);
         $('.header__link-open').removeClass('passive');
     });
-
-    /* $('.header__links').click(function (event) {
-        if ($('.header__link-open').hasClass('active')) {
-            $('.burg-menu.active').slideDown(500);
-            console.log('First click');
-        } else {
-            $('.burg-menu').slideUp(500);
-            console.log('Second click');
-        }
-    }); */
 
     $('.head-link').click(function (event) {
         $('.head-link').removeClass('active');
@@ -428,11 +371,6 @@ $(document).ready(function () {
     //____________FILTER_________
 
     $('.filter__element').click(function (event) {
-        /* if($('.filter__menu').hasClass('one')) {
-            $('.filter__element').not($(this)).removeClass('active');
-            $('.filter__submenu').not($(this).next()).slideUp(300);
-        
-        } */ // при нажатии на следующее подменю, текущее закрывается
         $(this).toggleClass('active').next().slideToggle(300);
     });
 
@@ -443,13 +381,6 @@ $(document).ready(function () {
     $('.filter__section').click(function (event) {
         $(this).toggleClass('active').children('.filter__sub-submenu').slideToggle(300);
     });
-
-    /* $('.filter__element').click(function(e) {
-        if(e.target.className == ".filter-close") {
-            $('.false-input, .for-input').removeClass('act-ive');
-        }
-    }); */ //если клик внутри блока был на крестике, удаляем acnive у инпута и текста 
-
 
     $('.filter__clear').click(function (event) {
         $('.false-input, .for-input').removeClass('act-ive');
@@ -513,16 +444,6 @@ $(document).ready(function () {
         $('.sorter__item._price').removeClass('active');
     });
 
-    /* $('.sorter__icon-row').click(function (event) {
-        $(this).addClass('active');
-        $('.sorter__icon-grid ').removeClass('active');
-    });
-
-    $('.sorter__icon-grid').click(function (event) {
-        $(this).addClass('active');
-        $('.sorter__icon-row').removeClass('active');
-    }); */
-
     $('.filter__burger').click(function (event) {
         $(this).toggleClass('active');
         $('.catalog-choice__filter').slideToggle(300);
@@ -532,66 +453,6 @@ $(document).ready(function () {
     $('.about-our-company__title').click(function (event) {
         $(this).toggleClass('active').next().slideToggle(500);
     });
-    //_____deliveryAndPay_____
-
-    /* $('.delivery-pay__item1').click(function(event) {
-        $('.delivery-pay__item').removeClass('active');
-        $(this).addClass('active');
-        $('.delivery-pay__condition').removeClass('active');
-        $('.condition1').addClass('active');
-    });
-    $('.delivery-pay__item2').click(function(event) {
-        $('.delivery-pay__item').removeClass('active');
-        $(this).addClass('active');
-        $('.delivery-pay__condition').removeClass('active');
-        $('.condition2').addClass('active');
-    });
-    $('.delivery-pay__item3').click(function(event) {
-        $('.delivery-pay__item').removeClass('active');
-        $(this).addClass('active');
-        $('.delivery-pay__condition').removeClass('active');
-        $('.condition3').addClass('active');
-    });
-    $('.delivery-pay__item4').click(function(event) {
-        $('.delivery-pay__item').removeClass('active');
-        $(this).addClass('active');
-        $('.delivery-pay__condition').removeClass('active');
-        $('.condition4').addClass('active');
-    }); */
-
-
-    /* $('.delivery-pay__item1').click(function(event) {
-        $('.swiper-condition').slideTo(1,300);
-    });
-    $('.delivery-pay__item2').click(function(event) {
-        $('.swiper-condition').slideTo(2,300);
-    }) */
-
-
-    /* $('.delivery-pay__item1').click(function (e) {
-        e.preventDefault();
-        $('.delivery-pay__item').removeClass('active');
-        $(this).addClass('active');
-        goToPage(0);
-    });
-    $('.delivery-pay__item2').click(function (e) {
-        e.preventDefault();
-        $('.delivery-pay__item').removeClass('active');
-        $(this).addClass('active');
-        goToPage(1);
-    });
-    $('.delivery-pay__item3').click(function (e) {
-        e.preventDefault();
-        $('.delivery-pay__item').removeClass('active');
-        $(this).addClass('active');
-        goToPage(2);
-    });
-    $('.delivery-pay__item4').click(function (e) {
-        e.preventDefault();
-        $('.delivery-pay__item').removeClass('active');
-        $(this).addClass('active');
-        goToPage(3);
-    }); */
 
     //_________PROFIL-PAGE__________
     $('._p-header').click(function (event) {
@@ -889,49 +750,6 @@ $(document).ready(function () {
     
 });
 
- //----------------reiting------
-
-
-
-
-/* function validateCreditCardForm(){
-    var result = false;
-    if (($('input').val().length > 0) &&
-        ($('input').val().length  > 0) &&
-        ($('input').val().length > 0)) {
-            result = true;
-    }
-    return result;
-} */
-/* $(document).ready(function(){
-    var maxCount = 1000;
-
-    $("#counter").html(maxCount);
-
-    $("#review-text").keyup(function() {
-    var revText = this.value.length;
-
-        if (this.value.length > maxCount)
-            {
-            this.value = this.value.substr(0, maxCount);
-            }
-        var cnt = (maxCount - revText);
-        if(cnt <= 0){$("#counter").html('0');}
-        else {$("#counter").html(cnt);}
-
-    });
-}); */
-
-
-
-
-
-
-
-/* function goToPage(numberPage) {
-    new Swiper('.swiper-condition').slideTo(numberPage, 500, false)
-} */
-
 $(window).on('resize', function () {
     if ($(window).width() < 1020) {
         filterOut();
@@ -977,23 +795,7 @@ var inputShow = function () {
         });
     });
 }
-/* var inputHide = function () {
-    var div = $('.choice-adres__item').val();
-    if(div == !str){
-        $('.choice-adres__item').hide();
-    }    
-} */
-/* $(document).ready(function () {
-    function classFunction() {
-        if ($('body').width() < 1020) {
-           
-           $('.sorter__icon-row').removeClass('active');
-        }
-    }
 
-    classFunction();
-    $(window).resize(classFunction);
-}); */
 
 
 
@@ -1176,35 +978,6 @@ let select = function () {
 select();
 
 
-/* let selectCatalog = function () {
-    let selectCatalogHeader = document.querySelectorAll('.select-catalog__header');
-    let selectCatalogItem = document.querySelectorAll('.select-catalog__item');
-
-    selectCatalogHeader.forEach(selectCatalogitem => {
-        selectCatalogitem.addEventListener('click', selectCatalogToggle)
-    });
-
-    selectCatalogItem.forEach(selectCatalogitem => {
-        selectCatalogitem.addEventListener('click', selectCatalogChoose);
-    });
-
-    function selectCatalogToggle() {
-        this.parentElement.classList.toggle('is-active')
-    }
-
-    function selectCatalogChoose() {
-        let selectCatalogtext = this.innerText,
-        selectCatalog = this.closest('.select-catalog'),
-            currentText = selectCatalog.querySelector('.select-catalog__current');
-        currentText.innerText = selectCatalogtext;
-        selectCatalog.classList.remove('is-active');
-    }
-
-
-};
-
-
-selectCatalog(); */
 
 
 
