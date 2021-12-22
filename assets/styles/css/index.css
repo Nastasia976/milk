@@ -1573,11 +1573,14 @@ h2 {
   border: 1px solid #adadad;
   border-radius: 18px;
   padding: 21px 28px 32px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: minmax(40px, 40px) minmax(300px, 300px) 0fr 0.1fr 0.6fr 0.5fr;
-      grid-template-rows: minmax(40px, 40px) minmax(300px, 300px) 0fr 0.1fr 0.6fr 0.5fr;
   margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .popular__items:hover {
@@ -1601,18 +1604,16 @@ h2 {
 
 .popular__image {
   position: relative;
+  padding: 0 0 100% 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
 }
 
 .popular__image img {
   position: absolute;
   width: 100%;
-  max-height: 300px;
-  max-width: 250px;
-  left: 0;
-  right: 0;
-  margin: auto;
   height: 100%;
-  bottom: 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1637,20 +1638,6 @@ h2 {
   margin-left: 26px;
   cursor: pointer;
   position: relative;
-  /* .popular__heart1,
-        .popular__heart2 {
-            position: absolute;
-        } */
-  /* .popular__heart1 {
-            z-index: 2;
-            background-color: #fff;
-        }
-        .popular__heart2 {
-            z-index: 1;
-        } */
-  /* .popular__heart1.passive {
-            opacity: 0;
-        } */
 }
 
 .popular__like .popular__heart2 {
@@ -1674,6 +1661,21 @@ h2 {
   line-height: 120%;
 }
 
+.popular .volume-product {
+  margin: 20px auto 15px;
+  font-size: 16px;
+}
+
+.popular .about__details {
+  min-width: 100%;
+}
+
+.popular .about__el:last-child {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .popular__bottons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1684,6 +1686,10 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.popular__bottons button {
+  margin-top: 15px;
 }
 
 .popular__button1 {
@@ -2410,7 +2416,7 @@ h2 {
 
 .production-slider__image {
   position: relative;
-  padding: 0 0 12.3% 0;
+  padding: 0 0 12% 0;
   margin: 0 10px;
 }
 
@@ -8466,6 +8472,17 @@ h3 {
   padding: 20px 28px 30px;
 }
 
+.catalog-choice__body .popular__items .about__details {
+  min-width: 100%;
+  margin-top: 15px;
+}
+
+.catalog-choice__body .popular__items .about__el {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
 .catalog-choice__body .popular__items:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -8486,10 +8503,10 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .catalog-choice__body .item-price__price {
@@ -8512,9 +8529,6 @@ h3 {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 10px 0 0 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
 }
 
 .catalog-choice__body .popular__bottons button {
@@ -9150,7 +9164,6 @@ h3 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    height: 140px;
   }
   .main-catalog-page .catalog-choice__body._grid .popular__bottons button {
     width: 100%;
@@ -9176,7 +9189,7 @@ h3 {
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
   .main-catalog-page .catalog-choice__body._grid .popular__items {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 45%;
@@ -9248,7 +9261,7 @@ h3 {
             justify-content: flex-start;
   }
   .catalog-choice__body._grid .popular__items .popular__image {
-    padding: 0 0 55% 0 !important;
+    padding: 0 0 75% 0 !important;
   }
   .catalog-choice__body._grid .popular__item,
   .catalog-choice__body._grid .popular__name,
@@ -13807,7 +13820,7 @@ h3 {
 
 .popup-register,
 .popup-autoriz,
-.popapp-add-adres,
+.popup-add-adres,
 .popup-question,
 .popup-reviews,
 .popup-quick,
@@ -13820,7 +13833,7 @@ h3 {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   left: 0;
   top: 0px;
   overflow: auto;
@@ -13828,7 +13841,7 @@ h3 {
 
 .popup-register__conteiner,
 .popup-autoriz__conteiner,
-.popapp-add-adres__conteiner,
+.popup-add-adres__conteiner,
 .popup-question__conteiner,
 .popup-reviews__conteiner,
 .popup-quick__conteiner,
@@ -13854,7 +13867,7 @@ h3 {
 
 .popup-register__wrapper,
 .popup-autoriz__wrapper,
-.popapp-add-adres__wrapper,
+.popup-add-adres__wrapper,
 .popup-question__wrapper,
 .popup-reviews__wrapper,
 .popup-quick__wrapper,
@@ -13869,7 +13882,7 @@ h3 {
 
 .popup-register__close,
 .popup-autoriz__close,
-.popapp-add-adres__close,
+.popup-add-adres__close,
 .popup-question__close,
 .popup-reviews__close,
 .popup-quick__close,
@@ -13888,7 +13901,7 @@ h3 {
 
 .popup-register__close svg,
 .popup-autoriz__close svg,
-.popapp-add-adres__close svg,
+.popup-add-adres__close svg,
 .popup-question__close svg,
 .popup-reviews__close svg,
 .popup-quick__close svg,
@@ -13901,7 +13914,7 @@ h3 {
 
 .popup-register__close .close-register__item,
 .popup-autoriz__close .close-register__item,
-.popapp-add-adres__close .close-register__item,
+.popup-add-adres__close .close-register__item,
 .popup-question__close .close-register__item,
 .popup-reviews__close .close-register__item,
 .popup-quick__close .close-register__item,
@@ -13925,7 +13938,7 @@ h3 {
 
 .popup-register__title,
 .popup-autoriz__title,
-.popapp-add-adres__title,
+.popup-add-adres__title,
 .popup-question__title,
 .popup-reviews__title,
 .popup-quick__title,
@@ -13941,7 +13954,7 @@ h3 {
 
 .popup-register__switches,
 .popup-autoriz__switches,
-.popapp-add-adres__switches,
+.popup-add-adres__switches,
 .popup-question__switches,
 .popup-reviews__switches,
 .popup-quick__switches,
@@ -13960,7 +13973,7 @@ h3 {
 
 .popup-register__el,
 .popup-autoriz__el,
-.popapp-add-adres__el,
+.popup-add-adres__el,
 .popup-question__el,
 .popup-reviews__el,
 .popup-quick__el,
@@ -13977,7 +13990,7 @@ h3 {
 
 .popup-register__el.active,
 .popup-autoriz__el.active,
-.popapp-add-adres__el.active,
+.popup-add-adres__el.active,
 .popup-question__el.active,
 .popup-reviews__el.active,
 .popup-quick__el.active,
@@ -13991,7 +14004,7 @@ h3 {
 
 .popup-register__el:first-child,
 .popup-autoriz__el:first-child,
-.popapp-add-adres__el:first-child,
+.popup-add-adres__el:first-child,
 .popup-question__el:first-child,
 .popup-reviews__el:first-child,
 .popup-quick__el:first-child,
@@ -14005,8 +14018,8 @@ h3 {
 .popup-register__body, .popup-register__body_ur,
 .popup-autoriz__body,
 .popup-autoriz__body_ur,
-.popapp-add-adres__body,
-.popapp-add-adres__body_ur,
+.popup-add-adres__body,
+.popup-add-adres__body_ur,
 .popup-question__body,
 .popup-question__body_ur,
 .popup-reviews__body,
@@ -14026,7 +14039,7 @@ h3 {
 
 .popup-register__body_ur,
 .popup-autoriz__body_ur,
-.popapp-add-adres__body_ur,
+.popup-add-adres__body_ur,
 .popup-question__body_ur,
 .popup-reviews__body_ur,
 .popup-quick__body_ur,
@@ -14039,7 +14052,7 @@ h3 {
 
 .popup-register .popup-autoriz__item,
 .popup-autoriz .popup-autoriz__item,
-.popapp-add-adres .popup-autoriz__item,
+.popup-add-adres .popup-autoriz__item,
 .popup-question .popup-autoriz__item,
 .popup-reviews .popup-autoriz__item,
 .popup-quick .popup-autoriz__item,
@@ -14061,7 +14074,7 @@ h3 {
 
 .popup-register__item,
 .popup-autoriz__item,
-.popapp-add-adres__item,
+.popup-add-adres__item,
 .popup-question__item,
 .popup-reviews__item,
 .popup-quick__item,
@@ -14076,7 +14089,7 @@ h3 {
 
 .popup-register__item input,
 .popup-autoriz__item input,
-.popapp-add-adres__item input,
+.popup-add-adres__item input,
 .popup-question__item input,
 .popup-reviews__item input,
 .popup-quick__item input,
@@ -14092,7 +14105,7 @@ h3 {
 
 .popup-register__item input::-webkit-input-placeholder,
 .popup-autoriz__item input::-webkit-input-placeholder,
-.popapp-add-adres__item input::-webkit-input-placeholder,
+.popup-add-adres__item input::-webkit-input-placeholder,
 .popup-question__item input::-webkit-input-placeholder,
 .popup-reviews__item input::-webkit-input-placeholder,
 .popup-quick__item input::-webkit-input-placeholder,
@@ -14107,7 +14120,7 @@ h3 {
 
 .popup-register__item input:-ms-input-placeholder,
 .popup-autoriz__item input:-ms-input-placeholder,
-.popapp-add-adres__item input:-ms-input-placeholder,
+.popup-add-adres__item input:-ms-input-placeholder,
 .popup-question__item input:-ms-input-placeholder,
 .popup-reviews__item input:-ms-input-placeholder,
 .popup-quick__item input:-ms-input-placeholder,
@@ -14122,7 +14135,7 @@ h3 {
 
 .popup-register__item input::-ms-input-placeholder,
 .popup-autoriz__item input::-ms-input-placeholder,
-.popapp-add-adres__item input::-ms-input-placeholder,
+.popup-add-adres__item input::-ms-input-placeholder,
 .popup-question__item input::-ms-input-placeholder,
 .popup-reviews__item input::-ms-input-placeholder,
 .popup-quick__item input::-ms-input-placeholder,
@@ -14137,7 +14150,7 @@ h3 {
 
 .popup-register__item input::placeholder,
 .popup-autoriz__item input::placeholder,
-.popapp-add-adres__item input::placeholder,
+.popup-add-adres__item input::placeholder,
 .popup-question__item input::placeholder,
 .popup-reviews__item input::placeholder,
 .popup-quick__item input::placeholder,
@@ -14152,7 +14165,7 @@ h3 {
 
 .popup-register__item input:focus,
 .popup-autoriz__item input:focus,
-.popapp-add-adres__item input:focus,
+.popup-add-adres__item input:focus,
 .popup-question__item input:focus,
 .popup-reviews__item input:focus,
 .popup-quick__item input:focus,
@@ -14167,8 +14180,8 @@ h3 {
 .popup-register__item input[type="password"]::-ms-clear,
 .popup-autoriz__item input[type="password"]::-ms-reveal,
 .popup-autoriz__item input[type="password"]::-ms-clear,
-.popapp-add-adres__item input[type="password"]::-ms-reveal,
-.popapp-add-adres__item input[type="password"]::-ms-clear,
+.popup-add-adres__item input[type="password"]::-ms-reveal,
+.popup-add-adres__item input[type="password"]::-ms-clear,
 .popup-question__item input[type="password"]::-ms-reveal,
 .popup-question__item input[type="password"]::-ms-clear,
 .popup-reviews__item input[type="password"]::-ms-reveal,
@@ -14190,8 +14203,8 @@ h3 {
 .popup-register__item input[type="number"]::-webkit-inner-spin-button,
 .popup-autoriz__item input[type="number"]::-webkit-outer-spin-button,
 .popup-autoriz__item input[type="number"]::-webkit-inner-spin-button,
-.popapp-add-adres__item input[type="number"]::-webkit-outer-spin-button,
-.popapp-add-adres__item input[type="number"]::-webkit-inner-spin-button,
+.popup-add-adres__item input[type="number"]::-webkit-outer-spin-button,
+.popup-add-adres__item input[type="number"]::-webkit-inner-spin-button,
 .popup-question__item input[type="number"]::-webkit-outer-spin-button,
 .popup-question__item input[type="number"]::-webkit-inner-spin-button,
 .popup-reviews__item input[type="number"]::-webkit-outer-spin-button,
@@ -14215,9 +14228,9 @@ h3 {
 .popup-autoriz__item input[type="number"],
 .popup-autoriz__item input[type="number"]:hover,
 .popup-autoriz__item input[type="number"]:focus,
-.popapp-add-adres__item input[type="number"],
-.popapp-add-adres__item input[type="number"]:hover,
-.popapp-add-adres__item input[type="number"]:focus,
+.popup-add-adres__item input[type="number"],
+.popup-add-adres__item input[type="number"]:hover,
+.popup-add-adres__item input[type="number"]:focus,
 .popup-question__item input[type="number"],
 .popup-question__item input[type="number"]:hover,
 .popup-question__item input[type="number"]:focus,
@@ -14246,7 +14259,7 @@ h3 {
 
 .popup-register__item svg,
 .popup-autoriz__item svg,
-.popapp-add-adres__item svg,
+.popup-add-adres__item svg,
 .popup-question__item svg,
 .popup-reviews__item svg,
 .popup-quick__item svg,
@@ -14269,10 +14282,10 @@ h3 {
 .popup-autoriz__item .eye-show,
 .popup-autoriz__item .eye-hide2,
 .popup-autoriz__item .eye-show2,
-.popapp-add-adres__item .eye-hide,
-.popapp-add-adres__item .eye-show,
-.popapp-add-adres__item .eye-hide2,
-.popapp-add-adres__item .eye-show2,
+.popup-add-adres__item .eye-hide,
+.popup-add-adres__item .eye-show,
+.popup-add-adres__item .eye-hide2,
+.popup-add-adres__item .eye-show2,
 .popup-question__item .eye-hide,
 .popup-question__item .eye-show,
 .popup-question__item .eye-hide2,
@@ -14312,10 +14325,10 @@ h3 {
 .popup-autoriz__item .eye-show.active,
 .popup-autoriz__item .eye-hide2.active,
 .popup-autoriz__item .eye-show2.active,
-.popapp-add-adres__item .eye-hide.active,
-.popapp-add-adres__item .eye-show.active,
-.popapp-add-adres__item .eye-hide2.active,
-.popapp-add-adres__item .eye-show2.active,
+.popup-add-adres__item .eye-hide.active,
+.popup-add-adres__item .eye-show.active,
+.popup-add-adres__item .eye-hide2.active,
+.popup-add-adres__item .eye-show2.active,
 .popup-question__item .eye-hide.active,
 .popup-question__item .eye-show.active,
 .popup-question__item .eye-hide2.active,
@@ -14350,7 +14363,7 @@ h3 {
 
 .popup-register__footer,
 .popup-autoriz__footer,
-.popapp-add-adres__footer,
+.popup-add-adres__footer,
 .popup-question__footer,
 .popup-reviews__footer,
 .popup-quick__footer,
@@ -14363,7 +14376,7 @@ h3 {
 
 .popup-register .popup-autoriz__footer,
 .popup-autoriz .popup-autoriz__footer,
-.popapp-add-adres .popup-autoriz__footer,
+.popup-add-adres .popup-autoriz__footer,
 .popup-question .popup-autoriz__footer,
 .popup-reviews .popup-autoriz__footer,
 .popup-quick .popup-autoriz__footer,
@@ -14376,7 +14389,7 @@ h3 {
 
 .popup-register__error,
 .popup-autoriz__error,
-.popapp-add-adres__error,
+.popup-add-adres__error,
 .popup-question__error,
 .popup-reviews__error,
 .popup-quick__error,
@@ -14393,7 +14406,7 @@ h3 {
 
 .popup-register__text,
 .popup-autoriz__text,
-.popapp-add-adres__text,
+.popup-add-adres__text,
 .popup-question__text,
 .popup-reviews__text,
 .popup-quick__text,
@@ -14408,7 +14421,7 @@ h3 {
 
 .popup-register__text a,
 .popup-autoriz__text a,
-.popapp-add-adres__text a,
+.popup-add-adres__text a,
 .popup-question__text a,
 .popup-reviews__text a,
 .popup-quick__text a,
@@ -14421,7 +14434,7 @@ h3 {
 
 .popup-register__button,
 .popup-autoriz__button,
-.popapp-add-adres__button,
+.popup-add-adres__button,
 .popup-question__button,
 .popup-reviews__button,
 .popup-quick__button,
@@ -14435,7 +14448,7 @@ h3 {
 
 .popup-register__button button,
 .popup-autoriz__button button,
-.popapp-add-adres__button button,
+.popup-add-adres__button button,
 .popup-question__button button,
 .popup-reviews__button button,
 .popup-quick__button button,
@@ -14455,7 +14468,7 @@ h3 {
 
 .popup-register__button button:hover,
 .popup-autoriz__button button:hover,
-.popapp-add-adres__button button:hover,
+.popup-add-adres__button button:hover,
 .popup-question__button button:hover,
 .popup-reviews__button button:hover,
 .popup-quick__button button:hover,
@@ -14468,7 +14481,7 @@ h3 {
 
 .popup-register__bottom,
 .popup-autoriz__bottom,
-.popapp-add-adres__bottom,
+.popup-add-adres__bottom,
 .popup-question__bottom,
 .popup-reviews__bottom,
 .popup-quick__bottom,
@@ -14484,7 +14497,7 @@ h3 {
 
 .popup-register__bottom span,
 .popup-autoriz__bottom span,
-.popapp-add-adres__bottom span,
+.popup-add-adres__bottom span,
 .popup-question__bottom span,
 .popup-reviews__bottom span,
 .popup-quick__bottom span,
@@ -14833,7 +14846,7 @@ h3 {
   }
   .popup-register__wrapper,
   .popup-autoriz__wrapper,
-  .popapp-add-adres__wrapper,
+  .popup-add-adres__wrapper,
   .popup-question__wrapper,
   .popup-reviews__wrapper,
   .popup-quick__wrapper,
@@ -14845,7 +14858,7 @@ h3 {
   }
   .popup-register__wrapper button,
   .popup-autoriz__wrapper button,
-  .popapp-add-adres__wrapper button,
+  .popup-add-adres__wrapper button,
   .popup-question__wrapper button,
   .popup-reviews__wrapper button,
   .popup-quick__wrapper button,
