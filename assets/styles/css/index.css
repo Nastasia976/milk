@@ -1572,7 +1572,7 @@ h2 {
   background: #ffffff;
   border: 1px solid #adadad;
   border-radius: 18px;
-  padding: 21px 28px 32px;
+  padding: 21px 25px 32px;
   margin: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1650,6 +1650,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   margin-top: 26px;
   font-weight: 500;
 }
@@ -1662,11 +1665,12 @@ h2 {
 }
 
 .popular .volume-product {
-  margin: 20px auto 15px;
+  margin: 0px auto 15px;
   font-size: 16px;
 }
 
 .popular .about__details {
+  margin-top: 10px;
   min-width: 100%;
 }
 
@@ -2226,17 +2230,25 @@ h2 {
 }
 
 .production-page {
-  padding: calc(50px + 120 * (100vw / 1920)) 20px calc(50px + (200 - 20) * ((100vw - 1100px) / (1920 - 1100)));
+  padding: calc(50px + 120 * (100vw / 1920)) 20px 70px;
   background: -webkit-gradient(linear, left bottom, left top, from(#f4f9ff), to(#f4f9ff)), -webkit-gradient(linear, left bottom, left top, from(#fbf7f2), to(#fbf7f2));
   background: linear-gradient(0deg, #f4f9ff, #f4f9ff), linear-gradient(0deg, #fbf7f2, #fbf7f2);
   position: relative;
   z-index: 2;
 }
 
+.production-page__fon {
+  width: 40%;
+  height: calc(400px + (600 - 400) * ((100vw - 1100px) / (1920 - 1100)));
+}
+
 .production-page__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -2255,7 +2267,7 @@ h2 {
   display: flex;
   position: absolute;
   right: 20px;
-  bottom: -75px;
+  bottom: -50px;
   right: 30px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -2284,7 +2296,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: -80px;
+  bottom: -55px;
   left: 50%;
   font-size: 18px;
   line-height: 28px;
@@ -2416,7 +2428,7 @@ h2 {
 
 .production-slider__image {
   position: relative;
-  padding: 0 0 12% 0;
+  padding: 0 0 11% 0;
   margin: 0 10px;
 }
 
@@ -2431,10 +2443,10 @@ h2 {
 @media (max-width: 1100px) {
   .production-page__arrows {
     right: 20px;
-    bottom: 30px;
+    bottom: 40px;
   }
   .production-page__dots {
-    bottom: 30px;
+    bottom: 40px;
   }
   .production-page__conteiner {
     -webkit-box-orient: vertical;
@@ -2595,7 +2607,7 @@ h2 {
 }
 
 .order-page__item {
-  margin-top: calc(0px + 77 * (100vw / 1920));
+  /* margin-top: calc(0px + 77 * (100vw / 1920)); */
 }
 
 .order-page__name {

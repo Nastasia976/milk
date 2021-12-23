@@ -1178,7 +1178,7 @@ h2 {
         background: #ffffff;
         border: 1px solid #adadad;
         border-radius: 18px;
-        padding: 21px 28px 32px;
+        padding: 21px 25px 32px;
         margin: 0 15px;
         display: flex;
         flex-direction: column;
@@ -1226,6 +1226,7 @@ h2 {
         font-size: calc(16px + 4 * (100vw / 1920));
         line-height: 120%;
         display: flex;
+        flex: 1 1 auto;
         margin-top: 26px;
         font-weight: 500;
     }
@@ -1236,10 +1237,11 @@ h2 {
         line-height: 120%;
     }
     .volume-product{
-        margin: 20px auto 15px;
+        margin: 0px auto 15px;
         font-size: 16px;
     }
     .about__details{
+        margin-top: 10px;
         min-width: 100%;
     }
     .about__el:last-child{
@@ -1664,12 +1666,17 @@ h2 {
 }
 //_________PRODUCTION______
 .production-page {
-    padding: calc(50px + 120 * (100vw / 1920)) 20px calc(50px + (200 - 20) * ((100vw - 1100px) / (1920 - 1100)));
+    padding: calc(50px + 120 * (100vw / 1920)) 20px 70px;
     background: linear-gradient(0deg, #f4f9ff, #f4f9ff), linear-gradient(0deg, #fbf7f2, #fbf7f2);
     position: relative;
     z-index: 2;
+    &__fon{
+        width: 40%;
+        height: calc(400px + (600 - 400) * ((100vw - 1100px) / (1920 - 1100)));
+    }
     &__conteiner {
         display: flex;
+        align-items: flex-start;
         justify-content: flex-end;
     }
     &__body {
@@ -1682,7 +1689,7 @@ h2 {
         display: flex;
         position: absolute;
         right: 20px;
-        bottom: -75px;
+        bottom: -50px;
         right: 30px;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
@@ -1703,7 +1710,7 @@ h2 {
     &__dots {
         position: absolute;
         display: flex;
-        bottom: -80px;
+        bottom: -55px;
         left: 50%;
         font-size: 18px;
         line-height: 28px;
@@ -1806,7 +1813,7 @@ h2 {
     }
     &__image {
         position: relative;
-        padding: 0 0 12% 0;
+        padding: 0 0 11% 0;
         margin: 0 10px;
         img {
             position: absolute;
@@ -1819,10 +1826,10 @@ h2 {
 @media (max-width: 1100px) {
     .production-page__arrows {
         right: 20px;
-        bottom: 30px;
+        bottom: 40px;
     }
     .production-page__dots {
-        bottom: 30px;
+        bottom: 40px;
     }
     .production-page__conteiner {
         flex-direction: column;
@@ -1951,7 +1958,7 @@ h2 {
         }
     }
     &__item {
-        margin-top: calc(0px + 77 * (100vw / 1920));
+        /* margin-top: calc(0px + 77 * (100vw / 1920)); */
     }
     &__name {
         font-size: calc(16px + 2 * (100vw / 1920));
