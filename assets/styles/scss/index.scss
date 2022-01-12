@@ -8329,40 +8329,6 @@ h3 {
     }
 }
 
-@media (max-width: 768px) {
-    .popapp-add-adres {
-        &__wrapper {
-            width: 420px;
-            height: 80vh;
-            background-color: #fff !important;
-        }
-        &__item {
-            font-size: 16px;
-            line-height: 120%;
-            padding: 10px 15px;
-            flex: 0 0 50%;
-            input {
-                background-color: #f9fafc;
-                width: 100%;
-                padding: 11px 21px;
-                line-height: 120%;
-                color: black;
-            }
-        }
-    }
-}
-@media (max-width: 445px) {
-    .popapp-add-adres {
-        &__wrapper {
-            width: 100%;
-            height: 100%;
-            padding: 30px 0;
-        }
-        .popapp-add-adres__close {
-            top: 30px;
-        }
-    }
-}
 @media (max-width: 1430px) {
     .profil__conteiner {
         flex-direction: column;
@@ -10900,7 +10866,7 @@ h3 {
 
 .popup-register,
 .popup-autoriz,
-.popup-add-adres,
+.popapp-add-adres,
 .popup-question,
 .popup-reviews,
 .popup-quick,
@@ -11324,7 +11290,11 @@ h3 {
         &__footer {
             margin-top: 14px;
         }
-        &__bottom {
+        &__button {
+            min-width: 100%;
+            button {
+                min-width: 100% !important;
+            }
         }
     }
 }
@@ -11352,7 +11322,7 @@ h3 {
     }
     .popup-register__wrapper,
     .popup-autoriz__wrapper,
-    .popup-add-adres__wrapper,
+    .popapp-add-adres__wrapper,
     .popup-question__wrapper,
     .popup-reviews__wrapper,
     .popup-quick__wrapper,
@@ -11370,3 +11340,37 @@ h3 {
         margin-top: 15px;
     }
 }
+/* @media (max-width: 768px) {
+    .popapp-add-adres {
+        &__wrapper {
+            width: 420px;
+            height: 80vh;
+            background-color: #fff !important;
+        }
+        &__item {
+            font-size: 16px;
+            line-height: 120%;
+            padding: 10px 15px;
+            flex: 0 0 50%;
+            input {
+                background-color: #f9fafc;
+                width: 100%;
+                padding: 11px 21px;
+                line-height: 120%;
+                color: black;
+            }
+        }
+    }
+} */
+/* @media (max-width: 445px) {
+    .popapp-add-adres {
+        &__wrapper {
+            width: 100%;
+            height: 100%;
+            padding: 30px 0;
+        }
+        .popapp-add-adres__close {
+            top: 30px;
+        }
+    }
+} */
