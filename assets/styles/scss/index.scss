@@ -3147,16 +3147,6 @@ h2 {
         .popular__heart2 {
             display: none;
         }
-        /* .popular__heart1 {
-            z-index: 2;
-            background-color: #fff;
-        }
-        .popular__heart2 {
-            z-index: 1;
-        } */
-        /* .popular__heart1.passive {
-            opacity: 0;
-        } */
     }
     &__title {
         margin-top: 43px;
@@ -3219,7 +3209,10 @@ h2 {
             .popular__button1 {
                 display: flex;
                 align-items: center;
-                padding: 14px 68px;
+                justify-content: center;
+                padding: 10px;
+                width: 260px;
+                height: 50px;
                 span {
                     font-size: calc(14px + 2 * (100vw / 1920));
                     line-height: 120%;
@@ -3232,11 +3225,14 @@ h2 {
                 margin-left: 20px;
                 border: 1px solid #4eb7e5;
                 border-radius: 4px;
-                padding: 14px 48px;
-                margin: 0 !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                width: 260px;
+                height: 50px;
                 svg {
                     color: #4eb7e5;
-                    /* color: #8ed8f3; */
                     margin-right: 17px;
                 }
                 span {
@@ -11340,37 +11336,8 @@ h3 {
         margin-top: 15px;
     }
 }
-/* @media (max-width: 768px) {
-    .popapp-add-adres {
-        &__wrapper {
-            width: 420px;
-            height: 80vh;
-            background-color: #fff !important;
-        }
-        &__item {
-            font-size: 16px;
-            line-height: 120%;
-            padding: 10px 15px;
-            flex: 0 0 50%;
-            input {
-                background-color: #f9fafc;
-                width: 100%;
-                padding: 11px 21px;
-                line-height: 120%;
-                color: black;
-            }
-        }
+.product-card{
+    .popular__button1{
+        margin-top: 0;
     }
-} */
-/* @media (max-width: 445px) {
-    .popapp-add-adres {
-        &__wrapper {
-            width: 100%;
-            height: 100%;
-            padding: 30px 0;
-        }
-        .popapp-add-adres__close {
-            top: 30px;
-        }
-    }
-} */
+}
