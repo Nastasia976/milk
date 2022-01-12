@@ -9,7 +9,10 @@ $(document).ready(function () {
         $('.head-link').removeClass('active');
         $('.header__link-open').removeClass('passive');
     });
-
+    $('.header__elem').click(function () {
+        $('.header__elem').removeClass('active');
+        $(this).addClass('active');
+    })
     $('.title-page__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -110,7 +113,7 @@ $(document).ready(function () {
     $('.why-we-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
+        infinite: false,
         prevArrow: $('.why-we-prev'),
         nextArrow: $('.why-we-next'),
         dots: true,
@@ -134,7 +137,7 @@ $(document).ready(function () {
     $('.production-slider').slick({
         slidesToScroll: 1,
         slidesToShow: 1.5,
-        infinite: true,
+        infinite: false,
         initialSlide: 0,
         arrows: true,
         prevArrow: $('.production-page-prev'),
@@ -166,7 +169,7 @@ $(document).ready(function () {
         nextArrow: $('.small-slider__next'),
         vertical: true,
         initialSlide: 0,
-        infinite: true,
+        infinite: false,
         asNavFor: '.big-slider',
         responsive: [
             {
@@ -183,7 +186,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        infinite: true,
+        infinite: false,
         asNavFor: '.small-slider',
         responsive: [
             {
@@ -262,10 +265,14 @@ $(document).ready(function () {
         $('.big-slider').slick('slickNext');
     });
 
-    $('.popular__heart1').click(function (evrnt) {
+    /* $('.popular__heart1').click(function (evrnt) {
         $(this).toggleClass('passive');
-        $('.popular__heart2').toggleClass('active');
-    });
+        if($('.popular__heart1').hasClass('passive')){
+            $('.about__favorites span').text('В избранном');
+        }else {
+            return;
+        }
+    }); */
 
     $('#ss-01').click(function (event) {
         $('.big-slider').slick('goTo', 0);
@@ -501,9 +508,15 @@ $(document).ready(function () {
     //_____FAVORITES__
     $('.popular__heart1').click(function () {
         $(this).hide().next().show();
+        if ($('.popular__heart1').hide()) {
+            $('.about__favorites span').text('В избранном');
+        }
     });
     $('.popular__heart2').click(function () {
         $(this).hide().prev().show();
+        if ($('.popular__heart1').show()) {
+            $('.about__favorites span').text('В избранноe');
+        }
     });
 
     //_______BUSKET_________
@@ -582,6 +595,10 @@ $(document).ready(function () {
         $('.reg-inp').css('background', '#f9fafc');
         $('.popup-register__error').hide();
     });
+    $('.account__items').click(function () {
+        $('.popup-autoriz').show();
+        $('body').addClass('lock');
+    })
 
     $('.add-question').click(function () {
         $('.popup-question').show();
@@ -592,7 +609,7 @@ $(document).ready(function () {
         $('.popup-reviews').show();
         $('body').addClass('lock');
     });
-    
+
     $('.close-register__item, .popup-thx__button').click(function () {
         $('.popup-register, .popup-autoriz, .popapp-add-adres, .popup-question, .popup-reviews, .popup-quick, .popup-thx, .popup-del, .popup-pre-order, .popup-subscription, .popup-thx-order, popup-thx-profil').hide();
         $('body').removeClass('lock');
@@ -705,49 +722,49 @@ $(document).ready(function () {
         $('.leave-reiting__value').text(5);
     });
 
-    $('.popular__button2, .slider-rec__button2').click(function(){
+    $('.popular__button2, .slider-rec__button2').click(function () {
         $('.popup-quick').show();
         $('body').addClass('lock');
     });
-    $('.button-popup-quick').click(function(){
+    $('.button-popup-quick').click(function () {
         $('.popup-thx').show();
         $('.popup-quick').hide();
     });
 
-    $('.card-basket__close').click(function(){
+    $('.card-basket__close').click(function () {
         $('.popup-del').show();
         $('body').addClass('lock');
     });
-    $('.popup-del__cancel').click(function(){
+    $('.popup-del__cancel').click(function () {
         $('.popup-del').hide();
         $('body').removeClass('lock');
     });
 
-    $('.side-basket__button').click(function(){
+    $('.side-basket__button').click(function () {
         $('.popup-pre-order').show();
         $('body').addClass('lock');
     });
 
-    $('.popup-pre-order__notice').click(function(){
+    $('.popup-pre-order__notice').click(function () {
         $('.popup-pre-order').hide();
         $('.popup-subscription').show();
     });
 
-    $('.popup-pre-order__prepayment').click(function(){
+    $('.popup-pre-order__prepayment').click(function () {
         $('.popup-thx-order').show();
         $('.popup-pre-order').hide();
     });
 
-    $('.save-data').click(function(){
+    $('.save-data').click(function () {
         $('.popup-thx-profil').show();
         $('body').addClass('lock');
     });
 
-    $('.side-basket__button-thx').click(function(){
+    $('.side-basket__button-thx').click(function () {
         $('.popup-thx-order').show();
         $('body').addClass('lock');
     });
-    
+
 });
 
 $(window).on('resize', function () {
@@ -772,7 +789,7 @@ var filterOut = function () {
 $(window).on('resize', function () {
     if ($(window).width() < 1081) {
         inputHide();
-    } else{
+    } else {
         inputShow();
     }
 });
@@ -780,18 +797,18 @@ $(window).on('resize', function () {
 var inputHide = function () {
     $(document).ready(function () {
         $('.choice-adres__item').each(function () {
-            if ($(this).text().length == ''){
+            if ($(this).text().length == '') {
                 $(this).hide().prev().hide();
-            } 
+            }
         });
     });
 }
 var inputShow = function () {
     $(document).ready(function () {
         $('.choice-adres__item').each(function () {
-            if ($(this).text().length == ''){
+            if ($(this).text().length == '') {
                 $(this).show().show();
-            } 
+            }
         });
     });
 }
@@ -833,7 +850,7 @@ counts.forEach(counterFunction);
 
 new Swiper('.tradishon-swiper', {
     slidePerGroup: 1,
-    loop: true,
+    loop: false,
     spaceBetween: 30,
     navigation: {
         nextEl: '.tradishon-next',
