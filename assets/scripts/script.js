@@ -66,13 +66,13 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 1160,
+                breakpoint: 960,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 676,
+                breakpoint: 570,
                 settings: {
                     slidesToShow: 1,
                 }
@@ -256,13 +256,13 @@ $(document).ready(function () {
         nextArrow: $('.rec-for-order__next'),
         responsive: [
             {
-                breakpoint: 1560,
+                breakpoint: 1350,
                 settings: {
                     slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 1130,
+                breakpoint: 1050,
                 settings: {
                     slidesToShow: 2,
                 }
