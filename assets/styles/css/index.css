@@ -2019,7 +2019,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
+  margin-top: 10px;
 }
 
 .popular__slider .popular__bottons .popular__button2 {
@@ -2029,6 +2029,9 @@ h2 {
 
 .popular__slider .popular__bottons .popular__button3 {
   padding: 14px 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 218px;
+          flex: 0 1 218px;
 }
 
 @media (max-width: 1413px) {
