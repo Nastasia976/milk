@@ -60,7 +60,7 @@ $(document).ready(function () {
         nextArrow: $('.popular-next'),
         responsive: [
             {
-                breakpoint: 1520,
+                breakpoint: 1270,
                 settings: {
                     slidesToShow: 3,
                 }
