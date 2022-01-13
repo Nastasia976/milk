@@ -398,7 +398,7 @@ h2 {
 }
 
 .contacts__items {
-  margin-left: calc(0px + 80 * (100vw / 1920));
+  margin-left: calc(20px + (80 - 20) * ((100vw - 1100px) / (1920 - 1100)));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,6 +484,7 @@ h2 {
   border-radius: 50%;
   background-color: #fff;
   font-weight: 500;
+  color: #000;
 }
 
 .inside:not(:last-child) {
