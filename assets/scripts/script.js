@@ -25,11 +25,31 @@ $(document).ready(function () {
     });
 
     $('.categories-slider').slick({
-        slidesToShow: 1,
+        slidesToShow: 4,
         slidesToScroll: 1,
         infinite: false,
         prevArrow: $('.categories-prev'),
         nextArrow: $('.categories-next'),
+        responsive: [
+            {
+                breakpoint: 1060,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 545,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
 
     $('.popular__slider').slick({
@@ -265,14 +285,12 @@ $(document).ready(function () {
         $('.big-slider').slick('slickNext');
     });
 
-    /* $('.popular__heart1').click(function (evrnt) {
-        $(this).toggleClass('passive');
-        if($('.popular__heart1').hasClass('passive')){
-            $('.about__favorites span').text('В избранном');
-        }else {
-            return;
-        }
-    }); */
+    $('.popular__heart1').click(function (evrnt) {
+        $(this).hide().next().show();
+    });
+    $('.popular__heart2').click(function (evrnt) {
+        $(this).hide().prev().show();
+    });
 
     $('#ss-01').click(function (event) {
         $('.big-slider').slick('goTo', 0);
@@ -289,6 +307,7 @@ $(document).ready(function () {
     $('.slick-cloned').click(function (event) {
         $('.big-slider').slick('slickNext');
     });
+
 
 
 
@@ -506,7 +525,21 @@ $(document).ready(function () {
     });
 
     //_____FAVORITES__
-    $('.popular__heart1').click(function () {
+    $('.heart-description1').click(function () {
+        $(this).hide().next().show();
+        if ($('.popular__heart1').hide()) {
+            $('.about__favorites span').text('В избранном');
+        }
+    });
+    $('.heart-description2').click(function () {
+        $(this).hide().prev().show();
+        if ($('.popular__heart1').show()) {
+            $('.about__favorites span').text('В избранноe');
+        }
+    });
+
+
+    /* $('.popular__heart1').click(function () {
         $(this).hide().next().show();
         if ($('.popular__heart1').hide()) {
             $('.about__favorites span').text('В избранном');
@@ -517,8 +550,7 @@ $(document).ready(function () {
         if ($('.popular__heart1').show()) {
             $('.about__favorites span').text('В избранноe');
         }
-    });
-
+    }); */
     //_______BUSKET_________
 
     $('.heart1').click(function (event) {
