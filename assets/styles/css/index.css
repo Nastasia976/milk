@@ -2007,9 +2007,6 @@ h2 {
 }
 
 .popular__slider .popular__bottons button {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2078,6 +2075,9 @@ h2 {
 @media (max-width: 570px) {
   .popular__slider .popular__bottons {
     min-height: 0;
+  }
+  .popular__slider .popular__bottons button {
+    min-width: 100%;
   }
 }
 
