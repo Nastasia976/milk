@@ -689,7 +689,7 @@
                         <div class="profil__title profil-order__title">Заказы</div>
                         <div class="profil__header profil-order__header">
                             <div class="profil-order__switches">
-                                <a href="#" class="profil-order__switch _order active">
+                                <div class="profil-order__switch _order-order active">
                                     <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -704,11 +704,11 @@
                                             fill="#8ED8F3" />
                                     </svg>
                                     <span>Оформленные заказы</span>
-                                </a>
-                                <a href="https://nastasia976.github.io/milk/pageProfilPreOrder"
+                                </div>
+                                <div
                                     class="profil-order__switch _pre-order">
                                     <span>Предзаказы</span>
-                                </a>
+                                </div>
                             </div>
                             <div class="profil-order__search">
                                 <input class="profil-order__search-form" type="text" placeholder="Поиск по заказам">
@@ -730,302 +730,692 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="profil-order__order-number order-number active">
-                            <div class="order-number__header">
-                                <div class="order-number__title">
-                                    Заказ № 16454 от 27 сентября 2021
-                                    <div class="order-number__marker _ready"><span>Готов к выдаче</span></div>
-                                </div>
-                                <svg class="arrow-d" width="9" height="14" viewBox="0 0 9 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </div>
-                            <div class="order-number__top">
-                                <div class="order-number__itemss">
-                                    <div class="order-number__item">Товаров в заказе: <span>1 шт.</span></div>
-                                    <div class="order-number__item">Кол-во позиций: <span>1</span></div>
-                                    <div class="order-number__item">На сумму:<span>1 500 руб</span></div>
-                                </div>
-                                <div class="order-number__button">
-                                    <button>
-                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.0508 0.963036C9.79255 0.954234 6.65924 2.21615 4.31659 4.48065V0.96298C4.31659 0.431132 3.88546 0 3.35361 0C2.82177 0 2.39069 0.431132 2.39069 0.96298V6.74074C2.39058 7.1554 2.65594 7.52356 3.04938 7.65458L8.82714 9.58048C9.33236 9.74857 9.8782 9.4752 10.0462 8.96998C10.2143 8.46476 9.94094 7.91892 9.43573 7.75089L5.16983 6.3315C9.1105 2.04022 15.7839 1.75595 20.0752 5.69663C24.3665 9.6373 24.6507 16.3107 20.71 20.602C16.7694 24.8933 10.096 25.1775 5.80471 21.2368C3.17379 18.8209 1.9441 15.2377 2.53711 11.7154C2.63038 11.1918 2.28157 10.6917 1.75801 10.5984C1.23446 10.5051 0.734379 10.854 0.641054 11.3775C0.640039 11.3832 0.639079 11.389 0.638177 11.3947C0.522903 12.0843 0.4649 12.7822 0.464844 13.4814C0.472687 20.3919 6.07277 25.992 12.9832 25.9999C19.897 26.0186 25.5168 20.429 25.5355 13.5153C25.5541 6.60155 19.9646 0.981712 13.0508 0.963036Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>Повторить заказ</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="profil__wrapper">
-                                <div class="order-number__body">
-                                    <div class="order-number__card card-order">
-                                        <div class="card-order__image">
-                                            <img src="img/consist.png" alt="granello">
-                                        </div>
-                                        <div class="card-order__description">
-                                            <div class="card-order__name">Сухой гранулированный быстрорастворимый
-                                                какао-напиток “Горячий шоколад”</div>
-                                            <div class="card-order__sum-name">шоколадно-мятный вкус</div>
-                                        </div>
-                                        <div class="card-order__item _unit">
-                                            <span class="card-order__unit">4 шт</span>
-                                        </div>
-                                        <div class="card-order__item">
-                                            <span class="card-order__unit-visible">4 шт</span>
-                                            <span class="card-order__price"> 1 500 руб</span>
-                                        </div>
+                        <div class="wrapper-prof-order">
+                            <div class="profil-order__order-number order-number active">
+                                <div class="order-number__header">
+                                    <div class="order-number__title">
+                                        Заказ № 16454 от 27 сентября 2021
+                                        <div class="order-number__marker _ready"><span>Готов к выдаче</span></div>
                                     </div>
+                                    <svg class="arrow-d" width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z"
+                                            fill="currentColor" />
+                                    </svg>
                                 </div>
-                                <div class="order-number__footer">
-                                    <div class="order-number__items">
-                                        <div class="order-number__img"><svg width="31" height="31" viewBox="0 0 31 31"
-                                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M29.8207 7.16313L16.1317 0.227065L16.1261 0.224219C15.5165 -0.0792416 14.7923 -0.0724603 14.1884 0.242383C14.1409 0.262485 1.18775 7.13734 1.14409 7.16543C0.438359 7.53489 0 8.25891 0 9.05577V21.945C0 22.7419 0.438359 23.4659 1.14409 23.8354L14.1826 30.7554L14.1884 30.7585C14.4964 30.9191 14.8357 30.9995 15.1752 30.9995C15.5012 30.9995 15.8274 30.9253 16.1261 30.7766L29.8207 23.8377C30.5483 23.4739 31 22.7429 31 21.9293V9.07157C31 8.25788 30.5482 7.52696 29.8207 7.16313ZM15.03 1.85136C15.1189 1.8057 15.2252 1.8048 15.3148 1.84881L28.1283 8.34119L23.1414 10.824L10.6144 4.19488L15.03 1.85136ZM14.2542 28.7379L1.9926 22.2301L1.98672 22.227C1.88131 22.172 1.81574 22.064 1.81574 21.9451V9.87515L14.2542 16.3612V28.7379ZM15.1717 14.7917L2.80163 8.34138L8.67613 5.22364L21.1412 11.8199L15.1717 14.7917ZM29.1842 21.9294C29.1842 22.0507 29.1166 22.1598 29.0079 22.2139L16.07 28.7694V16.3729L22.027 13.4072V16.5166C22.027 17.018 22.4335 17.4245 22.9349 17.4245C23.4362 17.4245 23.8428 17.018 23.8428 16.5166V12.5032L29.1842 9.84403V21.9294Z"
-                                                    fill="#4EB7E5" />
-                                            </svg>
-                                        </div>
-                                        <div class="order-number__info">
-                                            <div class="order-number__name">Самовывоз из пункта выдачи</div>
-                                            <div class="order-number__text">Санкт-Петербург, Петергофское шоссе д. 73,
-                                                литера У, офис 213</div>
-                                        </div>
+                                <div class="order-number__top">
+                                    <div class="order-number__itemss">
+                                        <div class="order-number__item">Товаров в заказе: <span>1 шт.</span></div>
+                                        <div class="order-number__item">Кол-во позиций: <span>1</span></div>
+                                        <div class="order-number__item">На сумму:<span>1 500 руб</span></div>
                                     </div>
-                                    <div class="order-number__items">
-                                        <div class="order-number__img">
-                                            <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
+                                    <div class="order-number__button">
+                                        <button>
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
-                                                    d="M27.6786 0.428528H3.32143C1.48705 0.428528 0 1.91558 0 3.74995V19.2499C0 21.0843 1.48705 22.5714 3.32143 22.5714H27.6786C29.5129 22.5714 31 21.0843 31 19.2499V3.74995C31 1.91558 29.5129 0.428528 27.6786 0.428528ZM28.7857 19.2499C28.7857 19.8614 28.29 20.3571 27.6785 20.3571H3.32143C2.70995 20.3571 2.21426 19.8614 2.21426 19.2499V12.6071H28.7857V19.2499ZM28.7857 10.3928H2.21426V8.17854H28.7857V10.3928ZM28.7857 5.96422H2.21426V3.74995C2.21426 3.13847 2.70995 2.64279 3.32143 2.64279H27.6786C28.2901 2.64279 28.7857 3.13847 28.7857 3.74995V5.96422H28.7857Z"
+                                                    d="M13.0508 0.963036C9.79255 0.954234 6.65924 2.21615 4.31659 4.48065V0.96298C4.31659 0.431132 3.88546 0 3.35361 0C2.82177 0 2.39069 0.431132 2.39069 0.96298V6.74074C2.39058 7.1554 2.65594 7.52356 3.04938 7.65458L8.82714 9.58048C9.33236 9.74857 9.8782 9.4752 10.0462 8.96998C10.2143 8.46476 9.94094 7.91892 9.43573 7.75089L5.16983 6.3315C9.1105 2.04022 15.7839 1.75595 20.0752 5.69663C24.3665 9.6373 24.6507 16.3107 20.71 20.602C16.7694 24.8933 10.096 25.1775 5.80471 21.2368C3.17379 18.8209 1.9441 15.2377 2.53711 11.7154C2.63038 11.1918 2.28157 10.6917 1.75801 10.5984C1.23446 10.5051 0.734379 10.854 0.641054 11.3775C0.640039 11.3832 0.639079 11.389 0.638177 11.3947C0.522903 12.0843 0.4649 12.7822 0.464844 13.4814C0.472687 20.3919 6.07277 25.992 12.9832 25.9999C19.897 26.0186 25.5168 20.429 25.5355 13.5153C25.5541 6.60155 19.9646 0.981712 13.0508 0.963036Z"
                                                     fill="#4EB7E5" />
                                             </svg>
-                                        </div>
-                                        <div class="order-number__info">
-                                            <div class="order-number__name">Способ оплаты</div>
-                                            <div class="order-number__text">Картой на сайте</div>
+                                            <span>Повторить заказ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="profil__wrapper">
+                                    <div class="order-number__body">
+                                        <div class="order-number__card card-order">
+                                            <div class="card-order__image">
+                                                <img src="img/consist.png" alt="granello">
+                                            </div>
+                                            <div class="card-order__description">
+                                                <div class="card-order__name">Сухой гранулированный быстрорастворимый
+                                                    какао-напиток “Горячий шоколад”</div>
+                                                <div class="card-order__sum-name">шоколадно-мятный вкус</div>
+                                            </div>
+                                            <div class="card-order__item _unit">
+                                                <span class="card-order__unit">4 шт</span>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit-visible">4 шт</span>
+                                                <span class="card-order__price"> 1 500 руб</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="order-number__elements">
-                                        <div class="order-number__list">
-                                            <li class="order-number__el">Сумма</li>
-                                            <li class="order-number__el _middle"></li>
-                                            <li class="order-number__el">1 800 руб</li>
+                                    <div class="order-number__footer">
+                                        <div class="order-number__items">
+                                            <div class="order-number__img"><svg width="31" height="31" viewBox="0 0 31 31"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M29.8207 7.16313L16.1317 0.227065L16.1261 0.224219C15.5165 -0.0792416 14.7923 -0.0724603 14.1884 0.242383C14.1409 0.262485 1.18775 7.13734 1.14409 7.16543C0.438359 7.53489 0 8.25891 0 9.05577V21.945C0 22.7419 0.438359 23.4659 1.14409 23.8354L14.1826 30.7554L14.1884 30.7585C14.4964 30.9191 14.8357 30.9995 15.1752 30.9995C15.5012 30.9995 15.8274 30.9253 16.1261 30.7766L29.8207 23.8377C30.5483 23.4739 31 22.7429 31 21.9293V9.07157C31 8.25788 30.5482 7.52696 29.8207 7.16313ZM15.03 1.85136C15.1189 1.8057 15.2252 1.8048 15.3148 1.84881L28.1283 8.34119L23.1414 10.824L10.6144 4.19488L15.03 1.85136ZM14.2542 28.7379L1.9926 22.2301L1.98672 22.227C1.88131 22.172 1.81574 22.064 1.81574 21.9451V9.87515L14.2542 16.3612V28.7379ZM15.1717 14.7917L2.80163 8.34138L8.67613 5.22364L21.1412 11.8199L15.1717 14.7917ZM29.1842 21.9294C29.1842 22.0507 29.1166 22.1598 29.0079 22.2139L16.07 28.7694V16.3729L22.027 13.4072V16.5166C22.027 17.018 22.4335 17.4245 22.9349 17.4245C23.4362 17.4245 23.8428 17.018 23.8428 16.5166V12.5032L29.1842 9.84403V21.9294Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Самовывоз из пункта выдачи</div>
+                                                <div class="order-number__text">Санкт-Петербург, Петергофское шоссе д. 73,
+                                                    литера У, офис 213</div>
+                                            </div>
                                         </div>
-                                        <div class="order-number__list">
-                                            <li class="order-number__el">Доставка</li>
-                                            <li class="order-number__el _middle"></li>
-                                            <li class="order-number__el">100 руб</li>
+                                        <div class="order-number__items">
+                                            <div class="order-number__img">
+                                                <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M27.6786 0.428528H3.32143C1.48705 0.428528 0 1.91558 0 3.74995V19.2499C0 21.0843 1.48705 22.5714 3.32143 22.5714H27.6786C29.5129 22.5714 31 21.0843 31 19.2499V3.74995C31 1.91558 29.5129 0.428528 27.6786 0.428528ZM28.7857 19.2499C28.7857 19.8614 28.29 20.3571 27.6785 20.3571H3.32143C2.70995 20.3571 2.21426 19.8614 2.21426 19.2499V12.6071H28.7857V19.2499ZM28.7857 10.3928H2.21426V8.17854H28.7857V10.3928ZM28.7857 5.96422H2.21426V3.74995C2.21426 3.13847 2.70995 2.64279 3.32143 2.64279H27.6786C28.2901 2.64279 28.7857 3.13847 28.7857 3.74995V5.96422H28.7857Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Способ оплаты</div>
+                                                <div class="order-number__text">Картой на сайте</div>
+                                            </div>
                                         </div>
-                                        <div class="order-number__list _total">
-                                            <li class="order-number__el">Итого</li>
-                                            <li class="order-number__el _middle"></li>
-                                            <li class="order-number__el">1 500 руб</li>
+                                        <div class="order-number__elements">
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Сумма</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 800 руб</li>
+                                            </div>
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Доставка</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">100 руб</li>
+                                            </div>
+                                            <div class="order-number__list _total">
+                                                <li class="order-number__el">Итого</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 500 руб</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profil-order__order-number order-number _hide">
+                                <div class="order-number__header">
+                                    <div class="order-number__title">
+                                        Заказ № 98565 от 5 августа 2021
+                                        <div class="order-number__marker _recd"><span>Получен</span></div>
+                                    </div>
+                                    <svg class="arrow-d" width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="order-number__top">
+                                    <div class="order-number__itemss">
+                                        <div class="order-number__item">Товаров в заказе: <span>1 шт.</span></div>
+                                        <div class="order-number__item">Кол-во позиций: <span>2</span></div>
+                                        <div class="order-number__item">На сумму:<span>1 500 руб</span></div>
+                                    </div>
+                                    <div class="order-number__button">
+                                        <button>
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.0508 0.963036C9.79255 0.954234 6.65924 2.21615 4.31659 4.48065V0.96298C4.31659 0.431132 3.88546 0 3.35361 0C2.82177 0 2.39069 0.431132 2.39069 0.96298V6.74074C2.39058 7.1554 2.65594 7.52356 3.04938 7.65458L8.82714 9.58048C9.33236 9.74857 9.8782 9.4752 10.0462 8.96998C10.2143 8.46476 9.94094 7.91892 9.43573 7.75089L5.16983 6.3315C9.1105 2.04022 15.7839 1.75595 20.0752 5.69663C24.3665 9.6373 24.6507 16.3107 20.71 20.602C16.7694 24.8933 10.096 25.1775 5.80471 21.2368C3.17379 18.8209 1.9441 15.2377 2.53711 11.7154C2.63038 11.1918 2.28157 10.6917 1.75801 10.5984C1.23446 10.5051 0.734379 10.854 0.641054 11.3775C0.640039 11.3832 0.639079 11.389 0.638177 11.3947C0.522903 12.0843 0.4649 12.7822 0.464844 13.4814C0.472687 20.3919 6.07277 25.992 12.9832 25.9999C19.897 26.0186 25.5168 20.429 25.5355 13.5153C25.5541 6.60155 19.9646 0.981712 13.0508 0.963036Z"
+                                                    fill="#4EB7E5" />
+                                            </svg>
+                                            <span>Повторить заказ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="profil__wrapper">
+                                    <div class="order-number__body">
+                                        <div class="order-number__card card-order">
+                                            <div class="card-order__image">
+                                                <img src="img/consist.png" alt="granello">
+                                            </div>
+                                            <div class="card-order__description">
+                                                <div class="card-order__name">Сухой гранулированный быстрорастворимый
+                                                    какао-напиток “Горячий шоколад”</div>
+                                                <div class="card-order__sum-name">шоколадно-мятный вкус</div>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit">2 шт</span>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit-visible">2 шт</span>
+                                                <span class="card-order__price"> 1 500 руб</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-number__footer">
+                                        <div class="order-number__items">
+                                            <div class="order-number__img"><svg width="31" height="31" viewBox="0 0 31 31"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M29.8207 7.16313L16.1317 0.227065L16.1261 0.224219C15.5165 -0.0792416 14.7923 -0.0724603 14.1884 0.242383C14.1409 0.262485 1.18775 7.13734 1.14409 7.16543C0.438359 7.53489 0 8.25891 0 9.05577V21.945C0 22.7419 0.438359 23.4659 1.14409 23.8354L14.1826 30.7554L14.1884 30.7585C14.4964 30.9191 14.8357 30.9995 15.1752 30.9995C15.5012 30.9995 15.8274 30.9253 16.1261 30.7766L29.8207 23.8377C30.5483 23.4739 31 22.7429 31 21.9293V9.07157C31 8.25788 30.5482 7.52696 29.8207 7.16313ZM15.03 1.85136C15.1189 1.8057 15.2252 1.8048 15.3148 1.84881L28.1283 8.34119L23.1414 10.824L10.6144 4.19488L15.03 1.85136ZM14.2542 28.7379L1.9926 22.2301L1.98672 22.227C1.88131 22.172 1.81574 22.064 1.81574 21.9451V9.87515L14.2542 16.3612V28.7379ZM15.1717 14.7917L2.80163 8.34138L8.67613 5.22364L21.1412 11.8199L15.1717 14.7917ZM29.1842 21.9294C29.1842 22.0507 29.1166 22.1598 29.0079 22.2139L16.07 28.7694V16.3729L22.027 13.4072V16.5166C22.027 17.018 22.4335 17.4245 22.9349 17.4245C23.4362 17.4245 23.8428 17.018 23.8428 16.5166V12.5032L29.1842 9.84403V21.9294Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Самовывоз из пункта выдачи</div>
+                                                <div class="order-number__text">Санкт-Петербург, Петергофское шоссе д. 73,
+                                                    литера У, офис 213</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-number__items">
+                                            <div class="order-number__img">
+                                                <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M27.6786 0.428528H3.32143C1.48705 0.428528 0 1.91558 0 3.74995V19.2499C0 21.0843 1.48705 22.5714 3.32143 22.5714H27.6786C29.5129 22.5714 31 21.0843 31 19.2499V3.74995C31 1.91558 29.5129 0.428528 27.6786 0.428528ZM28.7857 19.2499C28.7857 19.8614 28.29 20.3571 27.6785 20.3571H3.32143C2.70995 20.3571 2.21426 19.8614 2.21426 19.2499V12.6071H28.7857V19.2499ZM28.7857 10.3928H2.21426V8.17854H28.7857V10.3928ZM28.7857 5.96422H2.21426V3.74995C2.21426 3.13847 2.70995 2.64279 3.32143 2.64279H27.6786C28.2901 2.64279 28.7857 3.13847 28.7857 3.74995V5.96422H28.7857Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Способ оплаты</div>
+                                                <div class="order-number__text">Картой на сайте</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-number__elements">
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Сумма</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 800 руб</li>
+                                            </div>
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Доставка</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">100 руб</li>
+                                            </div>
+                                            <div class="order-number__list _total">
+                                                <li class="order-number__el">Итого</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 500 руб</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profil-order__order-number order-number _hide">
+                                <div class="order-number__header">
+                                    <div class="order-number__title">
+                                        Заказ № 85492 от 14 июля 2021
+                                        <div class="order-number__marker _flash"><span>Передан в службу доставки</span>
+                                        </div>
+                                    </div>
+                                    <svg class="arrow-d" width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="order-number__top">
+                                    <div class="order-number__itemss">
+                                        <div class="order-number__item">Товаров в заказе: <span>1 шт.</span></div>
+                                        <div class="order-number__item">Кол-во позиций: <span>4</span></div>
+                                        <div class="order-number__item">На сумму:<span>1 500 руб</span></div>
+                                    </div>
+                                    <div class="order-number__button">
+                                        <button>
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.0508 0.963036C9.79255 0.954234 6.65924 2.21615 4.31659 4.48065V0.96298C4.31659 0.431132 3.88546 0 3.35361 0C2.82177 0 2.39069 0.431132 2.39069 0.96298V6.74074C2.39058 7.1554 2.65594 7.52356 3.04938 7.65458L8.82714 9.58048C9.33236 9.74857 9.8782 9.4752 10.0462 8.96998C10.2143 8.46476 9.94094 7.91892 9.43573 7.75089L5.16983 6.3315C9.1105 2.04022 15.7839 1.75595 20.0752 5.69663C24.3665 9.6373 24.6507 16.3107 20.71 20.602C16.7694 24.8933 10.096 25.1775 5.80471 21.2368C3.17379 18.8209 1.9441 15.2377 2.53711 11.7154C2.63038 11.1918 2.28157 10.6917 1.75801 10.5984C1.23446 10.5051 0.734379 10.854 0.641054 11.3775C0.640039 11.3832 0.639079 11.389 0.638177 11.3947C0.522903 12.0843 0.4649 12.7822 0.464844 13.4814C0.472687 20.3919 6.07277 25.992 12.9832 25.9999C19.897 26.0186 25.5168 20.429 25.5355 13.5153C25.5541 6.60155 19.9646 0.981712 13.0508 0.963036Z"
+                                                    fill="#4EB7E5" />
+                                            </svg>
+                                            <span>Повторить заказ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="profil__wrapper">
+                                    <div class="order-number__body">
+                                        <div class="order-number__card card-order">
+                                            <div class="card-order__image">
+                                                <img src="img/consist.png" alt="granello">
+                                            </div>
+                                            <div class="card-order__description">
+                                                <div class="card-order__name">Сухой гранулированный быстрорастворимый
+                                                    какао-напиток “Горячий шоколад”</div>
+                                                <div class="card-order__sum-name">шоколадно-мятный вкус</div>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit">4 шт</span>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit-visible">4 шт</span>
+                                                <span class="card-order__price"> 1 500 руб</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-number__footer">
+                                        <div class="order-number__items">
+                                            <div class="order-number__img"><svg width="31" height="31" viewBox="0 0 31 31"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M29.8207 7.16313L16.1317 0.227065L16.1261 0.224219C15.5165 -0.0792416 14.7923 -0.0724603 14.1884 0.242383C14.1409 0.262485 1.18775 7.13734 1.14409 7.16543C0.438359 7.53489 0 8.25891 0 9.05577V21.945C0 22.7419 0.438359 23.4659 1.14409 23.8354L14.1826 30.7554L14.1884 30.7585C14.4964 30.9191 14.8357 30.9995 15.1752 30.9995C15.5012 30.9995 15.8274 30.9253 16.1261 30.7766L29.8207 23.8377C30.5483 23.4739 31 22.7429 31 21.9293V9.07157C31 8.25788 30.5482 7.52696 29.8207 7.16313ZM15.03 1.85136C15.1189 1.8057 15.2252 1.8048 15.3148 1.84881L28.1283 8.34119L23.1414 10.824L10.6144 4.19488L15.03 1.85136ZM14.2542 28.7379L1.9926 22.2301L1.98672 22.227C1.88131 22.172 1.81574 22.064 1.81574 21.9451V9.87515L14.2542 16.3612V28.7379ZM15.1717 14.7917L2.80163 8.34138L8.67613 5.22364L21.1412 11.8199L15.1717 14.7917ZM29.1842 21.9294C29.1842 22.0507 29.1166 22.1598 29.0079 22.2139L16.07 28.7694V16.3729L22.027 13.4072V16.5166C22.027 17.018 22.4335 17.4245 22.9349 17.4245C23.4362 17.4245 23.8428 17.018 23.8428 16.5166V12.5032L29.1842 9.84403V21.9294Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Самовывоз из пункта выдачи</div>
+                                                <div class="order-number__text">Санкт-Петербург, Петергофское шоссе д. 73,
+                                                    литера У, офис 213</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-number__items">
+                                            <div class="order-number__img">
+                                                <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M27.6786 0.428528H3.32143C1.48705 0.428528 0 1.91558 0 3.74995V19.2499C0 21.0843 1.48705 22.5714 3.32143 22.5714H27.6786C29.5129 22.5714 31 21.0843 31 19.2499V3.74995C31 1.91558 29.5129 0.428528 27.6786 0.428528ZM28.7857 19.2499C28.7857 19.8614 28.29 20.3571 27.6785 20.3571H3.32143C2.70995 20.3571 2.21426 19.8614 2.21426 19.2499V12.6071H28.7857V19.2499ZM28.7857 10.3928H2.21426V8.17854H28.7857V10.3928ZM28.7857 5.96422H2.21426V3.74995C2.21426 3.13847 2.70995 2.64279 3.32143 2.64279H27.6786C28.2901 2.64279 28.7857 3.13847 28.7857 3.74995V5.96422H28.7857Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Способ оплаты</div>
+                                                <div class="order-number__text">Картой на сайте</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-number__elements">
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Сумма</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 800 руб</li>
+                                            </div>
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Доставка</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">100 руб</li>
+                                            </div>
+                                            <div class="order-number__list _total">
+                                                <li class="order-number__el">Итого</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 500 руб</li>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="profil-order__order-number order-number _hide">
-                            <div class="order-number__header">
-                                <div class="order-number__title">
-                                    Заказ № 98565 от 5 августа 2021
-                                    <div class="order-number__marker _recd"><span>Получен</span></div>
-                                </div>
-                                <svg class="arrow-d" width="9" height="14" viewBox="0 0 9 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </div>
-                            <div class="order-number__top">
-                                <div class="order-number__itemss">
-                                    <div class="order-number__item">Товаров в заказе: <span>1 шт.</span></div>
-                                    <div class="order-number__item">Кол-во позиций: <span>2</span></div>
-                                    <div class="order-number__item">На сумму:<span>1 500 руб</span></div>
-                                </div>
-                                <div class="order-number__button">
-                                    <button>
-                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.0508 0.963036C9.79255 0.954234 6.65924 2.21615 4.31659 4.48065V0.96298C4.31659 0.431132 3.88546 0 3.35361 0C2.82177 0 2.39069 0.431132 2.39069 0.96298V6.74074C2.39058 7.1554 2.65594 7.52356 3.04938 7.65458L8.82714 9.58048C9.33236 9.74857 9.8782 9.4752 10.0462 8.96998C10.2143 8.46476 9.94094 7.91892 9.43573 7.75089L5.16983 6.3315C9.1105 2.04022 15.7839 1.75595 20.0752 5.69663C24.3665 9.6373 24.6507 16.3107 20.71 20.602C16.7694 24.8933 10.096 25.1775 5.80471 21.2368C3.17379 18.8209 1.9441 15.2377 2.53711 11.7154C2.63038 11.1918 2.28157 10.6917 1.75801 10.5984C1.23446 10.5051 0.734379 10.854 0.641054 11.3775C0.640039 11.3832 0.639079 11.389 0.638177 11.3947C0.522903 12.0843 0.4649 12.7822 0.464844 13.4814C0.472687 20.3919 6.07277 25.992 12.9832 25.9999C19.897 26.0186 25.5168 20.429 25.5355 13.5153C25.5541 6.60155 19.9646 0.981712 13.0508 0.963036Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>Повторить заказ</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="profil__wrapper">
-                                <div class="order-number__body">
-                                    <div class="order-number__card card-order">
-                                        <div class="card-order__image">
-                                            <img src="img/consist.png" alt="granello">
-                                        </div>
-                                        <div class="card-order__description">
-                                            <div class="card-order__name">Сухой гранулированный быстрорастворимый
-                                                какао-напиток “Горячий шоколад”</div>
-                                            <div class="card-order__sum-name">шоколадно-мятный вкус</div>
-                                        </div>
-                                        <div class="card-order__item">
-                                            <span class="card-order__unit">2 шт</span>
-                                        </div>
-                                        <div class="card-order__item">
-                                            <span class="card-order__unit-visible">2 шт</span>
-                                            <span class="card-order__price"> 1 500 руб</span>
+                        <div class="wrapper-prof-pre-order">
+                            <div class="profil-order__order-number order-number active">
+                                <div class="order-number__header">
+                                    <div class="order-number__title">
+                                        Предзаказ № 16454 от 27 сентября 2021
+                                        <div class="wrap">
+                                            <div class="order-number__marker _paid">
+                                                <span>Оплачен</span>
+                                            </div>
+                                            <div class="order-number__remind">
+                                                <svg width="25" height="27" viewBox="0 0 25 27" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M23.6243 20.0871C23.5171 19.5145 22.966 19.1374 22.3934 19.2447C21.8209 19.352 21.4437 19.9031 21.551 20.4755C21.6306 20.9003 21.4439 21.203 21.3256 21.3457C21.2075 21.4879 20.9451 21.7266 20.5145 21.7266H4.50477C4.0742 21.7266 3.81179 21.4879 3.69372 21.3457C3.57538 21.203 3.38865 20.9003 3.46828 20.4755C3.76744 18.8792 4.36772 17.8292 4.94822 16.8137C5.65327 15.5806 6.38227 14.3055 6.38227 12.3398V10.7578C6.38227 7.43201 9.0856 4.68956 12.4099 4.64131H12.6093C15.9223 4.6894 18.6167 7.43186 18.6167 10.7578V12.3398C18.6167 14.0127 19.1639 15.1639 19.6768 16.1116C19.8677 16.4643 20.2305 16.6644 20.6053 16.6644C20.7748 16.6644 20.9468 16.6235 21.1063 16.5371C21.6187 16.2599 21.8091 15.6198 21.5319 15.1076C21.0215 14.1646 20.726 13.4093 20.726 12.3398V10.7578C20.726 8.58721 19.8853 6.53711 18.3586 4.98519C17.0502 3.65512 15.3703 2.82519 13.5541 2.59611V1.05469C13.5541 0.472184 13.082 0 12.4995 0C11.917 0 11.4448 0.472184 11.4448 1.05469V2.59922C7.41281 3.12235 4.2729 6.60134 4.2729 10.7578V12.3398C4.2729 13.7451 3.7628 14.6373 3.11701 15.7668C2.48083 16.8797 1.75968 18.1411 1.39497 20.0871C1.2209 21.016 1.46717 21.9658 2.07066 22.6929C2.67362 23.4193 3.56083 23.8359 4.50477 23.8359H9.35575C9.35575 25.5806 10.7752 27 12.5198 27C14.2645 27 15.6839 25.5806 15.6839 23.8359H20.5145C21.4585 23.8359 22.3457 23.4193 22.9486 22.6929C23.5521 21.9658 23.7984 21.016 23.6243 20.0871ZM12.5199 24.8906C11.9383 24.8906 11.4652 24.4175 11.4652 23.8359H13.5746C13.5746 24.4175 13.1014 24.8906 12.5199 24.8906Z"
+                                                        fill="#E5844E" />
+                                                    <path
+                                                        d="M4.71445 2.37814C4.28045 1.9896 3.61368 2.02651 3.22518 2.46052C1.18067 4.74444 0.0546875 7.69124 0.0546875 10.7581C0.0546875 11.3406 0.526871 11.8127 1.10937 11.8127C1.69188 11.8127 2.16406 11.3406 2.16406 10.7581C2.16406 8.21109 3.09904 5.76395 4.79683 3.86742C5.18532 3.43341 5.14846 2.76664 4.71445 2.37814Z"
+                                                        fill="#E5844E" />
+                                                    <path
+                                                        d="M21.7751 2.4606C21.3866 2.02665 20.7198 1.98973 20.2858 2.37823C19.8519 2.76672 19.815 3.43349 20.2035 3.8675C21.9012 5.76409 22.8362 8.21118 22.8362 10.7581C22.8362 11.3406 23.3084 11.8128 23.8909 11.8128C24.4734 11.8128 24.9456 11.3406 24.9456 10.7581C24.9456 7.69132 23.8196 4.74452 21.7751 2.4606Z"
+                                                        fill="#E5844E" />
+                                                </svg>
+                                                <div class="popup-remind">Как только товар появится на складе, мы
+                                                    зарезервируем для вас необходимое количество и свяжемся с вами.</div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <svg class="arrow-d" width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z"
+                                            fill="currentColor" />
+                                    </svg>
                                 </div>
-                                <div class="order-number__footer">
-                                    <div class="order-number__items">
-                                        <div class="order-number__img"><svg width="31" height="31" viewBox="0 0 31 31"
-                                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M29.8207 7.16313L16.1317 0.227065L16.1261 0.224219C15.5165 -0.0792416 14.7923 -0.0724603 14.1884 0.242383C14.1409 0.262485 1.18775 7.13734 1.14409 7.16543C0.438359 7.53489 0 8.25891 0 9.05577V21.945C0 22.7419 0.438359 23.4659 1.14409 23.8354L14.1826 30.7554L14.1884 30.7585C14.4964 30.9191 14.8357 30.9995 15.1752 30.9995C15.5012 30.9995 15.8274 30.9253 16.1261 30.7766L29.8207 23.8377C30.5483 23.4739 31 22.7429 31 21.9293V9.07157C31 8.25788 30.5482 7.52696 29.8207 7.16313ZM15.03 1.85136C15.1189 1.8057 15.2252 1.8048 15.3148 1.84881L28.1283 8.34119L23.1414 10.824L10.6144 4.19488L15.03 1.85136ZM14.2542 28.7379L1.9926 22.2301L1.98672 22.227C1.88131 22.172 1.81574 22.064 1.81574 21.9451V9.87515L14.2542 16.3612V28.7379ZM15.1717 14.7917L2.80163 8.34138L8.67613 5.22364L21.1412 11.8199L15.1717 14.7917ZM29.1842 21.9294C29.1842 22.0507 29.1166 22.1598 29.0079 22.2139L16.07 28.7694V16.3729L22.027 13.4072V16.5166C22.027 17.018 22.4335 17.4245 22.9349 17.4245C23.4362 17.4245 23.8428 17.018 23.8428 16.5166V12.5032L29.1842 9.84403V21.9294Z"
-                                                    fill="#4EB7E5" />
-                                            </svg>
-                                        </div>
-                                        <div class="order-number__info">
-                                            <div class="order-number__name">Самовывоз из пункта выдачи</div>
-                                            <div class="order-number__text">Санкт-Петербург, Петергофское шоссе д. 73,
-                                                литера У, офис 213</div>
-                                        </div>
-                                    </div>
-                                    <div class="order-number__items">
-                                        <div class="order-number__img">
-                                            <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M27.6786 0.428528H3.32143C1.48705 0.428528 0 1.91558 0 3.74995V19.2499C0 21.0843 1.48705 22.5714 3.32143 22.5714H27.6786C29.5129 22.5714 31 21.0843 31 19.2499V3.74995C31 1.91558 29.5129 0.428528 27.6786 0.428528ZM28.7857 19.2499C28.7857 19.8614 28.29 20.3571 27.6785 20.3571H3.32143C2.70995 20.3571 2.21426 19.8614 2.21426 19.2499V12.6071H28.7857V19.2499ZM28.7857 10.3928H2.21426V8.17854H28.7857V10.3928ZM28.7857 5.96422H2.21426V3.74995C2.21426 3.13847 2.70995 2.64279 3.32143 2.64279H27.6786C28.2901 2.64279 28.7857 3.13847 28.7857 3.74995V5.96422H28.7857Z"
-                                                    fill="#4EB7E5" />
-                                            </svg>
-                                        </div>
-                                        <div class="order-number__info">
-                                            <div class="order-number__name">Способ оплаты</div>
-                                            <div class="order-number__text">Картой на сайте</div>
-                                        </div>
-                                    </div>
-                                    <div class="order-number__elements">
-                                        <div class="order-number__list">
-                                            <li class="order-number__el">Сумма</li>
-                                            <li class="order-number__el _middle"></li>
-                                            <li class="order-number__el">1 800 руб</li>
-                                        </div>
-                                        <div class="order-number__list">
-                                            <li class="order-number__el">Доставка</li>
-                                            <li class="order-number__el _middle"></li>
-                                            <li class="order-number__el">100 руб</li>
-                                        </div>
-                                        <div class="order-number__list _total">
-                                            <li class="order-number__el">Итого</li>
-                                            <li class="order-number__el _middle"></li>
-                                            <li class="order-number__el">1 500 руб</li>
-                                        </div>
+                                <div class="order-number__top">
+                                    <div class="order-number__itemss">
+                                        <div class="order-number__item">Товаров в заказе: <span>1 шт.</span></div>
+                                        <div class="order-number__item">Кол-во позиций: <span>1</span></div>
+                                        <div class="order-number__item">На сумму:<span>1 500 руб</span></div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="profil-order__order-number order-number _hide">
-                            <div class="order-number__header">
-                                <div class="order-number__title">
-                                    Заказ № 85492 от 14 июля 2021
-                                    <div class="order-number__marker _flash"><span>Передан в службу доставки</span>
+                                <div class="profil__wrapper">
+                                    <div class="order-number__body">
+                                        <div class="order-number__card card-order">
+                                            <div class="card-order__image">
+                                                <img src="img/consist.png" alt="granello">
+                                            </div>
+                                            <div class="card-order__description">
+                                                <div class="card-order__name">Сухой гранулированный быстрорастворимый
+                                                    какао-напиток “Горячий шоколад”</div>
+                                                <div class="card-order__sum-name">шоколадно-мятный вкус</div>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit">4 шт</span>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit-visible">4 шт</span>
+                                                <span class="card-order__price"> 1 500 руб</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <svg class="arrow-d" width="9" height="14" viewBox="0 0 9 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </div>
-                            <div class="order-number__top">
-                                <div class="order-number__itemss">
-                                    <div class="order-number__item">Товаров в заказе: <span>1 шт.</span></div>
-                                    <div class="order-number__item">Кол-во позиций: <span>4</span></div>
-                                    <div class="order-number__item">На сумму:<span>1 500 руб</span></div>
-                                </div>
-                                <div class="order-number__button">
-                                    <button>
-                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.0508 0.963036C9.79255 0.954234 6.65924 2.21615 4.31659 4.48065V0.96298C4.31659 0.431132 3.88546 0 3.35361 0C2.82177 0 2.39069 0.431132 2.39069 0.96298V6.74074C2.39058 7.1554 2.65594 7.52356 3.04938 7.65458L8.82714 9.58048C9.33236 9.74857 9.8782 9.4752 10.0462 8.96998C10.2143 8.46476 9.94094 7.91892 9.43573 7.75089L5.16983 6.3315C9.1105 2.04022 15.7839 1.75595 20.0752 5.69663C24.3665 9.6373 24.6507 16.3107 20.71 20.602C16.7694 24.8933 10.096 25.1775 5.80471 21.2368C3.17379 18.8209 1.9441 15.2377 2.53711 11.7154C2.63038 11.1918 2.28157 10.6917 1.75801 10.5984C1.23446 10.5051 0.734379 10.854 0.641054 11.3775C0.640039 11.3832 0.639079 11.389 0.638177 11.3947C0.522903 12.0843 0.4649 12.7822 0.464844 13.4814C0.472687 20.3919 6.07277 25.992 12.9832 25.9999C19.897 26.0186 25.5168 20.429 25.5355 13.5153C25.5541 6.60155 19.9646 0.981712 13.0508 0.963036Z"
-                                                fill="#4EB7E5" />
-                                        </svg>
-                                        <span>Повторить заказ</span>
-                                    </button>
+                                    <div class="order-number__footer">
+                                        <div class="order-number__items">
+                                            <div class="order-number__img"><svg width="31" height="31" viewBox="0 0 31 31"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M29.8207 7.16313L16.1317 0.227065L16.1261 0.224219C15.5165 -0.0792416 14.7923 -0.0724603 14.1884 0.242383C14.1409 0.262485 1.18775 7.13734 1.14409 7.16543C0.438359 7.53489 0 8.25891 0 9.05577V21.945C0 22.7419 0.438359 23.4659 1.14409 23.8354L14.1826 30.7554L14.1884 30.7585C14.4964 30.9191 14.8357 30.9995 15.1752 30.9995C15.5012 30.9995 15.8274 30.9253 16.1261 30.7766L29.8207 23.8377C30.5483 23.4739 31 22.7429 31 21.9293V9.07157C31 8.25788 30.5482 7.52696 29.8207 7.16313ZM15.03 1.85136C15.1189 1.8057 15.2252 1.8048 15.3148 1.84881L28.1283 8.34119L23.1414 10.824L10.6144 4.19488L15.03 1.85136ZM14.2542 28.7379L1.9926 22.2301L1.98672 22.227C1.88131 22.172 1.81574 22.064 1.81574 21.9451V9.87515L14.2542 16.3612V28.7379ZM15.1717 14.7917L2.80163 8.34138L8.67613 5.22364L21.1412 11.8199L15.1717 14.7917ZM29.1842 21.9294C29.1842 22.0507 29.1166 22.1598 29.0079 22.2139L16.07 28.7694V16.3729L22.027 13.4072V16.5166C22.027 17.018 22.4335 17.4245 22.9349 17.4245C23.4362 17.4245 23.8428 17.018 23.8428 16.5166V12.5032L29.1842 9.84403V21.9294Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Самовывоз из пункта выдачи</div>
+                                                <div class="order-number__text">Санкт-Петербург, Петергофское шоссе д. 73,
+                                                    литера У, офис 213</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-number__items">
+                                            <div class="order-number__img">
+                                                <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M27.6786 0.428528H3.32143C1.48705 0.428528 0 1.91558 0 3.74995V19.2499C0 21.0843 1.48705 22.5714 3.32143 22.5714H27.6786C29.5129 22.5714 31 21.0843 31 19.2499V3.74995C31 1.91558 29.5129 0.428528 27.6786 0.428528ZM28.7857 19.2499C28.7857 19.8614 28.29 20.3571 27.6785 20.3571H3.32143C2.70995 20.3571 2.21426 19.8614 2.21426 19.2499V12.6071H28.7857V19.2499ZM28.7857 10.3928H2.21426V8.17854H28.7857V10.3928ZM28.7857 5.96422H2.21426V3.74995C2.21426 3.13847 2.70995 2.64279 3.32143 2.64279H27.6786C28.2901 2.64279 28.7857 3.13847 28.7857 3.74995V5.96422H28.7857Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Способ оплаты</div>
+                                                <div class="order-number__text">Картой на сайте</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-number__elements">
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Сумма</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 800 руб</li>
+                                            </div>
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Доставка</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">100 руб</li>
+                                            </div>
+                                            <div class="order-number__list _total">
+                                                <li class="order-number__el">Итого</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 500 руб</li>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="profil__wrapper">
-                                <div class="order-number__body">
-                                    <div class="order-number__card card-order">
-                                        <div class="card-order__image">
-                                            <img src="img/consist.png" alt="granello">
+                            <div class="profil-order__order-number order-number _hide">
+                                <div class="order-number__header">
+                                    <div class="order-number__title">
+                                        Предзаказ № 98565 от 5 августа 2021
+                                        <div class="wrap">
+                                            <div class="order-number__remind">
+                                                <svg width="25" height="27" viewBox="0 0 25 27" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M23.6243 20.0871C23.5171 19.5145 22.966 19.1374 22.3934 19.2447C21.8209 19.352 21.4437 19.9031 21.551 20.4755C21.6306 20.9003 21.4439 21.203 21.3256 21.3457C21.2075 21.4879 20.9451 21.7266 20.5145 21.7266H4.50477C4.0742 21.7266 3.81179 21.4879 3.69372 21.3457C3.57538 21.203 3.38865 20.9003 3.46828 20.4755C3.76744 18.8792 4.36772 17.8292 4.94822 16.8137C5.65327 15.5806 6.38227 14.3055 6.38227 12.3398V10.7578C6.38227 7.43201 9.0856 4.68956 12.4099 4.64131H12.6093C15.9223 4.6894 18.6167 7.43186 18.6167 10.7578V12.3398C18.6167 14.0127 19.1639 15.1639 19.6768 16.1116C19.8677 16.4643 20.2305 16.6644 20.6053 16.6644C20.7748 16.6644 20.9468 16.6235 21.1063 16.5371C21.6187 16.2599 21.8091 15.6198 21.5319 15.1076C21.0215 14.1646 20.726 13.4093 20.726 12.3398V10.7578C20.726 8.58721 19.8853 6.53711 18.3586 4.98519C17.0502 3.65512 15.3703 2.82519 13.5541 2.59611V1.05469C13.5541 0.472184 13.082 0 12.4995 0C11.917 0 11.4448 0.472184 11.4448 1.05469V2.59922C7.41281 3.12235 4.2729 6.60134 4.2729 10.7578V12.3398C4.2729 13.7451 3.7628 14.6373 3.11701 15.7668C2.48083 16.8797 1.75968 18.1411 1.39497 20.0871C1.2209 21.016 1.46717 21.9658 2.07066 22.6929C2.67362 23.4193 3.56083 23.8359 4.50477 23.8359H9.35575C9.35575 25.5806 10.7752 27 12.5198 27C14.2645 27 15.6839 25.5806 15.6839 23.8359H20.5145C21.4585 23.8359 22.3457 23.4193 22.9486 22.6929C23.5521 21.9658 23.7984 21.016 23.6243 20.0871ZM12.5199 24.8906C11.9383 24.8906 11.4652 24.4175 11.4652 23.8359H13.5746C13.5746 24.4175 13.1014 24.8906 12.5199 24.8906Z"
+                                                        fill="#E5844E" />
+                                                    <path
+                                                        d="M4.71445 2.37814C4.28045 1.9896 3.61368 2.02651 3.22518 2.46052C1.18067 4.74444 0.0546875 7.69124 0.0546875 10.7581C0.0546875 11.3406 0.526871 11.8127 1.10937 11.8127C1.69188 11.8127 2.16406 11.3406 2.16406 10.7581C2.16406 8.21109 3.09904 5.76395 4.79683 3.86742C5.18532 3.43341 5.14846 2.76664 4.71445 2.37814Z"
+                                                        fill="#E5844E" />
+                                                    <path
+                                                        d="M21.7751 2.4606C21.3866 2.02665 20.7198 1.98973 20.2858 2.37823C19.8519 2.76672 19.815 3.43349 20.2035 3.8675C21.9012 5.76409 22.8362 8.21118 22.8362 10.7581C22.8362 11.3406 23.3084 11.8128 23.8909 11.8128C24.4734 11.8128 24.9456 11.3406 24.9456 10.7581C24.9456 7.69132 23.8196 4.74452 21.7751 2.4606Z"
+                                                        fill="#E5844E" />
+                                                </svg>
+                                                <div class="popup-remind">Ожидайте на e-mail уведомление о наличии товара
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card-order__description">
-                                            <div class="card-order__name">Сухой гранулированный быстрорастворимый
-                                                какао-напиток “Горячий шоколад”</div>
-                                            <div class="card-order__sum-name">шоколадно-мятный вкус</div>
-                                        </div>
-                                        <div class="card-order__item">
-                                            <span class="card-order__unit">4 шт</span>
-                                        </div>
-                                        <div class="card-order__item">
-                                            <span class="card-order__unit-visible">4 шт</span>
-                                            <span class="card-order__price"> 1 500 руб</span>
+    
+                                    </div>
+                                    <svg class="arrow-d" width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="order-number__top">
+                                    <div class="order-number__itemss">
+                                        <div class="order-number__item">Товаров в заказе: <span>1 шт.</span></div>
+                                        <div class="order-number__item">Кол-во позиций: <span>1</span></div>
+                                        <div class="order-number__item">На сумму:<span>1 500 руб</span></div>
+                                    </div>
+                                </div>
+                                <div class="profil__wrapper">
+                                    <div class="order-number__body">
+                                        <div class="order-number__card card-order">
+                                            <div class="card-order__image">
+                                                <img src="img/consist.png" alt="granello">
+                                            </div>
+                                            <div class="card-order__description">
+                                                <div class="card-order__name">Сухой гранулированный быстрорастворимый
+                                                    какао-напиток “Горячий шоколад”</div>
+                                                <div class="card-order__sum-name">шоколадно-мятный вкус</div>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit">1 шт</span>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit-visible">1 шт</span>
+                                                <span class="card-order__price"> 1 500 руб</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="order-number__footer">
-                                    <div class="order-number__items">
-                                        <div class="order-number__img"><svg width="31" height="31" viewBox="0 0 31 31"
-                                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M29.8207 7.16313L16.1317 0.227065L16.1261 0.224219C15.5165 -0.0792416 14.7923 -0.0724603 14.1884 0.242383C14.1409 0.262485 1.18775 7.13734 1.14409 7.16543C0.438359 7.53489 0 8.25891 0 9.05577V21.945C0 22.7419 0.438359 23.4659 1.14409 23.8354L14.1826 30.7554L14.1884 30.7585C14.4964 30.9191 14.8357 30.9995 15.1752 30.9995C15.5012 30.9995 15.8274 30.9253 16.1261 30.7766L29.8207 23.8377C30.5483 23.4739 31 22.7429 31 21.9293V9.07157C31 8.25788 30.5482 7.52696 29.8207 7.16313ZM15.03 1.85136C15.1189 1.8057 15.2252 1.8048 15.3148 1.84881L28.1283 8.34119L23.1414 10.824L10.6144 4.19488L15.03 1.85136ZM14.2542 28.7379L1.9926 22.2301L1.98672 22.227C1.88131 22.172 1.81574 22.064 1.81574 21.9451V9.87515L14.2542 16.3612V28.7379ZM15.1717 14.7917L2.80163 8.34138L8.67613 5.22364L21.1412 11.8199L15.1717 14.7917ZM29.1842 21.9294C29.1842 22.0507 29.1166 22.1598 29.0079 22.2139L16.07 28.7694V16.3729L22.027 13.4072V16.5166C22.027 17.018 22.4335 17.4245 22.9349 17.4245C23.4362 17.4245 23.8428 17.018 23.8428 16.5166V12.5032L29.1842 9.84403V21.9294Z"
-                                                    fill="#4EB7E5" />
-                                            </svg>
+                            </div>
+                            <div class="profil-order__order-number order-number active">
+                                <div class="order-number__header">
+                                    <div class="order-number__title">
+                                        Предзаказ № 16454 от 27 сентября 2021
+                                        <div class="wrap">
+                                            <div class="order-number__remind">
+                                                <svg width="25" height="27" viewBox="0 0 25 27" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M23.6243 20.0871C23.5171 19.5145 22.966 19.1374 22.3934 19.2447C21.8209 19.352 21.4437 19.9031 21.551 20.4755C21.6306 20.9003 21.4439 21.203 21.3256 21.3457C21.2075 21.4879 20.9451 21.7266 20.5145 21.7266H4.50477C4.0742 21.7266 3.81179 21.4879 3.69372 21.3457C3.57538 21.203 3.38865 20.9003 3.46828 20.4755C3.76744 18.8792 4.36772 17.8292 4.94822 16.8137C5.65327 15.5806 6.38227 14.3055 6.38227 12.3398V10.7578C6.38227 7.43201 9.0856 4.68956 12.4099 4.64131H12.6093C15.9223 4.6894 18.6167 7.43186 18.6167 10.7578V12.3398C18.6167 14.0127 19.1639 15.1639 19.6768 16.1116C19.8677 16.4643 20.2305 16.6644 20.6053 16.6644C20.7748 16.6644 20.9468 16.6235 21.1063 16.5371C21.6187 16.2599 21.8091 15.6198 21.5319 15.1076C21.0215 14.1646 20.726 13.4093 20.726 12.3398V10.7578C20.726 8.58721 19.8853 6.53711 18.3586 4.98519C17.0502 3.65512 15.3703 2.82519 13.5541 2.59611V1.05469C13.5541 0.472184 13.082 0 12.4995 0C11.917 0 11.4448 0.472184 11.4448 1.05469V2.59922C7.41281 3.12235 4.2729 6.60134 4.2729 10.7578V12.3398C4.2729 13.7451 3.7628 14.6373 3.11701 15.7668C2.48083 16.8797 1.75968 18.1411 1.39497 20.0871C1.2209 21.016 1.46717 21.9658 2.07066 22.6929C2.67362 23.4193 3.56083 23.8359 4.50477 23.8359H9.35575C9.35575 25.5806 10.7752 27 12.5198 27C14.2645 27 15.6839 25.5806 15.6839 23.8359H20.5145C21.4585 23.8359 22.3457 23.4193 22.9486 22.6929C23.5521 21.9658 23.7984 21.016 23.6243 20.0871ZM12.5199 24.8906C11.9383 24.8906 11.4652 24.4175 11.4652 23.8359H13.5746C13.5746 24.4175 13.1014 24.8906 12.5199 24.8906Z"
+                                                        fill="#E5844E" />
+                                                    <path
+                                                        d="M4.71445 2.37814C4.28045 1.9896 3.61368 2.02651 3.22518 2.46052C1.18067 4.74444 0.0546875 7.69124 0.0546875 10.7581C0.0546875 11.3406 0.526871 11.8127 1.10937 11.8127C1.69188 11.8127 2.16406 11.3406 2.16406 10.7581C2.16406 8.21109 3.09904 5.76395 4.79683 3.86742C5.18532 3.43341 5.14846 2.76664 4.71445 2.37814Z"
+                                                        fill="#E5844E" />
+                                                    <path
+                                                        d="M21.7751 2.4606C21.3866 2.02665 20.7198 1.98973 20.2858 2.37823C19.8519 2.76672 19.815 3.43349 20.2035 3.8675C21.9012 5.76409 22.8362 8.21118 22.8362 10.7581C22.8362 11.3406 23.3084 11.8128 23.8909 11.8128C24.4734 11.8128 24.9456 11.3406 24.9456 10.7581C24.9456 7.69132 23.8196 4.74452 21.7751 2.4606Z"
+                                                        fill="#E5844E" />
+                                                </svg>
+                                                <div class="popup-remind">Ожидайте на e-mail уведомление о наличии товара
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="order-number__info">
-                                            <div class="order-number__name">Самовывоз из пункта выдачи</div>
-                                            <div class="order-number__text">Санкт-Петербург, Петергофское шоссе д. 73,
-                                                литера У, офис 213</div>
+    
+                                    </div>
+                                    <svg class="arrow-d" width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="order-number__top">
+                                    <div class="order-number__itemss">
+                                        <div class="order-number__item">Товаров в заказе: <span>1 шт.</span></div>
+                                        <div class="order-number__item">Кол-во позиций: <span>1</span></div>
+                                        <div class="order-number__item">На сумму:<span>1 500 руб</span></div>
+                                    </div>
+                                </div>
+                                <div class="profil__wrapper">
+                                    <div class="order-number__body">
+                                        <div class="order-number__card card-order">
+                                            <div class="card-order__image">
+                                                <img src="img/consist.png" alt="granello">
+                                            </div>
+                                            <div class="card-order__description">
+                                                <div class="card-order__name">Сухой гранулированный быстрорастворимый
+                                                    какао-напиток “Горячий шоколад”</div>
+                                                <div class="card-order__sum-name">шоколадно-мятный вкус</div>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit">1 шт</span>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit-visible">1 шт</span>
+                                                <span class="card-order__price"> 1 500 руб</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="order-number__items">
-                                        <div class="order-number__img">
-                                            <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M27.6786 0.428528H3.32143C1.48705 0.428528 0 1.91558 0 3.74995V19.2499C0 21.0843 1.48705 22.5714 3.32143 22.5714H27.6786C29.5129 22.5714 31 21.0843 31 19.2499V3.74995C31 1.91558 29.5129 0.428528 27.6786 0.428528ZM28.7857 19.2499C28.7857 19.8614 28.29 20.3571 27.6785 20.3571H3.32143C2.70995 20.3571 2.21426 19.8614 2.21426 19.2499V12.6071H28.7857V19.2499ZM28.7857 10.3928H2.21426V8.17854H28.7857V10.3928ZM28.7857 5.96422H2.21426V3.74995C2.21426 3.13847 2.70995 2.64279 3.32143 2.64279H27.6786C28.2901 2.64279 28.7857 3.13847 28.7857 3.74995V5.96422H28.7857Z"
-                                                    fill="#4EB7E5" />
-                                            </svg>
+                                    <!-- <div class="order-number__footer">
+                                        <div class="order-number__items">
+                                            <div class="order-number__img"><svg width="31" height="31" viewBox="0 0 31 31"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M29.8207 7.16313L16.1317 0.227065L16.1261 0.224219C15.5165 -0.0792416 14.7923 -0.0724603 14.1884 0.242383C14.1409 0.262485 1.18775 7.13734 1.14409 7.16543C0.438359 7.53489 0 8.25891 0 9.05577V21.945C0 22.7419 0.438359 23.4659 1.14409 23.8354L14.1826 30.7554L14.1884 30.7585C14.4964 30.9191 14.8357 30.9995 15.1752 30.9995C15.5012 30.9995 15.8274 30.9253 16.1261 30.7766L29.8207 23.8377C30.5483 23.4739 31 22.7429 31 21.9293V9.07157C31 8.25788 30.5482 7.52696 29.8207 7.16313ZM15.03 1.85136C15.1189 1.8057 15.2252 1.8048 15.3148 1.84881L28.1283 8.34119L23.1414 10.824L10.6144 4.19488L15.03 1.85136ZM14.2542 28.7379L1.9926 22.2301L1.98672 22.227C1.88131 22.172 1.81574 22.064 1.81574 21.9451V9.87515L14.2542 16.3612V28.7379ZM15.1717 14.7917L2.80163 8.34138L8.67613 5.22364L21.1412 11.8199L15.1717 14.7917ZM29.1842 21.9294C29.1842 22.0507 29.1166 22.1598 29.0079 22.2139L16.07 28.7694V16.3729L22.027 13.4072V16.5166C22.027 17.018 22.4335 17.4245 22.9349 17.4245C23.4362 17.4245 23.8428 17.018 23.8428 16.5166V12.5032L29.1842 9.84403V21.9294Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Самовывоз из пункта выдачи</div>
+                                                <div class="order-number__text">Санкт-Петербург, Петергофское шоссе д. 73,
+                                                    литера У, офис 213</div>
+                                            </div>
                                         </div>
-                                        <div class="order-number__info">
-                                            <div class="order-number__name">Способ оплаты</div>
-                                            <div class="order-number__text">Картой на сайте</div>
+                                        <div class="order-number__items">
+                                            <div class="order-number__img">
+                                                <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M27.6786 0.428528H3.32143C1.48705 0.428528 0 1.91558 0 3.74995V19.2499C0 21.0843 1.48705 22.5714 3.32143 22.5714H27.6786C29.5129 22.5714 31 21.0843 31 19.2499V3.74995C31 1.91558 29.5129 0.428528 27.6786 0.428528ZM28.7857 19.2499C28.7857 19.8614 28.29 20.3571 27.6785 20.3571H3.32143C2.70995 20.3571 2.21426 19.8614 2.21426 19.2499V12.6071H28.7857V19.2499ZM28.7857 10.3928H2.21426V8.17854H28.7857V10.3928ZM28.7857 5.96422H2.21426V3.74995C2.21426 3.13847 2.70995 2.64279 3.32143 2.64279H27.6786C28.2901 2.64279 28.7857 3.13847 28.7857 3.74995V5.96422H28.7857Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Способ оплаты</div>
+                                                <div class="order-number__text">Картой на сайте</div>
+                                            </div>
+                                        </div>
+                                        <div class="order-number__elements">
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Сумма</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 800 руб</li>
+                                            </div>
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Доставка</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">100 руб</li>
+                                            </div>
+                                            <div class="order-number__list _total">
+                                                <li class="order-number__el">Итого</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 500 руб</li>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="profil-order__order-number order-number _hide">
+                                <div class="order-number__header">
+                                    <div class="order-number__title">
+                                        Предзаказ № 85492 от 14 июля 2021
+                                        <div class="wrap">
+                                            <div class="order-number__marker _paid">
+                                                <span>Оплачен</span>
+                                            </div>
+                                            <div class="order-number__remind">
+                                                <svg width="25" height="27" viewBox="0 0 25 27" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M23.6243 20.0871C23.5171 19.5145 22.966 19.1374 22.3934 19.2447C21.8209 19.352 21.4437 19.9031 21.551 20.4755C21.6306 20.9003 21.4439 21.203 21.3256 21.3457C21.2075 21.4879 20.9451 21.7266 20.5145 21.7266H4.50477C4.0742 21.7266 3.81179 21.4879 3.69372 21.3457C3.57538 21.203 3.38865 20.9003 3.46828 20.4755C3.76744 18.8792 4.36772 17.8292 4.94822 16.8137C5.65327 15.5806 6.38227 14.3055 6.38227 12.3398V10.7578C6.38227 7.43201 9.0856 4.68956 12.4099 4.64131H12.6093C15.9223 4.6894 18.6167 7.43186 18.6167 10.7578V12.3398C18.6167 14.0127 19.1639 15.1639 19.6768 16.1116C19.8677 16.4643 20.2305 16.6644 20.6053 16.6644C20.7748 16.6644 20.9468 16.6235 21.1063 16.5371C21.6187 16.2599 21.8091 15.6198 21.5319 15.1076C21.0215 14.1646 20.726 13.4093 20.726 12.3398V10.7578C20.726 8.58721 19.8853 6.53711 18.3586 4.98519C17.0502 3.65512 15.3703 2.82519 13.5541 2.59611V1.05469C13.5541 0.472184 13.082 0 12.4995 0C11.917 0 11.4448 0.472184 11.4448 1.05469V2.59922C7.41281 3.12235 4.2729 6.60134 4.2729 10.7578V12.3398C4.2729 13.7451 3.7628 14.6373 3.11701 15.7668C2.48083 16.8797 1.75968 18.1411 1.39497 20.0871C1.2209 21.016 1.46717 21.9658 2.07066 22.6929C2.67362 23.4193 3.56083 23.8359 4.50477 23.8359H9.35575C9.35575 25.5806 10.7752 27 12.5198 27C14.2645 27 15.6839 25.5806 15.6839 23.8359H20.5145C21.4585 23.8359 22.3457 23.4193 22.9486 22.6929C23.5521 21.9658 23.7984 21.016 23.6243 20.0871ZM12.5199 24.8906C11.9383 24.8906 11.4652 24.4175 11.4652 23.8359H13.5746C13.5746 24.4175 13.1014 24.8906 12.5199 24.8906Z"
+                                                        fill="#E5844E" />
+                                                    <path
+                                                        d="M4.71445 2.37814C4.28045 1.9896 3.61368 2.02651 3.22518 2.46052C1.18067 4.74444 0.0546875 7.69124 0.0546875 10.7581C0.0546875 11.3406 0.526871 11.8127 1.10937 11.8127C1.69188 11.8127 2.16406 11.3406 2.16406 10.7581C2.16406 8.21109 3.09904 5.76395 4.79683 3.86742C5.18532 3.43341 5.14846 2.76664 4.71445 2.37814Z"
+                                                        fill="#E5844E" />
+                                                    <path
+                                                        d="M21.7751 2.4606C21.3866 2.02665 20.7198 1.98973 20.2858 2.37823C19.8519 2.76672 19.815 3.43349 20.2035 3.8675C21.9012 5.76409 22.8362 8.21118 22.8362 10.7581C22.8362 11.3406 23.3084 11.8128 23.8909 11.8128C24.4734 11.8128 24.9456 11.3406 24.9456 10.7581C24.9456 7.69132 23.8196 4.74452 21.7751 2.4606Z"
+                                                        fill="#E5844E" />
+                                                </svg>
+                                                <div class="popup-remind">Как только товар появится на складе, мы
+                                                    зарезервируем для вас необходимое количество и свяжемся с вами.</div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    <svg class="arrow-d" width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.733398 1.98517L5.70046 7L0.733398 12.0148L2.26628 13.5625L8.76628 7L2.26628 0.4375L0.733398 1.98517Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="order-number__top">
+                                    <div class="order-number__itemss">
+                                        <div class="order-number__item">Товаров в заказе: <span>1 шт.</span></div>
+                                        <div class="order-number__item">Кол-во позиций: <span>1</span></div>
+                                        <div class="order-number__item">На сумму:<span>1 500 руб</span></div>
+                                    </div>
+                                </div>
+                                <div class="profil__wrapper">
+                                    <div class="order-number__body">
+                                        <div class="order-number__card card-order">
+                                            <div class="card-order__image">
+                                                <img src="img/consist.png" alt="granello">
+                                            </div>
+                                            <div class="card-order__description">
+                                                <div class="card-order__name">Сухой гранулированный быстрорастворимый
+                                                    какао-напиток “Горячий шоколад”</div>
+                                                <div class="card-order__sum-name">шоколадно-мятный вкус</div>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit">1 шт</span>
+                                            </div>
+                                            <div class="card-order__item">
+                                                <span class="card-order__unit-visible">1 шт</span>
+                                                <span class="card-order__price"> 1 500 руб</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="order-number__elements">
-                                        <div class="order-number__list">
-                                            <li class="order-number__el">Сумма</li>
-                                            <li class="order-number__el _middle"></li>
-                                            <li class="order-number__el">1 800 руб</li>
+                                    <div class="order-number__footer">
+                                        <div class="order-number__items">
+                                            <div class="order-number__img"><svg width="31" height="31" viewBox="0 0 31 31"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M29.8207 7.16313L16.1317 0.227065L16.1261 0.224219C15.5165 -0.0792416 14.7923 -0.0724603 14.1884 0.242383C14.1409 0.262485 1.18775 7.13734 1.14409 7.16543C0.438359 7.53489 0 8.25891 0 9.05577V21.945C0 22.7419 0.438359 23.4659 1.14409 23.8354L14.1826 30.7554L14.1884 30.7585C14.4964 30.9191 14.8357 30.9995 15.1752 30.9995C15.5012 30.9995 15.8274 30.9253 16.1261 30.7766L29.8207 23.8377C30.5483 23.4739 31 22.7429 31 21.9293V9.07157C31 8.25788 30.5482 7.52696 29.8207 7.16313ZM15.03 1.85136C15.1189 1.8057 15.2252 1.8048 15.3148 1.84881L28.1283 8.34119L23.1414 10.824L10.6144 4.19488L15.03 1.85136ZM14.2542 28.7379L1.9926 22.2301L1.98672 22.227C1.88131 22.172 1.81574 22.064 1.81574 21.9451V9.87515L14.2542 16.3612V28.7379ZM15.1717 14.7917L2.80163 8.34138L8.67613 5.22364L21.1412 11.8199L15.1717 14.7917ZM29.1842 21.9294C29.1842 22.0507 29.1166 22.1598 29.0079 22.2139L16.07 28.7694V16.3729L22.027 13.4072V16.5166C22.027 17.018 22.4335 17.4245 22.9349 17.4245C23.4362 17.4245 23.8428 17.018 23.8428 16.5166V12.5032L29.1842 9.84403V21.9294Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Самовывоз из пункта выдачи</div>
+                                                <div class="order-number__text">Санкт-Петербург, Петергофское шоссе д. 73,
+                                                    литера У, офис 213</div>
+                                            </div>
                                         </div>
-                                        <div class="order-number__list">
-                                            <li class="order-number__el">Доставка</li>
-                                            <li class="order-number__el _middle"></li>
-                                            <li class="order-number__el">100 руб</li>
+                                        <div class="order-number__items">
+                                            <div class="order-number__img">
+                                                <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M27.6786 0.428528H3.32143C1.48705 0.428528 0 1.91558 0 3.74995V19.2499C0 21.0843 1.48705 22.5714 3.32143 22.5714H27.6786C29.5129 22.5714 31 21.0843 31 19.2499V3.74995C31 1.91558 29.5129 0.428528 27.6786 0.428528ZM28.7857 19.2499C28.7857 19.8614 28.29 20.3571 27.6785 20.3571H3.32143C2.70995 20.3571 2.21426 19.8614 2.21426 19.2499V12.6071H28.7857V19.2499ZM28.7857 10.3928H2.21426V8.17854H28.7857V10.3928ZM28.7857 5.96422H2.21426V3.74995C2.21426 3.13847 2.70995 2.64279 3.32143 2.64279H27.6786C28.2901 2.64279 28.7857 3.13847 28.7857 3.74995V5.96422H28.7857Z"
+                                                        fill="#4EB7E5" />
+                                                </svg>
+                                            </div>
+                                            <div class="order-number__info">
+                                                <div class="order-number__name">Способ оплаты</div>
+                                                <div class="order-number__text">Картой на сайте</div>
+                                            </div>
                                         </div>
-                                        <div class="order-number__list _total">
-                                            <li class="order-number__el">Итого</li>
-                                            <li class="order-number__el _middle"></li>
-                                            <li class="order-number__el">1 500 руб</li>
+                                        <div class="order-number__elements">
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Сумма</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 800 руб</li>
+                                            </div>
+                                            <div class="order-number__list">
+                                                <li class="order-number__el">Доставка</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">100 руб</li>
+                                            </div>
+                                            <div class="order-number__list _total">
+                                                <li class="order-number__el">Итого</li>
+                                                <li class="order-number__el _middle"></li>
+                                                <li class="order-number__el">1 500 руб</li>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
