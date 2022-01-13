@@ -7033,13 +7033,13 @@ h3 {
             justify-content: space-between;
             .popular__image {
                 flex: 0 0 30%;
-                padding: 0 0 18% 0;
+                padding: 0 0 16% 0;
             }
 
             .popular__name {
                 flex: 1 1 auto !important;
                 max-width: 70%;
-                padding: 0;
+                padding: 0 0 0 20px;
                 margin-top: 40px;
             }
             .item-price {
@@ -7048,6 +7048,7 @@ h3 {
             }
             .popular__bottons {
                 flex: 1 1 auto;
+                padding: 0 0 0 20px;
                 justify-content: flex-start;
                 align-items: flex-start;
             }
@@ -7064,6 +7065,7 @@ h3 {
             }
             .popular__item {
                 margin: 0;
+                padding: 0;
             }
         }
     }
@@ -7115,6 +7117,7 @@ h3 {
                 align-items: flex-start;
                 min-width: 0;
                 flex: 1 1 auto !important;
+                padding: 0 0 0 10px;
                 span {
                     font-size: 12px;
                 }
@@ -7138,6 +7141,7 @@ h3 {
             .popular__name {
                 font-size: 15px;
                 margin-top: 25px;
+                padding: 0 0 0 10px;
             }
             .popular__text {
                 font-size: 14px;
@@ -7206,6 +7210,9 @@ h3 {
 @media (max-width: 445px) {
     .catalog-choice__body-list-favorit,
     .catalog-choice__body-list {
+        .popular__image{
+            min-width: 120px;
+        }
         .popular__bottons {
             margin: 0;
             button {
@@ -7221,7 +7228,7 @@ h3 {
         }
     }
 }
-@media (max-width: 410px) {
+@media (max-width: 445px) {
     .catalog-choice__body-list-favorit,
     .catalog-choice__body-list {
         .popular__items {
@@ -7230,6 +7237,7 @@ h3 {
             gap: 10px;
             grid-template-columns: 0.5fr 1fr;
             grid-template-rows: 1fr 0.5fr;
+            padding: 20px 10px 20px 5px;
             .item-price {
                 margin: 0 !important;
             }
@@ -7244,12 +7252,18 @@ h3 {
             }
         }
     }
+    .catalog-choice__body-list-favorit, .catalog-choice__body-list{
+        .popular__name, .popular__bottons{
+            padding: 0 !important;
+            width: 100%;
+        }
+        .popular__name{
+        }
+
+    }
     .catalog-choice__body-list-favorit{
         .popular__items {
             margin: 10px 5px;
-        }
-        .popular__name, .popular__bottons{
-            padding: 0 !important;
         }
     }
 }
