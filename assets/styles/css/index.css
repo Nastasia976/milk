@@ -4253,13 +4253,6 @@ h2 {
   white-space: nowrap;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  cursor: pointer;
-}
-
-.about__reiting span:hover {
-  color: #4EB7E5;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .about__favorites {
@@ -6456,8 +6449,6 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .main-about-page .lider .production-page__items {
@@ -8389,6 +8380,17 @@ h3 {
   font-size: 16px;
   line-height: 16%;
   white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sorter__item svg {
+  margin-left: 8px;
+  display: none;
 }
 
 .sorter__item:hover {
@@ -8410,6 +8412,16 @@ h3 {
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.sorter__item._price.active svg, .sorter__item._reitings.active svg {
+  display: block;
+}
+
+.sorter__item._price.active:hover, .sorter__item._reitings.active:hover {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .sorter__item._price {
   border-radius: 50px;
   position: relative;
@@ -8422,12 +8434,7 @@ h3 {
   margin-left: 10px;
 }
 
-.sorter__item._price svg {
-  margin-left: 5px;
-}
-
 .sorter__item._reitings.active {
-  padding: 22px 19px;
   border-radius: 50px;
   position: relative;
   display: -webkit-box;
