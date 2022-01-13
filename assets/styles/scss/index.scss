@@ -3738,7 +3738,8 @@ h2 {
     margin-top: calc(22px + 60 * (100vw / 1920));
     background-color: #f3f9fe;
     &__el {
-        padding: 28px 37px;
+        padding: 27px 37px;
+        margin: 0 1px;
         font-size: 20px;
         line-height: 120%;
         display: flex;
@@ -11853,4 +11854,30 @@ h3 {
 }
 .add-adres:hover{
     color: #8ED8F3;
+}
+.footer__link{
+    svg{
+        margin-left: 0;
+    }
+}
+.footer__icon-link{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 27px;
+    transition: 0.3s;
+}
+.footer__link:hover{
+    .footer__icon-link{
+        background-color: #fff;
+        transition: 0.3s;
+        svg{
+            color:  #8ED8F3;
+            transition: 0.3s;
+        }
+    }
 }

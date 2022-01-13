@@ -4882,7 +4882,8 @@ h2 {
 }
 
 .product-about__el {
-  padding: 28px 37px;
+  padding: 27px 37px;
+  margin: 0 1px;
   font-size: 20px;
   line-height: 120%;
   display: -webkit-box;
@@ -15571,4 +15572,39 @@ h3 {
 
 .add-adres:hover {
   color: #8ED8F3;
+}
+
+.footer__link svg {
+  margin-left: 0;
+}
+
+.footer__icon-link {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 27px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__link:hover .footer__icon-link {
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__link:hover .footer__icon-link svg {
+  color: #8ED8F3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
