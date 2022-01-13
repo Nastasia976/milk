@@ -9350,6 +9350,14 @@ h3 {
 }
 
 @media (max-width: 345px) {
+  .catalog-choice__body-list-favorit .popular__items,
+  .catalog-choice__body-list .popular__items {
+    /* .item-price__choice {
+                button {
+                    width: 27px;
+                }
+            } */
+  }
   .catalog-choice__body-list-favorit .popular__items .item-price__after,
   .catalog-choice__body-list .popular__items .item-price__after {
     font-size: 14px;
@@ -9365,10 +9373,6 @@ h3 {
   .catalog-choice__body-list-favorit .popular__items .popular__text,
   .catalog-choice__body-list .popular__items .popular__text {
     font-size: 13px;
-  }
-  .catalog-choice__body-list-favorit .popular__items .item-price__choice button,
-  .catalog-choice__body-list .popular__items .item-price__choice button {
-    width: 27px;
   }
 }
 
