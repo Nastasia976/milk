@@ -9217,8 +9217,15 @@ h3 {
   }
 }
 
+@media (max-width: 520px) {
+  .main-catalog-page .catalog-choice__body._grid .popular__items._grid .popular__name {
+    min-height: 0;
+  }
+}
+
 @media (max-width: 445px) {
-  .main-catalog-page .catalog-choice__body._grid .popular__items._grid .popular__bottons .popular__button2, .main-catalog-page .catalog-choice__body._grid .popular__items._grid .popular__bottons .popular__button1 {
+  .main-catalog-page .catalog-choice__body._grid .popular__items._grid .popular__bottons .popular__button2,
+  .main-catalog-page .catalog-choice__body._grid .popular__items._grid .popular__bottons .popular__button1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

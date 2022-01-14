@@ -7131,7 +7131,7 @@ h3 {
             margin-top: 10px;
             font-weight: 400;
         }
-        .about__details{
+        .about__details {
             margin-top: 10px !important;
         }
         .popular__sell2 {
@@ -7223,19 +7223,19 @@ h3 {
     .main-catalog-page {
         .catalog-choice__body._grid {
             grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-            .popular__items._grid{
+            .popular__items._grid {
                 .popular__image {
                     padding: 0 0 50% 0 !important;
                     margin-top: 0;
-                    img{
+                    img {
                         max-width: 70%;
                     }
                 }
-                .popular__name{
+                .popular__name {
                     font-size: 15px !important;
                     min-height: 120px;
                 }
-                .item-price__after{
+                .item-price__after {
                     font-size: 18px;
                 }
             }
@@ -7250,19 +7250,31 @@ h3 {
         right: 0;
     }
 }
-@media(max-width:445px){
+@media (max-width: 520px) {
     .main-catalog-page {
         .catalog-choice__body._grid {
-            .popular__items._grid{
-                .popular__bottons{
-                    .popular__button2, .popular__button1{
+            .popular__items._grid {
+                .popular__name {
+                    min-height: 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 445px) {
+    .main-catalog-page {
+        .catalog-choice__body._grid {
+            .popular__items._grid {
+                .popular__bottons {
+                    .popular__button2,
+                    .popular__button1 {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         max-height: 50px;
                     }
                 }
-                .popular__name{
+                .popular__name {
                     min-height: 0;
                 }
             }
