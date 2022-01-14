@@ -728,6 +728,8 @@ $(document).ready(function () {
     //-------------choice-adres---------
     $('.ordering__footer').click(function () {
         $(this).toggleClass('active').next().slideToggle();
+       /*  $(this).toggleClass('active');
+        $('.wrapper-profil-add-adres ').toggleClass('active'); */
     })
 
     $(document).on('click', '.choice-adres__items', function (e) {
