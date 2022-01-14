@@ -280,9 +280,13 @@ $(document).ready(function () {
         $('.wrapper-prof-pre-order').show();
         $('.wrapper-prof-order').hide();
     });
-    $('._order-order').click(function(){
-        $('.wrapper-prof-order').show();
-        $('.wrapper-prof-pre-order').hide();
+    $('._order').click(function(){
+        $('.wrapper-prof-order').css('display', 'block');
+        $('.wrapper-prof-pre-order').css('display', 'none');
+    })
+    $('._pre-order').click(function(){
+        $('.wrapper-prof-order').css('display', 'none');
+        $('.wrapper-prof-pre-order').css('display', 'block');
     })
 
     $('.big-slider__prev').click(function (event) {
