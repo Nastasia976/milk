@@ -6859,6 +6859,7 @@ h3 {
             margin-top: 0;
             position: relative;
             margin-top: 30px;
+            min-width: 250px;
             .popular__sell2 {
                 background: #e5844e;
                 border-radius: 50px;
@@ -8935,6 +8936,18 @@ h3 {
         right: 30px;
         margin: 0;
     }
+    .order-number__footer{
+        justify-content: flex-start !important;
+        align-items: flex-start;
+        .order-number__elements{
+            order: 2;
+            margin-left: 0px;
+            flex: 1 1 40%;
+        }
+        .order-number__items:nth-child(2){
+            order: 3;
+        }
+    }
     .main-profil,
     .main-profil-ur {
         .profil__wrapper {
@@ -9027,6 +9040,14 @@ h3 {
     .choice-adres {
         &__items {
             padding: 15px 20px !important;
+        }
+    }
+    .order-number__footer{
+        flex-direction: column;
+        .order-number__elements{
+            order: 3;
+            margin-left: 0px;
+            flex: 1 1 40%;
         }
     }
 }
@@ -10326,6 +10347,7 @@ h3 {
         font-size: 20px;
         line-height: 120%;
         font-weight: 500;
+        color: #000000;
     }
 
     &__description {

@@ -19,7 +19,7 @@ $(document).ready(function () {
         autoplay: true,
         infinite: true,
         speed: 1500,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 5000,
         prevArrow: $('.mainPage-prev'),
         nextArrow: $('.mainPage-next'),
     });
