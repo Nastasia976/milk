@@ -1200,7 +1200,12 @@ h2 {
         }
         .popular-prev {
             color: #cccccc;
-            margin-right: 30px;
+            margin-right: 20px;
+            width: 38px;
+            height: 68px;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
         }
         .popular-prev:hover {
             color: #c0c0c0 !important;
@@ -1468,13 +1473,20 @@ h2 {
         }
     }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1360px) {
     .popular {
         &__slider {
             margin: calc(40px + (74 - 40) * ((100vw - 320px) / (1920 - 320))) -10px 0;
         }
         .popular__items {
             margin: 0 10px;
+        }
+    }
+}
+@media (max-width: 1280px) {
+    .popular {
+        .popular__items {
+            padding: 21px 20px 15px;
         }
     }
 }
@@ -1502,6 +1514,15 @@ h2 {
         .popular__bottons {
             margin-top: 20px;
         }
+        .popular__image{
+            padding: 0 0 65% 0;
+            img{
+                width: 90%;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
     }
 }
 @media (max-width: 400px) {
@@ -1509,6 +1530,7 @@ h2 {
         .popular__bottons {
             flex-direction: column;
             height: 91px;
+            margin-top: 10px;
             .popular__button3 {
                 flex: 0 1 50px;
                 width: 100%;
@@ -1516,6 +1538,11 @@ h2 {
             }
             .popular__button1,
             .popular__button2 {
+                width: 100%;
+            }
+        }
+        .popular__image{
+            img{
                 width: 100%;
             }
         }
@@ -3082,7 +3109,7 @@ h2 {
     &__image {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         flex: 0 1 50%;
         max-width: 48%;
         margin-right: 20px;
@@ -3216,9 +3243,11 @@ h2 {
 .big-slider {
     margin-top: 40px;
     &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         img {
             width: calc(224px + 300 * (100vw / 1920));
-            margin-left: 30px;
         }
     }
 }
@@ -3425,21 +3454,21 @@ h2 {
     }
 }
 @media (max-width: 1280px) {
+    .product-card__slider2{
+        min-width: 100%;
+    }
     .big-slider {
         margin-top: 0;
+        width: 100%;
+        .slick-track{
+            column-gap: 20px;
+        }
         &__image {
             position: relative;
-            padding: 0 0 26% 0;
             margin-top: 50px;
-            img {
-                left: 0;
-                right: 0;
-                margin: auto;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                z-index: 1;
+            img{
+                margin: 0;
+                max-width: 90%;
             }
         }
     }
@@ -3469,6 +3498,7 @@ h2 {
             margin: 0px auto;
             .slick-track {
                 max-height: 150px !important;
+                column-gap: 20px;
             }
             .slick-list {
                 max-height: 150px !important;
@@ -3477,7 +3507,6 @@ h2 {
                 height: 140px !important;
                 padding: 0;
                 img {
-                    max-height: 100px !important;
                 }
             }
             .slick-track {
@@ -3493,31 +3522,30 @@ h2 {
     }
     .product-card__slider2 {
         .about__favorites._hide {
-            top: 50px;
-            right: 20px;
+            top: 20px;
+            right: 25px;
         }
     }
-}
-@media (max-width: 445px) {
-    .recommendations {
-        .popular__items {
-            .popular__bottons {
-                flex-direction: column;
-                button {
-                    min-width: 100% !important;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-        }
+    .product-card__descriptions{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
+
 @media (max-width: 1180px) {
     .product-card__descriptions {
         .about__items {
             min-width: 100%;
             transform: translate(0);
+        }
+        .about__title{
+            margin-top: 40px;
+            line-height: 125%;
+            margin-right: 0;
+        }
+        .about__subtitle{
+            margin: 30px 0;
         }
         .popular__bottons {
             flex-direction: column;
@@ -3543,11 +3571,10 @@ h2 {
 
 @media (max-width: 1020px) {
     .about__title {
-        font-size: calc(18px + 14 * (100vw / 1020));
     }
     .product-card__descriptions {
         .about__items {
-            margin-top: 20px;
+            margin-top: 30px;
             padding: 20px;
         }
         .item-price {
@@ -3571,9 +3598,6 @@ h2 {
 }
 
 @media (max-width: 870px) {
-    .product-card__image {
-        height: fit-content;
-    }
     .bread-crumbs {
         flex-wrap: wrap;
     }
@@ -3585,12 +3609,12 @@ h2 {
     .product-card {
         flex-direction: column;
         &__image {
-            margin: 0 auto;
+            margin: 30px auto 0;
             min-width: 100%;
             .big-slider {
                 margin-top: 20px;
                 &__image {
-                    padding: 0 0 18% 0;
+                    padding: 0;
                 }
             }
         }
@@ -3617,19 +3641,26 @@ h2 {
     }
     .about {
         position: relative;
+        &__title{
+            font-size: calc(24px + (34 - 24) * ((100vw - 320px) / (768 - 320)));
+        }
+        &__subtitle{
+            margin: 20px 0 0 !important;
+        }
         .item-price {
             flex-direction: row;
             .item-price__choice {
                 margin-top: 0;
                 margin-left: 30px !important;
             }
+            &__price{
+                margin-top: 0;
+            }
         }
         .popular__bottons {
-            flex-direction: row;
             .popular__button2 {
-                margin-top: 0 !important;
-                padding: 12px 44.5px;
-                margin-left: 30px !important;
+                margin-top: 10px !important;
+                margin-left: 0;
             }
         }
     }
@@ -3661,13 +3692,20 @@ h2 {
     }
 }
 @media (max-width: 500px) {
+    .product-card{
+        margin-top: 30px;
+    }
     .product-card__items {
         flex-direction: column;
         .product-card__item {
             padding: 15px 26px !important;
+            width: 100%;
         }
         .product-card__item:first-child {
             margin-right: 0px;
+        }
+        .product-card__item:last-child{
+            margin-top: 10px;
         }
     }
     .about__details {
@@ -3697,12 +3735,13 @@ h2 {
     .big-slider {
         margin-top: 20px !important;
         max-width: 100% !important;
+        .slick-track{
+            column-gap: 0;
+        }
         &__image {
-            padding: 0 0 20% 0 !important;
+            margin-top: 30px;
             margin-bottom: 30px;
             img {
-                height: 100%;
-                width: 100%;
             }
         }
     }
@@ -3728,6 +3767,21 @@ h2 {
         }
         .about__nds {
             margin-top: 20px;
+        }
+    }
+}
+@media (max-width: 445px) {
+    .recommendations {
+        .popular__items {
+            .popular__bottons {
+                flex-direction: column;
+                button {
+                    min-width: 100% !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
         }
     }
 }
@@ -4746,7 +4800,7 @@ h3 {
     }
     .sale-block__button {
         order: 2;
-        margin-top: 5px;
+        margin-top: 5px !important;
         button {
             padding: 11px 30px;
         }
@@ -4826,6 +4880,9 @@ h3 {
         .slick-track {
             padding: 0 0 30px 0;
         }
+        .popular__button3{
+            padding: 10px;
+        }
     }
     .popular__items:hover {
         box-shadow: 0px 10px 20px rgba(59, 88, 99, 0.4);
@@ -4853,49 +4910,53 @@ h3 {
         margin-top: 15px;
     }
 }
+@media (max-width: 1360px) {
+    .recommendations {
+        .popular__slider {
+            margin: 67px -10px 0;
+        }
+        .popular__items{
+            margin: 0 10px;
+            padding: 21px 20px;
+        }
+    }
+}
 @media (max-width: 768px) {
     .recommendations {
         .popular__slider {
-            margin: 90px 0 0;
+            margin: 90px -5px 0;
+            .popular__items{
+                margin: 0 5px;
+            }
         }
+        
         .popular__arrows {
             bottom: -70px;
             right: 0;
         }
     }
 }
+@media (max-width: 579px) {
+    .recommendations {
+        .popular__slider {
+            .popular__name{
+                min-height: 0;
+            }
+        }
+    }
+}
 @media (max-width: 440px) {
     .recommendations {
         .popular__bottons {
-            align-items: center;
-            button {
-                justify-content: center;
-                width: 100%;
-            }
-            .popular__button2 {
-                margin-top: 10px !important;
-            }
         }
         .popular__items {
-            display: flex;
-            flex-direction: column;
-            margin-top: 10px;
-            padding: 15px 15px 10px;
-            padding: 20px 15px;
         }
         .popular__image {
             margin-top: 20px;
             padding: 0 0 70% 0;
         }
-        .popular__name {
-            margin-top: 0;
-        }
         .popular__text {
             margin-top: 8px;
-        }
-        .item-price__choice {
-            margin-left: 0;
-            margin-top: 10px;
         }
     }
 }
@@ -7373,9 +7434,9 @@ h3 {
                 justify-content: flex-end;
             }
             .popular__image {
-                object-fit: contain;
                 margin: 0;
                 max-width: 100px;
+                padding: 0 !important;
                 img {
                     width: 100%;
                     max-width: 100px;
@@ -7386,6 +7447,9 @@ h3 {
             .popular__bottons {
                 padding: 0 !important;
                 width: 100%;
+            }
+            .popular__name{
+                margin-top: 35px;
             }
             .popular__sell{
                 left: -15px;
