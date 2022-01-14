@@ -10448,7 +10448,14 @@ h3 {
         margin-top: 28px;
         padding: 0;
     }
-
+    .about__details{
+        min-width: 100%;
+        .about__el:last-child{
+            min-width: 0 !important;
+            margin-right: -10px !important;
+            width: 100px;
+        }
+    }
     &__buttons {
         display: flex;
         align-items: center;
@@ -10516,10 +10523,19 @@ h3 {
         margin: 30px -10px 0;
         &__items {
             margin: 0 10px;
-            padding: 24px 15px;
+            padding: 24px 15px 20px;
         }
-        .slider-rec__button2 {
-            padding: 14px 20px !important;
+    }
+}
+@media (max-width: 1348px) {
+    .slider-rec__button2 {
+        padding: 14px 20px !important;
+    }
+}
+@media (max-width: 1280px) {
+    .slider-rec {
+        &__image{
+            padding: 0 0 65% 0;
         }
     }
 }

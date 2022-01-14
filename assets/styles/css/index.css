@@ -13265,6 +13265,16 @@ h3 {
   padding: 0;
 }
 
+.slider-rec .about__details {
+  min-width: 100%;
+}
+
+.slider-rec .about__details .about__el:last-child {
+  min-width: 0 !important;
+  margin-right: -10px !important;
+  width: 100px;
+}
+
 .slider-rec__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13352,10 +13362,19 @@ h3 {
   }
   .slider-rec__items {
     margin: 0 10px;
-    padding: 24px 15px;
+    padding: 24px 15px 20px;
   }
-  .slider-rec .slider-rec__button2 {
+}
+
+@media (max-width: 1348px) {
+  .slider-rec__button2 {
     padding: 14px 20px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .slider-rec__image {
+    padding: 0 0 65% 0;
   }
 }
 
