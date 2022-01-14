@@ -14659,6 +14659,20 @@ h3 {
   .info-hint._small {
     right: 0;
   }
+  .profil__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profil__conteiner .profil__menu {
+    width: 100%;
+  }
+  .profil__conteiner .profil__body {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 1000px) {
