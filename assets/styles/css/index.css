@@ -14325,7 +14325,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 39px;
+  margin-top: 14px;
 }
 
 .ordering__bottom .radiobuttons {
@@ -14339,6 +14339,7 @@ h3 {
 
 .ordering__bottom .radiobuttons__item {
   padding: 0 0 0 38px;
+  margin-top: 25px;
   position: relative;
   font-size: 16px;
   line-height: 120%;
@@ -16315,6 +16316,11 @@ h3 {
   margin-top: 0;
 }
 
+.recommendations .popular__items .about__details {
+  margin-top: 8px;
+  min-width: 100%;
+}
+
 ._minus:hover {
   color: #c1b493;
 }
@@ -16532,4 +16538,13 @@ h3 {
 
 .order-number__button {
   margin-top: 15px;
+}
+
+._fw500:last-child {
+  white-space: nowrap;
+}
+
+.radiobuttons {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }

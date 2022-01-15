@@ -11292,12 +11292,13 @@ h3 {
     &__bottom {
         display: flex;
         align-items: center;
-        margin-top: 39px;
+        margin-top: 14px;
         .radiobuttons {
             display: flex;
             align-items: center;
             &__item {
                 padding: 0 0 0 38px;
+                margin-top: 25px;
                 position: relative;
                 font-size: 16px;
                 line-height: 120%;
@@ -12510,6 +12511,10 @@ h3 {
                 margin-top: 0;
             }
         }
+        .about__details{
+            margin-top: 8px;
+            min-width: 100%;
+        }
     }
 }
 ._minus:hover {
@@ -12682,5 +12687,11 @@ h3 {
 }
 .order-number__button {
     margin-top: 15px;
+}
+._fw500:last-child{
+    white-space: nowrap;
+}
+.radiobuttons{
+    flex-wrap: wrap;
 }
 //====================slider-popular=================================
