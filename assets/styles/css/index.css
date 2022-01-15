@@ -3928,11 +3928,6 @@ h2 {
   .footer__link {
     font-size: calc(16px + 4 * (100vw / 1920));
   }
-  .footer__link svg {
-    margin-left: 13px;
-    width: 40px;
-    height: 40px;
-  }
 }
 
 .swiper__page {
