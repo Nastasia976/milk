@@ -965,10 +965,16 @@ h2 {
 
 .title-page__slider {
   z-index: 200;
+  padding: 0 0 50px 0;
+  min-height: 90vh;
 }
 
 .title-page__slider .slick-list {
-  padding: 0 0 calc(30px + 170 * (100vw / 1920)) 0;
+  min-height: inherit !important;
+}
+
+.title-page__slider .slick-track {
+  min-height: inherit !important;
 }
 
 .title-page__contein {
@@ -1049,7 +1055,9 @@ h2 {
 
 .title-page__cards {
   position: relative;
-  padding: 0 0 6.2% 0;
+  width: 100%;
+  overflow: hidden;
+  min-height: 880px;
 }
 
 .title-page__cards .title-page__main-img {
@@ -1058,6 +1066,15 @@ h2 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  bottom: 0;
+}
+
+.title-page__cards img {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  width: calc(620px + (1920 - 620) * ((100vw - 320px) / (1920 - 320)));
+  right: 0;
 }
 
 .title-page__cards .wave {
@@ -1074,6 +1091,10 @@ h2 {
 .title-page__cards._blue {
   background: -webkit-gradient(linear, left top, left bottom, from(#4eb7e5), color-stop(70.95%, #0096cc));
   background: linear-gradient(180deg, #4eb7e5 0%, #0096cc 70.95%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#4eb7e5), color-stop(#0096cc), color-stop(91%, #f8fafe));
+  background: linear-gradient(180deg, #4eb7e5, #0096cc, #f8fafe 91%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#4eb7e5), color-stop(#0096cc), color-stop(89%, #efefee));
+  background: linear-gradient(180deg, #4eb7e5, #0096cc, #efefee 89%);
 }
 
 .title-page__cards._pink {
@@ -1149,7 +1170,7 @@ h2 {
 .title-page__body {
   position: absolute;
   color: white;
-  padding: 134px 0 0 0;
+  padding: 134px 20px 0 20px;
 }
 
 .title-page__title {
@@ -1220,6 +1241,24 @@ h2 {
   background: #d17645;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+@media (max-width: 1100px) {
+  .title-page__cards img {
+    right: -80px;
+  }
+  .title-page__cards._pink img {
+    right: -150px;
+  }
+}
+
+@media (max-width: 520px) {
+  .title-page__cards img {
+    right: -60px;
+  }
+  .title-page__cards._pink img {
+    right: -120px;
+  }
 }
 
 @media (max-width: 1640px) {
@@ -1382,8 +1421,8 @@ h2 {
   margin-top: calc(-60px + (-60) * (100vw / 1920));
   background: -webkit-gradient(linear, left bottom, left top, color-stop(74%, #f4f9ff), to(#fcfaf8));
   background: linear-gradient(0deg, #f4f9ff 74%, #fcfaf8);
-  -webkit-box-shadow: 0px calc(-30px + (-30) * (100vw / 1920)) 37px 15px #fcfaf8;
-          box-shadow: 0px calc(-30px + (-30) * (100vw / 1920)) 37px 15px #fcfaf8;
+  -webkit-box-shadow: 0px calc(-30px + (-30) * (100vw / 1920)) 17px 15px #fcfaf8;
+          box-shadow: 0px calc(-30px + (-30) * (100vw / 1920)) 17px 15px #fcfaf8;
 }
 
 .categories-page .categories-slider {
@@ -1480,17 +1519,14 @@ h2 {
   }
 }
 
-@media (max-width: 1000px) {
-  .categories-page {
-    -webkit-box-shadow: 0px -25px 15px 21px #f2f3f1;
-            box-shadow: 0px -25px 15px 21px #f2f3f1;
-    margin: 30px 0 0 0;
-    padding: calc(20px + 50 * (100vw / 1180)) 20px 0;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(83%, #f4f9ff), to(#f2f3f1));
-    background: linear-gradient(0deg, #f4f9ff 83%, #f2f3f1);
-  }
-}
-
+/* @media (max-width: 1000px) {
+    .categories-page {
+        box-shadow: 0px -25px 15px 21px rgba(242, 243, 241, 1);
+        margin: 30px 0 0 0;
+        padding: calc(20px + 50 * (100vw / 1180)) 20px 0;
+        background: linear-gradient(0deg, rgb(244, 249, 255) 83%, rgb(242, 243, 241));
+    }
+} */
 @media (max-width: 1300px) {
   .categories-page__body {
     display: none;
@@ -1540,6 +1576,27 @@ h2 {
 .wrapper {
   width: 100%;
   overflow: hidden;
+}
+
+@media (max-width: 1470px) {
+  .categories-page {
+    -webkit-box-shadow: 0px -30px 17px 15px #fcfaf8;
+            box-shadow: 0px -30px 17px 15px #fcfaf8;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-page {
+    -webkit-box-shadow: 0px -20px 17px 15px #fcfaf8;
+            box-shadow: 0px -20px 17px 15px #fcfaf8;
+  }
+}
+
+@media (max-width: 500px) {
+  .categories-page {
+    -webkit-box-shadow: 0px -15px 17px 15px #fcfaf8;
+            box-shadow: 0px -15px 17px 15px #fcfaf8;
+  }
 }
 
 .popular {
