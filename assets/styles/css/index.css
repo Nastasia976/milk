@@ -1101,8 +1101,6 @@ h2 {
 .title-page__cards._pink {
   background: -webkit-gradient(linear, left top, left bottom, from(#c65282), color-stop(70.95%, #a53c67));
   background: linear-gradient(180deg, #c65282 0%, #a53c67 70.95%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #c65282), color-stop(78%, #a53c67), color-stop(93%, #efefee));
-  background: linear-gradient(180deg, #c65282 10%, #a53c67 78%, #efefee 93%);
 }
 
 .title-page__cards._beige {
