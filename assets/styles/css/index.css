@@ -1075,6 +1075,7 @@ h2 {
   min-width: 100%;
   width: calc(620px + (1920 - 620) * ((100vw - 320px) / (1920 - 320)));
   right: 0;
+  z-index: 2;
 }
 
 .title-page__cards .wave {
