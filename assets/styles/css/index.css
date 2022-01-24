@@ -4651,7 +4651,7 @@ h2 {
   }
   .product-card__body .small-slider {
     max-width: 55%;
-    min-width: 300px;
+    min-width: 320px;
     min-height: 80px !important;
     margin: 0px auto;
   }
@@ -4795,7 +4795,7 @@ h2 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .product-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

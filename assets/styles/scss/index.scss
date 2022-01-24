@@ -3555,7 +3555,7 @@ h2 {
         }
         .small-slider {
             max-width: 55%;
-            min-width: 300px;
+            min-width: 320px;
             min-height: 80px !important;
             margin: 0px auto;
             .slick-track {
@@ -3684,7 +3684,7 @@ h2 {
         max-width: 75% !important;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
     .product-card {
         flex-direction: column;
         &__image {
