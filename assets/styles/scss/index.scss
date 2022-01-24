@@ -7297,14 +7297,19 @@ h3 {
 @media (max-width: 600px) {
     .main-catalog-page {
         .catalog-choice__body._grid {
-            grid-template-columns: repeat(auto-fit, minmax(235px, 0.5fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
+            .popular__items._grid {
+                .popular__button3{
+                    padding: 14px 10px;
+                }
+            }
         }
     }
 }
-@media (max-width: 580px) {
+@media (max-width: 560px) {
     .main-catalog-page {
         .catalog-choice__body._grid {
-            grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+            grid-template-columns: 1fr;
             .popular__items._grid {
                 .popular__image {
                     padding: 0 0 50% 0 !important;
@@ -7315,7 +7320,7 @@ h3 {
                 }
                 .popular__name {
                     font-size: 15px !important;
-                    min-height: 120px;
+                    min-height: 0px;
                 }
                 .item-price__after {
                     font-size: 18px;
