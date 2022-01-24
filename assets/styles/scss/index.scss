@@ -7177,9 +7177,9 @@ h3 {
     padding: 32px 0 63px;
     min-width: 100% !important;
     margin: 0;
-    gap: 20px;
+    gap: calc(10px + (20 - 10) * ((100vw - 1360px) / (1920 - 1360)));
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.33fr));
     .popular__items._grid {
         margin: 0 !important;
         display: flex;
@@ -7262,7 +7262,7 @@ h3 {
 @media (max-width: 1360px) {
     .main-catalog-page {
         .catalog-choice__body._grid {
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(270px, 0.5fr));
             gap: 10px;
             .popular__items._grid {
                 padding: 20px;
@@ -7291,6 +7291,13 @@ h3 {
                     }
                 }
             }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .main-catalog-page {
+        .catalog-choice__body._grid {
+            grid-template-columns: repeat(auto-fit, minmax(235px, 0.5fr));
         }
     }
 }
@@ -7829,8 +7836,8 @@ h3 {
 .catalog-choice__body-favorite {
     margin: calc(26px + 20 * (100vw / 1920)) 0 calc(30px + 34 * (100vw / 1920));
     display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: calc(10px + (24 - 10) * ((100vw - 1245px) / (1920 - 1245)));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 0.25fr));
     .popular__items._favorit {
         display: flex;
         flex-direction: column;
@@ -7877,8 +7884,17 @@ h3 {
 }
 @media (max-width: 1400px) {
     .catalog-choice__body-favorite {
-        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 0.33fr));
+        gap: 10px;
+    }
+}
+@media (max-width: 940px) {
+    .catalog-choice__body-favorite {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 0.5fr));
+        gap: 10px;
+        .popular__items._favorit{
+            max-width: 100%;
+        }
     }
 }
 @media (max-width: 1330px) {
@@ -7895,7 +7911,7 @@ h3 {
 }
 @media (max-width: 720px) {
     .catalog-choice__body-favorite {
-        grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(255px, 0.5fr));
         gap: 10px;
         .popular__items._favorit {
             padding: 20px 15px;
